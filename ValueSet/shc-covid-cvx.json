@@ -1,0 +1,101 @@
+{
+  "resourceType": "ValueSet",
+  "id": "shc-covid-cvx",
+  "language" : "en",
+  "url": "https://github.com/dvci/shc-terminology/ValueSet/shc-covid-cvx",
+  "version": "4.0.1",
+  "name": "ShcCovidCvxCodes",
+  "title": "CVX Covid Codes for use in Smart Health Cards",
+  "status": "draft",
+  "date": "2021-09-22",
+  "publisher": "Health Intersections",
+  "contact": [
+    {
+      "name": "Grahame Grieve",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "grahame@healthintersections.com.au"
+        }
+      ]
+    }
+  ],
+  "description": "A list of CVX codes with recommended consumer suitable displays for use in Smart Health Cards, with localized consumer friendly terms",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "AU"
+        }
+      ]
+    }
+  ],
+  "copyright": "Creative Commons 0",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "concept": [
+          {
+            "code": "210",
+            "display": "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL",
+            "designation" : [{
+               "language" : "en-AU",
+               "use" : {
+                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "use" : "consumer-friendly"
+               },
+               "value" : "AstraZeneca (Vaxzevria)"
+            }]
+          },
+          {
+            "code": "208",
+            "display": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose",
+            "designation" : [{
+               "language" : "en-AU",
+               "use" : {
+                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "use" : "consumer-friendly"
+               },
+               "value" : "Pfizer (Comirnaty)"
+            }, {
+               "language" : "en-US",
+               "use" : {
+                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "use" : "consumer-friendly"
+               },
+               "value" : "Pfizer/Covid"
+            }, {
+               "language" : "en-NZ",
+               "use" : {
+                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "use" : "consumer-friendly"
+               },
+               "value" : "Pfizer-BioNTech COVID-19 Vaccine"
+            }]
+          },
+          {
+            "code": "207",
+            "display": "COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose",
+            "designation" : [{
+               "language" : "en-AU",
+               "use" : {
+                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "use" : "consumer-friendly"
+               },
+               "value" : "Moderna (Spikevax)"
+            }, {
+               "language" : "en-US",
+               "use" : {
+                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "use" : "consumer-friendly"
+               },
+               "value" : "Pfizer/Moderna"
+            }]
+          }
+        ]
+      }
+    ]
+  }
+}
