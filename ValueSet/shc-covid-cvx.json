@@ -127,7 +127,7 @@
                  "system" : "http://example.org/fhir/CodeSystem/designation-use",
                  "use" : "consumer-friendly"
                },
-               "value" : "Pfizer-BioNTech COVID-19 Vaccine"
+               "value" : "Pfizer (Comirnaty)"
             }, {
                "language" : "en-US",
                "use" : {
@@ -145,7 +145,7 @@
                  "system" : "http://example.org/fhir/CodeSystem/designation-use",
                  "use" : "consumer-friendly"
                },
-               "value" : "Pfizer-BioNTech COVID-19 Vaccine"
+               "value" : "Pfizer (Comirnaty) - Child dose"
             }, {
                "language" : "en-US",
                "use" : {
