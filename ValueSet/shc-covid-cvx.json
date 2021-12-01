@@ -47,6 +47,13 @@
                  "use" : "consumer-friendly"
                },
                "value" : "AstraZeneca (Vaxzevria)"
+            }, {
+               "language" : "en-US",
+               "use" : {
+                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "use" : "consumer-friendly"
+               },
+               "value" : "AstraZeneca COVID-19 Vaccine"
             }]
           },
           {
@@ -65,7 +72,7 @@
                  "system" : "http://example.org/fhir/CodeSystem/designation-use",
                  "use" : "consumer-friendly"
                },
-               "value" : "Pfizer/Covid"
+               "value" : "Pfizer-BioNTech COVID-19 Vaccine"
             }, {
                "language" : "en-NZ",
                "use" : {
@@ -91,7 +98,61 @@
                  "system" : "http://example.org/fhir/CodeSystem/designation-use",
                  "use" : "consumer-friendly"
                },
-               "value" : "Pfizer/Moderna"
+               "value" : "Moderna COVID-19 Vaccine"
+            }]
+          }, {
+            "code": "212",
+            "display": "COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL",
+            "designation" : [{
+               "language" : "en-AU",
+               "use" : {
+                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "use" : "consumer-friendly"
+               },
+               "value" : "Janssen COVID-19 Vaccine"
+            }, {
+               "language" : "en-US",
+               "use" : {
+                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "use" : "consumer-friendly"
+               },
+               "value" : "Janssen COVID-19 Vaccine"
+            }]
+          }, {
+            "code": "217",
+            "display": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose",
+            "designation" : [{
+               "language" : "en-AU",
+               "use" : {
+                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "use" : "consumer-friendly"
+               },
+               "value" : "Pfizer-BioNTech COVID-19 Vaccine"
+            }, {
+               "language" : "en-US",
+               "use" : {
+                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "use" : "consumer-friendly"
+               },
+               "value" : "Pfizer-BioNTech COVID-19 Vaccine"
+            }]
+          }, {
+            "code": "218",
+            "display": "COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose",
+            "designation" : [{
+               "language" : "en-AU",
+               "use" : {
+                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "use" : "consumer-friendly"
+               },
+               "value" : "Pfizer-BioNTech COVID-19 Vaccine"
+            }, {
+               "language" : "en-US",
+               "use" : {
+                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "use" : "consumer-friendly"
+               },
+               "value" : "Pfizer-BioNTech COVID-19 Vaccine"
             }]
           }
         ]
