@@ -198,6 +198,17 @@
                 },
                 "value": "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled) COMIRNATY (BLA labeled)"
             }]
+          }, {
+            "code": "502",
+            "display": "COVID-19 IV Non-US Vaccine (COVAXIN)",
+            "designation": [{
+                "language": "en-US",
+                "use": {
+                    "system": "http://example.org/fhir/CodeSystem/designation-use",
+                    "use": "consumer-friendly"
+                },
+                "value": "COVAXIN (Bharat) COVID-19 Vaccine"
+            }]
           }
         ]
       }
