@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+/fsh-generated
+/input-cache
+/output
+/temp
+/template
+/script/*
+!/script/validate*
+!/script/artifacts-for-jira-spec
+.vscode
+.env
+.classpath
+.project
+.settings/*
+target/*
+.mvn/wrapper/maven-wrapper.jar

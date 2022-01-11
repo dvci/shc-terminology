@@ -1,0 +1,13 @@
+﻿{
+  "name": "org.vci.ig-template",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "VCI FHIR IG Template",
+  "author": "http://hl7.org/fhir",
+  "canonical": "http://vci.org/ig-template",
+  "base": "fhir.base.template",
+  "dependencies": {
+    "fhir.base.template": "current"
+  },
+  "version": "0.1.0"
+}
