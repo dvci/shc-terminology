@@ -1,0 +1,15 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+id: cards.smarthealth.terminology
+canonical: https://terminology.smarthealth.cards
+name: SMARTHealthCardsTerminology
+fhirVersion: 4.0.1
+# FSHOnly: true
+applyExtensionMetadataToRoot: false
+status: draft
+version: continuous build
+copyrightYear: 2022
+releaseLabel: ci-build
