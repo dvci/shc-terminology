@@ -1,0 +1,52 @@
+name: Build IG
+
+on:
+  push:
+    branches: 
+      - main
+  workflow_dispatch:    
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Cache contents of ~/.fhir for docker volume
+        id: fhir-cache
+        uses: actions/cache@v3
+        with:
+          path: /.fhir
+          key: ${{ runner.os }}-fhir    
+          
+      - name: Run the build process with Docker
+        uses: addnab/docker-run-action@v3
+        with:
+          image: hl7fhir/ig-publisher-base:latest
+          options: -v ${{ github.workspace }}:/home/publisher/ig -v /.fhir:/root/.fhir
+          # Fetch and run the publisher - runs publisher directly instead of using batch script
+          run: |
+            _updatePublisher.sh --yes
+            java -jar ./input-cache/publisher.jar publisher -ig .
+
+      - name: Commit
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }} 
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          # keeps gh-pages branch from storing old commits, which balloons size of repo
+          force_orphan: true
+
+      # deploy output to sub-directory indicated by the tag or branch that triggered this workflow, used for testing
+      # triggered manually by dispatch of selected branch
+      # will be overwritten with next deployment to main
+      - name: Commit
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref != 'refs/heads/main' }} 
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          destination_dir: ${{ github.ref_name }}
+          keep_files: true          
