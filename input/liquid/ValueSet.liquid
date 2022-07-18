@@ -1,21 +1,27 @@
 <div xmlns="http://www.w3.org/1999/xhtml">
-    <ul>
         {% loop incl in ValueSet.compose.include %}
-            {% loop concept in incl.concept %}
-                <li>
-                    <code>{{ concept.code }}</code>:
-                    {{ concept.display }}
-
-                    <ul>
-                        {% loop designation in concept.designation %}
-                            <li>
-                                <code>{{ designation.language }}</code>:
-                                {{ designation.value }}
-                            </li>
-                        {% endloop %}
-                    </ul>
-                </li>
-            {% endloop %}
+            <p>Include these codes as defined in <a href="{{ incl.system }}"><code>{{ incl.system }}</code></a>:</p>
+            <table class="table-striped table table-bordered">
+                <tr>
+                    <th>Code</th>
+                    <th>Description(s)</th>
+                </tr>
+                {% loop concept in incl.concept %}
+                    <tr>
+                        <td><code>{{ concept.code }}</code></td>
+                        <td>
+                            <ul>
+                                <li>Default: {{ concept.display }}</li>
+                                {% loop designation in concept.designation %}
+                                    <li>
+                                        <code>{{ designation.language }}</code>:
+                                        {{ designation.value }}
+                                    </li>
+                                {% endloop %}
+                            </ul>
+                        </td>
+                    </tr>
+                {% endloop %}
+            </table>
         {% endloop %}
-    </ul>
 </div>
