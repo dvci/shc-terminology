@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "shc-covid-cvx",
-  "language" : "en",
+  "language": "en",
   "url": "https://github.com/dvci/shc-terminology/ValueSet/shc-covid-cvx",
   "version": "4.0.1",
   "name": "ShcCovidCvxCodes",
@@ -44,175 +44,212 @@
           {
             "code": "210",
             "display": "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL",
-            "designation" : [{
-               "language" : "en-AU",
-               "use" : {
-                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                 "use" : "consumer-friendly"
-               },
-               "value" : "AstraZeneca (Vaxzevria)"
-            }, {
-               "language" : "en-US",
-               "use" : {
-                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                 "use" : "consumer-friendly"
-               },
-               "value" : "AstraZeneca COVID-19 Vaccine"
-            }]
+            "designation": [
+              {
+                "language": "en-AU",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "AstraZeneca (Vaxzevria)"
+              },
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "AstraZeneca COVID-19 Vaccine"
+              }
+            ]
           },
           {
             "code": "208",
             "display": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose",
-            "designation" : [{
-               "language" : "en-AU",
-               "use" : {
-                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                 "use" : "consumer-friendly"
-               },
-               "value" : "Pfizer (Comirnaty)"
-            }, {
-               "language" : "en-US",
-               "use" : {
-                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                 "use" : "consumer-friendly"
-               },
-               "value" : "Pfizer-BioNTech COVID-19 Vaccine"
-            }, {
-               "language" : "en-NZ",
-               "use" : {
-                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                 "use" : "consumer-friendly"
-               },
-               "value" : "Pfizer-BioNTech COVID-19 Vaccine"
-            }]
+            "designation": [
+              {
+                "language": "en-AU",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Pfizer (Comirnaty)"
+              },
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Pfizer-BioNTech COVID-19 Vaccine"
+              },
+              {
+                "language": "en-NZ",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Pfizer-BioNTech COVID-19 Vaccine"
+              }
+            ]
           },
           {
             "code": "207",
             "display": "COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose",
-            "designation" : [{
-               "language" : "en-AU",
-               "use" : {
-                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                 "use" : "consumer-friendly"
-               },
-               "value" : "Moderna (Spikevax)"
-            }, {
-               "language" : "en-US",
-               "use" : {
-                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                 "use" : "consumer-friendly"
-               },
-               "value" : "Moderna COVID-19 Vaccine"
-            }]
-          }, {
+            "designation": [
+              {
+                "language": "en-AU",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Moderna (Spikevax)"
+              },
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Moderna COVID-19 Vaccine"
+              }
+            ]
+          },
+          {
             "code": "212",
             "display": "COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL",
-            "designation" : [{
-               "language" : "en-AU",
-               "use" : {
-                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                 "use" : "consumer-friendly"
-               },
-               "value" : "Janssen COVID-19 Vaccine"
-            }, {
-               "language" : "en-US",
-               "use" : {
-                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                 "use" : "consumer-friendly"
-               },
-               "value" : "Janssen COVID-19 Vaccine"
-            }]
-          }, {
+            "designation": [
+              {
+                "language": "en-AU",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Janssen COVID-19 Vaccine"
+              },
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Janssen COVID-19 Vaccine"
+              }
+            ]
+          },
+          {
             "code": "217",
             "display": "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose",
-            "designation" : [{
-               "language" : "en-AU",
-               "use" : {
-                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                 "use" : "consumer-friendly"
-               },
-               "value" : "Pfizer (Comirnaty)"
-            }, {
-               "language" : "en-US",
-               "use" : {
-                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                 "use" : "consumer-friendly"
-               },
-               "value" : "Pfizer-BioNTech COVID-19 Vaccine"
-            }]
-          }, {
+            "designation": [
+              {
+                "language": "en-AU",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Pfizer (Comirnaty)"
+              },
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Pfizer-BioNTech COVID-19 Vaccine"
+              }
+            ]
+          },
+          {
             "code": "218",
             "display": "COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose",
-            "designation" : [{
-               "language" : "en-AU",
-               "use" : {
-                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                 "use" : "consumer-friendly"
-               },
-               "value" : "Pfizer (Comirnaty) - Child dose"
-            }, {
-               "language" : "en-US",
-               "use" : {
-                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                 "use" : "consumer-friendly"
-               },
-               "value" : "Pfizer-BioNTech COVID-19 Vaccine"
-            }]
-          }, {
+            "designation": [
+              {
+                "language": "en-AU",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Pfizer (Comirnaty) - Child dose"
+              },
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Pfizer-BioNTech COVID-19 Vaccine"
+              }
+            ]
+          },
+          {
             "code": "510",
             "display": "COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)",
-            "designation": [{
+            "designation": [
+              {
                 "language": "en-US",
                 "use": {
                   "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                   "use": "consumer-friendly"
                 },
                 "value": "Sinopharm (BIBP) COVID-19 Vaccine"
-            }]
-          }, {
+              }
+            ]
+          },
+          {
             "code": "511",
             "display": "COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)",
-            "designation": [{
+            "designation": [
+              {
                 "language": "en-US",
                 "use": {
                   "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                   "use": "consumer-friendly"
                 },
                 "value": "Coronavac (Sinovac) COVID-19 Vaccine"
-            }]
-          }, {
+              }
+            ]
+          },
+          {
             "code": "211",
             "display": "COVID-19 vaccine, Subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL",
-            "designation": [{
+            "designation": [
+              {
                 "language": "en-US",
                 "use": {
                   "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                   "use": "consumer-friendly"
                 },
                 "value": "Novavax COVID-19 Vaccine"
-            }]
-          }, {
+              }
+            ]
+          },
+          {
             "code": "219",
             "display": "COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose",
-            "designation": [{
+            "designation": [
+              {
                 "language": "en-US",
                 "use": {
-                    "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                    "use": "consumer-friendly"
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
                 },
                 "value": "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled) COMIRNATY (BLA labeled)"
-            }]
-          }, {
+              }
+            ]
+          },
+          {
             "code": "502",
             "display": "COVID-19 IV Non-US Vaccine (COVAXIN)",
-            "designation": [{
+            "designation": [
+              {
                 "language": "en-US",
                 "use": {
-                    "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                    "use": "consumer-friendly"
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
                 },
                 "value": "COVAXIN (Bharat) COVID-19 Vaccine"
-            }]
+              }
+            ]
           }
         ]
       }
