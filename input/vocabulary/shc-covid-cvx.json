@@ -27,6 +27,10 @@
         {
           "system": "urn:iso:std:iso:3166",
           "code": "AU"
+        },
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
         }
       ]
     }
@@ -43,14 +47,14 @@
             "designation" : [{
                "language" : "en-AU",
                "use" : {
-                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                  "use" : "consumer-friendly"
                },
                "value" : "AstraZeneca (Vaxzevria)"
             }, {
                "language" : "en-US",
                "use" : {
-                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                  "use" : "consumer-friendly"
                },
                "value" : "AstraZeneca COVID-19 Vaccine"
@@ -62,21 +66,21 @@
             "designation" : [{
                "language" : "en-AU",
                "use" : {
-                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                  "use" : "consumer-friendly"
                },
                "value" : "Pfizer (Comirnaty)"
             }, {
                "language" : "en-US",
                "use" : {
-                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                  "use" : "consumer-friendly"
                },
                "value" : "Pfizer-BioNTech COVID-19 Vaccine"
             }, {
                "language" : "en-NZ",
                "use" : {
-                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                  "use" : "consumer-friendly"
                },
                "value" : "Pfizer-BioNTech COVID-19 Vaccine"
@@ -88,14 +92,14 @@
             "designation" : [{
                "language" : "en-AU",
                "use" : {
-                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                  "use" : "consumer-friendly"
                },
                "value" : "Moderna (Spikevax)"
             }, {
                "language" : "en-US",
                "use" : {
-                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                  "use" : "consumer-friendly"
                },
                "value" : "Moderna COVID-19 Vaccine"
@@ -106,14 +110,14 @@
             "designation" : [{
                "language" : "en-AU",
                "use" : {
-                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                  "use" : "consumer-friendly"
                },
                "value" : "Janssen COVID-19 Vaccine"
             }, {
                "language" : "en-US",
                "use" : {
-                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                  "use" : "consumer-friendly"
                },
                "value" : "Janssen COVID-19 Vaccine"
@@ -124,14 +128,14 @@
             "designation" : [{
                "language" : "en-AU",
                "use" : {
-                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                  "use" : "consumer-friendly"
                },
                "value" : "Pfizer (Comirnaty)"
             }, {
                "language" : "en-US",
                "use" : {
-                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                  "use" : "consumer-friendly"
                },
                "value" : "Pfizer-BioNTech COVID-19 Vaccine"
@@ -142,14 +146,14 @@
             "designation" : [{
                "language" : "en-AU",
                "use" : {
-                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                  "use" : "consumer-friendly"
                },
                "value" : "Pfizer (Comirnaty) - Child dose"
             }, {
                "language" : "en-US",
                "use" : {
-                 "system" : "http://example.org/fhir/CodeSystem/designation-use",
+                 "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                  "use" : "consumer-friendly"
                },
                "value" : "Pfizer-BioNTech COVID-19 Vaccine"
@@ -160,7 +164,7 @@
             "designation": [{
                 "language": "en-US",
                 "use": {
-                  "system": "http://example.org/fhir/CodeSystem/designation-use",
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                   "use": "consumer-friendly"
                 },
                 "value": "Sinopharm (BIBP) COVID-19 Vaccine"
@@ -171,7 +175,7 @@
             "designation": [{
                 "language": "en-US",
                 "use": {
-                  "system": "http://example.org/fhir/CodeSystem/designation-use",
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                   "use": "consumer-friendly"
                 },
                 "value": "Coronavac (Sinovac) COVID-19 Vaccine"
@@ -182,7 +186,7 @@
             "designation": [{
                 "language": "en-US",
                 "use": {
-                  "system": "http://example.org/fhir/CodeSystem/designation-use",
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                   "use": "consumer-friendly"
                 },
                 "value": "Novavax COVID-19 Vaccine"
@@ -193,7 +197,7 @@
             "designation": [{
                 "language": "en-US",
                 "use": {
-                    "system": "http://example.org/fhir/CodeSystem/designation-use",
+                    "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                     "use": "consumer-friendly"
                 },
                 "value": "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled) COMIRNATY (BLA labeled)"
@@ -204,7 +208,7 @@
             "designation": [{
                 "language": "en-US",
                 "use": {
-                    "system": "http://example.org/fhir/CodeSystem/designation-use",
+                    "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                     "use": "consumer-friendly"
                 },
                 "value": "COVAXIN (Bharat) COVID-19 Vaccine"
