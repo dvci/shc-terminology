@@ -1,9 +1,9 @@
 {
   "resourceType": "ConceptMap",
-  "id": "covid-cvx-air-mapping",
-  "url": "https://github.com/dvci/shc-terminology/ConceptMap/covid-cvx-air-mapping",
+  "id": "covid-mapping-cvx-air",
+  "url": "https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air",
   "version": "4.0.1",
-  "name": "CovidCVXandAIRCodeMapping",
+  "name": "CovidCVXAirConceptMap",
   "title": "Mapping between CVX and AIR Covid Codes",
   "status": "draft",
   "date": "2021-09-22",

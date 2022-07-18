@@ -1,0 +1,21 @@
+<div xmlns="http://www.w3.org/1999/xhtml">
+    <ul>
+        {% loop incl in ValueSet.compose.include %}
+            {% loop concept in incl.concept %}
+                <li>
+                    <code>{{ concept.code }}</code>:
+                    {{ concept.display }}
+
+                    <ul>
+                        {% loop designation in concept.designation %}
+                            <li>
+                                <code>{{ designation.language }}</code>:
+                                {{ designation.value }}
+                            </li>
+                        {% endloop %}
+                    </ul>
+                </li>
+            {% endloop %}
+        {% endloop %}
+    </ul>
+</div>

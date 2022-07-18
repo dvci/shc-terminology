@@ -1,10 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "id": "shc-covid-cvx",
+  "id": "covid-cvx",
   "language": "en",
-  "url": "https://github.com/dvci/shc-terminology/ValueSet/shc-covid-cvx",
+  "url": "https://terminology.smarthealth.cards/ValueSet/covid-cvx",
   "version": "4.0.1",
-  "name": "ShcCovidCvxCodes",
+  "name": "CovidCVXValueSet",
   "title": "CVX Covid Codes for use in Smart Health Cards",
   "status": "draft",
   "date": "2021-09-22",
