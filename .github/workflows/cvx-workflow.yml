@@ -1,7 +1,9 @@
 name: CVX Update
 
 on:
-  push: 
+  schedule:
+    - cron: 1 1 1 * *
+
 
 jobs:
   build:
@@ -24,7 +26,7 @@ jobs:
       uses: peter-evans/create-pull-request@v4
       with:
         branch: create-pull-request/cvx-parsing-update
-        team-reviewers: @shc-terminology-maintainers
+        team-reviewers: shc-terminology-maintainers
 
     
 
