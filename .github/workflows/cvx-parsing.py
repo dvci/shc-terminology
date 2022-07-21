@@ -1,4 +1,34 @@
 import json
+import re
+import requests
+
+URL = 'https://www2a.cdc.gov/vaccines/iis/iisstandards/downloads/cvx.txt'
+
+def retrieve_new_cvx(URL):
+    '''
+    use requests.get to retrieve latest flat file from CDC
+    saves the file as newest_cvx_file for posterity and returns file for reading
+    '''
+    # retrieve flat file data
+    cvx_from_cdc = requests.get(URL)
+    
+    # extract content and write to a file
+    open('latest_cdc_file.txt', 'wb').write(cvx_from_cdc.content)
+
+    # open file to read for processing
+    return open('latest_cdc_file.txt', 'r')
+
+
+def retrieve_old_cvx():
+    '''
+    retrieves saved updated cvx file from same folder for comparison
+    returns most up-to-date dictionary of codes
+    '''
+    with open ('cvx_updated.json') as json_file:
+        data_dict = json.load(json_file)
+
+    return data_dict
+
 
 def parse_cvx_file(cvx_file):
     '''
@@ -18,6 +48,18 @@ def parse_cvx_file(cvx_file):
         sub_dict['notes'] = split_list[6]
     return cvx_dict
 
+def find_diffs(old_cvx, new_cvx):
+
+    old_set = set(old_cvx)
+    new_set = set(new_cvx)
+
+    difference = new_set - old_set
+
+    if len(difference) == 0:
+        return None
+    else:
+        return difference
+
 
 def update_cvx(old_cvx, new_cvx):
     '''
@@ -32,11 +74,19 @@ def update_cvx(old_cvx, new_cvx):
 
 
 def main():
-    old_cvx_file = open('cvx_0.txt','r')
-    new_cvx_file = open('cvx_1.txt','r')
-    old = parse_cvx_file(old_cvx_file)
+
+    new_cvx_file = retrieve_new_cvx(URL)
+
+    old = retrieve_old_cvx()
     new = parse_cvx_file(new_cvx_file)
-    update_cvx(old, new)
+
+    if find_diffs(old, new) != None:
+
+        update_cvx(old, new)
+
+    # save the updated file for reuse in next update
+    with open('cvx_updated.json','w') as outfile:
+            json.dump(old, outfile)
 
 if __name__=="__main__":
     main()
