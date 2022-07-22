@@ -2,7 +2,7 @@ name: CVX Update
 
 on:
   schedule:
-    - cron: 25 21 21 7 *
+    - cron: 0 0 1 * *
 
 
 jobs:
@@ -10,12 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
+#     - uses: actions/setup-python@v4
+#       with:
+#         python-version: '3.x'
     - name: run python script
       run: | 
-        python cvx-parsing.py
+        python .github/workflows/cvx-parsing.py
     - name: checkout branch
       run: |
         git checkout cvx-parsing-update 
