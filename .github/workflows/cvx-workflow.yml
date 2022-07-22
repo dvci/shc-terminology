@@ -2,7 +2,7 @@ name: CVX Update
 
 on:
   schedule:
-    - cron: 55 17  * * *
+    - cron: 30 20  * * *
 
 jobs:
   build:
