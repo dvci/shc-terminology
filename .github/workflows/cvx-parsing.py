@@ -24,7 +24,7 @@ def retrieve_old_cvx():
     retrieves saved updated cvx file from same folder for comparison
     returns most up-to-date dictionary of codes
     '''
-    with open ('cvx_updated.json') as json_file:
+    with open ('.github/workflows/cvx_updated.json') as json_file:
         data_dict = json.load(json_file)
 
     return data_dict
