@@ -2,13 +2,14 @@ name: CVX Update
 
 on:
   schedule:
-    - cron: 33 13  * * *
+    - cron: 7 15  * * *
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+
 #     - uses: actions/setup-python@v4
 #       with:
 #         python-version: '3.x'
@@ -16,8 +17,11 @@ jobs:
       run: | 
         python .github/workflows/cvx-parsing.py
     - name: checkout branch
-      run: |
-        git checkout cvx-parsing-update 
+      uses: actions/checkout@v3
+      with:
+        ref: cvx-parsing-update 
+      # run: |
+      #   git checkout cvx-parsing-update 
     - name: Create pull request
 
     #https://github.com/marketplace/actions/create-pull-request
