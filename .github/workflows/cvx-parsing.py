@@ -86,7 +86,7 @@ def main():
 
     # save the updated file for reuse in next update
     with open('.github/workflows/cvx_updated.json','w') as outfile:
-            json.dump(old, outfile)
+            json.dump(old, outfile, indent=4)
 
 if __name__=="__main__":
     main()
