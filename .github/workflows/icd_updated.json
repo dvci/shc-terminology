@@ -1,0 +1,44 @@
+{
+    "COVID-19 vaccine, inactivated virus": [
+        "CoronaVac\u00ae",
+        "BBIBP-CorV",
+        "KCONVAC",
+        "Covaxin",
+        "Covi-Vac",
+        "Hayat-Vax",
+        "QazVac",
+        "COVIran Barakat",
+        "Covidful",
+        "Sinopharm WIBP-CorV"
+    ],
+    "COVID-19 vaccine, live attenuated virus": [],
+    "COVID-19 vaccine, non-replicating viral vector": [
+        "COVID-19 Vaccine AstraZeneca",
+        "Covishield\u00ae",
+        "COVID-19 Vaccine Janssen",
+        "Convidecia",
+        "Gam-Covid-Vac",
+        "Sputnik-Light"
+    ],
+    "COVID-19 vaccine, replicating viral vector": [],
+    "COVID-19 vaccine, virus protein subunit": [
+        "Recombinant SARS-CoV-2 vaccine",
+        "CIGB-66",
+        "Soberana-02",
+        "MVC-COV1901",
+        "EpiVacCorona",
+        "Soberana Plus",
+        "EpiVacCorona-N",
+        "SpikoGen",
+        "Novavax COVID-19 vaccine",
+        "Razi COV PARS"
+    ],
+    "COVID-19 vaccine, virus like particle": [],
+    "COVID-19 vaccine, DNA based": [
+        "ZyCov-D"
+    ],
+    "COVID-19 vaccine, RNA based": [
+        "Comirnaty\u00ae",
+        "COVID-19 Vaccine Moderna"
+    ]
+}
