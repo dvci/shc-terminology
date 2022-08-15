@@ -2,7 +2,7 @@ name: CVX Update
 
 on:
   schedule:
-    - cron: 35 21 * * *
+    - cron: 15 23 * * *
     # - cron: 0 0 1 * *
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
       with:
         ref: cvx-parsing-update 
     - name: run python script
-      run: python .github/workflows/cvx-parsing.py
+      run: python cvx-parsing.py
       # deploy output to sub-directory indicated by the tag or branch that triggered this workflow, used for testing
       # triggered manually by dispatch of selected branch
       # will be overwritten with next deployment to main
