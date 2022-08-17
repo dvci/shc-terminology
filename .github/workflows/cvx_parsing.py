@@ -2,6 +2,7 @@ import json
 import re
 import requests
 import os
+from collections import OrderedDict
 
 
 def retrieve_new_cvx():
@@ -13,6 +14,8 @@ def retrieve_new_cvx():
 
     # retrieve flat file data
     response = requests.get(CVX)
+
+    response.encoding = 'utf-8'
 
     with open('cvx_cdc.txt', 'w') as outfile:
         outfile.write(response.text)
@@ -30,7 +33,12 @@ def retrieve_new_cvx():
             sub_dict['last-update-date'] = split_list[6]
             sub_dict['notes'] = split_list[3]
 
-    # open file to read for processing
+    # # convert keys to integers for ordering
+    # cvx_dict = {int(key): value for key, value in cvx_dict.items()}
+
+    # # reorder dictionary by increasing value of keys
+    # cvx_dict = OrderedDict(sorted(cvx_dict.items()))
+
     return cvx_dict
 
 
@@ -142,46 +150,58 @@ def update_value_set(covid_dict, target_dir):
           "value": ""
           }
     ] 
+
+    # check that all the cvx codes are integers
+    for code in vs['compose']['include'][0]['concept']:
+        code['code'] = int(code['code'])
     
+    # access the list of code dictionaries within value set file
     code_subdict = vs['compose']['include'][0]['concept']
     current_cvx_codes = []
-    one_code = {}
 
     # make reference list of cvx codes that are already in the vocab file
     for code in code_subdict:
         current_cvx_codes.append(code['code'])
-    
+
     # iterate through the covid dictionary
     for key, value in covid_dict.items():
         # if the key is already present, pass
-        if key in current_cvx_codes:
+        if int(key) in current_cvx_codes:
             pass
-        # otherwise, build a new dictionary for the new cvx code
-        # in the format of the vocab file
+        # otherwise, build a new dictionary for the new cvx code in the format of the vocab file
         else:
             one_code = {}
-            one_code['code'] = key
+            one_code['code'] = int(key)
             one_code['display'] = value['short-description']
-            # try and except clause because it's possible the 
-            # cvx file won't have a prod_name
-            try:
+            # it's possible the cvx file won't have a prod_name so if else statement to check if it exists
+            if 'prod_name' in value.keys():
                 designation_dict[0]['value'] = value['prod_name']
-            except KeyError:
+            else:
                 designation_dict[0]['value'] = ""
             one_code['designation'] = designation_dict
             vs['compose']['include'][0]['concept'].append(one_code)
+    
+    # order the list of dictionaries by increasing cvx value 
+    ordered_vs = sorted(vs['compose']['include'][0]['concept'], key=lambda d: d['code'])
+
+    # insert sorted value set back into json value set
+    vs['compose']['include'][0]['concept'] = ordered_vs
 
     return vs
 
 
 def main():
 
+    # retrieve newest CVX file from CDC
     new_cvx = retrieve_new_cvx()
 
+    # retrieve newest Manufacturer name file from CDC
     new_name = retrieve_new_name()
 
+    # retrieve old CVX file from previous run
     old = retrieve_old_cvx()
 
+    # update the CVX dictionary
     updated_dict = update_cvx(old, new_cvx, new_name)
 
     # save the updated file for reuse in next update
@@ -196,6 +216,7 @@ def main():
     # move two levels up in directory to get value set file
     target_dir = os.path.sep.join(current_dir.split(os.path.sep)[:-2])
 
+    # update the value set
     updated_vs = update_value_set(covid, target_dir)
 
     # save the updated file for reuse in next update

@@ -1965,5 +1965,68 @@
         "notes": "Pre-EUA Moderna bivalent adult booster original strain + omicron strain",
         "prod_name": "Moderna COVID-19 Vaccine (non-US Spikevax)",
         "Description": "COVID-19, mRNA, LNP-S, bivalent, PF, 50 mcg/0.5 mL dose"
+    },
+    "1": {
+        "short-description": "DTP",
+        "full-vaccine-name": "diphtheria, tetanus toxoids and pertussis vaccine",
+        "vaccine-status": "Inactive",
+        "last-update-date": "2010/05/28\n",
+        "notes": ""
+    },
+    "8": {
+        "short-description": "Hep B, adolescent or pediatric",
+        "full-vaccine-name": "hepatitis B vaccine, pediatric or pediatric/adolescent dosage",
+        "vaccine-status": "Active",
+        "last-update-date": "2018/05/10\n",
+        "notes": "This code applies to any standard pediatric formulation of Hepatitis B vaccine. It should not be used for the 2-dose hepatitis B schedule for adolescents (11-15 year olds). It requires Merck's Recombivax HB adult formulation. Use code 43 for that vaccine."
+    },
+    "2": {
+        "short-description": "OPV",
+        "full-vaccine-name": "trivalent poliovirus vaccine, live, oral",
+        "vaccine-status": "Inactive",
+        "last-update-date": "2017/02/10\n",
+        "notes": "This is the OPV that was used in the US"
+    },
+    "3": {
+        "short-description": "MMR",
+        "full-vaccine-name": "measles, mumps and rubella virus vaccine",
+        "vaccine-status": "Active",
+        "last-update-date": "2010/05/28\n",
+        "notes": ""
+    },
+    "4": {
+        "short-description": "M/R",
+        "full-vaccine-name": "measles and rubella virus vaccine",
+        "vaccine-status": "Inactive",
+        "last-update-date": "2010/05/28\n",
+        "notes": ""
+    },
+    "5": {
+        "short-description": "measles",
+        "full-vaccine-name": "measles virus vaccine",
+        "vaccine-status": "Inactive",
+        "last-update-date": "2010/08/31\n",
+        "notes": ""
+    },
+    "7": {
+        "short-description": "mumps",
+        "full-vaccine-name": "mumps virus vaccine",
+        "vaccine-status": "Inactive",
+        "last-update-date": "2015/06/18\n",
+        "notes": ""
+    },
+    "6": {
+        "short-description": "rubella",
+        "full-vaccine-name": "rubella virus vaccine",
+        "vaccine-status": "Inactive",
+        "last-update-date": "2015/06/18\n",
+        "notes": ""
+    },
+    "9": {
+        "short-description": "Td (adult), 2 Lf tetanus toxoid, preservative free, adsorbed",
+        "full-vaccine-name": "tetanus and diphtheria toxoids, adsorbed, preservative free, for adult use (2 Lf of tetanus toxoid and 2 Lf of diphtheria toxoid)",
+        "vaccine-status": "Active",
+        "last-update-date": "2017/10/27\n",
+        "notes": ""
     }
 }

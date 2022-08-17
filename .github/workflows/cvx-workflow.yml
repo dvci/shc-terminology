@@ -14,7 +14,7 @@ jobs:
       with:
         ref: cvx-parsing-update 
     - name: run python script
-      run: python cvx-parsing.py
+      run: python cvx_parsing.py
       # deploy output to sub-directory indicated by the tag or branch that triggered this workflow, used for testing
       # triggered manually by dispatch of selected branch
       # will be overwritten with next deployment to main
