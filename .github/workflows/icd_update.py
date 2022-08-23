@@ -1,13 +1,13 @@
 import requests
-import secret
+import icd_secret
 import json
-from requests.packages.urllib3.exceptions import InsecureRequestWarning
+import urllib3
 
-requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+urllib3.disable_warnings()
 
 token_endpoint = 'https://icdaccessmanagement.who.int/connect/token'
-client_id = secret.CLIENT_ID
-client_secret = secret.CLIENT_SECRET
+client_id = icd_secret.ClientId
+client_secret = icd_secret.ClientSecret
 scope = 'icdapi_access'
 grant_type = 'client_credentials'
 
@@ -20,7 +20,7 @@ payload = {'client_id': client_id,
            'scope': scope, 
            'grant_type': grant_type}
            
-# make request
+# # make request for token
 r = requests.post(token_endpoint, data=payload, verify=False).json()
 token = r['access_token']
 
@@ -35,16 +35,6 @@ headers = {'Authorization':  'Bearer '+token,
            'Accept': 'application/json', 
            'Accept-Language': 'en',
 	       'API-Version': 'v2'}
-           
-# # make request           
-# r = requests.get(uri, headers=headers, verify=False)
-
-# r_json = json.loads(r.text)
-
-# print the result
-# print (r.text)	
-# print(json.dumps(r_json, indent=4))
-
 
 
 def call_api(uri):
@@ -63,6 +53,7 @@ def obtain_vax_codes(api_json):
     returns the child vaccines for the vaccine type
     '''
     vaccine_group_list = api_json['child']
+    
     return vaccine_group_list
 
 
@@ -78,9 +69,9 @@ def call_vaccines(vaccine_group_list):
         vacc = call_api(vaccine)
         title = vacc['title']['@value']
         # try and except statement for determining if there's child vaccines or not
-        try:
+        if 'child' in vacc.keys():
             vacc_names = obtain_vax_codes(vacc)
-        except KeyError:
+        else:
             vacc_names = []
         vacc_name_list = []
         vacc_dict = {}

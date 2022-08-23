@@ -15,4 +15,5 @@ Thumbs.db
 .settings/*
 target/*
 .mvn/wrapper/maven-wrapper.jar
-/.github/workflows/secret.py
+/.github/workflows/icd_secret.py
+/.github/workflows/__pycache__
