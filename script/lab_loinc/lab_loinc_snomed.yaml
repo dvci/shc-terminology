@@ -1,0 +1,106 @@
+# Mapping of LOINC answers to SNOMED for qualitative lab values
+#
+# Based on output of `script/lab_loinc_covid.py`, but should also be applicable to many other infectious disease
+# qualitative tests.
+- loinc: LA11883-8
+  loinc_display: Not detected
+  snomed: 260415000
+  snomed_display: Not detected (qualifier value)
+
+- loinc: LA11882-0
+  loinc_display: Detected
+  snomed: 260373001
+  snomed_display: Detected (qualifier value)
+
+- loinc: LA9663-1
+  loinc_display: Inconclusive
+  snomed: 419984006
+  snomed_display: Inconclusive (qualifier value)
+
+- loinc: LA11885-3
+  loinc_display: Equivocal
+  snomed: 42425007
+  snomed_display: Equivocal (qualifier value)
+
+- loinc: LA6576-8
+  loinc_display: Positive
+  snomed: 10828004
+  snomed_display: Positive (qualifier value)
+
+- loinc: LA6577-6
+  loinc_display: Negative
+  snomed: 260385009
+  snomed_display: Negative (qualifier value)
+
+- loinc: LA11884-6
+  loinc_display: Indeterminate
+  snomed: 82334004
+  snomed_display: Indeterminate (qualifier value)
+
+- loinc: LA15255-5
+  loinc_display: Reactive
+  snomed: 11214006
+  snomed_display: Reactive (qualifier value)
+
+- loinc: LA15256-3
+  loinc_display: Nonreactive
+  snomed: 131194007
+  snomed_display: Non-reactive (qualifier value)
+
+- loinc: LA31317-3
+  loinc_display: Presumptive positive
+  snomed: 720735008
+  snomed_display: Presumptive positive (qualifier value)
+
+- loinc: LA15291-0
+  loinc_display: Suspected
+  snomed: 415684004
+  snomed_display: Suspected (qualifier value)
+
+- loinc: LA13548-5
+  loinc_display: Specimen unsatisfactory for evaluation
+  snomed: 125154007
+  snomed_display: Specimen unsatisfactory for evaluation (finding)
+
+- loinc: LA15841-2
+  loinc_display: Invalid
+  snomed: 455371000124106
+  snomed_display: Invalid result (qualifier value)
+
+# Part of LL6182-1 (Reactive|Non-Reactive|Invalid|Borderline), no obvious SNOMED equivalency
+# Used in 99772-6 (SARS-CoV-2 stimulated gamma interferon [Interpretation] in Blood Qualitative)
+- loinc: LA4259-3
+  loinc_display: Borderline
+  snomed: false
+
+# LL4772-1 (Recent or past infection)
+# Used in 94661-6 (SARS-CoV-2 (COVID-19) Ab [Interpretation] in Serum or Plasma)
+#         88700-0 (Babesia microti IgG and IgM [Interpretation] in Serum)
+#         94475-1 (Borrelia burgdorferi IgA and IgG and IgM [Interpretation] in Cerebral spinal fluid)
+#         93871-2 (Borrelia miyamotoi IgG+IgM Ab [Interpretation] in Serum or Plasma)
+#         88456-9 (California encephalitis virus IgG+IgM Ab [Interpretation] in Serum Qualitative by Immunofluorescence)
+#         90365-8 (Chlamydia trachomatis L1 Ab.IgG+IgA+IgM Interpretation in Serum by Immunoassay)
+- loinc: LA28480-4
+  loinc_display: Ab not detected
+  snomed: false
+- loinc: LA28481-2
+  loinc_display: Past infection
+  snomed: false
+- loinc: LA28482-0
+  loinc_display: Recent infection
+  snomed: false
+
+# LL5604-5 (SARS-CoV-2|FLUAV|FLUAB|Not det|Unsat|Invalid)
+# Not a generic lab test but used for COVID, so including anyway
+- loinc: LA11919-0
+  loinc_display: Influenza A virus
+  snomed: 407479009
+  snomed_display: Influenza A virus (organism)
+- loinc: LA13543-6
+  loinc_display: Influenza B virus
+  snomed: 407480007
+  snomed_display: Influenza B virus (organism)
+- loinc: LA31065-8
+  loinc_display: SARS coronavirus 2
+  snomed: 840533007
+  snomed_display: Severe acute respiratory syndrome coronavirus 2 (organism)

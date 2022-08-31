@@ -1,0 +1,29 @@
+# Known answer lists used for **qualitative** COVID test results
+included:
+  - LL5604-5 # SARS-CoV-2|FLUAV|FLUAB|Not det|Unsat|Invalid
+  - LL3250-9 # Detected|Not det|Inconcl|Spec unsat for eval
+  - LL5508-8 # Detected|Not det|Inconclusive|Invalid
+  - LL3713-6 # Detected|Not det||Equiv|Invalid
+  - LL744-4 # Detected|Not det
+  - LL2009-0 # Pos|Neg|Equiv
+  - LL2021-5 # Pos|Neg|Invalid
+  - LL956-4 # Detected|Not det|Equiv|Inconcl
+  - LL2038-9 # Pos|Neg|Indeterm
+  - LL4994-1 # Reactive|Nonreactive
+  - LL3596-5 # Detected|Not det|Inconcl
+  - LL5837-1 # Pos|Neg|Inconcl|Invalid
+  - LL5695-3 # Pos|Presump Pos|Neg|Invalid
+  - LL2888-7 # React/Non/Inval
+  - LL4772-1 # Recent or past infection
+  - LL4623-6 # Pos|Neg|Suspect|Invalid
+  - LL360-9 # Pos|Neg
+  - LL6182-1 # Reactive|Non-Reactive|Invalid|Borderline
+  - LL1055-4 # Detected|Not det|Equiv|Inconcl|Spec unsat for eval
+
+# Answer lists that are COVID-related but not a qualitative "yes/no"
+ignored:
+  - LL6125-0 # SARS-CoV-2 RdRp gene mutations
+  - LL5775-3 # SARS-CoV-2 S gene mutations
+  - LL5806-6 # Nextstrain SARS-CoV-2 clades
+  - LL5807-4 # SARS-CoV-2 lineages
+  - LL5768-8 # SARS-CoV-2 variants
