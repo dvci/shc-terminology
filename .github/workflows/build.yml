@@ -38,6 +38,7 @@ jobs:
           publish_dir: ./output
           # keeps gh-pages branch from storing old commits, which balloons size of repo
           force_orphan: true
+          cname: terminology.smarthealth.cards
 
       # deploy output to sub-directory indicated by the tag or branch that triggered this workflow, used for testing
       # triggered manually by dispatch of selected branch
@@ -49,4 +50,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
           destination_dir: ${{ github.ref_name }}
-          keep_files: true          
+          keep_files: true
+          cname: terminology.smarthealth.cards
