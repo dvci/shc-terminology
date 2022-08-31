@@ -10,6 +10,7 @@ lxml = "*"
 requests = "*"
 python-dotenv = "*"
 pyyaml = "*"
+tabulate = "*"
 
 [dev-packages]
 

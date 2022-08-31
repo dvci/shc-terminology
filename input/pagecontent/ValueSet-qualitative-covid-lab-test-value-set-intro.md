@@ -1,3 +1,5 @@
+### Usage
+    
 This value set includes a subset of the LOINCs found at <{LOINC_COVID_URL}> that identify COVID-19-related laboratory tests. Only those laboratory tests that include qualitative results we believe to be useful in SMART Health Cards are included.
 
 The purpose of this value set is to provide Issuers guidance on what LOINCs Verifiers are likely to expect in a COVID-19-related SMART Health Card. It is possible to construct a fully valid SMART Health Card that identifies a laboratory test with a LOINC *not* in this list, but it may be less likely that a Verifier will have included such a LOINC in their logic for processing the SMART Health Card data.
