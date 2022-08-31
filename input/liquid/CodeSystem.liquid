@@ -1,0 +1,34 @@
+<!-- Hide unnecessary message about Code System not being used anywhere -->
+<script>
+    let pTags = Array.from(document.getElementsByTagName("p"));
+    pTags.filter(function(x) { return x.textContent.includes('This Code system is referenced in the content logical definition of the following value sets:')}).forEach(function(t) { t.style.display = "none"});
+    pTags.filter(function(x) { return x.textContent.includes('This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)')}).forEach(function(t) {t.style.display = "none"});
+</script>
+<div xmlns="http://www.w3.org/1999/xhtml">
+    <table class="table-striped table table-bordered">
+        <tr>
+            <th>Code</th>
+            <th>Description(s)</th>
+        </tr>
+        {% loop concept in CodeSystem.concept %}
+            <tr>
+                <td><code>{{ concept.code }}</code></td>
+                <td>
+                    {% if concept.designation %}
+                        <ul>
+                            <li>Default: {{ concept.display }}</li>
+                            {% loop designation in concept.designation %}
+                            <li>
+                                <code>{{ designation.language }}</code>:
+                                {{ designation.value }}
+                            </li>
+                            {% endloop %}
+                        </ul>
+                    {% else %}
+                        {{ concept.display }}
+                    {% endif %}
+                </td>
+            </tr>
+        {% endloop %}
+    </table>
+</div>

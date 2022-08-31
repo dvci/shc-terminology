@@ -4,9 +4,7 @@ The following FHIR resources are provided as a community resource for implemente
 
 Typically, SMART Health Cards for vaccines use either [CVX](https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx) or [SNOMED CT](https://www.snomed.org/) to identify the administered vaccine. [ICD-11](https://icdcdn.who.int/icd11referenceguide/en/html/index.html) may also be used. For more details please see [the SMART Health Cards Vaccination Profile](https://vci.org/ig/vaccination-and-testing/StructureDefinition-shc-vaccination-dm.html) for more information.
 
-#### COVID-19 Vaccines
-
-The following ValueSets are provided to assist implementers wishing to identify COVID-19 vaccines:
+The following ValueSets are provided to assist implementers wishing to identify vaccines for specific diseases:
 
 {:.table-striped.table.table-bordered}
 |Disease|ValueSet|
@@ -25,6 +23,18 @@ The following ValueSets are provided to assist implementers of SMART Health Card
 
 * [LOINCs for COVID-19-related qualitative laboratory tests](ValueSet-qualitative-covid-lab-test-value-set.html)
 * [SNOMED CT codes and LOINC Answer codes for qualitative laboratory tests](ValueSet-qualitative-lab-test-result-value-set.html), including for COVID-19 and other infectious diseases
+
+### SMART Health Card Types
+
+The [health card type code system](CodeSystem-health-card.html) contains the codes used to identify the credential type. See the [SMART Health Cards specification](https://spec.smarthealth.cards/#health-cards-are-encoded-as-compact-serialization-json-web-signatures-jws) for more information.
+
+### Identity Assurance Level
+
+[These codes](CodeSystem-identity-assurance-level.html) may be used by Issuers of SMART Health Cards to record if/how a patient's identity was verified at the point of care. For example, if a patient showed their driver's license to verify their name and date of birth when getting a vaccination, this would correspond to `IAL1.4`.
+
+### Designation Use
+
+[The `consumer-friendly` code in this code system](CodeSystem-designation-use.html) is used in a [ValueSet's designation element](https://www.hl7.org/fhir/valueset-definitions.html#ValueSet.compose.include.concept.designation) to define how that designation should be used. 
 
 ----
 
