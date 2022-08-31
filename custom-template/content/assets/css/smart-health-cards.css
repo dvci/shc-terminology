@@ -15,6 +15,7 @@ Disable until these issues are resolved.
   --navbar-bg-color: #7952b3; /* 2. Header container color */
   --footer-bg-color: #7952b3; /* 3. Footer background color*/
   --footer-container-color: #7952b3; /* 4. Footer container color */
+  --footer-container-bg-color: #7952b3;
   --stripe-bg-color: #7952b3; /* 5. Header strip color */
 
   --btn-hover-color: #9b2fdd;  /* 6. Menu button hover color */
