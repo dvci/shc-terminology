@@ -1,7 +1,39 @@
-### SHC Terminology
+The following FHIR resources are provided as a community resource for implementers of [SMART Health Cards](https://smarthealth.cards/).
 
-#### JSON formatting
+### Vaccines
 
-We use [`prettier`](https://prettier.io) to format the contents of `input/vocabulary`. Please run `prettier --write input/vocabulary/*.json` before committing. (Formatting is checked on GitHub Pull Requests with CI.)
+Typically, SMART Health Cards for vaccines use either [CVX](https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx) or [SNOMED CT](https://www.snomed.org/) to identify the administered vaccine. [ICD-11](https://icdcdn.who.int/icd11referenceguide/en/html/index.html) may also be used. For more details please see [the SMART Health Cards Vaccination Profile](https://vci.org/ig/vaccination-and-testing/StructureDefinition-shc-vaccination-dm.html) for more information.
 
-If you need to install `prettier`, you can run `npm install -g prettier` to install it system-wide.
+#### COVID-19 Vaccines
+
+The following ValueSets are provided to assist implementers wishing to identify COVID-19 vaccines:
+
+{:.table-striped.table.table-bordered}
+|Disease|ValueSet|
+|-|-|
+|COVID-19|[CVX](ValueSet-covid-cvx.html)|
+|COVID-19|ICD-11 (forthcoming)|
+|COVID-19|[SNOMED CT](ValueSet-covid-19-vaccine-snomed-value-set.html)|
+
+### Infectious disease-related laboratory testing
+
+SMART Health Cards use [LOINC](https://loinc.org/) to identify laboratory tests related to infectious diseases (including COVID-19).
+
+Lab test results are identified using [SNOMED CT](https://www.snomed.org/) whenever possible, with [LOINC Answer codes](https://loinc.org/answer-file/) as a fallback.
+
+The following ValueSets are provided to assist implementers of SMART Health Cards representing infectious disease-related laboratory tests and test results:
+
+* [LOINCs for COVID-19-related qualitative laboratory tests](ValueSet-qualitative-covid-lab-test-value-set.html)
+* [SNOMED CT codes and LOINC Answer codes for qualitative laboratory tests](ValueSet-qualitative-lab-test-result-value-set.html), including for COVID-19 and other infectious diseases
+
+----
+
+### Contact Information
+
+For technical questions, please post on the [smart/health-cards Zulip stream at chat.fhir.org](https://chat.fhir.org/#narrow/stream/284830-smart.2Fhealth-cards) (free account required).
+
+This website is maintained by [VCI](https://vci.org).
+
+### Contributing
+
+The source code for this website and the FHIR resources contained within are available on GitHub, and community contributions are welcome. Please see <https://github.com/dvci/shc-terminology/> for details.
