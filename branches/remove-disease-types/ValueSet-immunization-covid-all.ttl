@@ -1,0 +1,756 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/ValueSet/immunization-covid-all> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "immunization-covid-all"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n        \n            <p>\n                The following codes from the <code><a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-CVX.html\">PH_VaccinesAdministeredCVX_CDC_NIP</a></code> code system are included:\n            </p>\n            <table class=\"table-striped table table-bordered\">\n                <tr>\n                    <th>Code</th>\n                    <th>Description(s)</th>\n                </tr>\n                \n                    <tr>\n                        <td><code>207</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose</li>\n                                    \n                                    <li>\n                                        <code>en-AU</code>:\n                                        Moderna (Spikevax)\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Moderna COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>208</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose</li>\n                                    \n                                    <li>\n                                        <code>en-AU</code>:\n                                        Pfizer (Comirnaty)\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Pfizer-BioNTech COVID-19 Vaccine\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-NZ</code>:\n                                        Pfizer-BioNTech COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>210</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL </li>\n                                    \n                                    <li>\n                                        <code>en-AU</code>:\n                                        AstraZeneca (Vaxzevria)\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        AstraZeneca COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>211</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Novavax COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>212</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL</li>\n                                    \n                                    <li>\n                                        <code>en-AU</code>:\n                                        Janssen COVID-19 Vaccine\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Janssen COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>217</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose</li>\n                                    \n                                    <li>\n                                        <code>en-AU</code>:\n                                        Pfizer (Comirnaty)\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Pfizer-BioNTech COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>218</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose</li>\n                                    \n                                    <li>\n                                        <code>en-AU</code>:\n                                        Pfizer (Comirnaty) - Child dose\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Pfizer-BioNTech COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>219</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Pfizer-BioNTech COVID-19 Vaccine (EUA labeled) COMIRNATY (BLA labeled)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>221</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL dose</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Moderna COVID-19 Vaccine (non-US Spikevax)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>225</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 5mcg/0.5mL</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Sanofi COVID-19 \n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>226</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 10mcg/0.5mL</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Sanofi COVID-19 \n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>227</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, PF, pediatric 50 mcg/0.5 mL dose</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Moderna COVID-19 Vaccine (non-US Spikevax)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>228</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, PF, pediatric 25 mcg/0.25 mL dose</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Moderna COVID-19 Vaccine (non-US Spikevax)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>229</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, bivalent booster, PF, 50 mcg/0.5 mL or 25mcg/0.25 mL dose</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Moderna COVID-19 Vaccine (non-US Spikevax)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>230</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, bivalent booster, PF, 10 mcg/0.2 mL</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Moderna COVID-19 Bivalent, Original + BA.4/BA.5 (Non-US Tradename Spikevax Bivalent)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>300</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, bivalent booster, PF, 30 mcg/0.3 mL dose</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>301</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, bivalent booster, PF, 10 mcg/0.2 mL dose</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>302</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, bivalent, PF, 3 mcg/0.2 mL dose</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Pfizer-BioNTech COVID-19 Bivalent, Original + BA.4/BA.5 (Non-US Tradename COMIRNATY Bivalent)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>501</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 IV Non-US Vaccine (QAZCOVID-IN)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVID-19 IV Non-US Vaccine (QAZCOVID-IN)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>502</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 IV Non-US Vaccine (COVAXIN)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVAXIN (Bharat) COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>503</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 LAV Non-US Vaccine (COVIVAC)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVID-19 LAV Non-US Vaccine (COVIVAC)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>504</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 VVnr Non-US Vaccine (Sputnik Light)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVID-19 VVnr Non-US Vaccine (Sputnik Light)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>505</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 VVnr Non-US Vaccine (Sputnik V)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVID-19 VVnr Non-US Vaccine (Sputnik V)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>506</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>507</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>508</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>509</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 PS Non-US Vaccine (EpiVacCorona)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVID-19 PS Non-US Vaccine (EpiVacCorona)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>510</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Sinopharm (BIBP) COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>511</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Coronavac (Sinovac) COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>512</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: SARS-COV-2 COVID-19 VLP Non-US Vaccine (Medicago, Covifenz)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Covifenz\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>513</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>514</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>515</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>516</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>517</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>518</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 Inactivated, Non-US Vaccine (VLA2001, Valneva)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVID-19 Inactivated, Non-US Vaccine (VLA2001, Valneva)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>519</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine (Spikevax Bivalent), Moderna</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Moderna COVID-19 Bivalent, Original + BA.1 (Non-US Tradename Spikevax Bivalent)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>520</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine Product, Pfizer-BioNTech</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Pfizer COVID-19 Bivalent, Original + BA.1 (Non-US Tradename COMIRNATY Bivalent)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n            </table>\n        \n            <p>\n                The following codes from the <code><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">SNOMED CT (all versions)</a></code> code system are included:\n            </p>\n            <table class=\"table-striped table table-bordered\">\n                <tr>\n                    <th>Code</th>\n                    <th>Description(s)</th>\n                </tr>\n                \n                    <tr>\n                        <td><code>1031000172108</code></td>\n                        <td>\n                            \n                                COVID-19 mRNA vaccine (BNT162b2) of Pfizer-BioNTech\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>10871000172106</code></td>\n                        <td>\n                            \n                                COVID-19 mRNA vaccine (mRNA-1273) of Moderna\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>10891000172107</code></td>\n                        <td>\n                            \n                                COVID-19 viral vector vaccine (AZD1222 (ChAdOx1-S recombinant)) of AstraZeneca, Oxford\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>10901000172106</code></td>\n                        <td>\n                            \n                                COVID-19 viral vector vaccine (JNJ-78436735( Ad26.COV2-S recombinant)) of Johnson and Johnson, Janssens\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>125071000220108</code></td>\n                        <td>\n                            \n                                COVID-19 mRNA Vaccine Pfizer-BioNTech 10 micrograms/dose concentrate for dispersion for injection\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>125081000220106</code></td>\n                        <td>\n                            \n                                COVID-19 mRNA Vaccine Ready to Use Pfizer-BioNTech 30 micrograms/ 0.3 milliliter dose dispersion for injection\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>125091000220109</code></td>\n                        <td>\n                            \n                                COVID-19 mRNA Ready to Use Adapted BA.1 Vaccine Pfizer-BioNTech 15 / 15 micrograms/ 0.3 milliliter dose dispersion for injection\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>125101000220104</code></td>\n                        <td>\n                            \n                                COVID-19 mRNA Ready to Use Adapted BA.4 and BA.5 Vaccine Pfizer-BioNTech 15 / 15 micrograms/ 0.3 milliliter dose dispersion for injection\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>125111000220101</code></td>\n                        <td>\n                            \n                                COVID-19 mRNA Adapted BA.1 Vaccine Moderna (50 micrograms/50 micrograms) / milliliter dispersion for injection\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>125121000220108</code></td>\n                        <td>\n                            \n                                COVID-19 mRNA Adapted BA.4 nd BA.5 Vaccine Moderna (50 micrograms/50 micrograms) / milliliter dispersion for injection\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>1401000220108</code></td>\n                        <td>\n                            \n                                COVID-19 Vaccine AstraZeneca 5 x10,000,000,000 viral particles/per 0.5ml dose for injection multidose vials\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>1411000220106</code></td>\n                        <td>\n                            \n                                COVID-19 mRNA Vaccine Pfizer-BioNTech 30 micrograms per 0.3ml dose concentrate for suspension for injection multidose vials\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>1421000220104</code></td>\n                        <td>\n                            \n                                COVID-19 mRNA Vaccine Moderna 0.1mg per 0.5mL dose dispersion for injection multidose vials\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>28571000087109</code></td>\n                        <td>\n                            \n                                COVID-19 SPIKEVAX 0.20 mg/mL mRNA Mod\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>28581000087106</code></td>\n                        <td>\n                            \n                                COVID-19 COMIRNATY 30 mcg/0.3 ml mRNA PB\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>28761000087108</code></td>\n                        <td>\n                            \n                                COVID-19 VAXZEVRIA AZC\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>28951000087107</code></td>\n                        <td>\n                            \n                                COVID-19 JANSSEN COVID-19 VACCINE Jan\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>28961000087105</code></td>\n                        <td>\n                            \n                                COVID-19 COVISHIELD VP\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>29171000087106</code></td>\n                        <td>\n                            \n                                COVID-19 NUVAXOVID NOV\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>30151000087105</code></td>\n                        <td>\n                            \n                                COVID-19 COVIFENZ VLP MED\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>31301000087101</code></td>\n                        <td>\n                            \n                                COVID-19 SINOPHARM-BIBP\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>31311000087104</code></td>\n                        <td>\n                            \n                                COVID-19 CoronaVac\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>31341000087103</code></td>\n                        <td>\n                            \n                                COVID-19 Sputnik V\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>31431000087100</code></td>\n                        <td>\n                            \n                                COVID-19 Convidecia\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>33201000087108</code></td>\n                        <td>\n                            \n                                COVID-19 SINOPHARM-WIBP\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>33211000087105</code></td>\n                        <td>\n                            \n                                COVID-19 COVAXIN\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>33221000087102</code></td>\n                        <td>\n                            \n                                COVID-19 mRNA CureVac\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>33361000087101</code></td>\n                        <td>\n                            \n                                COVID-19 COMIRNATY pediatric 10 mcg/0.2 ml mRNA PB\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>33391000087109</code></td>\n                        <td>\n                            \n                                COVID-19 Abdala\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>33401000087107</code></td>\n                        <td>\n                            \n                                COVID-19 COVIran Barekat\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>33411000087109</code></td>\n                        <td>\n                            \n                                COVID-19 CoviVac\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>33421000087101</code></td>\n                        <td>\n                            \n                                COVID-19 EpiVacCorona\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>33431000087104</code></td>\n                        <td>\n                            \n                                COVID-19 KCONVAC\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>33441000087105</code></td>\n                        <td>\n                            \n                                COVID-19 Medgen-Dynavax-NIAID\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>33451000087108</code></td>\n                        <td>\n                            \n                                COVID-19 QazCovid-in\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>33461000087106</code></td>\n                        <td>\n                            \n                                COVID-19 Sputnik Light\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>33471000087102</code></td>\n                        <td>\n                            \n                                COVID-19 ZIFIVAX\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>33581000087104</code></td>\n                        <td>\n                            \n                                COVID-19 pediatric mRNA unspecified\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>33881000087102</code></td>\n                        <td>\n                            \n                                COVID-19 COMIRNATY tris-sucrose 30 mcg/0.3 ml mRNA PB\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>34591000087100</code></td>\n                        <td>\n                            \n                                COVID-19 Soberana 02\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>34601000087108</code></td>\n                        <td>\n                            \n                                COVID-19 SpikoGen\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>34611000087105</code></td>\n                        <td>\n                            \n                                COVID-19 COMIRNATY pediatric 3 mcg/0.2 ml mRNA PB\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>34921000087108</code></td>\n                        <td>\n                            \n                                COVID-19 COVOVAX\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>35651000087105</code></td>\n                        <td>\n                            \n                                COVID-19 SPIKEVAX 0.10 mg/mL mRNA Mod\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>37311000087109</code></td>\n                        <td>\n                            \n                                COVID-19 SPIKEVAX Bivalent (Original / Omicron BA.1) 0.10 mg/mL mRNA Mod\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>37651000087101</code></td>\n                        <td>\n                            \n                                COVID-19 SPIKEVAX Bivalent (Original / Omicron BA.4/BA.5) 0.10 mg/mL mRNA Mod\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>384671000221101</code></td>\n                        <td>\n                            \n                                SINOPHARM - BIBP vacuna COVID-19 [SARS-COV-2 (células Vero) inactivado 1 dosis/0,5 ml] suspensión inyectable, vial de 0,5 ml (1 dosis), Sinopharm - Beijing Institute\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>399651000221108</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 virus entero inactivado 1 dosis/0,5 ml, suspensión inyectable, vial de 0,5 ml (1 dosis)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>399661000221105</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 vector no replicante adenovirus de chimpancé 1 dosis/0,5 ml, solución inyectable, vial de 5 ml (10 dosis)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>399681000221103</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 vector no replicante Adenovirus humano 5 1 dosis/0,5 ml, solución inyectable, vial de 3 ml (5 dosis)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>399691000221100</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, solución inyectable, vial de 3 ml (5 dosis)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>399701000221100</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, suspensión inyectable, vial de 3 ml (5 dosis)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>399771000221108</code></td>\n                        <td>\n                            \n                                COVISHIELD vacuna COVID-19 [ChAdOx1 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 5 ml (10 dosis), Serum Institute of India\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>399781000221106</code></td>\n                        <td>\n                            \n                                VAXZEVRIA vacuna COVID-19 [ChAdOx1 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 5 ml (10 dosis), Astrazeneca\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>399801000221105</code></td>\n                        <td>\n                            \n                                SPUTNIK V vacuna COVID-19 componente I [rAd 26 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 3 ml (5 dosis), Instituto Gamaleya\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>399811000221108</code></td>\n                        <td>\n                            \n                                SPUTNIK V vacuna COVID-19 componente II [rAd 5 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 3 ml (5 dosis), Instituto Gamaleya\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>399821000221103</code></td>\n                        <td>\n                            \n                                JANSSEN vacuna COVID-19 [rAd 26 SARS-CoV-2 S 1 dosis/0,5 ml] suspensión inyectable, vial de 3 ml (5 dosis), Janssen\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>399861000221106</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 ARNm 100 mcg/ml, suspensión inyectable, vial de 5,5 ml (10 dosis de 0,5 ml)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>399871000221102</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 ARNm 100 mcg/ml, suspensión inyectable, vial de 7,5 ml (15 dosis de 0,5 ml)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>399881000221104</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 ARNm 30 mcg/0,3 ml, suspensión inyectable, vial de 0,45 ml (6 dosis de 0,3 ml luego de dilución)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>399891000221101</code></td>\n                        <td>\n                            \n                                SPIKEVAX vacuna COVID-19 [SARS-CoV-2 S ARNm 100 mcg/0,5 ml] suspensión inyectable, vial de 5.5 ml (10 dosis), Moderna\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>399901000221102</code></td>\n                        <td>\n                            \n                                SPIKEVAX vacuna COVID-19 [SARS-CoV-2 S ARNm 100 mcg/0,5 ml] suspensión inyectable, vial de 7,5 ml (15 dosis de 0,5 ml), Moderna\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>399911000221104</code></td>\n                        <td>\n                            \n                                COMIRNATY vacuna COVID-19 [SARS-CoV-2 S ARNm 30 mcg/0,3 ml] suspensión inyectable, vial de 0,45 ml (6 dosis de 0,3 ml luego de dilución), Pfizer\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424531000221101</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 virus entero inactivado 1 dosis/0,5 ml, suspensión inyectable\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424541000221108</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 virus entero inactivado 1 dosis/0,5 ml, suspensión inyectable, vial de 1 ml (2 dosis)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424551000221105</code></td>\n                        <td>\n                            \n                                SINOPHARM - BIBP vacuna COVID-19 [SARS-COV-2 (células Vero) inactivado 1 dosis/0,5 ml] suspensión inyectable, vial de 1 ml (2 dosis), Sinopharm - Beijing Institute\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424561000221107</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 vector no replicante adenovirus de chimpancé 1 dosis/0,5 ml, solución inyectable\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424571000221103</code></td>\n                        <td>\n                            \n                                VAXZEVRIA vacuna COVID-19 vector viral no replicante\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424581000221100</code></td>\n                        <td>\n                            \n                                COVISHIELD vacuna COVID-19 vector viral no replicante\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424591000221102</code></td>\n                        <td>\n                            \n                                JANSSEN vacuna COVID-19 vector viral no replicante\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424601000221107</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, suspensión inyectable\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424611000221105</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, solución inyectable, vial de 0,5 ml (1 dosis)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424621000221100</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, solución inyectable, vial de 1 ml (2 dosis)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424631000221102</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, solución inyectable\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424641000221109</code></td>\n                        <td>\n                            \n                                SPUTNIK V vacuna COVID-19 componente I [rAd 26 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 0,5 ml (1 dosis), Instituto Gamaleya\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424651000221106</code></td>\n                        <td>\n                            \n                                SPUTNIK V vacuna COVID-19 componente I [rAd 26 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 1 ml (2 dosis), Instituto Gamaleya\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424661000221108</code></td>\n                        <td>\n                            \n                                SPUTNIK V vacuna COVID-19 componente II [rAd 5 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 1 ml (2 dosis), Instituto Gamaleya\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424671000221104</code></td>\n                        <td>\n                            \n                                SPUTNIK V vacuna COVID-19 componente II [rAd 5 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 0,5 ml (1 dosis), Instituto Gamaleya\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424681000221101</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 vector no replicante Adenovirus humano 5 1 dosis/0,5 ml, solución inyectable, vial de 1 ml (2 dosis)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424691000221103</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 vector no replicante Adenovirus humano 5 1 dosis/0,5 ml, solución inyectable, vial de 0,5 ml (1 dosis)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424701000221103</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 vector no replicante Adenovirus humano 5 1 dosis/0,5 ml, solución inyectable\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424711000221100</code></td>\n                        <td>\n                            \n                                SPUTNIK V vacuna COVID-19 vector viral no replicante\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424721000221105</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 ARNm 100 mcg/0,5 ml, suspensión inyectable\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424731000221108</code></td>\n                        <td>\n                            \n                                SPIKEVAX vacuna COVID-19 ARNm\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424741000221101</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 ARNm 30 mcg/0,3 ml, suspensión inyectable\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424751000221104</code></td>\n                        <td>\n                            \n                                COMIRNATY vacuna COVID-19 ARNm\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424781000221109</code></td>\n                        <td>\n                            \n                                CONVIDECIA vacuna COVID-19 [rAd 5 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 0,5 ml, (1 dosis), Cansino\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424791000221107</code></td>\n                        <td>\n                            \n                                CONVIDECIA vacuna COVID-19 [rAd 5 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 1,5 ml (3 dosis), Cansino\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424801000221108</code></td>\n                        <td>\n                            \n                                vacuna COVID-19 vector no replicante Adenovirus humano 5 1 dosis/0,5 ml, solución inyectable, vial de 1,5 ml (3 dosis)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424821000221101</code></td>\n                        <td>\n                            \n                                SPUTNIK LIGTH vacuna COVID-19 vector viral no replicante\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424831000221103</code></td>\n                        <td>\n                            \n                                NOVAVAX vacuna COVID-19 proteína de espiga recombinante\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>424971000221108</code></td>\n                        <td>\n                            \n                                ZYDUS CADILA vacuna COVID-19 ADN\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>425001000221100</code></td>\n                        <td>\n                            \n                                SPUTNIK V componente I vacuna COVID-19 vector viral no replicante rAd 26\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>425011000221102</code></td>\n                        <td>\n                            \n                                SPUTNIK V componente II vacuna COVID-19 vector viral no replicante rAd 5\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>425031000221105</code></td>\n                        <td>\n                            \n                                VAXZEVRIA vacuna COVID-19 [ChAdOx1 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 4 ml (8 dosis), Astrazeneca\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>425051000221101</code></td>\n                        <td>\n                            \n                                vacuna que contiene vector adenovirus de chimpancé no replicante que codifica proteína de espiga de SARS-CoV-2 1 dosis/0,5 ml, solución inyectable, vial de 4 ml (8 dosis)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>62051000220105</code></td>\n                        <td>\n                            \n                                Janssen COVID-19 Vaccine 0.5 millilitre suspension injection Janssen Inc\n                            \n                        </td>\n                    </tr>\n                \n            </table>\n        \n</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://terminology.smarthealth.cards/ValueSet/immunization-covid-all"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "20230601"] ; # 
+  fhir:name [ fhir:v "ImmunizationCovidAllValueSet"] ; # 
+  fhir:title [ fhir:v "Immunization / COVID / All codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-06-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "VCI"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "VCI" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://vci.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A list of all immunization codes for COVID, combining the following ValueSets: <a href=\"ValueSet-immunization-covid-cvx.html\">ValueSet-immunization-covid-cvx.json</a>; <a href=\"ValueSet-immunization-covid-snomed.html\">ValueSet-immunization-covid-snomed.json</a>"] ; # 
+  fhir:copyright [ fhir:v "Please see the following links for the copyright/legal information for each code system included here: <a href=\"ValueSet-immunization-covid-cvx.html\">ValueSet-immunization-covid-cvx.json</a>; <a href=\"ValueSet-immunization-covid-snomed.html\">ValueSet-immunization-covid-snomed.json</a>"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "207" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-AU" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Moderna (Spikevax)" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Moderna COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "208" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-AU" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer (Comirnaty)" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Vaccine" ]
+         ] [
+           fhir:language [ fhir:v "en-NZ" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "210" ] ;
+         fhir:display [ fhir:v "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL " ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-AU" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "AstraZeneca (Vaxzevria)" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "AstraZeneca COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "211" ] ;
+         fhir:display [ fhir:v "COVID-19, subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Novavax COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "212" ] ;
+         fhir:display [ fhir:v "COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-AU" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Janssen COVID-19 Vaccine" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Janssen COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "217" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-AU" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer (Comirnaty)" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "218" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-AU" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer (Comirnaty) - Child dose" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "219" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled) COMIRNATY (BLA labeled)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "221" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Moderna COVID-19 Vaccine (non-US Spikevax)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "225" ] ;
+         fhir:display [ fhir:v "COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 5mcg/0.5mL" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Sanofi COVID-19 " ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226" ] ;
+         fhir:display [ fhir:v "COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 10mcg/0.5mL" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Sanofi COVID-19 " ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "227" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, pediatric 50 mcg/0.5 mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Moderna COVID-19 Vaccine (non-US Spikevax)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "228" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, pediatric 25 mcg/0.25 mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Moderna COVID-19 Vaccine (non-US Spikevax)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "229" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, bivalent booster, PF, 50 mcg/0.5 mL or 25mcg/0.25 mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Moderna COVID-19 Vaccine (non-US Spikevax)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "230" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, bivalent booster, PF, 10 mcg/0.2 mL" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Moderna COVID-19 Bivalent, Original + BA.4/BA.5 (Non-US Tradename Spikevax Bivalent)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "300" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, bivalent booster, PF, 30 mcg/0.3 mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "301" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, bivalent booster, PF, 10 mcg/0.2 mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "302" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, bivalent, PF, 3 mcg/0.2 mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Bivalent, Original + BA.4/BA.5 (Non-US Tradename COMIRNATY Bivalent)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "501" ] ;
+         fhir:display [ fhir:v "COVID-19 IV Non-US Vaccine (QAZCOVID-IN)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 IV Non-US Vaccine (QAZCOVID-IN)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "502" ] ;
+         fhir:display [ fhir:v "COVID-19 IV Non-US Vaccine (COVAXIN)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVAXIN (Bharat) COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "503" ] ;
+         fhir:display [ fhir:v "COVID-19 LAV Non-US Vaccine (COVIVAC)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 LAV Non-US Vaccine (COVIVAC)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "504" ] ;
+         fhir:display [ fhir:v "COVID-19 VVnr Non-US Vaccine (Sputnik Light)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 VVnr Non-US Vaccine (Sputnik Light)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "505" ] ;
+         fhir:display [ fhir:v "COVID-19 VVnr Non-US Vaccine (Sputnik V)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 VVnr Non-US Vaccine (Sputnik V)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "506" ] ;
+         fhir:display [ fhir:v "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "507" ] ;
+         fhir:display [ fhir:v "COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "508" ] ;
+         fhir:display [ fhir:v "COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "509" ] ;
+         fhir:display [ fhir:v "COVID-19 PS Non-US Vaccine (EpiVacCorona)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 PS Non-US Vaccine (EpiVacCorona)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "510" ] ;
+         fhir:display [ fhir:v "COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Sinopharm (BIBP) COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "511" ] ;
+         fhir:display [ fhir:v "COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Coronavac (Sinovac) COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "512" ] ;
+         fhir:display [ fhir:v "SARS-COV-2 COVID-19 VLP Non-US Vaccine (Medicago, Covifenz)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Covifenz" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "513" ] ;
+         fhir:display [ fhir:v "SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "514" ] ;
+         fhir:display [ fhir:v "SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "515" ] ;
+         fhir:display [ fhir:v "SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "516" ] ;
+         fhir:display [ fhir:v "COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "517" ] ;
+         fhir:display [ fhir:v "SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "518" ] ;
+         fhir:display [ fhir:v "COVID-19 Inactivated, Non-US Vaccine (VLA2001, Valneva)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 Inactivated, Non-US Vaccine (VLA2001, Valneva)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "519" ] ;
+         fhir:display [ fhir:v "COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine (Spikevax Bivalent), Moderna" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Moderna COVID-19 Bivalent, Original + BA.1 (Non-US Tradename Spikevax Bivalent)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "520" ] ;
+         fhir:display [ fhir:v "COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine Product, Pfizer-BioNTech" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer COVID-19 Bivalent, Original + BA.1 (Non-US Tradename COMIRNATY Bivalent)" ]
+         ] )
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1031000172108" ] ;
+         fhir:display [ fhir:v "COVID-19 mRNA vaccine (BNT162b2) of Pfizer-BioNTech" ]
+       ] [
+         fhir:code [ fhir:v "10871000172106" ] ;
+         fhir:display [ fhir:v "COVID-19 mRNA vaccine (mRNA-1273) of Moderna" ]
+       ] [
+         fhir:code [ fhir:v "10891000172107" ] ;
+         fhir:display [ fhir:v "COVID-19 viral vector vaccine (AZD1222 (ChAdOx1-S recombinant)) of AstraZeneca, Oxford" ]
+       ] [
+         fhir:code [ fhir:v "10901000172106" ] ;
+         fhir:display [ fhir:v "COVID-19 viral vector vaccine (JNJ-78436735( Ad26.COV2-S recombinant)) of Johnson and Johnson, Janssens" ]
+       ] [
+         fhir:code [ fhir:v "125071000220108" ] ;
+         fhir:display [ fhir:v "COVID-19 mRNA Vaccine Pfizer-BioNTech 10 micrograms/dose concentrate for dispersion for injection" ]
+       ] [
+         fhir:code [ fhir:v "125081000220106" ] ;
+         fhir:display [ fhir:v "COVID-19 mRNA Vaccine Ready to Use Pfizer-BioNTech 30 micrograms/ 0.3 milliliter dose dispersion for injection" ]
+       ] [
+         fhir:code [ fhir:v "125091000220109" ] ;
+         fhir:display [ fhir:v "COVID-19 mRNA Ready to Use Adapted BA.1 Vaccine Pfizer-BioNTech 15 / 15 micrograms/ 0.3 milliliter dose dispersion for injection" ]
+       ] [
+         fhir:code [ fhir:v "125101000220104" ] ;
+         fhir:display [ fhir:v "COVID-19 mRNA Ready to Use Adapted BA.4 and BA.5 Vaccine Pfizer-BioNTech 15 / 15 micrograms/ 0.3 milliliter dose dispersion for injection" ]
+       ] [
+         fhir:code [ fhir:v "125111000220101" ] ;
+         fhir:display [ fhir:v "COVID-19 mRNA Adapted BA.1 Vaccine Moderna (50 micrograms/50 micrograms) / milliliter dispersion for injection" ]
+       ] [
+         fhir:code [ fhir:v "125121000220108" ] ;
+         fhir:display [ fhir:v "COVID-19 mRNA Adapted BA.4 nd BA.5 Vaccine Moderna (50 micrograms/50 micrograms) / milliliter dispersion for injection" ]
+       ] [
+         fhir:code [ fhir:v "1401000220108" ] ;
+         fhir:display [ fhir:v "COVID-19 Vaccine AstraZeneca 5 x10,000,000,000 viral particles/per 0.5ml dose for injection multidose vials" ]
+       ] [
+         fhir:code [ fhir:v "1411000220106" ] ;
+         fhir:display [ fhir:v "COVID-19 mRNA Vaccine Pfizer-BioNTech 30 micrograms per 0.3ml dose concentrate for suspension for injection multidose vials" ]
+       ] [
+         fhir:code [ fhir:v "1421000220104" ] ;
+         fhir:display [ fhir:v "COVID-19 mRNA Vaccine Moderna 0.1mg per 0.5mL dose dispersion for injection multidose vials" ]
+       ] [
+         fhir:code [ fhir:v "28571000087109" ] ;
+         fhir:display [ fhir:v "COVID-19 SPIKEVAX 0.20 mg/mL mRNA Mod" ]
+       ] [
+         fhir:code [ fhir:v "28581000087106" ] ;
+         fhir:display [ fhir:v "COVID-19 COMIRNATY 30 mcg/0.3 ml mRNA PB" ]
+       ] [
+         fhir:code [ fhir:v "28761000087108" ] ;
+         fhir:display [ fhir:v "COVID-19 VAXZEVRIA AZC" ]
+       ] [
+         fhir:code [ fhir:v "28951000087107" ] ;
+         fhir:display [ fhir:v "COVID-19 JANSSEN COVID-19 VACCINE Jan" ]
+       ] [
+         fhir:code [ fhir:v "28961000087105" ] ;
+         fhir:display [ fhir:v "COVID-19 COVISHIELD VP" ]
+       ] [
+         fhir:code [ fhir:v "29171000087106" ] ;
+         fhir:display [ fhir:v "COVID-19 NUVAXOVID NOV" ]
+       ] [
+         fhir:code [ fhir:v "30151000087105" ] ;
+         fhir:display [ fhir:v "COVID-19 COVIFENZ VLP MED" ]
+       ] [
+         fhir:code [ fhir:v "31301000087101" ] ;
+         fhir:display [ fhir:v "COVID-19 SINOPHARM-BIBP" ]
+       ] [
+         fhir:code [ fhir:v "31311000087104" ] ;
+         fhir:display [ fhir:v "COVID-19 CoronaVac" ]
+       ] [
+         fhir:code [ fhir:v "31341000087103" ] ;
+         fhir:display [ fhir:v "COVID-19 Sputnik V" ]
+       ] [
+         fhir:code [ fhir:v "31431000087100" ] ;
+         fhir:display [ fhir:v "COVID-19 Convidecia" ]
+       ] [
+         fhir:code [ fhir:v "33201000087108" ] ;
+         fhir:display [ fhir:v "COVID-19 SINOPHARM-WIBP" ]
+       ] [
+         fhir:code [ fhir:v "33211000087105" ] ;
+         fhir:display [ fhir:v "COVID-19 COVAXIN" ]
+       ] [
+         fhir:code [ fhir:v "33221000087102" ] ;
+         fhir:display [ fhir:v "COVID-19 mRNA CureVac" ]
+       ] [
+         fhir:code [ fhir:v "33361000087101" ] ;
+         fhir:display [ fhir:v "COVID-19 COMIRNATY pediatric 10 mcg/0.2 ml mRNA PB" ]
+       ] [
+         fhir:code [ fhir:v "33391000087109" ] ;
+         fhir:display [ fhir:v "COVID-19 Abdala" ]
+       ] [
+         fhir:code [ fhir:v "33401000087107" ] ;
+         fhir:display [ fhir:v "COVID-19 COVIran Barekat" ]
+       ] [
+         fhir:code [ fhir:v "33411000087109" ] ;
+         fhir:display [ fhir:v "COVID-19 CoviVac" ]
+       ] [
+         fhir:code [ fhir:v "33421000087101" ] ;
+         fhir:display [ fhir:v "COVID-19 EpiVacCorona" ]
+       ] [
+         fhir:code [ fhir:v "33431000087104" ] ;
+         fhir:display [ fhir:v "COVID-19 KCONVAC" ]
+       ] [
+         fhir:code [ fhir:v "33441000087105" ] ;
+         fhir:display [ fhir:v "COVID-19 Medgen-Dynavax-NIAID" ]
+       ] [
+         fhir:code [ fhir:v "33451000087108" ] ;
+         fhir:display [ fhir:v "COVID-19 QazCovid-in" ]
+       ] [
+         fhir:code [ fhir:v "33461000087106" ] ;
+         fhir:display [ fhir:v "COVID-19 Sputnik Light" ]
+       ] [
+         fhir:code [ fhir:v "33471000087102" ] ;
+         fhir:display [ fhir:v "COVID-19 ZIFIVAX" ]
+       ] [
+         fhir:code [ fhir:v "33581000087104" ] ;
+         fhir:display [ fhir:v "COVID-19 pediatric mRNA unspecified" ]
+       ] [
+         fhir:code [ fhir:v "33881000087102" ] ;
+         fhir:display [ fhir:v "COVID-19 COMIRNATY tris-sucrose 30 mcg/0.3 ml mRNA PB" ]
+       ] [
+         fhir:code [ fhir:v "34591000087100" ] ;
+         fhir:display [ fhir:v "COVID-19 Soberana 02" ]
+       ] [
+         fhir:code [ fhir:v "34601000087108" ] ;
+         fhir:display [ fhir:v "COVID-19 SpikoGen" ]
+       ] [
+         fhir:code [ fhir:v "34611000087105" ] ;
+         fhir:display [ fhir:v "COVID-19 COMIRNATY pediatric 3 mcg/0.2 ml mRNA PB" ]
+       ] [
+         fhir:code [ fhir:v "34921000087108" ] ;
+         fhir:display [ fhir:v "COVID-19 COVOVAX" ]
+       ] [
+         fhir:code [ fhir:v "35651000087105" ] ;
+         fhir:display [ fhir:v "COVID-19 SPIKEVAX 0.10 mg/mL mRNA Mod" ]
+       ] [
+         fhir:code [ fhir:v "37311000087109" ] ;
+         fhir:display [ fhir:v "COVID-19 SPIKEVAX Bivalent (Original / Omicron BA.1) 0.10 mg/mL mRNA Mod" ]
+       ] [
+         fhir:code [ fhir:v "37651000087101" ] ;
+         fhir:display [ fhir:v "COVID-19 SPIKEVAX Bivalent (Original / Omicron BA.4/BA.5) 0.10 mg/mL mRNA Mod" ]
+       ] [
+         fhir:code [ fhir:v "384671000221101" ] ;
+         fhir:display [ fhir:v "SINOPHARM - BIBP vacuna COVID-19 [SARS-COV-2 (células Vero) inactivado 1 dosis/0,5 ml] suspensión inyectable, vial de 0,5 ml (1 dosis), Sinopharm - Beijing Institute" ]
+       ] [
+         fhir:code [ fhir:v "399651000221108" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 virus entero inactivado 1 dosis/0,5 ml, suspensión inyectable, vial de 0,5 ml (1 dosis)" ]
+       ] [
+         fhir:code [ fhir:v "399661000221105" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 vector no replicante adenovirus de chimpancé 1 dosis/0,5 ml, solución inyectable, vial de 5 ml (10 dosis)" ]
+       ] [
+         fhir:code [ fhir:v "399681000221103" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 vector no replicante Adenovirus humano 5 1 dosis/0,5 ml, solución inyectable, vial de 3 ml (5 dosis)" ]
+       ] [
+         fhir:code [ fhir:v "399691000221100" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, solución inyectable, vial de 3 ml (5 dosis)" ]
+       ] [
+         fhir:code [ fhir:v "399701000221100" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, suspensión inyectable, vial de 3 ml (5 dosis)" ]
+       ] [
+         fhir:code [ fhir:v "399771000221108" ] ;
+         fhir:display [ fhir:v "COVISHIELD vacuna COVID-19 [ChAdOx1 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 5 ml (10 dosis), Serum Institute of India" ]
+       ] [
+         fhir:code [ fhir:v "399781000221106" ] ;
+         fhir:display [ fhir:v "VAXZEVRIA vacuna COVID-19 [ChAdOx1 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 5 ml (10 dosis), Astrazeneca" ]
+       ] [
+         fhir:code [ fhir:v "399801000221105" ] ;
+         fhir:display [ fhir:v "SPUTNIK V vacuna COVID-19 componente I [rAd 26 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 3 ml (5 dosis), Instituto Gamaleya" ]
+       ] [
+         fhir:code [ fhir:v "399811000221108" ] ;
+         fhir:display [ fhir:v "SPUTNIK V vacuna COVID-19 componente II [rAd 5 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 3 ml (5 dosis), Instituto Gamaleya" ]
+       ] [
+         fhir:code [ fhir:v "399821000221103" ] ;
+         fhir:display [ fhir:v "JANSSEN vacuna COVID-19 [rAd 26 SARS-CoV-2 S 1 dosis/0,5 ml] suspensión inyectable, vial de 3 ml (5 dosis), Janssen" ]
+       ] [
+         fhir:code [ fhir:v "399861000221106" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 ARNm 100 mcg/ml, suspensión inyectable, vial de 5,5 ml (10 dosis de 0,5 ml)" ]
+       ] [
+         fhir:code [ fhir:v "399871000221102" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 ARNm 100 mcg/ml, suspensión inyectable, vial de 7,5 ml (15 dosis de 0,5 ml)" ]
+       ] [
+         fhir:code [ fhir:v "399881000221104" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 ARNm 30 mcg/0,3 ml, suspensión inyectable, vial de 0,45 ml (6 dosis de 0,3 ml luego de dilución)" ]
+       ] [
+         fhir:code [ fhir:v "399891000221101" ] ;
+         fhir:display [ fhir:v "SPIKEVAX vacuna COVID-19 [SARS-CoV-2 S ARNm 100 mcg/0,5 ml] suspensión inyectable, vial de 5.5 ml (10 dosis), Moderna" ]
+       ] [
+         fhir:code [ fhir:v "399901000221102" ] ;
+         fhir:display [ fhir:v "SPIKEVAX vacuna COVID-19 [SARS-CoV-2 S ARNm 100 mcg/0,5 ml] suspensión inyectable, vial de 7,5 ml (15 dosis de 0,5 ml), Moderna" ]
+       ] [
+         fhir:code [ fhir:v "399911000221104" ] ;
+         fhir:display [ fhir:v "COMIRNATY vacuna COVID-19 [SARS-CoV-2 S ARNm 30 mcg/0,3 ml] suspensión inyectable, vial de 0,45 ml (6 dosis de 0,3 ml luego de dilución), Pfizer" ]
+       ] [
+         fhir:code [ fhir:v "424531000221101" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 virus entero inactivado 1 dosis/0,5 ml, suspensión inyectable" ]
+       ] [
+         fhir:code [ fhir:v "424541000221108" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 virus entero inactivado 1 dosis/0,5 ml, suspensión inyectable, vial de 1 ml (2 dosis)" ]
+       ] [
+         fhir:code [ fhir:v "424551000221105" ] ;
+         fhir:display [ fhir:v "SINOPHARM - BIBP vacuna COVID-19 [SARS-COV-2 (células Vero) inactivado 1 dosis/0,5 ml] suspensión inyectable, vial de 1 ml (2 dosis), Sinopharm - Beijing Institute" ]
+       ] [
+         fhir:code [ fhir:v "424561000221107" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 vector no replicante adenovirus de chimpancé 1 dosis/0,5 ml, solución inyectable" ]
+       ] [
+         fhir:code [ fhir:v "424571000221103" ] ;
+         fhir:display [ fhir:v "VAXZEVRIA vacuna COVID-19 vector viral no replicante" ]
+       ] [
+         fhir:code [ fhir:v "424581000221100" ] ;
+         fhir:display [ fhir:v "COVISHIELD vacuna COVID-19 vector viral no replicante" ]
+       ] [
+         fhir:code [ fhir:v "424591000221102" ] ;
+         fhir:display [ fhir:v "JANSSEN vacuna COVID-19 vector viral no replicante" ]
+       ] [
+         fhir:code [ fhir:v "424601000221107" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, suspensión inyectable" ]
+       ] [
+         fhir:code [ fhir:v "424611000221105" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, solución inyectable, vial de 0,5 ml (1 dosis)" ]
+       ] [
+         fhir:code [ fhir:v "424621000221100" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, solución inyectable, vial de 1 ml (2 dosis)" ]
+       ] [
+         fhir:code [ fhir:v "424631000221102" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, solución inyectable" ]
+       ] [
+         fhir:code [ fhir:v "424641000221109" ] ;
+         fhir:display [ fhir:v "SPUTNIK V vacuna COVID-19 componente I [rAd 26 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 0,5 ml (1 dosis), Instituto Gamaleya" ]
+       ] [
+         fhir:code [ fhir:v "424651000221106" ] ;
+         fhir:display [ fhir:v "SPUTNIK V vacuna COVID-19 componente I [rAd 26 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 1 ml (2 dosis), Instituto Gamaleya" ]
+       ] [
+         fhir:code [ fhir:v "424661000221108" ] ;
+         fhir:display [ fhir:v "SPUTNIK V vacuna COVID-19 componente II [rAd 5 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 1 ml (2 dosis), Instituto Gamaleya" ]
+       ] [
+         fhir:code [ fhir:v "424671000221104" ] ;
+         fhir:display [ fhir:v "SPUTNIK V vacuna COVID-19 componente II [rAd 5 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 0,5 ml (1 dosis), Instituto Gamaleya" ]
+       ] [
+         fhir:code [ fhir:v "424681000221101" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 vector no replicante Adenovirus humano 5 1 dosis/0,5 ml, solución inyectable, vial de 1 ml (2 dosis)" ]
+       ] [
+         fhir:code [ fhir:v "424691000221103" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 vector no replicante Adenovirus humano 5 1 dosis/0,5 ml, solución inyectable, vial de 0,5 ml (1 dosis)" ]
+       ] [
+         fhir:code [ fhir:v "424701000221103" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 vector no replicante Adenovirus humano 5 1 dosis/0,5 ml, solución inyectable" ]
+       ] [
+         fhir:code [ fhir:v "424711000221100" ] ;
+         fhir:display [ fhir:v "SPUTNIK V vacuna COVID-19 vector viral no replicante" ]
+       ] [
+         fhir:code [ fhir:v "424721000221105" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 ARNm 100 mcg/0,5 ml, suspensión inyectable" ]
+       ] [
+         fhir:code [ fhir:v "424731000221108" ] ;
+         fhir:display [ fhir:v "SPIKEVAX vacuna COVID-19 ARNm" ]
+       ] [
+         fhir:code [ fhir:v "424741000221101" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 ARNm 30 mcg/0,3 ml, suspensión inyectable" ]
+       ] [
+         fhir:code [ fhir:v "424751000221104" ] ;
+         fhir:display [ fhir:v "COMIRNATY vacuna COVID-19 ARNm" ]
+       ] [
+         fhir:code [ fhir:v "424781000221109" ] ;
+         fhir:display [ fhir:v "CONVIDECIA vacuna COVID-19 [rAd 5 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 0,5 ml, (1 dosis), Cansino" ]
+       ] [
+         fhir:code [ fhir:v "424791000221107" ] ;
+         fhir:display [ fhir:v "CONVIDECIA vacuna COVID-19 [rAd 5 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 1,5 ml (3 dosis), Cansino" ]
+       ] [
+         fhir:code [ fhir:v "424801000221108" ] ;
+         fhir:display [ fhir:v "vacuna COVID-19 vector no replicante Adenovirus humano 5 1 dosis/0,5 ml, solución inyectable, vial de 1,5 ml (3 dosis)" ]
+       ] [
+         fhir:code [ fhir:v "424821000221101" ] ;
+         fhir:display [ fhir:v "SPUTNIK LIGTH vacuna COVID-19 vector viral no replicante" ]
+       ] [
+         fhir:code [ fhir:v "424831000221103" ] ;
+         fhir:display [ fhir:v "NOVAVAX vacuna COVID-19 proteína de espiga recombinante" ]
+       ] [
+         fhir:code [ fhir:v "424971000221108" ] ;
+         fhir:display [ fhir:v "ZYDUS CADILA vacuna COVID-19 ADN" ]
+       ] [
+         fhir:code [ fhir:v "425001000221100" ] ;
+         fhir:display [ fhir:v "SPUTNIK V componente I vacuna COVID-19 vector viral no replicante rAd 26" ]
+       ] [
+         fhir:code [ fhir:v "425011000221102" ] ;
+         fhir:display [ fhir:v "SPUTNIK V componente II vacuna COVID-19 vector viral no replicante rAd 5" ]
+       ] [
+         fhir:code [ fhir:v "425031000221105" ] ;
+         fhir:display [ fhir:v "VAXZEVRIA vacuna COVID-19 [ChAdOx1 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 4 ml (8 dosis), Astrazeneca" ]
+       ] [
+         fhir:code [ fhir:v "425051000221101" ] ;
+         fhir:display [ fhir:v "vacuna que contiene vector adenovirus de chimpancé no replicante que codifica proteína de espiga de SARS-CoV-2 1 dosis/0,5 ml, solución inyectable, vial de 4 ml (8 dosis)" ]
+       ] [
+         fhir:code [ fhir:v "62051000220105" ] ;
+         fhir:display [ fhir:v "Janssen COVID-19 Vaccine 0.5 millilitre suspension injection Janssen Inc" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

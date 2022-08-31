@@ -1,0 +1,505 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/ValueSet/covid-cvx> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "covid-cvx"];
+  fhir:Resource.language [ fhir:value "en"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n        \n            <p>Include these codes as defined in <a href=\"http://hl7.org/fhir/sid/cvx\"><code>http://hl7.org/fhir/sid/cvx</code></a>:</p>\n            <table class=\"table-striped table table-bordered\">\n                <tr>\n                    <th>Code</th>\n                    <th>Description(s)</th>\n                </tr>\n                \n                    <tr>\n                        <td><code>207</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose</li>\n                                    \n                                    <li>\n                                        <code>en-AU</code>:\n                                        Moderna (Spikevax)\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Moderna COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>208</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose</li>\n                                    \n                                    <li>\n                                        <code>en-AU</code>:\n                                        Pfizer (Comirnaty)\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Pfizer-BioNTech COVID-19 Vaccine\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-NZ</code>:\n                                        Pfizer-BioNTech COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>210</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL </li>\n                                    \n                                    <li>\n                                        <code>en-AU</code>:\n                                        AstraZeneca (Vaxzevria)\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        AstraZeneca COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>211</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Novavax COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>212</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL</li>\n                                    \n                                    <li>\n                                        <code>en-AU</code>:\n                                        Janssen COVID-19 Vaccine\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Janssen COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>217</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose</li>\n                                    \n                                    <li>\n                                        <code>en-AU</code>:\n                                        Pfizer (Comirnaty)\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Pfizer-BioNTech COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>218</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose</li>\n                                    \n                                    <li>\n                                        <code>en-AU</code>:\n                                        Pfizer (Comirnaty) - Child dose\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Pfizer-BioNTech COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>219</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Pfizer-BioNTech COVID-19 Vaccine (EUA labeled) COMIRNATY (BLA labeled)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>221</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL dose</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Moderna COVID-19 Vaccine (non-US Spikevax)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>225</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 5mcg/0.5mL</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Sanofi COVID-19 \n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>226</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 10mcg/0.5mL</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Sanofi COVID-19 \n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>227</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, PF, pediatric 50 mcg/0.5 mL dose</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Moderna COVID-19 Vaccine (non-US Spikevax)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>228</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, PF, pediatric 25 mcg/0.25 mL dose</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Moderna COVID-19 Vaccine (non-US Spikevax)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>229</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, bivalent booster, PF, 50 mcg/0.5 mL or 25mcg/0.25 mL dose</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Moderna COVID-19 Vaccine (non-US Spikevax)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>300</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, bivalent booster, PF, 30 mcg/0.3 mL dose</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>301</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19, mRNA, LNP-S, bivalent booster, PF, 10 mcg/0.2 mL dose</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>501</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 IV Non-US Vaccine (QAZCOVID-IN)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVID-19 IV Non-US Vaccine (QAZCOVID-IN)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>502</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 IV Non-US Vaccine (COVAXIN)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVAXIN (Bharat) COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>503</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 LAV Non-US Vaccine (COVIVAC)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVID-19 LAV Non-US Vaccine (COVIVAC)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>504</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 VVnr Non-US Vaccine (Sputnik Light)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVID-19 VVnr Non-US Vaccine (Sputnik Light)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>505</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 VVnr Non-US Vaccine (Sputnik V)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVID-19 VVnr Non-US Vaccine (Sputnik V)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>506</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>507</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>508</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>509</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 PS Non-US Vaccine (EpiVacCorona)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COVID-19 PS Non-US Vaccine (EpiVacCorona)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>510</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Sinopharm (BIBP) COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>511</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Coronavac (Sinovac) COVID-19 Vaccine\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>512</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: SARS-COV-2 COVID-19 VLP Non-US Vaccine (Medicago, Covifenz)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Covifenz\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>513</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>514</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>515</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>516</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>517</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n            </table>\n        \n</div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://terminology.smarthealth.cards/ValueSet/covid-cvx"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "CovidCVXValueSet"];
+  fhir:ValueSet.title [ fhir:value "CVX Covid Codes for use in SMART Health Cards"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2021-09-22"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "VCI"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "VCI" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://vci.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "A list of CVX codes with recommended consumer suitable displays for use in SMART Health Cards, with localized consumer friendly terms"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "AU" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:ValueSet.copyright [ fhir:value "Creative Commons 0"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/sid/cvx" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "207" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-AU" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Moderna (Spikevax)" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Moderna COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "208" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-AU" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer (Comirnaty)" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer-BioNTech COVID-19 Vaccine" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-NZ" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer-BioNTech COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "210" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL " ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-AU" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "AstraZeneca (Vaxzevria)" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "AstraZeneca COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "211" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Novavax COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "212" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-AU" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Janssen COVID-19 Vaccine" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Janssen COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "217" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-AU" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer (Comirnaty)" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer-BioNTech COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "218" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-AU" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer (Comirnaty) - Child dose" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer-BioNTech COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "219" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled) COMIRNATY (BLA labeled)" ]
+         ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "221" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL dose" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Moderna COVID-19 Vaccine (non-US Spikevax)" ]
+         ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "225" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 5mcg/0.5mL" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sanofi COVID-19 " ]
+         ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "226" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 10mcg/0.5mL" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sanofi COVID-19 " ]
+         ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "227" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, pediatric 50 mcg/0.5 mL dose" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Moderna COVID-19 Vaccine (non-US Spikevax)" ]
+         ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "228" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, pediatric 25 mcg/0.25 mL dose" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Moderna COVID-19 Vaccine (non-US Spikevax)" ]
+         ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "229" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, mRNA, LNP-S, bivalent booster, PF, 50 mcg/0.5 mL or 25mcg/0.25 mL dose" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Moderna COVID-19 Vaccine (non-US Spikevax)" ]
+         ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "300" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, mRNA, LNP-S, bivalent booster, PF, 30 mcg/0.3 mL dose" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)" ]
+         ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "301" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, mRNA, LNP-S, bivalent booster, PF, 10 mcg/0.2 mL dose" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)" ]
+         ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "501" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 IV Non-US Vaccine (QAZCOVID-IN)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "COVID-19 IV Non-US Vaccine (QAZCOVID-IN)" ]
+         ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "502" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 IV Non-US Vaccine (COVAXIN)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "COVAXIN (Bharat) COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "503" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 LAV Non-US Vaccine (COVIVAC)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "COVID-19 LAV Non-US Vaccine (COVIVAC)" ]
+         ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "504" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 VVnr Non-US Vaccine (Sputnik Light)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "COVID-19 VVnr Non-US Vaccine (Sputnik Light)" ]
+         ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "505" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 VVnr Non-US Vaccine (Sputnik V)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "COVID-19 VVnr Non-US Vaccine (Sputnik V)" ]
+         ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "506" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)" ]
+         ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "507" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)" ]
+         ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "508" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)" ]
+         ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "509" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 PS Non-US Vaccine (EpiVacCorona)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "COVID-19 PS Non-US Vaccine (EpiVacCorona)" ]
+         ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "510" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sinopharm (BIBP) COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "511" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Coronavac (Sinovac) COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "512" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "SARS-COV-2 COVID-19 VLP Non-US Vaccine (Medicago, Covifenz)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Covifenz" ]
+         ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "513" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)" ]
+         ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "514" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)" ]
+         ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "515" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)" ]
+         ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "516" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)" ]
+         ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "517" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/ValueSet/covid-cvx.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

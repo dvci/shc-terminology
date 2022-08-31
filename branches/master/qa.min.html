@@ -1,0 +1,1596 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 1, errors = 123, warn = 154, info = 4-->
+<head>
+  <title>SMARTHealthCardsTerminology : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for SMARTHealthCardsTerminology</h1>
+ <p>Generated Fri Nov 22 10:51:31 UTC 2024, FHIR version 4.0.1 for cards.smarthealth.terminology#0.1.0 (canonical = <a href="https://terminology.smarthealth.cards">https://terminology.smarthealth.cards</a> (<a href="https://terminology.smarthealth.cards/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.7.4</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = cards.smarthealth.terminology, Canonical = https://terminology.smarthealth.cards</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Publication Request:</td><td><ul><li><span title="Not Found">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/shc-terminology/shc-terminology/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> cards.smarthealth.terminology</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://terminology.smarthealth.cards</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/shc-terminology/shc-terminology/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/shc-terminology/shc-terminology/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: org.vci.ig-template#0.1.0 -&gt; fhir.base.template#current. Tools: 0.3.0</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (15 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://terminology.smarthealth.cards (Problem #1 with package-list.json at https://terminology.smarthealth.cards: Not Found)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
+<tr><td>Narratives Suppressed</td><td><a href="CodeSystem-designation-use.html">CodeSystem/designation-use</a>, <a href="CodeSystem-health-card.html">CodeSystem/health-card</a>, <a href="CodeSystem-identity-assurance-level.html">CodeSystem/identity-assurance-level</a>, <a href="ValueSet-immunization-covid-icd11.html">ValueSet/immunization-covid-icd11</a>, <a href="ValueSet-immunization-covid-snomed.html">ValueSet/immunization-covid-snomed</a>, <a href="ValueSet-lab-qualitative-result.html">ValueSet/lab-qualitative-result</a>, <a href="ValueSet-lab-qualitative-test-covid.html">ValueSet/lab-qualitative-test-covid</a>, <a href="ValueSet-immunization-covid-all.html">ValueSet/immunization-covid-all</a>, <a href="ValueSet-immunization-covid-cvx.html">ValueSet/immunization-covid-cvx</a>, <a href="ValueSet-immunization-orthopoxvirus-all.html">ValueSet/immunization-orthopoxvirus-all</a>, <a href="ValueSet-immunization-orthopoxvirus-cvx.html">ValueSet/immunization-orthopoxvirus-cvx</a> <tr><td>Summary:</td><td> errors = 123, warn = 154, info = 4, broken links = 1</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_CodeSystem-designation-use"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-designation-use</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_CodeSystem-health-card"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-health-card</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_CodeSystem-identity-assurance-level"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-identity-assurance-level</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-immunization-all-cvx"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-immunization-all-cvx</b></a></td><td><b>1</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-immunization-all-icd11"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-immunization-all-icd11</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-immunization-all-snomed"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-immunization-all-snomed</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-immunization-covid-icd11"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-immunization-covid-icd11</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-immunization-covid-snomed"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-immunization-covid-snomed</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-lab-qualitative-result"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-lab-qualitative-result</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-lab-qualitative-test-covid"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-lab-qualitative-test-covid</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_immunization-covid-all"><b>/home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-all</b></a></td><td><b>46</b></td><td><b>53</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_immunization-covid-cvx"><b>/home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-cvx</b></a></td><td><b>53</b></td><td><b>58</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_immunization-covid-mapping-cvx-air"><b>/home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-mapping-cvx-air</b></a></td><td><b>3</b></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_immunization-orthopoxvirus-all"><b>/home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-orthopoxvirus-all</b></a></td><td><b>5</b></td><td><b>8</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_immunization-orthopoxvirus-cvx"><b>/home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-orthopoxvirus-cvx</b></a></td><td><b>5</b></td><td><b>6</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-immunization-covid-cvx.html#l333">output&#8203;/ValueSet-immunization-covid-cvx&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 219, column 199</a></b></td><td><b>error</b></td><td><b>The link 'https://terminology.smarthealth.cards/CodeSystem-designation-use.html' for &quot;consumer-friendly&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_CodeSystem-designation-use"> </a>
+<h2><a href="CodeSystem-designation-use.html">fsh-generated/resources/CodeSystem-designation-use.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c915)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c915)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_CodeSystem-health-card"> </a>
+<h2><a href="CodeSystem-health-card.html">fsh-generated/resources/CodeSystem-health-card.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem&#8203;.where(url = 'https:&#8203;/&#8203;/smarthealth&#8203;.cards&#8203;#')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-health-card.json - the canonical URL (https://terminology.smarthealth.cards/CodeSystem/health-card) does not match the URL (https://smarthealth.cards#)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c1120)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c1120)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/CodeSystem-health-card</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://terminology.smarthealth.cards/CodeSystem/health-card vs https://smarthealth.cards#</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_CodeSystem-identity-assurance-level"> </a>
+<h2><a href="CodeSystem-identity-assurance-level.html">fsh-generated/resources/CodeSystem-identity-assurance-level.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem&#8203;.where(url = 'https:&#8203;/&#8203;/smarthealth&#8203;.cards&#8203;/ial')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-identity-assurance-level.json - the canonical URL (https://terminology.smarthealth.cards/CodeSystem/identity-assurance-level) does not match the URL (https://smarthealth.cards/ial)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c1535)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c1535)</b></td><td><b>warning</b></td><td title="CODESYSTEM_SHAREABLE_MISSING"><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/CodeSystem-identity-assurance-level</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://terminology.smarthealth.cards/CodeSystem/identity-assurance-level vs https://smarthealth.cards/ial</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-immunization-all-cvx"> </a>
+<h2><a href="ValueSet-immunization-all-cvx.html">fsh-generated/resources/ValueSet-immunization-all-cvx.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[209]&#8203;.display (l1&#8203;/c94127)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL '</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[256]&#8203;.display (l1&#8203;/c98167)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Respiratory syncytial virus (RSV), unspecified '</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c98994)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(id = 'immunization-all-cvx')</b></td><td><b>error</b></td><td title=""><b>Unable to expand imported value set: No server available</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-immunization-all-icd11"> </a>
+<h2><a href="ValueSet-immunization-all-icd11.html">fsh-generated/resources/ValueSet-immunization-all-icd11.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c69435)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(id = 'immunization-all-icd11')</b></td><td><b>error</b></td><td title=""><b>Unable to expand imported value set: No server available</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-immunization-all-snomed"> </a>
+<h2><a href="ValueSet-immunization-all-snomed.html">fsh-generated/resources/ValueSet-immunization-all-snomed.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1365)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.version is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1365)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(id = 'immunization-all-snomed')</b></td><td><b>error</b></td><td title=""><b>Unable to expand imported value set: No server available</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-immunization-covid-icd11"> </a>
+<h2><a href="ValueSet-immunization-covid-icd11.html">fsh-generated/resources/ValueSet-immunization-covid-icd11.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2759)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c2759)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(id = 'immunization-covid-icd11')</b></td><td><b>error</b></td><td title=""><b>Unable to expand imported value set: No server available</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-immunization-covid-snomed"> </a>
+<h2><a href="ValueSet-immunization-covid-snomed.html">fsh-generated/resources/ValueSet-immunization-covid-snomed.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c12225)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c12225)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(id = 'immunization-covid-snomed')</b></td><td><b>error</b></td><td title=""><b>Unable to expand imported value set: No server available</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-lab-qualitative-result"> </a>
+<h2><a href="ValueSet-lab-qualitative-result.html">fsh-generated/resources/ValueSet-lab-qualitative-result.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c3338)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c3338)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(id = 'lab-qualitative-result')</b></td><td><b>error</b></td><td title=""><b>Unable to expand imported value set: No server available</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-lab-qualitative-test-covid"> </a>
+<h2><a href="ValueSet-lab-qualitative-test-covid.html">fsh-generated/resources/ValueSet-lab-qualitative-test-covid.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c6481)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c6481)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(id = 'lab-qualitative-test-covid')</b></td><td><b>error</b></td><td title=""><b>Unable to expand imported value set: No server available</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_immunization-covid-all"> </a>
+<h2><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[0]&#8203;.use (l38&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[1]&#8203;.use (l46&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[0]&#8203;.use (l60&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[1]&#8203;.use (l68&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[2]&#8203;.use (l76&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[2]&#8203;.designation[0]&#8203;.use (l90&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[2]&#8203;.designation[1]&#8203;.use (l98&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[3]&#8203;.designation[0]&#8203;.use (l112&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[4]&#8203;.designation[0]&#8203;.use (l126&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[4]&#8203;.designation[1]&#8203;.use (l134&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[5]&#8203;.designation[0]&#8203;.use (l148&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[5]&#8203;.designation[1]&#8203;.use (l156&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[6]&#8203;.designation[0]&#8203;.use (l170&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[6]&#8203;.designation[1]&#8203;.use (l178&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[7]&#8203;.designation[0]&#8203;.use (l192&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[8]&#8203;.designation[0]&#8203;.use (l206&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[9]&#8203;.designation[0]&#8203;.use (l220&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[10]&#8203;.designation[0]&#8203;.use (l234&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[11]&#8203;.designation[0]&#8203;.use (l248&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[12]&#8203;.designation[0]&#8203;.use (l262&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[13]&#8203;.designation[0]&#8203;.use (l276&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[14]&#8203;.designation[0]&#8203;.use (l290&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[15]&#8203;.designation[0]&#8203;.use (l304&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[16]&#8203;.designation[0]&#8203;.use (l318&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[17]&#8203;.designation[0]&#8203;.use (l332&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[18]&#8203;.designation[0]&#8203;.use (l346&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[19]&#8203;.designation[0]&#8203;.use (l360&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[20]&#8203;.designation[0]&#8203;.use (l374&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[21]&#8203;.designation[0]&#8203;.use (l388&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[22]&#8203;.designation[0]&#8203;.use (l402&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[23]&#8203;.designation[0]&#8203;.use (l416&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[24]&#8203;.designation[0]&#8203;.use (l430&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[25]&#8203;.designation[0]&#8203;.use (l444&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[26]&#8203;.designation[0]&#8203;.use (l458&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[27]&#8203;.designation[0]&#8203;.use (l472&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[28]&#8203;.designation[0]&#8203;.use (l486&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[29]&#8203;.designation[0]&#8203;.use (l500&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[30]&#8203;.designation[0]&#8203;.use (l514&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[31]&#8203;.designation[0]&#8203;.use (l528&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[32]&#8203;.designation[0]&#8203;.use (l542&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[33]&#8203;.designation[0]&#8203;.use (l556&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[34]&#8203;.designation[0]&#8203;.use (l570&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[35]&#8203;.designation[0]&#8203;.use (l584&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[36]&#8203;.designation[0]&#8203;.use (l598&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[37]&#8203;.designation[0]&#8203;.use (l612&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.language (l1/c73)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.description (l1/c768)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'A '. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.copyright (l1/c1167)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'Pl'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[0]&#8203;.language (l1&#8203;/c1369)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[1]&#8203;.language (l1&#8203;/c1503)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[0]&#8203;.language (l1&#8203;/c1732)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[1]&#8203;.language (l1&#8203;/c1866)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[2]&#8203;.language (l1&#8203;/c2014)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[2]&#8203;.display (l1&#8203;/c2223)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL '</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[2]&#8203;.designation[0]&#8203;.language (l1&#8203;/c2258)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[2]&#8203;.designation[1]&#8203;.language (l1&#8203;/c2397)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[3]&#8203;.designation[0]&#8203;.language (l1&#8203;/c2650)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[4]&#8203;.designation[0]&#8203;.language (l1&#8203;/c2882)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[4]&#8203;.designation[1]&#8203;.language (l1&#8203;/c3022)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[5]&#8203;.designation[0]&#8203;.language (l1&#8203;/c3265)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[5]&#8203;.designation[1]&#8203;.language (l1&#8203;/c3399)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[6]&#8203;.designation[0]&#8203;.language (l1&#8203;/c3650)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[6]&#8203;.designation[1]&#8203;.language (l1&#8203;/c3797)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[7]&#8203;.designation[0]&#8203;.language (l1&#8203;/c4047)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[8]&#8203;.designation[0]&#8203;.language (l1&#8203;/c4322)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[9]&#8203;.designation[0]&#8203;.language (l1&#8203;/c4591)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[9]&#8203;.designation[0]&#8203;.value (l1&#8203;/c4702)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Sanofi COVID-19 '</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[10]&#8203;.designation[0]&#8203;.language (l1&#8203;/c4835)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[10]&#8203;.designation[0]&#8203;.value (l1&#8203;/c4946)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Sanofi COVID-19 '</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[11]&#8203;.designation[0]&#8203;.language (l1&#8203;/c5066)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[12]&#8203;.designation[0]&#8203;.language (l1&#8203;/c5324)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[13]&#8203;.designation[0]&#8203;.language (l1&#8203;/c5606)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[14]&#8203;.designation[0]&#8203;.language (l1&#8203;/c5866)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[15]&#8203;.designation[0]&#8203;.language (l1&#8203;/c6173)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[16]&#8203;.designation[0]&#8203;.language (l1&#8203;/c6467)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[17]&#8203;.designation[0]&#8203;.language (l1&#8203;/c6752)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[18]&#8203;.designation[0]&#8203;.language (l1&#8203;/c7045)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[19]&#8203;.designation[0]&#8203;.language (l1&#8203;/c7281)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[20]&#8203;.designation[0]&#8203;.language (l1&#8203;/c7511)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[21]&#8203;.designation[0]&#8203;.language (l1&#8203;/c7752)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[22]&#8203;.designation[0]&#8203;.language (l1&#8203;/c7996)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[23]&#8203;.designation[0]&#8203;.language (l1&#8203;/c8284)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[24]&#8203;.designation[0]&#8203;.language (l1&#8203;/c8633)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[25]&#8203;.designation[0]&#8203;.language (l1&#8203;/c8981)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[26]&#8203;.designation[0]&#8203;.language (l1&#8203;/c9270)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[27]&#8203;.designation[0]&#8203;.language (l1&#8203;/c9515)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[28]&#8203;.designation[0]&#8203;.language (l1&#8203;/c9755)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[29]&#8203;.designation[0]&#8203;.language (l1&#8203;/c10010)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[30]&#8203;.designation[0]&#8203;.language (l1&#8203;/c10247)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[31]&#8203;.designation[0]&#8203;.language (l1&#8203;/c10538)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[32]&#8203;.designation[0]&#8203;.language (l1&#8203;/c10820)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[33]&#8203;.designation[0]&#8203;.language (l1&#8203;/c11124)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[34]&#8203;.designation[0]&#8203;.language (l1&#8203;/c11438)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[35]&#8203;.designation[0]&#8203;.language (l1&#8203;/c11723)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[36]&#8203;.designation[0]&#8203;.language (l1&#8203;/c12029)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[37]&#8203;.designation[0]&#8203;.language (l1&#8203;/c12355)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c25758)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c25758)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(id = 'immunization-covid-all')</b></td><td><b>error</b></td><td title=""><b>Unable to expand imported value set: No server available</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_immunization-covid-cvx"> </a>
+<h2><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[0]&#8203;.use (l52&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[1]&#8203;.use (l60&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[0]&#8203;.use (l74&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[1]&#8203;.use (l82&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[2]&#8203;.use (l90&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[2]&#8203;.designation[0]&#8203;.use (l104&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[2]&#8203;.designation[1]&#8203;.use (l112&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[3]&#8203;.designation[0]&#8203;.use (l126&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[4]&#8203;.designation[0]&#8203;.use (l140&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[4]&#8203;.designation[1]&#8203;.use (l148&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[5]&#8203;.designation[0]&#8203;.use (l162&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[5]&#8203;.designation[1]&#8203;.use (l170&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[6]&#8203;.designation[0]&#8203;.use (l184&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[6]&#8203;.designation[1]&#8203;.use (l192&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[7]&#8203;.designation[0]&#8203;.use (l206&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[8]&#8203;.designation[0]&#8203;.use (l220&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[9]&#8203;.designation[0]&#8203;.use (l234&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[10]&#8203;.designation[0]&#8203;.use (l248&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[11]&#8203;.designation[0]&#8203;.use (l262&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[12]&#8203;.designation[0]&#8203;.use (l276&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[13]&#8203;.designation[0]&#8203;.use (l290&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[14]&#8203;.designation[0]&#8203;.use (l304&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[15]&#8203;.designation[0]&#8203;.use (l318&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[16]&#8203;.designation[0]&#8203;.use (l332&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[17]&#8203;.designation[0]&#8203;.use (l346&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[18]&#8203;.designation[0]&#8203;.use (l360&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[19]&#8203;.designation[0]&#8203;.use (l374&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[20]&#8203;.designation[0]&#8203;.use (l388&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[21]&#8203;.designation[0]&#8203;.use (l402&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[22]&#8203;.designation[0]&#8203;.use (l416&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[23]&#8203;.designation[0]&#8203;.use (l430&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[24]&#8203;.designation[0]&#8203;.use (l444&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[25]&#8203;.designation[0]&#8203;.use (l458&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[26]&#8203;.designation[0]&#8203;.use (l472&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[27]&#8203;.designation[0]&#8203;.use (l486&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[28]&#8203;.designation[0]&#8203;.use (l500&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[29]&#8203;.designation[0]&#8203;.use (l514&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[30]&#8203;.designation[0]&#8203;.use (l528&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[31]&#8203;.designation[0]&#8203;.use (l542&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[32]&#8203;.designation[0]&#8203;.use (l556&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[33]&#8203;.designation[0]&#8203;.use (l570&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[34]&#8203;.designation[0]&#8203;.use (l584&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[35]&#8203;.designation[0]&#8203;.use (l598&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[36]&#8203;.designation[0]&#8203;.use (l612&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[37]&#8203;.designation[0]&#8203;.use (l626&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[38]&#8203;.designation[0]&#8203;.use (l640&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[39]&#8203;.designation[0]&#8203;.use (l654&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[40]&#8203;.designation[0]&#8203;.use (l668&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[41]&#8203;.designation[0]&#8203;.use (l682&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[42]&#8203;.designation[0]&#8203;.use (l696&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[43]&#8203;.designation[0]&#8203;.use (l710&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[44]&#8203;.designation[0]&#8203;.use (l724&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.language (l1/c73)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[0]&#8203;.language (l1&#8203;/c869)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[1]&#8203;.language (l1&#8203;/c1003)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[0]&#8203;.language (l1&#8203;/c1232)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[1]&#8203;.language (l1&#8203;/c1366)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[2]&#8203;.language (l1&#8203;/c1514)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[2]&#8203;.display (l1&#8203;/c1723)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL '</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[2]&#8203;.designation[0]&#8203;.language (l1&#8203;/c1758)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[2]&#8203;.designation[1]&#8203;.language (l1&#8203;/c1897)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[3]&#8203;.designation[0]&#8203;.language (l1&#8203;/c2150)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[4]&#8203;.designation[0]&#8203;.language (l1&#8203;/c2382)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[4]&#8203;.designation[1]&#8203;.language (l1&#8203;/c2522)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[5]&#8203;.designation[0]&#8203;.language (l1&#8203;/c2765)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[5]&#8203;.designation[1]&#8203;.language (l1&#8203;/c2899)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[6]&#8203;.designation[0]&#8203;.language (l1&#8203;/c3150)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[6]&#8203;.designation[1]&#8203;.language (l1&#8203;/c3297)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[7]&#8203;.designation[0]&#8203;.language (l1&#8203;/c3547)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[8]&#8203;.designation[0]&#8203;.language (l1&#8203;/c3822)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[9]&#8203;.designation[0]&#8203;.language (l1&#8203;/c4091)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[9]&#8203;.designation[0]&#8203;.value (l1&#8203;/c4202)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Sanofi COVID-19 '</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[10]&#8203;.designation[0]&#8203;.language (l1&#8203;/c4335)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[10]&#8203;.designation[0]&#8203;.value (l1&#8203;/c4446)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Sanofi COVID-19 '</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[11]&#8203;.designation[0]&#8203;.language (l1&#8203;/c4566)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[12]&#8203;.designation[0]&#8203;.language (l1&#8203;/c4824)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[13]&#8203;.designation[0]&#8203;.language (l1&#8203;/c5098)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[14]&#8203;.designation[0]&#8203;.language (l1&#8203;/c5350)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[15]&#8203;.designation[0]&#8203;.language (l1&#8203;/c5649)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[16]&#8203;.designation[0]&#8203;.language (l1&#8203;/c5935)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[17]&#8203;.designation[0]&#8203;.language (l1&#8203;/c6220)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[18]&#8203;.designation[0]&#8203;.language (l1&#8203;/c6526)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[19]&#8203;.designation[0]&#8203;.language (l1&#8203;/c6782)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[20]&#8203;.designation[0]&#8203;.language (l1&#8203;/c7005)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[21]&#8203;.designation[0]&#8203;.language (l1&#8203;/c7248)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[22]&#8203;.designation[0]&#8203;.language (l1&#8203;/c7482)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[23]&#8203;.designation[0]&#8203;.language (l1&#8203;/c7714)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[24]&#8203;.designation[0]&#8203;.language (l1&#8203;/c7960)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[25]&#8203;.designation[0]&#8203;.language (l1&#8203;/c8196)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[26]&#8203;.designation[0]&#8203;.language (l1&#8203;/c8426)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[27]&#8203;.designation[0]&#8203;.language (l1&#8203;/c8667)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[28]&#8203;.designation[0]&#8203;.language (l1&#8203;/c8911)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[29]&#8203;.designation[0]&#8203;.language (l1&#8203;/c9199)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[30]&#8203;.designation[0]&#8203;.language (l1&#8203;/c9548)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[31]&#8203;.designation[0]&#8203;.language (l1&#8203;/c9896)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[32]&#8203;.designation[0]&#8203;.language (l1&#8203;/c10185)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[33]&#8203;.designation[0]&#8203;.language (l1&#8203;/c10430)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[34]&#8203;.designation[0]&#8203;.language (l1&#8203;/c10670)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[35]&#8203;.designation[0]&#8203;.language (l1&#8203;/c10925)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[36]&#8203;.designation[0]&#8203;.language (l1&#8203;/c11162)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[37]&#8203;.designation[0]&#8203;.language (l1&#8203;/c11453)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[38]&#8203;.designation[0]&#8203;.language (l1&#8203;/c11735)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[39]&#8203;.designation[0]&#8203;.language (l1&#8203;/c12039)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[40]&#8203;.designation[0]&#8203;.language (l1&#8203;/c12353)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[41]&#8203;.designation[0]&#8203;.language (l1&#8203;/c12638)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[42]&#8203;.designation[0]&#8203;.language (l1&#8203;/c12944)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[43]&#8203;.designation[0]&#8203;.language (l1&#8203;/c13270)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[44]&#8203;.designation[0]&#8203;.language (l1&#8203;/c13577)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c13748)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c13748)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(id = 'immunization-covid-cvx')</b></td><td><b>error</b></td><td title=""><b>Unable to expand imported value set: No server available</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_immunization-covid-mapping-cvx-air"> </a>
+<h2><a href="ConceptMap-immunization-covid-mapping-cvx-air.html">input/vocabulary/immunization-covid-mapping-cvx-air.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>ConceptMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/conceptmap.html">ConceptMap</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ConceptMap&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/dvci&#8203;/shc-terminology&#8203;/ConceptMap&#8203;/covid-mapping-cvx-air')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/immunization-covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ConceptMap&#8203;.where(url = 'https:&#8203;/&#8203;/github&#8203;.com&#8203;/dvci&#8203;/shc-terminology&#8203;/ConceptMap&#8203;/covid-mapping-cvx-air')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/immunization-covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ConceptMap.group[0].source (l1/c6722)</b></td><td><b>warning</b></td><td title="CONCEPTMAP_GROUP_SOURCE_UNKNOWN"><b>The Source Code System https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ConceptMap.group[0].target (l1/c6722)</b></td><td><b>warning</b></td><td title="CONCEPTMAP_GROUP_TARGET_INCOMPLETE"><b>Target Code System http://hl7.org/fhir/sid/cvx doesn't have all content (content = not-present), so the target codes cannot be checked</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ConceptMap.group[1].source (l1/c9602)</b></td><td><b>warning</b></td><td title="CONCEPTMAP_GROUP_SOURCE_INCOMPLETE"><b>Source Code System http://hl7.org/fhir/sid/cvx doesn't have all content (content = not-present), so the source codes cannot be checked</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ConceptMap.group[1].target (l1/c9602)</b></td><td><b>warning</b></td><td title="CONCEPTMAP_GROUP_TARGET_UNKNOWN"><b>The Target Code System https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ConceptMap (l1/c9604)</b></td><td><b>warning</b></td><td title="CONCEPTMAP_SHAREABLE_MISSING"><b>Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input&#8203;/vocabulary&#8203;/immunization-covid-mapping-cvx-air</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://terminology.smarthealth.cards/ConceptMap/immunization-covid-mapping-cvx-air vs https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_immunization-orthopoxvirus-all"> </a>
+<h2><a href="ValueSet-immunization-orthopoxvirus-all.html">input/vocabulary/immunization-orthopoxvirus-all.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[0]&#8203;.use (l38&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[1]&#8203;.use (l46&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[2]&#8203;.use (l54&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[0]&#8203;.use (l68&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.language (l1/c81)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.description (l1/c632)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'A '. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.copyright (l1/c855)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'Pl'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[0]&#8203;.language (l1&#8203;/c1055)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[1]&#8203;.language (l1&#8203;/c1178)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('en-EU') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'en-EU' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#en-EU' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[2]&#8203;.language (l1&#8203;/c1301)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[0]&#8203;.language (l1&#8203;/c1487)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1598)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1598)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(id = 'immunization-orthopoxvirus-all')</b></td><td><b>error</b></td><td title=""><b>Unable to expand imported value set: No server available</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_immunization-orthopoxvirus-cvx"> </a>
+<h2><a href="ValueSet-immunization-orthopoxvirus-cvx.html">input/vocabulary/immunization-orthopoxvirus-cvx.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[0]&#8203;.use (l48&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[1]&#8203;.use (l56&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[2]&#8203;.use (l64&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[0]&#8203;.use (l78&#8203;/c45)</b></td><td><b>error</b></td><td title=""><b>Unrecognized property 'use'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.language (l1/c81)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[0]&#8203;.language (l1&#8203;/c890)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[1]&#8203;.language (l1&#8203;/c1013)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('en-EU') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'en-EU' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#en-EU' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[2]&#8203;.language (l1&#8203;/c1136)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[0]&#8203;.language (l1&#8203;/c1322)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_WARNING"><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1433)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1433)</b></td><td><b>warning</b></td><td title=""><b>Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet&#8203;.where(id = 'immunization-orthopoxvirus-cvx')</b></td><td><b>error</b></td><td title=""><b>Unable to expand imported value set: No server available</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="CODESYSTEM_SHAREABLE_MISSING"> </a>
+<h2>CODESYSTEM_SHAREABLE_MISSING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-designation-use.html">fsh-generated/resources/CodeSystem-designation-use.json</a></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-health-card.html">fsh-generated/resources/CodeSystem-health-card.json</a></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-identity-assurance-level.html">fsh-generated/resources/CodeSystem-identity-assurance-level.json</a></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="CONCEPTMAP_GROUP_SOURCE_INCOMPLETE"> </a>
+<h2>CONCEPTMAP_GROUP_SOURCE_INCOMPLETE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ConceptMap-immunization-covid-mapping-cvx-air.html">input/vocabulary/immunization-covid-mapping-cvx-air.json</a></td><td><b>Source Code System http://hl7.org/fhir/sid/cvx doesn't have all content (content = not-present), so the source codes cannot be checked</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="CONCEPTMAP_GROUP_SOURCE_UNKNOWN"> </a>
+<h2>CONCEPTMAP_GROUP_SOURCE_UNKNOWN</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ConceptMap-immunization-covid-mapping-cvx-air.html">input/vocabulary/immunization-covid-mapping-cvx-air.json</a></td><td><b>The Source Code System https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="CONCEPTMAP_GROUP_TARGET_INCOMPLETE"> </a>
+<h2>CONCEPTMAP_GROUP_TARGET_INCOMPLETE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ConceptMap-immunization-covid-mapping-cvx-air.html">input/vocabulary/immunization-covid-mapping-cvx-air.json</a></td><td><b>Target Code System http://hl7.org/fhir/sid/cvx doesn't have all content (content = not-present), so the target codes cannot be checked</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="CONCEPTMAP_GROUP_TARGET_UNKNOWN"> </a>
+<h2>CONCEPTMAP_GROUP_TARGET_UNKNOWN</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ConceptMap-immunization-covid-mapping-cvx-air.html">input/vocabulary/immunization-covid-mapping-cvx-air.json</a></td><td><b>The Target Code System https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="CONCEPTMAP_SHAREABLE_MISSING"> </a>
+<h2>CONCEPTMAP_SHAREABLE_MISSING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ConceptMap-immunization-covid-mapping-cvx-air.html">input/vocabulary/immunization-covid-mapping-cvx-air.json</a></td><td><b>Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.experimental is mandatory, but it is not present</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-health-card.html">fsh-generated/resources/CodeSystem-health-card.json</a></td><td><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-health-card.json - the canonical URL (https://terminology.smarthealth.cards/CodeSystem/health-card) does not match the URL (https://smarthealth.cards#)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-identity-assurance-level.html">fsh-generated/resources/CodeSystem-identity-assurance-level.json</a></td><td><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-identity-assurance-level.json - the canonical URL (https://terminology.smarthealth.cards/CodeSystem/identity-assurance-level) does not match the URL (https://smarthealth.cards/ial)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ConceptMap-immunization-covid-mapping-cvx-air.html">input/vocabulary/immunization-covid-mapping-cvx-air.json</a></td><td><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/immunization-covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ConceptMap-immunization-covid-mapping-cvx-air.html">input/vocabulary/immunization-covid-mapping-cvx-air.json</a></td><td><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/immunization-covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SECURITY_STRING_CONTENT_WARNING"> </a>
+<h2>SECURITY_STRING_CONTENT_WARNING</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-cards.smarthealth.terminology.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-cards.smarthealth.terminology.json</a></td><td><b>The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TERMINOLOGY_TX_WARNING"> </a>
+<h2>TERMINOLOGY_TX_WARNING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-orthopoxvirus-all.html">input/vocabulary/immunization-orthopoxvirus-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-orthopoxvirus-all.html">input/vocabulary/immunization-orthopoxvirus-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-orthopoxvirus-all.html">input/vocabulary/immunization-orthopoxvirus-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-orthopoxvirus-all.html">input/vocabulary/immunization-orthopoxvirus-all.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-orthopoxvirus-cvx.html">input/vocabulary/immunization-orthopoxvirus-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-orthopoxvirus-cvx.html">input/vocabulary/immunization-orthopoxvirus-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-orthopoxvirus-cvx.html">input/vocabulary/immunization-orthopoxvirus-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-orthopoxvirus-cvx.html">input/vocabulary/immunization-orthopoxvirus-cvx.json</a></td><td><b>Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>The markdown contains content that appears to be an embedded HTML tag starting at 'A '. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>The markdown contains content that appears to be an embedded HTML tag starting at 'Pl'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-orthopoxvirus-all.html">input/vocabulary/immunization-orthopoxvirus-all.json</a></td><td><b>The markdown contains content that appears to be an embedded HTML tag starting at 'A '. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-orthopoxvirus-all.html">input/vocabulary/immunization-orthopoxvirus-all.json</a></td><td><b>The markdown contains content that appears to be an embedded HTML tag starting at 'Pl'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_18"> </a>
+<h2>Terminology_TX_NoValid_18</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-immunization-orthopoxvirus-all.html">input/vocabulary/immunization-orthopoxvirus-all.json</a></td><td><b>The value provided ('en-EU') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'en-EU' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#en-EU' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-immunization-orthopoxvirus-cvx.html">input/vocabulary/immunization-orthopoxvirus-cvx.json</a></td><td><b>The value provided ('en-EU') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'en-EU' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#en-EU' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_String_WS"> </a>
+<h2>Type_Specific_Checks_DT_String_WS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-all-cvx.html">fsh-generated/resources/ValueSet-immunization-all-cvx.json</a></td><td><b>value should not start or finish with whitespace 'COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL '</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-all-cvx.html">fsh-generated/resources/ValueSet-immunization-all-cvx.json</a></td><td><b>value should not start or finish with whitespace 'Respiratory syncytial virus (RSV), unspecified '</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>value should not start or finish with whitespace 'COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL '</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>value should not start or finish with whitespace 'Sanofi COVID-19 '</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-all.html">input/vocabulary/immunization-covid-all.json</a></td><td><b>value should not start or finish with whitespace 'Sanofi COVID-19 '</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>value should not start or finish with whitespace 'COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL '</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>value should not start or finish with whitespace 'Sanofi COVID-19 '</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-immunization-covid-cvx.html">input/vocabulary/immunization-covid-cvx.json</a></td><td><b>value should not start or finish with whitespace 'Sanofi COVID-19 '</b></td>
+   </tr>
+</table>
+</body>
+</html>

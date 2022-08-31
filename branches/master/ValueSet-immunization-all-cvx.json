@@ -1,0 +1,1096 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "immunization-all-cvx",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n        \n            <p>\n                The following codes from the <code><a href=\"http://terminology.hl7.org/6.1.0/CodeSystem-CVX.html\">http://hl7.org/fhir/sid/cvx</a></code> code system are included:\n            </p>\n            <table class=\"table-striped table table-bordered\">\n                <tr>\n                    <th>Code</th>\n                    <th>Description(s)</th>\n                </tr>\n                \n                    <tr>\n                        <td><code>54</code></td>\n                        <td>\n                            \n                                adenovirus, type 4\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>55</code></td>\n                        <td>\n                            \n                                adenovirus, type 7\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>82</code></td>\n                        <td>\n                            \n                                adenovirus, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>24</code></td>\n                        <td>\n                            \n                                anthrax\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>19</code></td>\n                        <td>\n                            \n                                BCG\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>27</code></td>\n                        <td>\n                            \n                                botulinum antitoxin\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>26</code></td>\n                        <td>\n                            \n                                cholera, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>29</code></td>\n                        <td>\n                            \n                                CMVIG\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>56</code></td>\n                        <td>\n                            \n                                dengue fever tetravalent\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>12</code></td>\n                        <td>\n                            \n                                diphtheria antitoxin\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>28</code></td>\n                        <td>\n                            \n                                DT (pediatric)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>20</code></td>\n                        <td>\n                            \n                                DTaP\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>106</code></td>\n                        <td>\n                            \n                                DTaP, 5 pertussis antigens\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>107</code></td>\n                        <td>\n                            \n                                DTaP, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>110</code></td>\n                        <td>\n                            \n                                DTaP-Hep B-IPV\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>50</code></td>\n                        <td>\n                            \n                                DTaP-Hib\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>120</code></td>\n                        <td>\n                            \n                                DTaP-Hib-IPV\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>130</code></td>\n                        <td>\n                            \n                                DTaP-IPV\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>1</code></td>\n                        <td>\n                            \n                                DTP\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>22</code></td>\n                        <td>\n                            \n                                DTP-Hib\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>102</code></td>\n                        <td>\n                            \n                                DTP-Hib-Hep B\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>57</code></td>\n                        <td>\n                            \n                                hantavirus\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>52</code></td>\n                        <td>\n                            \n                                Hep A, adult\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>83</code></td>\n                        <td>\n                            \n                                Hep A, ped/adol, 2 dose\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>84</code></td>\n                        <td>\n                            \n                                Hep A, ped/adol, 3 dose\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>31</code></td>\n                        <td>\n                            \n                                Hep A, pediatric, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>85</code></td>\n                        <td>\n                            \n                                Hep A, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>104</code></td>\n                        <td>\n                            \n                                Hep A-Hep B\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>30</code></td>\n                        <td>\n                            \n                                HBIG\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>8</code></td>\n                        <td>\n                            \n                                Hep B, adolescent or pediatric\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>42</code></td>\n                        <td>\n                            \n                                Hep B, adolescent/high risk infant\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>43</code></td>\n                        <td>\n                            \n                                Hep B, adult\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>44</code></td>\n                        <td>\n                            \n                                Hep B, dialysis\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>45</code></td>\n                        <td>\n                            \n                                Hep B, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>58</code></td>\n                        <td>\n                            \n                                Hep C\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>59</code></td>\n                        <td>\n                            \n                                Hep E\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>60</code></td>\n                        <td>\n                            \n                                herpes simplex 2\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>46</code></td>\n                        <td>\n                            \n                                Hib (PRP-D)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>47</code></td>\n                        <td>\n                            \n                                Hib (HbOC)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>48</code></td>\n                        <td>\n                            \n                                Hib (PRP-T)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>49</code></td>\n                        <td>\n                            \n                                Hib (PRP-OMP)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>17</code></td>\n                        <td>\n                            \n                                Hib, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>51</code></td>\n                        <td>\n                            \n                                Hib-Hep B\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>61</code></td>\n                        <td>\n                            \n                                HIV\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>118</code></td>\n                        <td>\n                            \n                                HPV, bivalent\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>62</code></td>\n                        <td>\n                            \n                                HPV, quadrivalent\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>86</code></td>\n                        <td>\n                            \n                                IG\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>87</code></td>\n                        <td>\n                            \n                                IGIV\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>14</code></td>\n                        <td>\n                            \n                                IG, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>111</code></td>\n                        <td>\n                            \n                                influenza, live, intranasal\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>15</code></td>\n                        <td>\n                            \n                                influenza, split (incl. purified surface antigen)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>16</code></td>\n                        <td>\n                            \n                                influenza, whole\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>88</code></td>\n                        <td>\n                            \n                                influenza, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>123</code></td>\n                        <td>\n                            \n                                influenza, H5N1-1203\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>10</code></td>\n                        <td>\n                            \n                                IPV\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>2</code></td>\n                        <td>\n                            \n                                OPV\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>89</code></td>\n                        <td>\n                            \n                                polio, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>39</code></td>\n                        <td>\n                            \n                                Japanese encephalitis SC\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>63</code></td>\n                        <td>\n                            \n                                Junin virus\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>64</code></td>\n                        <td>\n                            \n                                leishmaniasis\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>65</code></td>\n                        <td>\n                            \n                                leprosy\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>66</code></td>\n                        <td>\n                            \n                                Lyme disease\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>3</code></td>\n                        <td>\n                            \n                                MMR\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>4</code></td>\n                        <td>\n                            \n                                M/R\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>94</code></td>\n                        <td>\n                            \n                                MMRV\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>67</code></td>\n                        <td>\n                            \n                                malaria\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>5</code></td>\n                        <td>\n                            \n                                measles\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>68</code></td>\n                        <td>\n                            \n                                melanoma\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>32</code></td>\n                        <td>\n                            \n                                meningococcal MPSV4\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>103</code></td>\n                        <td>\n                            \n                                meningococcal C conjugate\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>114</code></td>\n                        <td>\n                            \n                                meningococcal MCV4P\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>108</code></td>\n                        <td>\n                            \n                                meningococcal ACWY, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>7</code></td>\n                        <td>\n                            \n                                mumps\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>69</code></td>\n                        <td>\n                            \n                                parainfluenza-3\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>11</code></td>\n                        <td>\n                            \n                                pertussis\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>23</code></td>\n                        <td>\n                            \n                                plague\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>33</code></td>\n                        <td>\n                            \n                                pneumococcal polysaccharide PPV23\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>100</code></td>\n                        <td>\n                            \n                                pneumococcal conjugate PCV 7\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>109</code></td>\n                        <td>\n                            \n                                pneumococcal, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>70</code></td>\n                        <td>\n                            \n                                Q fever\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>18</code></td>\n                        <td>\n                            \n                                rabies, intramuscular injection\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>40</code></td>\n                        <td>\n                            \n                                rabies, intradermal injection\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>90</code></td>\n                        <td>\n                            \n                                rabies, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>72</code></td>\n                        <td>\n                            \n                                rheumatic fever\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>73</code></td>\n                        <td>\n                            \n                                Rift Valley fever\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>34</code></td>\n                        <td>\n                            \n                                RIG\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>119</code></td>\n                        <td>\n                            \n                                rotavirus, monovalent\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>122</code></td>\n                        <td>\n                            \n                                rotavirus, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>116</code></td>\n                        <td>\n                            \n                                rotavirus, pentavalent\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>74</code></td>\n                        <td>\n                            \n                                rotavirus, tetravalent\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>71</code></td>\n                        <td>\n                            \n                                RSV-IGIV\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>93</code></td>\n                        <td>\n                            \n                                RSV-MAb\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>6</code></td>\n                        <td>\n                            \n                                rubella\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>38</code></td>\n                        <td>\n                            \n                                rubella/mumps\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>76</code></td>\n                        <td>\n                            \n                                Staphylococcus bacterio lysate\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>113</code></td>\n                        <td>\n                            \n                                Td (adult), 5 Lf tetanus toxoid, preservative free, adsorbed\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>9</code></td>\n                        <td>\n                            \n                                Td (adult), 2 Lf tetanus toxoid, preservative free, adsorbed\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>115</code></td>\n                        <td>\n                            \n                                Tdap\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>35</code></td>\n                        <td>\n                            \n                                tetanus toxoid, adsorbed\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>112</code></td>\n                        <td>\n                            \n                                tetanus toxoid, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>77</code></td>\n                        <td>\n                            \n                                Tick-borne encephalitis vaccine (non-US)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>13</code></td>\n                        <td>\n                            \n                                TIG\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>95</code></td>\n                        <td>\n                            \n                                TST-OT tine test\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>96</code></td>\n                        <td>\n                            \n                                TST-PPD intradermal\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>97</code></td>\n                        <td>\n                            \n                                TST-PPD tine test\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>98</code></td>\n                        <td>\n                            \n                                TST, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>78</code></td>\n                        <td>\n                            \n                                tularemia vaccine\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>91</code></td>\n                        <td>\n                            \n                                typhoid, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>25</code></td>\n                        <td>\n                            \n                                typhoid, oral\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>41</code></td>\n                        <td>\n                            \n                                typhoid, parenteral\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>53</code></td>\n                        <td>\n                            \n                                typhoid, parenteral, AKD (U.S. military)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>101</code></td>\n                        <td>\n                            \n                                typhoid, ViCPs\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>75</code></td>\n                        <td>\n                            \n                                vaccinia (smallpox)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>105</code></td>\n                        <td>\n                            \n                                vaccinia (smallpox) diluted\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>79</code></td>\n                        <td>\n                            \n                                vaccinia immune globulin\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>21</code></td>\n                        <td>\n                            \n                                varicella\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>81</code></td>\n                        <td>\n                            \n                                VEE, inactivated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>80</code></td>\n                        <td>\n                            \n                                VEE, live\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>92</code></td>\n                        <td>\n                            \n                                VEE, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>36</code></td>\n                        <td>\n                            \n                                VZIG\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>117</code></td>\n                        <td>\n                            \n                                VZIG (IND)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>37</code></td>\n                        <td>\n                            \n                                yellow fever\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>121</code></td>\n                        <td>\n                            \n                                zoster live\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>998</code></td>\n                        <td>\n                            \n                                no vaccine administered\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>999</code></td>\n                        <td>\n                            \n                                unknown\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>99</code></td>\n                        <td>\n                            \n                                RESERVED - do not use\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>133</code></td>\n                        <td>\n                            \n                                Pneumococcal conjugate PCV 13\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>134</code></td>\n                        <td>\n                            \n                                Japanese Encephalitis IM\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>137</code></td>\n                        <td>\n                            \n                                HPV, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>136</code></td>\n                        <td>\n                            \n                                Meningococcal MCV4O\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>135</code></td>\n                        <td>\n                            \n                                Influenza, high dose seasonal\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>131</code></td>\n                        <td>\n                            \n                                typhus, historical\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>132</code></td>\n                        <td>\n                            \n                                DTaP-IPV-HIB-HEP B, historical\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>128</code></td>\n                        <td>\n                            \n                                Novel Influenza-H1N1-09, all formulations\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>125</code></td>\n                        <td>\n                            \n                                Novel Influenza-H1N1-09, nasal\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>126</code></td>\n                        <td>\n                            \n                                Novel influenza-H1N1-09, preservative-free\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>127</code></td>\n                        <td>\n                            \n                                Novel influenza-H1N1-09\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>138</code></td>\n                        <td>\n                            \n                                Td (adult)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>139</code></td>\n                        <td>\n                            \n                                Td(adult) unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>140</code></td>\n                        <td>\n                            \n                                Influenza, seasonal, injectable, preservative free\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>129</code></td>\n                        <td>\n                            \n                                Japanese Encephalitis, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>141</code></td>\n                        <td>\n                            \n                                Influenza, seasonal, injectable\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>142</code></td>\n                        <td>\n                            \n                                tetanus toxoid, not adsorbed\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>143</code></td>\n                        <td>\n                            \n                                Adenovirus types 4 and 7\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>144</code></td>\n                        <td>\n                            \n                                influenza, seasonal, intradermal, preservative free\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>145</code></td>\n                        <td>\n                            \n                                RSV-MAb (new)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>146</code></td>\n                        <td>\n                            \n                                DTaP,IPV,Hib,HepB\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>147</code></td>\n                        <td>\n                            \n                                meningococcal MCV4, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>148</code></td>\n                        <td>\n                            \n                                Meningococcal C/Y-HIB PRP\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>149</code></td>\n                        <td>\n                            \n                                influenza, live, intranasal, quadrivalent\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>150</code></td>\n                        <td>\n                            \n                                influenza, injectable, quadrivalent, preservative free\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>151</code></td>\n                        <td>\n                            \n                                influenza nasal, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>152</code></td>\n                        <td>\n                            \n                                Pneumococcal Conjugate, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>153</code></td>\n                        <td>\n                            \n                                Influenza, injectable, MDCK, preservative free\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>154</code></td>\n                        <td>\n                            \n                                Hep A, IG\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>155</code></td>\n                        <td>\n                            \n                                influenza, recombinant, injectable, preservative free\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>156</code></td>\n                        <td>\n                            \n                                Rho(D)-IG\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>157</code></td>\n                        <td>\n                            \n                                Rho(D) -IG IM\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>158</code></td>\n                        <td>\n                            \n                                influenza, injectable, quadrivalent\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>159</code></td>\n                        <td>\n                            \n                                Rho(D) - Unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>160</code></td>\n                        <td>\n                            \n                                Influenza A monovalent (H5N1), ADJUVANTED-2013\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>801</code></td>\n                        <td>\n                            \n                                AS03 Adjuvant\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>161</code></td>\n                        <td>\n                            \n                                Influenza, injectable,quadrivalent, preservative free, pediatric\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>162</code></td>\n                        <td>\n                            \n                                meningococcal B, recombinant\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>163</code></td>\n                        <td>\n                            \n                                meningococcal B, OMV\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>164</code></td>\n                        <td>\n                            \n                                meningococcal B, unspecified\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>165</code></td>\n                        <td>\n                            \n                                HPV9\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>166</code></td>\n                        <td>\n                            \n                                influenza, intradermal, quadrivalent, preservative free\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>167</code></td>\n                        <td>\n                            \n                                meningococcal, unknown serogroups\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>168</code></td>\n                        <td>\n                            \n                                influenza, trivalent, adjuvanted\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>169</code></td>\n                        <td>\n                            \n                                Hep A, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>170</code></td>\n                        <td>\n                            \n                                DTAP/IPV/HIB - non-US\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>171</code></td>\n                        <td>\n                            \n                                Influenza, injectable, MDCK, preservative free, quadrivalent\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>172</code></td>\n                        <td>\n                            \n                                cholera, WC-rBS\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>173</code></td>\n                        <td>\n                            \n                                cholera, BivWC\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>174</code></td>\n                        <td>\n                            \n                                cholera, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>175</code></td>\n                        <td>\n                            \n                                Rabies - IM Diploid cell culture\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>176</code></td>\n                        <td>\n                            \n                                Rabies - IM fibroblast culture\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>177</code></td>\n                        <td>\n                            \n                                PCV10\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>178</code></td>\n                        <td>\n                            \n                                OPV bivalent\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>179</code></td>\n                        <td>\n                            \n                                OPV ,monovalent, unspecified\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>180</code></td>\n                        <td>\n                            \n                                tetanus immune globulin\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>181</code></td>\n                        <td>\n                            \n                                anthrax immune globulin\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>182</code></td>\n                        <td>\n                            \n                                OPV, Unspecified\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>183</code></td>\n                        <td>\n                            \n                                Yellow fever vaccine - alt\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>184</code></td>\n                        <td>\n                            \n                                Yellow fever, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>185</code></td>\n                        <td>\n                            \n                                influenza, recombinant, quadrivalent,injectable, preservative free\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>186</code></td>\n                        <td>\n                            \n                                Influenza, injectable, MDCK, quadrivalent, preservative\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>187</code></td>\n                        <td>\n                            \n                                zoster recombinant\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>188</code></td>\n                        <td>\n                            \n                                zoster, unspecified formulation\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>189</code></td>\n                        <td>\n                            \n                                HepB-CpG\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>190</code></td>\n                        <td>\n                            \n                                Typhoid conjugate vaccine (TCV)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>191</code></td>\n                        <td>\n                            \n                                meningococcal A polysaccharide (non-US)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>192</code></td>\n                        <td>\n                            \n                                meningococcal AC polysaccharide (non-US)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>193</code></td>\n                        <td>\n                            \n                                Hep A-Hep B, pediatric/adolescent\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>194</code></td>\n                        <td>\n                            \n                                Influenza, Southern Hemisphere\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>195</code></td>\n                        <td>\n                            \n                                DT, IPV adsorbed\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>196</code></td>\n                        <td>\n                            \n                                Td, adsorbed, preservative free, adult use, Lf unspecified\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>197</code></td>\n                        <td>\n                            \n                                influenza, high-dose, quadrivalent\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>200</code></td>\n                        <td>\n                            \n                                influenza, Southern Hemisphere, pediatric, preservative free\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>201</code></td>\n                        <td>\n                            \n                                influenza, Southern Hemisphere, preservative free\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>202</code></td>\n                        <td>\n                            \n                                influenza, Southern Hemisphere, quadrivalent, with preservative\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>198</code></td>\n                        <td>\n                            \n                                DTP-hepB-Hib Pentavalent Non-US\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>203</code></td>\n                        <td>\n                            \n                                meningococcal conjugate quadrivalent, MenACWY-TT (MCV4)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>205</code></td>\n                        <td>\n                            \n                                Influenza vaccine, quadrivalent, adjuvanted\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>206</code></td>\n                        <td>\n                            \n                                Vaccinia, smallpox Mpox vaccine live, PF, SQ or ID injection\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>207</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>208</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>213</code></td>\n                        <td>\n                            \n                                SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>210</code></td>\n                        <td>\n                            \n                                COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL \n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>212</code></td>\n                        <td>\n                            \n                                COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>204</code></td>\n                        <td>\n                            \n                                Ebola Zaire vaccine, live, recombinant, 1mL dose\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>214</code></td>\n                        <td>\n                            \n                                Ebola, unspecified\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>211</code></td>\n                        <td>\n                            \n                                COVID-19, subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>500</code></td>\n                        <td>\n                            \n                                COVID-19 Non-US Vaccine, Product Unknown\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>501</code></td>\n                        <td>\n                            \n                                COVID-19 IV Non-US Vaccine (QAZCOVID-IN)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>502</code></td>\n                        <td>\n                            \n                                COVID-19 IV Non-US Vaccine (COVAXIN)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>503</code></td>\n                        <td>\n                            \n                                COVID-19 LAV Non-US Vaccine (COVIVAC)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>504</code></td>\n                        <td>\n                            \n                                COVID-19 VVnr Non-US Vaccine (Sputnik Light)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>505</code></td>\n                        <td>\n                            \n                                COVID-19 VVnr Non-US Vaccine (Sputnik V)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>506</code></td>\n                        <td>\n                            \n                                COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>507</code></td>\n                        <td>\n                            \n                                COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>508</code></td>\n                        <td>\n                            \n                                COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>509</code></td>\n                        <td>\n                            \n                                COVID-19 PS Non-US Vaccine (EpiVacCorona)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>510</code></td>\n                        <td>\n                            \n                                COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>511</code></td>\n                        <td>\n                            \n                                COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>215</code></td>\n                        <td>\n                            \n                                Pneumococcal conjugate PCV15, polysaccharide CRM197 conjugate, adjuvant, PF\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>216</code></td>\n                        <td>\n                            \n                                Pneumococcal conjugate PCV20, polysaccharide CRM197 conjugate, adjuvant, PF\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>219</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>217</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>218</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>220</code></td>\n                        <td>\n                            \n                                HepB recombinant, 3-antigen, Al(OH)3\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>221</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL dose\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>222</code></td>\n                        <td>\n                            \n                                Tick-borne encephalitis, unspecified\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>223</code></td>\n                        <td>\n                            \n                                Tick-borne encephalitis, inactivated, PF, 0.25mL\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>224</code></td>\n                        <td>\n                            \n                                Tick-borne encephalitis, inactivated, PF, 0.5mL\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>225</code></td>\n                        <td>\n                            \n                                COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 5mcg/0.5mL\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>226</code></td>\n                        <td>\n                            \n                                COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 10mcg/0.5mL\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>512</code></td>\n                        <td>\n                            \n                                SARS-COV-2 COVID-19 VLP Non-US Vaccine (Medicago, Covifenz)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>513</code></td>\n                        <td>\n                            \n                                SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>514</code></td>\n                        <td>\n                            \n                                SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>515</code></td>\n                        <td>\n                            \n                                SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>516</code></td>\n                        <td>\n                            \n                                COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>517</code></td>\n                        <td>\n                            \n                                SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>227</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, PF, pediatric 50 mcg/0.5 mL dose\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>228</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, PF, pediatric 25 mcg/0.25 mL dose\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>229</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, bivalent, PF, 50 mcg/0.5 mL or 25mcg/0.25 mL dose\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>301</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, bivalent, PF, 10 mcg/0.2 mL dose\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>300</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, bivalent, PF, 30 mcg/0.3 mL dose\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>230</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, bivalent, PF, 10 mcg/0.2 mL\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>518</code></td>\n                        <td>\n                            \n                                COVID-19 Inactivated, Non-US Vaccine (VLA2001, Valneva)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>519</code></td>\n                        <td>\n                            \n                                COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine (Spikevax Bivalent), Moderna\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>520</code></td>\n                        <td>\n                            \n                                COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine Product, Pfizer-BioNTech\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>521</code></td>\n                        <td>\n                            \n                                COVID-19 SP, protein-based, adjuvanted (VidPrevtyn Beta), Sanofi-GSK\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>231</code></td>\n                        <td>\n                            \n                                influenza, Southern Hemisphere, high-dose, quadrivalent\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>303</code></td>\n                        <td>\n                            \n                                RSV, recombinant, protein subunit RSVpreF, adjuvant reconstituted, 0.5 mL, PF\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>304</code></td>\n                        <td>\n                            \n                                Respiratory syncytial virus (RSV), unspecified \n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>305</code></td>\n                        <td>\n                            \n                                RSV, bivalent, protein subunit RSVpreF, diluent reconstituted, 0.5 mL, PF\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>306</code></td>\n                        <td>\n                            \n                                RSV, mAb, nirsevimab-alip, 0.5 mL, neonate to 24 months\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>307</code></td>\n                        <td>\n                            \n                                RSV, mAb, nirsevimab-alip, 1 mL, neonate to 24 months\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>313</code></td>\n                        <td>\n                            \n                                COVID-19, subunit, rS-nanoparticle, adjuvanted, PF, 5 mcg/0.5 mL\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>308</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, PF, tris-sucrose, 3 mcg/0.3 mL\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>309</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, PF, tris-sucrose, 30 mcg/0.3 mL\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>310</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, PF, tris-sucrose, 10 mcg/0.3 mL\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>312</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>311</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, PF, 25 mcg/0.25 mL\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>302</code></td>\n                        <td>\n                            \n                                COVID-19, mRNA, LNP-S, bivalent, PF, 3 mcg/0.2 mL dose\n                            \n                        </td>\n                    </tr>\n                \n            </table>\n        \n</div>"
+  },
+  "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-all-cvx",
+  "version" : "20230920",
+  "name" : "ImmunizationAllCvxValueSet",
+  "title" : "Immunization / All / CVX",
+  "status" : "draft",
+  "date" : "2024-11-22T10:51:11+00:00",
+  "publisher" : "VCI",
+  "contact" : [{
+    "name" : "VCI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://vci.org"
+    }]
+  }],
+  "description" : "Contains all CVX codes from <https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx> as of 2023-09-20.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/cvx",
+      "concept" : [{
+        "code" : "54",
+        "display" : "adenovirus, type 4"
+      },
+      {
+        "code" : "55",
+        "display" : "adenovirus, type 7"
+      },
+      {
+        "code" : "82",
+        "display" : "adenovirus, unspecified formulation"
+      },
+      {
+        "code" : "24",
+        "display" : "anthrax"
+      },
+      {
+        "code" : "19",
+        "display" : "BCG"
+      },
+      {
+        "code" : "27",
+        "display" : "botulinum antitoxin"
+      },
+      {
+        "code" : "26",
+        "display" : "cholera, unspecified formulation"
+      },
+      {
+        "code" : "29",
+        "display" : "CMVIG"
+      },
+      {
+        "code" : "56",
+        "display" : "dengue fever tetravalent"
+      },
+      {
+        "code" : "12",
+        "display" : "diphtheria antitoxin"
+      },
+      {
+        "code" : "28",
+        "display" : "DT (pediatric)"
+      },
+      {
+        "code" : "20",
+        "display" : "DTaP"
+      },
+      {
+        "code" : "106",
+        "display" : "DTaP, 5 pertussis antigens"
+      },
+      {
+        "code" : "107",
+        "display" : "DTaP, unspecified formulation"
+      },
+      {
+        "code" : "110",
+        "display" : "DTaP-Hep B-IPV"
+      },
+      {
+        "code" : "50",
+        "display" : "DTaP-Hib"
+      },
+      {
+        "code" : "120",
+        "display" : "DTaP-Hib-IPV"
+      },
+      {
+        "code" : "130",
+        "display" : "DTaP-IPV"
+      },
+      {
+        "code" : "1",
+        "display" : "DTP"
+      },
+      {
+        "code" : "22",
+        "display" : "DTP-Hib"
+      },
+      {
+        "code" : "102",
+        "display" : "DTP-Hib-Hep B"
+      },
+      {
+        "code" : "57",
+        "display" : "hantavirus"
+      },
+      {
+        "code" : "52",
+        "display" : "Hep A, adult"
+      },
+      {
+        "code" : "83",
+        "display" : "Hep A, ped/adol, 2 dose"
+      },
+      {
+        "code" : "84",
+        "display" : "Hep A, ped/adol, 3 dose"
+      },
+      {
+        "code" : "31",
+        "display" : "Hep A, pediatric, unspecified formulation"
+      },
+      {
+        "code" : "85",
+        "display" : "Hep A, unspecified formulation"
+      },
+      {
+        "code" : "104",
+        "display" : "Hep A-Hep B"
+      },
+      {
+        "code" : "30",
+        "display" : "HBIG"
+      },
+      {
+        "code" : "8",
+        "display" : "Hep B, adolescent or pediatric"
+      },
+      {
+        "code" : "42",
+        "display" : "Hep B, adolescent/high risk infant"
+      },
+      {
+        "code" : "43",
+        "display" : "Hep B, adult"
+      },
+      {
+        "code" : "44",
+        "display" : "Hep B, dialysis"
+      },
+      {
+        "code" : "45",
+        "display" : "Hep B, unspecified formulation"
+      },
+      {
+        "code" : "58",
+        "display" : "Hep C"
+      },
+      {
+        "code" : "59",
+        "display" : "Hep E"
+      },
+      {
+        "code" : "60",
+        "display" : "herpes simplex 2"
+      },
+      {
+        "code" : "46",
+        "display" : "Hib (PRP-D)"
+      },
+      {
+        "code" : "47",
+        "display" : "Hib (HbOC)"
+      },
+      {
+        "code" : "48",
+        "display" : "Hib (PRP-T)"
+      },
+      {
+        "code" : "49",
+        "display" : "Hib (PRP-OMP)"
+      },
+      {
+        "code" : "17",
+        "display" : "Hib, unspecified formulation"
+      },
+      {
+        "code" : "51",
+        "display" : "Hib-Hep B"
+      },
+      {
+        "code" : "61",
+        "display" : "HIV"
+      },
+      {
+        "code" : "118",
+        "display" : "HPV, bivalent"
+      },
+      {
+        "code" : "62",
+        "display" : "HPV, quadrivalent"
+      },
+      {
+        "code" : "86",
+        "display" : "IG"
+      },
+      {
+        "code" : "87",
+        "display" : "IGIV"
+      },
+      {
+        "code" : "14",
+        "display" : "IG, unspecified formulation"
+      },
+      {
+        "code" : "111",
+        "display" : "influenza, live, intranasal"
+      },
+      {
+        "code" : "15",
+        "display" : "influenza, split (incl. purified surface antigen)"
+      },
+      {
+        "code" : "16",
+        "display" : "influenza, whole"
+      },
+      {
+        "code" : "88",
+        "display" : "influenza, unspecified formulation"
+      },
+      {
+        "code" : "123",
+        "display" : "influenza, H5N1-1203"
+      },
+      {
+        "code" : "10",
+        "display" : "IPV"
+      },
+      {
+        "code" : "2",
+        "display" : "OPV"
+      },
+      {
+        "code" : "89",
+        "display" : "polio, unspecified formulation"
+      },
+      {
+        "code" : "39",
+        "display" : "Japanese encephalitis SC"
+      },
+      {
+        "code" : "63",
+        "display" : "Junin virus"
+      },
+      {
+        "code" : "64",
+        "display" : "leishmaniasis"
+      },
+      {
+        "code" : "65",
+        "display" : "leprosy"
+      },
+      {
+        "code" : "66",
+        "display" : "Lyme disease"
+      },
+      {
+        "code" : "3",
+        "display" : "MMR"
+      },
+      {
+        "code" : "4",
+        "display" : "M/R"
+      },
+      {
+        "code" : "94",
+        "display" : "MMRV"
+      },
+      {
+        "code" : "67",
+        "display" : "malaria"
+      },
+      {
+        "code" : "5",
+        "display" : "measles"
+      },
+      {
+        "code" : "68",
+        "display" : "melanoma"
+      },
+      {
+        "code" : "32",
+        "display" : "meningococcal MPSV4"
+      },
+      {
+        "code" : "103",
+        "display" : "meningococcal C conjugate"
+      },
+      {
+        "code" : "114",
+        "display" : "meningococcal MCV4P"
+      },
+      {
+        "code" : "108",
+        "display" : "meningococcal ACWY, unspecified formulation"
+      },
+      {
+        "code" : "7",
+        "display" : "mumps"
+      },
+      {
+        "code" : "69",
+        "display" : "parainfluenza-3"
+      },
+      {
+        "code" : "11",
+        "display" : "pertussis"
+      },
+      {
+        "code" : "23",
+        "display" : "plague"
+      },
+      {
+        "code" : "33",
+        "display" : "pneumococcal polysaccharide PPV23"
+      },
+      {
+        "code" : "100",
+        "display" : "pneumococcal conjugate PCV 7"
+      },
+      {
+        "code" : "109",
+        "display" : "pneumococcal, unspecified formulation"
+      },
+      {
+        "code" : "70",
+        "display" : "Q fever"
+      },
+      {
+        "code" : "18",
+        "display" : "rabies, intramuscular injection"
+      },
+      {
+        "code" : "40",
+        "display" : "rabies, intradermal injection"
+      },
+      {
+        "code" : "90",
+        "display" : "rabies, unspecified formulation"
+      },
+      {
+        "code" : "72",
+        "display" : "rheumatic fever"
+      },
+      {
+        "code" : "73",
+        "display" : "Rift Valley fever"
+      },
+      {
+        "code" : "34",
+        "display" : "RIG"
+      },
+      {
+        "code" : "119",
+        "display" : "rotavirus, monovalent"
+      },
+      {
+        "code" : "122",
+        "display" : "rotavirus, unspecified formulation"
+      },
+      {
+        "code" : "116",
+        "display" : "rotavirus, pentavalent"
+      },
+      {
+        "code" : "74",
+        "display" : "rotavirus, tetravalent"
+      },
+      {
+        "code" : "71",
+        "display" : "RSV-IGIV"
+      },
+      {
+        "code" : "93",
+        "display" : "RSV-MAb"
+      },
+      {
+        "code" : "6",
+        "display" : "rubella"
+      },
+      {
+        "code" : "38",
+        "display" : "rubella/mumps"
+      },
+      {
+        "code" : "76",
+        "display" : "Staphylococcus bacterio lysate"
+      },
+      {
+        "code" : "113",
+        "display" : "Td (adult), 5 Lf tetanus toxoid, preservative free, adsorbed"
+      },
+      {
+        "code" : "9",
+        "display" : "Td (adult), 2 Lf tetanus toxoid, preservative free, adsorbed"
+      },
+      {
+        "code" : "115",
+        "display" : "Tdap"
+      },
+      {
+        "code" : "35",
+        "display" : "tetanus toxoid, adsorbed"
+      },
+      {
+        "code" : "112",
+        "display" : "tetanus toxoid, unspecified formulation"
+      },
+      {
+        "code" : "77",
+        "display" : "Tick-borne encephalitis vaccine (non-US)"
+      },
+      {
+        "code" : "13",
+        "display" : "TIG"
+      },
+      {
+        "code" : "95",
+        "display" : "TST-OT tine test"
+      },
+      {
+        "code" : "96",
+        "display" : "TST-PPD intradermal"
+      },
+      {
+        "code" : "97",
+        "display" : "TST-PPD tine test"
+      },
+      {
+        "code" : "98",
+        "display" : "TST, unspecified formulation"
+      },
+      {
+        "code" : "78",
+        "display" : "tularemia vaccine"
+      },
+      {
+        "code" : "91",
+        "display" : "typhoid, unspecified formulation"
+      },
+      {
+        "code" : "25",
+        "display" : "typhoid, oral"
+      },
+      {
+        "code" : "41",
+        "display" : "typhoid, parenteral"
+      },
+      {
+        "code" : "53",
+        "display" : "typhoid, parenteral, AKD (U.S. military)"
+      },
+      {
+        "code" : "101",
+        "display" : "typhoid, ViCPs"
+      },
+      {
+        "code" : "75",
+        "display" : "vaccinia (smallpox)"
+      },
+      {
+        "code" : "105",
+        "display" : "vaccinia (smallpox) diluted"
+      },
+      {
+        "code" : "79",
+        "display" : "vaccinia immune globulin"
+      },
+      {
+        "code" : "21",
+        "display" : "varicella"
+      },
+      {
+        "code" : "81",
+        "display" : "VEE, inactivated"
+      },
+      {
+        "code" : "80",
+        "display" : "VEE, live"
+      },
+      {
+        "code" : "92",
+        "display" : "VEE, unspecified formulation"
+      },
+      {
+        "code" : "36",
+        "display" : "VZIG"
+      },
+      {
+        "code" : "117",
+        "display" : "VZIG (IND)"
+      },
+      {
+        "code" : "37",
+        "display" : "yellow fever"
+      },
+      {
+        "code" : "121",
+        "display" : "zoster live"
+      },
+      {
+        "code" : "998",
+        "display" : "no vaccine administered"
+      },
+      {
+        "code" : "999",
+        "display" : "unknown"
+      },
+      {
+        "code" : "99",
+        "display" : "RESERVED - do not use"
+      },
+      {
+        "code" : "133",
+        "display" : "Pneumococcal conjugate PCV 13"
+      },
+      {
+        "code" : "134",
+        "display" : "Japanese Encephalitis IM"
+      },
+      {
+        "code" : "137",
+        "display" : "HPV, unspecified formulation"
+      },
+      {
+        "code" : "136",
+        "display" : "Meningococcal MCV4O"
+      },
+      {
+        "code" : "135",
+        "display" : "Influenza, high dose seasonal"
+      },
+      {
+        "code" : "131",
+        "display" : "typhus, historical"
+      },
+      {
+        "code" : "132",
+        "display" : "DTaP-IPV-HIB-HEP B, historical"
+      },
+      {
+        "code" : "128",
+        "display" : "Novel Influenza-H1N1-09, all formulations"
+      },
+      {
+        "code" : "125",
+        "display" : "Novel Influenza-H1N1-09, nasal"
+      },
+      {
+        "code" : "126",
+        "display" : "Novel influenza-H1N1-09, preservative-free"
+      },
+      {
+        "code" : "127",
+        "display" : "Novel influenza-H1N1-09"
+      },
+      {
+        "code" : "138",
+        "display" : "Td (adult)"
+      },
+      {
+        "code" : "139",
+        "display" : "Td(adult) unspecified formulation"
+      },
+      {
+        "code" : "140",
+        "display" : "Influenza, seasonal, injectable, preservative free"
+      },
+      {
+        "code" : "129",
+        "display" : "Japanese Encephalitis, unspecified formulation"
+      },
+      {
+        "code" : "141",
+        "display" : "Influenza, seasonal, injectable"
+      },
+      {
+        "code" : "142",
+        "display" : "tetanus toxoid, not adsorbed"
+      },
+      {
+        "code" : "143",
+        "display" : "Adenovirus types 4 and 7"
+      },
+      {
+        "code" : "144",
+        "display" : "influenza, seasonal, intradermal, preservative free"
+      },
+      {
+        "code" : "145",
+        "display" : "RSV-MAb (new)"
+      },
+      {
+        "code" : "146",
+        "display" : "DTaP,IPV,Hib,HepB"
+      },
+      {
+        "code" : "147",
+        "display" : "meningococcal MCV4, unspecified formulation"
+      },
+      {
+        "code" : "148",
+        "display" : "Meningococcal C/Y-HIB PRP"
+      },
+      {
+        "code" : "149",
+        "display" : "influenza, live, intranasal, quadrivalent"
+      },
+      {
+        "code" : "150",
+        "display" : "influenza, injectable, quadrivalent, preservative free"
+      },
+      {
+        "code" : "151",
+        "display" : "influenza nasal, unspecified formulation"
+      },
+      {
+        "code" : "152",
+        "display" : "Pneumococcal Conjugate, unspecified formulation"
+      },
+      {
+        "code" : "153",
+        "display" : "Influenza, injectable, MDCK, preservative free"
+      },
+      {
+        "code" : "154",
+        "display" : "Hep A, IG"
+      },
+      {
+        "code" : "155",
+        "display" : "influenza, recombinant, injectable, preservative free"
+      },
+      {
+        "code" : "156",
+        "display" : "Rho(D)-IG"
+      },
+      {
+        "code" : "157",
+        "display" : "Rho(D) -IG IM"
+      },
+      {
+        "code" : "158",
+        "display" : "influenza, injectable, quadrivalent"
+      },
+      {
+        "code" : "159",
+        "display" : "Rho(D) - Unspecified formulation"
+      },
+      {
+        "code" : "160",
+        "display" : "Influenza A monovalent (H5N1), ADJUVANTED-2013"
+      },
+      {
+        "code" : "801",
+        "display" : "AS03 Adjuvant"
+      },
+      {
+        "code" : "161",
+        "display" : "Influenza, injectable,quadrivalent, preservative free, pediatric"
+      },
+      {
+        "code" : "162",
+        "display" : "meningococcal B, recombinant"
+      },
+      {
+        "code" : "163",
+        "display" : "meningococcal B, OMV"
+      },
+      {
+        "code" : "164",
+        "display" : "meningococcal B, unspecified"
+      },
+      {
+        "code" : "165",
+        "display" : "HPV9"
+      },
+      {
+        "code" : "166",
+        "display" : "influenza, intradermal, quadrivalent, preservative free"
+      },
+      {
+        "code" : "167",
+        "display" : "meningococcal, unknown serogroups"
+      },
+      {
+        "code" : "168",
+        "display" : "influenza, trivalent, adjuvanted"
+      },
+      {
+        "code" : "169",
+        "display" : "Hep A, live attenuated"
+      },
+      {
+        "code" : "170",
+        "display" : "DTAP/IPV/HIB - non-US"
+      },
+      {
+        "code" : "171",
+        "display" : "Influenza, injectable, MDCK, preservative free, quadrivalent"
+      },
+      {
+        "code" : "172",
+        "display" : "cholera, WC-rBS"
+      },
+      {
+        "code" : "173",
+        "display" : "cholera, BivWC"
+      },
+      {
+        "code" : "174",
+        "display" : "cholera, live attenuated"
+      },
+      {
+        "code" : "175",
+        "display" : "Rabies - IM Diploid cell culture"
+      },
+      {
+        "code" : "176",
+        "display" : "Rabies - IM fibroblast culture"
+      },
+      {
+        "code" : "177",
+        "display" : "PCV10"
+      },
+      {
+        "code" : "178",
+        "display" : "OPV bivalent"
+      },
+      {
+        "code" : "179",
+        "display" : "OPV ,monovalent, unspecified"
+      },
+      {
+        "code" : "180",
+        "display" : "tetanus immune globulin"
+      },
+      {
+        "code" : "181",
+        "display" : "anthrax immune globulin"
+      },
+      {
+        "code" : "182",
+        "display" : "OPV, Unspecified"
+      },
+      {
+        "code" : "183",
+        "display" : "Yellow fever vaccine - alt"
+      },
+      {
+        "code" : "184",
+        "display" : "Yellow fever, unspecified formulation"
+      },
+      {
+        "code" : "185",
+        "display" : "influenza, recombinant, quadrivalent,injectable, preservative free"
+      },
+      {
+        "code" : "186",
+        "display" : "Influenza, injectable, MDCK, quadrivalent, preservative"
+      },
+      {
+        "code" : "187",
+        "display" : "zoster recombinant"
+      },
+      {
+        "code" : "188",
+        "display" : "zoster, unspecified formulation"
+      },
+      {
+        "code" : "189",
+        "display" : "HepB-CpG"
+      },
+      {
+        "code" : "190",
+        "display" : "Typhoid conjugate vaccine (TCV)"
+      },
+      {
+        "code" : "191",
+        "display" : "meningococcal A polysaccharide (non-US)"
+      },
+      {
+        "code" : "192",
+        "display" : "meningococcal AC polysaccharide (non-US)"
+      },
+      {
+        "code" : "193",
+        "display" : "Hep A-Hep B, pediatric/adolescent"
+      },
+      {
+        "code" : "194",
+        "display" : "Influenza, Southern Hemisphere"
+      },
+      {
+        "code" : "195",
+        "display" : "DT, IPV adsorbed"
+      },
+      {
+        "code" : "196",
+        "display" : "Td, adsorbed, preservative free, adult use, Lf unspecified"
+      },
+      {
+        "code" : "197",
+        "display" : "influenza, high-dose, quadrivalent"
+      },
+      {
+        "code" : "200",
+        "display" : "influenza, Southern Hemisphere, pediatric, preservative free"
+      },
+      {
+        "code" : "201",
+        "display" : "influenza, Southern Hemisphere, preservative free"
+      },
+      {
+        "code" : "202",
+        "display" : "influenza, Southern Hemisphere, quadrivalent, with preservative"
+      },
+      {
+        "code" : "198",
+        "display" : "DTP-hepB-Hib Pentavalent Non-US"
+      },
+      {
+        "code" : "203",
+        "display" : "meningococcal conjugate quadrivalent, MenACWY-TT (MCV4)"
+      },
+      {
+        "code" : "205",
+        "display" : "Influenza vaccine, quadrivalent, adjuvanted"
+      },
+      {
+        "code" : "206",
+        "display" : "Vaccinia, smallpox Mpox vaccine live, PF, SQ or ID injection"
+      },
+      {
+        "code" : "207",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose"
+      },
+      {
+        "code" : "208",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose"
+      },
+      {
+        "code" : "213",
+        "display" : "SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED"
+      },
+      {
+        "code" : "210",
+        "display" : "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL "
+      },
+      {
+        "code" : "212",
+        "display" : "COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL"
+      },
+      {
+        "code" : "204",
+        "display" : "Ebola Zaire vaccine, live, recombinant, 1mL dose"
+      },
+      {
+        "code" : "214",
+        "display" : "Ebola, unspecified"
+      },
+      {
+        "code" : "211",
+        "display" : "COVID-19, subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL"
+      },
+      {
+        "code" : "500",
+        "display" : "COVID-19 Non-US Vaccine, Product Unknown"
+      },
+      {
+        "code" : "501",
+        "display" : "COVID-19 IV Non-US Vaccine (QAZCOVID-IN)"
+      },
+      {
+        "code" : "502",
+        "display" : "COVID-19 IV Non-US Vaccine (COVAXIN)"
+      },
+      {
+        "code" : "503",
+        "display" : "COVID-19 LAV Non-US Vaccine (COVIVAC)"
+      },
+      {
+        "code" : "504",
+        "display" : "COVID-19 VVnr Non-US Vaccine (Sputnik Light)"
+      },
+      {
+        "code" : "505",
+        "display" : "COVID-19 VVnr Non-US Vaccine (Sputnik V)"
+      },
+      {
+        "code" : "506",
+        "display" : "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology"
+      },
+      {
+        "code" : "507",
+        "display" : "COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)"
+      },
+      {
+        "code" : "508",
+        "display" : "COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)"
+      },
+      {
+        "code" : "509",
+        "display" : "COVID-19 PS Non-US Vaccine (EpiVacCorona)"
+      },
+      {
+        "code" : "510",
+        "display" : "COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)"
+      },
+      {
+        "code" : "511",
+        "display" : "COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)"
+      },
+      {
+        "code" : "215",
+        "display" : "Pneumococcal conjugate PCV15, polysaccharide CRM197 conjugate, adjuvant, PF"
+      },
+      {
+        "code" : "216",
+        "display" : "Pneumococcal conjugate PCV20, polysaccharide CRM197 conjugate, adjuvant, PF"
+      },
+      {
+        "code" : "219",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose"
+      },
+      {
+        "code" : "217",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose"
+      },
+      {
+        "code" : "218",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose"
+      },
+      {
+        "code" : "220",
+        "display" : "HepB recombinant, 3-antigen, Al(OH)3"
+      },
+      {
+        "code" : "221",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL dose"
+      },
+      {
+        "code" : "222",
+        "display" : "Tick-borne encephalitis, unspecified"
+      },
+      {
+        "code" : "223",
+        "display" : "Tick-borne encephalitis, inactivated, PF, 0.25mL"
+      },
+      {
+        "code" : "224",
+        "display" : "Tick-borne encephalitis, inactivated, PF, 0.5mL"
+      },
+      {
+        "code" : "225",
+        "display" : "COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 5mcg/0.5mL"
+      },
+      {
+        "code" : "226",
+        "display" : "COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 10mcg/0.5mL"
+      },
+      {
+        "code" : "512",
+        "display" : "SARS-COV-2 COVID-19 VLP Non-US Vaccine (Medicago, Covifenz)"
+      },
+      {
+        "code" : "513",
+        "display" : "SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)"
+      },
+      {
+        "code" : "514",
+        "display" : "SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)"
+      },
+      {
+        "code" : "515",
+        "display" : "SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)"
+      },
+      {
+        "code" : "516",
+        "display" : "COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)"
+      },
+      {
+        "code" : "517",
+        "display" : "SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)"
+      },
+      {
+        "code" : "227",
+        "display" : "COVID-19, mRNA, LNP-S, PF, pediatric 50 mcg/0.5 mL dose"
+      },
+      {
+        "code" : "228",
+        "display" : "COVID-19, mRNA, LNP-S, PF, pediatric 25 mcg/0.25 mL dose"
+      },
+      {
+        "code" : "229",
+        "display" : "COVID-19, mRNA, LNP-S, bivalent, PF, 50 mcg/0.5 mL or 25mcg/0.25 mL dose"
+      },
+      {
+        "code" : "301",
+        "display" : "COVID-19, mRNA, LNP-S, bivalent, PF, 10 mcg/0.2 mL dose"
+      },
+      {
+        "code" : "300",
+        "display" : "COVID-19, mRNA, LNP-S, bivalent, PF, 30 mcg/0.3 mL dose"
+      },
+      {
+        "code" : "230",
+        "display" : "COVID-19, mRNA, LNP-S, bivalent, PF, 10 mcg/0.2 mL"
+      },
+      {
+        "code" : "518",
+        "display" : "COVID-19 Inactivated, Non-US Vaccine (VLA2001, Valneva)"
+      },
+      {
+        "code" : "519",
+        "display" : "COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine (Spikevax Bivalent), Moderna"
+      },
+      {
+        "code" : "520",
+        "display" : "COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine Product, Pfizer-BioNTech"
+      },
+      {
+        "code" : "521",
+        "display" : "COVID-19 SP, protein-based, adjuvanted (VidPrevtyn Beta), Sanofi-GSK"
+      },
+      {
+        "code" : "231",
+        "display" : "influenza, Southern Hemisphere, high-dose, quadrivalent"
+      },
+      {
+        "code" : "303",
+        "display" : "RSV, recombinant, protein subunit RSVpreF, adjuvant reconstituted, 0.5 mL, PF"
+      },
+      {
+        "code" : "304",
+        "display" : "Respiratory syncytial virus (RSV), unspecified "
+      },
+      {
+        "code" : "305",
+        "display" : "RSV, bivalent, protein subunit RSVpreF, diluent reconstituted, 0.5 mL, PF"
+      },
+      {
+        "code" : "306",
+        "display" : "RSV, mAb, nirsevimab-alip, 0.5 mL, neonate to 24 months"
+      },
+      {
+        "code" : "307",
+        "display" : "RSV, mAb, nirsevimab-alip, 1 mL, neonate to 24 months"
+      },
+      {
+        "code" : "313",
+        "display" : "COVID-19, subunit, rS-nanoparticle, adjuvanted, PF, 5 mcg/0.5 mL"
+      },
+      {
+        "code" : "308",
+        "display" : "COVID-19, mRNA, LNP-S, PF, tris-sucrose, 3 mcg/0.3 mL"
+      },
+      {
+        "code" : "309",
+        "display" : "COVID-19, mRNA, LNP-S, PF, tris-sucrose, 30 mcg/0.3 mL"
+      },
+      {
+        "code" : "310",
+        "display" : "COVID-19, mRNA, LNP-S, PF, tris-sucrose, 10 mcg/0.3 mL"
+      },
+      {
+        "code" : "312",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL"
+      },
+      {
+        "code" : "311",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 25 mcg/0.25 mL"
+      },
+      {
+        "code" : "302",
+        "display" : "COVID-19, mRNA, LNP-S, bivalent, PF, 3 mcg/0.2 mL dose"
+      }]
+    }]
+  }
+}

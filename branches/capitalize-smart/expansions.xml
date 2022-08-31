@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="7ac67820-3d10-4912-b421-da4d08d19fe0"/>
+  <meta>
+    <lastUpdated value="2022-09-01T17:36:34.854+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://terminology.smarthealth.cards/ValueSet/qualitative-covid-lab-test-value-set"/>
+    <resource>
+      <ValueSet>
+        <id value="qualitative-covid-lab-test-value-set"/>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+        
+</div>
+        </text>
+        <url value="https://terminology.smarthealth.cards/ValueSet/qualitative-covid-lab-test-value-set"/>
+        <version value="0.1.0"/>
+        <name value="QualitativeCovidLabTestValueSet"/>
+        <title value="LOINCs identifying qualitative COVID lab tests"/>
+        <status value="active"/>
+        <date value="2022-09-01T17:36:34+00:00"/>
+        <publisher value="VCI"/>
+        <contact>
+          <name value="VCI"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://vci.org"/>
+          </telecom>
+        </contact>
+        <description value="This value set includes a subset of the LOINCs found at &lt;https://loinc.org/sars-cov-2-and-covid-19/&gt; that identify COVID-19-related laboratory tests. Only those laboratory tests that include qualitative results we believe to be useful in SMART Health Cards are included."/>
+        <copyright value="This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"/>
+        <expansion>
+          <identifier value="urn:uuid:830264a2-5626-4e53-b6d6-9db3a6de191c"/>
+          <timestamp value="2022-09-01T17:36:50+00:00"/>
+          <total value="84"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.73"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94822-4"/>
+            <display value="SARS-CoV-2 RNA Sal Ql Seq"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94762-2"/>
+            <display value="SARS-CoV-2 Ab SerPl Ql IA"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94761-4"/>
+            <display value="SARS-CoV-2 IgG DBS Ql IA"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94757-2"/>
+            <display value="SARS-CoV-2 N gene Resp Ql NAA N2"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94756-4"/>
+            <display value="SARS-CoV-2 N gene Resp Ql NAA N1"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94768-9"/>
+            <display value="SARS-CoV-2 IgA SerPlBld Ql IA.rapid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94767-1"/>
+            <display value="SARS-CoV-2 S gene SerPl Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94763-0"/>
+            <display value="SARS-CoV-2 Spec Ql Cult"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94760-6"/>
+            <display value="SARS-CoV-2 N gene Nph Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94759-8"/>
+            <display value="SARS-CoV-2 RNA Nph Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94758-0"/>
+            <display value="SARS-rel CoV E gene Resp Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94661-6"/>
+            <display value="SARS-CoV-2 Ab SerPl-Imp"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94660-8"/>
+            <display value="SARS-CoV-2 RNA SerPl Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96797-6"/>
+            <display value="SARS-CoV-2 RNA OPA wash Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94647-5"/>
+            <display value="SARSr-CoV RNA Spec Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94641-8"/>
+            <display value="SARS-CoV-2 S gene Spec Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94640-0"/>
+            <display value="SARS-CoV-2 S gene Resp Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94639-2"/>
+            <display value="SARS-CoV-2 ORF1ab Spec Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94563-4"/>
+            <display value="SARS-CoV-2 IgG SerPl Ql IA"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95971-8"/>
+            <display value="SARS-CoV-2 IFN-g Bld Ql"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95970-0"/>
+            <display value="SARS-CoV-2 TCRB Bld Ql Seq"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95825-6"/>
+            <display value="SARS-CoV-2 Ab DBS Ql IA"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96123-5"/>
+            <display value="SARS-CoV-2 RdRp Upper resp Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96122-7"/>
+            <display value="SARS-rel CoV E gene Upper resp Ql NAA+prb"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96121-9"/>
+            <display value="SARS-rel CoV E gene Low resp Ql NAA+prb"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95411-5"/>
+            <display value="SARS-CoV-2 NAb Ser Ql pVNT"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95409-9"/>
+            <display value="SARS-CoV-2 N gene Nose Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95406-5"/>
+            <display value="SARS-CoV-2 RNA Nose Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96120-1"/>
+            <display value="SARS-CoV-2 RdRp Lower resp Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96119-3"/>
+            <display value="SARS-CoV-2 Ag Upper resp Ql IA"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95609-4"/>
+            <display value="SARS-CoV-2 S gene Resp Ql Seq"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95608-6"/>
+            <display value="SARS-CoV-2 RNA Resp Ql NAA+non-probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95209-3"/>
+            <display value="SARS-CoV+SARS-CoV-2 Ag Resp Ql IA.rapid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95125-1"/>
+            <display value="SARS-CoV-2 IgA+IgM SerPl Ql IA"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96448-6"/>
+            <display value="SARS-CoV-2 N gene Sal Ql NAA N1"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96603-6"/>
+            <display value="SARS-CoV-2 S RBD NAb SerPl Ql sVNT"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95416-4"/>
+            <display value="SARS-CoV-2 IgM DBS Ql IA"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95425-5"/>
+            <display value="SARS-CoV-2 N gene Sal Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94845-5"/>
+            <display value="SARS-CoV-2 RNA Sal Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96829-7"/>
+            <display value="SARS-CoV-2 RNA Spec Donr Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96752-1"/>
+            <display value="SARS-CoV-2 S gene mut Spec Ql"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96986-5"/>
+            <display value="SARS-CoV-2 N gene Nose Ql NAA+non-probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96957-6"/>
+            <display value="SARS-CoV-2 M gene Upper resp Ql NAA+prb"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96958-4"/>
+            <display value="SARS-CoV-2 N gene Sal Ql NAA N2"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94766-3"/>
+            <display value="SARS-CoV-2 N gene SerPl Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94765-5"/>
+            <display value="SARS-rel CoV E gene SerPl Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96091-4"/>
+            <display value="SARS-CoV-2 RdRp Sal Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94565-9"/>
+            <display value="SARS-CoV-2 RNA Nph Ql NAA+non-probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94564-2"/>
+            <display value="SARS-CoV-2 IgM SerPl Ql IA"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94562-6"/>
+            <display value="SARS-CoV-2 IgA SerPl Ql IA"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94559-2"/>
+            <display value="SARS-CoV-2 ORF1ab Resp Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94558-4"/>
+            <display value="SARS-CoV-2 Ag Resp Ql IA.rapid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94547-7"/>
+            <display value="SARS-CoV-2 IgG+IgM SerPl Ql IA"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94534-5"/>
+            <display value="SARS-CoV-2 RdRp Resp Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94533-7"/>
+            <display value="SARS-CoV-2 N gene Resp Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94532-9"/>
+            <display value="SARS-rel CoV+MERS RNA Resp Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94508-9"/>
+            <display value="SARS-CoV-2 IgM SerPlBld Ql IA.rapid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94507-1"/>
+            <display value="SARS-CoV-2 IgG SerPlBld Ql IA.rapid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94502-2"/>
+            <display value="SARS-rel CoV RNA Resp Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94500-6"/>
+            <display value="SARS-CoV-2 RNA Resp Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94316-7"/>
+            <display value="SARS-CoV-2 N gene Spec Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94315-9"/>
+            <display value="SARS-rel CoV E gene Spec Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94314-2"/>
+            <display value="SARS-CoV-2 RdRp Spec Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94310-0"/>
+            <display value="SARS-related CoV N Spec Ql NAA N3"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94309-2"/>
+            <display value="SARS-CoV-2 RNA Spec Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94308-4"/>
+            <display value="SARS-CoV-2 N gene Spec Ql NAA N2"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94307-6"/>
+            <display value="SARS-CoV-2 N gene Spec Ql NAA N1"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95824-9"/>
+            <display value="SARS-CoV-2 ORF1ab Sal Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95823-1"/>
+            <display value="SARS-rel CoV E gene Sal Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95542-7"/>
+            <display value="SARS-CoV-2 Ab SerPlBld Ql IA.rapid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95424-8"/>
+            <display value="SARS-CoV-2 RNA Resp Ql Seq"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="95423-0"/>
+            <display value="FLUABV + SARS-CoV-2 Resp NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="97097-0"/>
+            <display value="SARS-CoV-2 Ag Upper resp Ql IA.rapid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="97098-8"/>
+            <display value="SARS-CoV-2 Nsp2 Upper resp Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96763-8"/>
+            <display value="SARS-CoV-2 E gene Resp Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="96765-3"/>
+            <display value="SARS-CoV-2 S gene Sal Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="99772-6"/>
+            <display value="SARS-CoV-2 IFN-g Bld-Imp"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="98132-4"/>
+            <display value="SARS-CoV-2 ORF1a Resp Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="98069-8"/>
+            <display value="SARS-CoV-2 Ab Sal Ql IA.rapid"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="99596-9"/>
+            <display value="SARS-CoV-2 N IgG SerPl Ql IA"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="99597-7"/>
+            <display value="SARS-CoV-2 S IgG SerPl Ql IA"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="98493-0"/>
+            <display value="SARS-CoV-2 ORF1b Sal Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="98494-8"/>
+            <display value="SARS-CoV-2 ORF1a Sal Ql NAA+probe"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="98131-6"/>
+            <display value="SARS-CoV-2 ORF1b Resp Ql NAA+probe"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://terminology.smarthealth.cards/ValueSet/qualitative-lab-test-result-value-set"/>
+    <resource>
+      <ValueSet>
+        <id value="qualitative-lab-test-result-value-set"/>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+        
+</div>
+        </text>
+        <url value="https://terminology.smarthealth.cards/ValueSet/qualitative-lab-test-result-value-set"/>
+        <version value="0.1.0"/>
+        <name value="QualitativeLabTestResultValueSet"/>
+        <title value="Qualitative infectious disease-related lab test result codes"/>
+        <status value="active"/>
+        <date value="2022-09-01T17:36:34+00:00"/>
+        <publisher value="VCI"/>
+        <contact>
+          <name value="VCI"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://vci.org"/>
+          </telecom>
+        </contact>
+        <description value="This value set includes a codes to identify the results of qualitative lab tests related to infectious diseases."/>
+        <copyright value="This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc&#xA;&#xA;The SNOMED CT codes in this ValueSet are made available by SNOMED International to users at no cost, and are licensed under the Creative Commons Attribution 4.0 International License."/>
+        <expansion>
+          <identifier value="urn:uuid:5540aac5-6238-467b-8273-91a0d6e4c129"/>
+          <timestamp value="2022-09-01T17:36:51+00:00"/>
+          <total value="20"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.73"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA28480-4"/>
+            <display value="Ab not detected"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA28481-2"/>
+            <display value="Past infection"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA28482-0"/>
+            <display value="Recent infection"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA4259-3"/>
+            <display value="Borderline"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="10828004"/>
+            <display value="Positive (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="11214006"/>
+            <display value="Reactive (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="125154007"/>
+            <display value="Specimen unsatisfactory for evaluation (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="131194007"/>
+            <display value="Non-reactive (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260373001"/>
+            <display value="Detected (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260385009"/>
+            <display value="Negative (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="260415000"/>
+            <display value="Not detected (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="407479009"/>
+            <display value="Influenza A virus (organism)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="407480007"/>
+            <display value="Influenza B virus (organism)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="415684004"/>
+            <display value="Suspected (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="419984006"/>
+            <display value="Inconclusive (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="42425007"/>
+            <display value="Equivocal (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="455371000124106"/>
+            <display value="Invalid result (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="720735008"/>
+            <display value="Presumptive positive (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="82334004"/>
+            <display value="Indeterminate (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="840533007"/>
+            <display value="Severe acute respiratory syndrome coronavirus 2 (organism)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://terminology.smarthealth.cards/ValueSet/covid-cvx"/>
+    <resource>
+      <ValueSet>
+        <id value="covid-cvx"/>
+        <language value="en"/>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+        
+</div>
+        </text>
+        <url value="https://terminology.smarthealth.cards/ValueSet/covid-cvx"/>
+        <version value="0.1.0"/>
+        <name value="CovidCVXValueSet"/>
+        <title value="CVX Covid Codes for use in SMART Health Cards"/>
+        <status value="draft"/>
+        <date value="2021-09-22"/>
+        <publisher value="VCI"/>
+        <contact>
+          <name value="VCI"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://vci.org"/>
+          </telecom>
+        </contact>
+        <description value="A list of CVX codes with recommended consumer suitable displays for use in SMART Health Cards, with localized consumer friendly terms"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="AU"/>
+          </coding>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="US"/>
+          </coding>
+        </jurisdiction>
+        <copyright value="Creative Commons 0"/>
+        <expansion>
+          <identifier value="urn:uuid:88a7b2c6-cbf8-4bde-8b22-bb851c16e5d6"/>
+          <timestamp value="2022-09-01T17:36:51+00:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/sid/cvx|20210406"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/cvx"/>
+            <code value="207"/>
+            <display value="Moderna (Spikevax)"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/cvx"/>
+            <code value="208"/>
+            <display value="Pfizer (Comirnaty)"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/cvx"/>
+            <code value="210"/>
+            <display value="AstraZeneca (Vaxzevria)"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/cvx"/>
+            <code value="211"/>
+            <display value="Novavax COVID-19 Vaccine"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/sid/cvx"/>
+            <code value="212"/>
+            <display value="Janssen COVID-19 Vaccine"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

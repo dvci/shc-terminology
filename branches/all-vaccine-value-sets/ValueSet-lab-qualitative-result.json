@@ -1,0 +1,100 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "lab-qualitative-result",
+  "url" : "https://terminology.smarthealth.cards/ValueSet/lab-qualitative-result",
+  "version" : "2022.2",
+  "name" : "LabQualitativeResultValueSet",
+  "title" : "Qualitative infectious disease-related lab test result codes",
+  "status" : "draft",
+  "date" : "2023-06-25T12:22:10+00:00",
+  "publisher" : "VCI",
+  "contact" : [{
+    "name" : "VCI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://vci.org"
+    }]
+  }],
+  "description" : "This value set includes a codes to identify the results of qualitative lab tests related to infectious diseases.",
+  "copyright" : "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc\n\nThe SNOMED CT codes in this ValueSet are part of SNOMED GPS, which is produced by SNOMED International under the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/).\n\nAdditional information about this license specific to SNOMED International's release of the GPS:\n\n- SNOMED CT is © and ® SNOMED International. The right to maintain the GPS remains vested exclusively in SNOMED International.\n- The Licensee can redistribute the GPS.\n- The Licensee can create derivatives or implementation-related products and services based on the GPS.\n- The Licensee cannot claim that SNOMED International or any of its Members endorses the Licensee's derivative because it uses content from the GPS.\n- Neither SNOMED International nor any of the contributors accept any liability for the Licensee's use or redistribution of the GPS.\n- SNOMED CT® was originally created by the College of American Pathologists.\n\nWithout obtaining prior written permission from SNOMED International, you are expressly prohibited from using, distributing or reproducing the SNOMED International, SNOMED CT or SNOMED GPS logo, service mark or trademark. Please review all terms and conditions of use [here](http://www.snomed.org/terms-and-conditions).",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA28481-2",
+        "display" : "Past infection"
+      },
+      {
+        "code" : "LA28482-0",
+        "display" : "Recent infection"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "10828004",
+        "display" : "Positive (qualifier value)"
+      },
+      {
+        "code" : "11214006",
+        "display" : "Reactive (qualifier value)"
+      },
+      {
+        "code" : "125154007",
+        "display" : "Specimen unsatisfactory for evaluation (finding)"
+      },
+      {
+        "code" : "131194007",
+        "display" : "Non-reactive (qualifier value)"
+      },
+      {
+        "code" : "260373001",
+        "display" : "Detected (qualifier value)"
+      },
+      {
+        "code" : "260385009",
+        "display" : "Negative (qualifier value)"
+      },
+      {
+        "code" : "260415000",
+        "display" : "Not detected (qualifier value)"
+      },
+      {
+        "code" : "407479009",
+        "display" : "Influenza A virus (organism)"
+      },
+      {
+        "code" : "407480007",
+        "display" : "Influenza B virus (organism)"
+      },
+      {
+        "code" : "415684004",
+        "display" : "Suspected (qualifier value)"
+      },
+      {
+        "code" : "419984006",
+        "display" : "Inconclusive (qualifier value)"
+      },
+      {
+        "code" : "42425007",
+        "display" : "Equivocal (qualifier value)"
+      },
+      {
+        "code" : "455371000124106",
+        "display" : "Invalid result (qualifier value)"
+      },
+      {
+        "code" : "720735008",
+        "display" : "Presumptive positive (qualifier value)"
+      },
+      {
+        "code" : "82334004",
+        "display" : "Indeterminate (qualifier value)"
+      },
+      {
+        "code" : "840533007",
+        "display" : "Severe acute respiratory syndrome coronavirus 2 (organism)"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,528 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/ValueSet/immunization-covid-cvx> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "immunization-covid-cvx"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:url [ fhir:v "https://terminology.smarthealth.cards/ValueSet/immunization-covid-cvx"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2023.1"] ; # 
+  fhir:name [ fhir:v "ImmunizationCovidCvxValueSet"] ; # 
+  fhir:title [ fhir:v "Immunization / COVID / CVX"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-02-03"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "VCI"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "VCI" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://vci.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Contains [CVX (\"vaccine administered\") codes](https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx) with recommended consumer-suitable display text for use in SMART Health Cards, with localized consumer friendly terms"] ; # 
+  fhir:copyright [ fhir:v "Creative Commons 0"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "207" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-AU" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Moderna (Spikevax)" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Moderna COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "208" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-AU" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer (Comirnaty)" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Vaccine" ]
+         ] [
+           fhir:language [ fhir:v "en-NZ" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "210" ] ;
+         fhir:display [ fhir:v "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL " ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-AU" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "AstraZeneca (Vaxzevria)" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "AstraZeneca COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "211" ] ;
+         fhir:display [ fhir:v "COVID-19, subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Novavax COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "212" ] ;
+         fhir:display [ fhir:v "COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-AU" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Janssen COVID-19 Vaccine" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Janssen COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "217" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-AU" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer (Comirnaty)" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "218" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-AU" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer (Comirnaty) - Child dose" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "219" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled) COMIRNATY (BLA labeled)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "221" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Moderna COVID-19 Vaccine (non-US Spikevax)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "225" ] ;
+         fhir:display [ fhir:v "COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 5mcg/0.5mL" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Sanofi COVID-19 " ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226" ] ;
+         fhir:display [ fhir:v "COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 10mcg/0.5mL" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Sanofi COVID-19 " ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "227" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, pediatric 50 mcg/0.5 mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Moderna COVID-19 Vaccine (non-US Spikevax)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "228" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, pediatric 25 mcg/0.25 mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Moderna COVID-19 Vaccine (non-US Spikevax)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "229" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, bivalent, PF, 50 mcg/0.5 mL or 25mcg/0.25 mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Moderna COVID-19 Vaccine (non-US Spikevax)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "230" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, bivalent, PF, 10 mcg/0.2 mL" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Moderna COVID-19 Bivalent, Original + BA.4/BA.5 (Non-US Tradename Spikevax Bivalent)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "300" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, bivalent, PF, 30 mcg/0.3 mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "301" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, bivalent, PF, 10 mcg/0.2 mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "302" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, bivalent, PF, 3 mcg/0.2 mL dose" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Bivalent, Original + BA.4/BA.5 (Non-US Tradename COMIRNATY Bivalent)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "308" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, tris-sucrose, 3 mcg/0.3 mL" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Vaccine (US Only)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "309" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, tris-sucrose, 30 mcg/0.3 mL" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COMIRNATY" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "310" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, tris-sucrose, 10 mcg/0.3 mL" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer-BioNTech COVID-19 Vaccine (US Only)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "311" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 25 mcg/0.25 mL" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Moderna COVID-19 Vaccine (US only)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "312" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "SPIKEVAX" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "313" ] ;
+         fhir:display [ fhir:v "COVID-19, subunit, rS-nanoparticle, adjuvanted, PF, 5 mcg/0.5 mL" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Novavax COVID-19 Vaccine, Adjuvanted (US Only)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "501" ] ;
+         fhir:display [ fhir:v "COVID-19 IV Non-US Vaccine (QAZCOVID-IN)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 IV Non-US Vaccine (QAZCOVID-IN)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "502" ] ;
+         fhir:display [ fhir:v "COVID-19 IV Non-US Vaccine (COVAXIN)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVAXIN (Bharat) COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "503" ] ;
+         fhir:display [ fhir:v "COVID-19 LAV Non-US Vaccine (COVIVAC)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 LAV Non-US Vaccine (COVIVAC)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "504" ] ;
+         fhir:display [ fhir:v "COVID-19 VVnr Non-US Vaccine (Sputnik Light)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 VVnr Non-US Vaccine (Sputnik Light)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "505" ] ;
+         fhir:display [ fhir:v "COVID-19 VVnr Non-US Vaccine (Sputnik V)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 VVnr Non-US Vaccine (Sputnik V)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "506" ] ;
+         fhir:display [ fhir:v "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "507" ] ;
+         fhir:display [ fhir:v "COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "508" ] ;
+         fhir:display [ fhir:v "COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "509" ] ;
+         fhir:display [ fhir:v "COVID-19 PS Non-US Vaccine (EpiVacCorona)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 PS Non-US Vaccine (EpiVacCorona)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "510" ] ;
+         fhir:display [ fhir:v "COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Sinopharm (BIBP) COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "511" ] ;
+         fhir:display [ fhir:v "COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Coronavac (Sinovac) COVID-19 Vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "512" ] ;
+         fhir:display [ fhir:v "SARS-COV-2 COVID-19 VLP Non-US Vaccine (Medicago, Covifenz)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Covifenz" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "513" ] ;
+         fhir:display [ fhir:v "SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "514" ] ;
+         fhir:display [ fhir:v "SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "515" ] ;
+         fhir:display [ fhir:v "SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "516" ] ;
+         fhir:display [ fhir:v "COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "517" ] ;
+         fhir:display [ fhir:v "SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "518" ] ;
+         fhir:display [ fhir:v "COVID-19 Inactivated, Non-US Vaccine (VLA2001, Valneva)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 Inactivated, Non-US Vaccine (VLA2001, Valneva)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "519" ] ;
+         fhir:display [ fhir:v "COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine (Spikevax Bivalent), Moderna" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Moderna COVID-19 Bivalent, Original + BA.1 (Non-US Tradename Spikevax Bivalent)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "520" ] ;
+         fhir:display [ fhir:v "COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine Product, Pfizer-BioNTech" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Pfizer COVID-19 Bivalent, Original + BA.1 (Non-US Tradename COMIRNATY Bivalent)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "521" ] ;
+         fhir:display [ fhir:v "COVID-19 SP, protein-based, adjuvanted (VidPrevtyn Beta), Sanofi-GSK" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "COVID-19 SP, protein-based, adjuvanted (VidPrevtyn Beta), Sanofi-GSK" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

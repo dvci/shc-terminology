@@ -1,0 +1,206 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/ConceptMap/immunization-covid-mapping-cvx-air> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "immunization-covid-mapping-cvx-air"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from (not specified) to (not specified)</p><p>DRAFT. Published on 2021-09-22 by VCI (VCI: <a href=\"https://vci.org\">https://vci.org</a>). Creative Commons 0</p><div><p>A Mapping between CVX and AIR Codes for Covid vaccinations. This mapping is bi-directional - one group for each direction</p>\n</div><br/><p><b>Group 1</b>Mapping from <code>https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats|20210222</code> to <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-CVX.html\">PH_VaccinesAdministeredCVX_CDC_NIP</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>COVAST (COVID-19 Vaccine AstraZeneca)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>210 (COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL)</td></tr><tr><td>COMIRN (Pfizer Comirnaty)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>208 (COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose)</td></tr><tr><td>MODERN (Moderna Spikevax)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>207 (COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose)</td></tr></table><hr/><p><b>Group 2</b>Mapping from <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-CVX.html\">PH_VaccinesAdministeredCVX_CDC_NIP</a> to <code>https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats|20210222</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>210 (COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>COVAST (COVID-19 Vaccine AstraZeneca)</td></tr><tr><td>208 (COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>COMIRN (Pfizer Comirnaty)</td></tr><tr><td>207 (COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MODERN (Moderna Spikevax)</td></tr><tr><td>211 (COVID-19 vaccine, Subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>212 (COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>213 (SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>217 (COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>218 (COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>219 (COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>500 (COVID-19 Non-US Vaccine, Product Unknown)</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>501 (COVID-19 IV Non-US Vaccine (QAZCOVID-IN))</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>502 (COVID-19 IV Non-US Vaccine (COVAXIN))</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>503 (COVID-19 LAV Non-US Vaccine (COVIVAC))</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>504 (COVID-19 VVnr Non-US Vaccine (Sputnik Light))</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>505 (COVID-19 VVnr Non-US Vaccine (Sputnik V))</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>506 (COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology))</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>507 (COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences))</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>508 (COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention))</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>509 (COVID-19 PS Non-US Vaccine (EpiVacCorona))</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>510 (COVID-19 IV Non-US Vaccine (BIBP, Sinopharm))</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td>511 (COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac))</td><td colspan=\"2\" style=\"background-color: #efefef\">(not mapped)</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2022.1"] ; # 
+  fhir:name [ fhir:v "ImmunizationCovidCVXAirConceptMap"] ; # 
+  fhir:title [ fhir:v "Mapping between CVX and AIR Covid Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2021-09-22"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "VCI"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "VCI" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://vci.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A Mapping between CVX and AIR Codes for Covid vaccinations. This mapping is bi-directional - one group for each direction"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "AU" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Creative Commons 0"] ; # 
+  fhir:group ( [
+     fhir:source [ fhir:v "https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats"^^xsd:anyURI ] ;
+     fhir:sourceVersion [ fhir:v "20210222" ] ;
+     fhir:target [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "COVAST" ] ;
+       fhir:display [ fhir:v "COVID-19 Vaccine AstraZeneca" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "210" ] ;
+         fhir:display [ fhir:v "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "COMIRN" ] ;
+       fhir:display [ fhir:v "Pfizer Comirnaty" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "208" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "MODERN" ] ;
+       fhir:display [ fhir:v "Moderna Spikevax" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "207" ] ;
+         fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] [
+     fhir:source [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats"^^xsd:anyURI ] ;
+     fhir:targetVersion [ fhir:v "20210222" ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "210" ] ;
+       fhir:display [ fhir:v "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "COVAST" ] ;
+         fhir:display [ fhir:v "COVID-19 Vaccine AstraZeneca" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "208" ] ;
+       fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "COMIRN" ] ;
+         fhir:display [ fhir:v "Pfizer Comirnaty" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "207" ] ;
+       fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "MODERN" ] ;
+         fhir:display [ fhir:v "Moderna Spikevax" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "211" ] ;
+       fhir:display [ fhir:v "COVID-19 vaccine, Subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "212" ] ;
+       fhir:display [ fhir:v "COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "213" ] ;
+       fhir:display [ fhir:v "SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "217" ] ;
+       fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "218" ] ;
+       fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "219" ] ;
+       fhir:display [ fhir:v "COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "500" ] ;
+       fhir:display [ fhir:v "COVID-19 Non-US Vaccine, Product Unknown" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "501" ] ;
+       fhir:display [ fhir:v "COVID-19 IV Non-US Vaccine (QAZCOVID-IN)" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "502" ] ;
+       fhir:display [ fhir:v "COVID-19 IV Non-US Vaccine (COVAXIN)" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "503" ] ;
+       fhir:display [ fhir:v "COVID-19 LAV Non-US Vaccine (COVIVAC)" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "504" ] ;
+       fhir:display [ fhir:v "COVID-19 VVnr Non-US Vaccine (Sputnik Light)" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "505" ] ;
+       fhir:display [ fhir:v "COVID-19 VVnr Non-US Vaccine (Sputnik V)" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "506" ] ;
+       fhir:display [ fhir:v "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "507" ] ;
+       fhir:display [ fhir:v "COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "508" ] ;
+       fhir:display [ fhir:v "COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "509" ] ;
+       fhir:display [ fhir:v "COVID-19 PS Non-US Vaccine (EpiVacCorona)" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "510" ] ;
+       fhir:display [ fhir:v "COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "511" ] ;
+       fhir:display [ fhir:v "COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

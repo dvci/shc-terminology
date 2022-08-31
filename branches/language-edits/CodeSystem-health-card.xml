@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="health-card"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+<script>
+    let pTags = Array.from(document.getElementsByTagName(&quot;p&quot;));
+    pTags.filter(function(x) { return x.textContent.includes('This Code system is referenced in the content logical definition of the following value sets:')}).forEach(function(t) { t.style.display = &quot;none&quot;});
+    pTags.filter(function(x) { return x.textContent.includes('This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)')}).forEach(function(t) {t.style.display = &quot;none&quot;});
+</script>
+<div>
+    <table class="table-striped table table-bordered">
+        <tr>
+            <th>Code</th>
+            <th>Description(s)</th>
+        </tr>
+        
+            <tr>
+                <td><code>health-card</code></td>
+                <td>
+                    
+                        A VC designed to convey a &quot;Health Card&quot; (i.e., clinical data bound to a subject's identity)
+                    
+                </td>
+            </tr>
+        
+            <tr>
+                <td><code>covid19</code></td>
+                <td>
+                    
+                        A Health Card designed to convey COVID-19 details
+                    
+                </td>
+            </tr>
+        
+            <tr>
+                <td><code>monkeypox</code></td>
+                <td>
+                    
+                        A Health Card designed to convey monkeypox details
+                    
+                </td>
+            </tr>
+        
+            <tr>
+                <td><code>immunization</code></td>
+                <td>
+                    
+                        A Health Card designed to convey immunization details
+                    
+                </td>
+            </tr>
+        
+            <tr>
+                <td><code>laboratory</code></td>
+                <td>
+                    
+                        A Health Card designed to convey laboratory results
+                    
+                </td>
+            </tr>
+        
+    </table>
+</div></div>
+  </text>
+  <url value="https://smarthealth.cards"/>
+  <version value="0.1.0"/>
+  <name value="HealthCardTypeCodeSystem"/>
+  <title value="Health Card Type Code System"/>
+  <status value="active"/>
+  <date value="2022-09-02T20:55:52+00:00"/>
+  <publisher value="VCI"/>
+  <contact>
+    <name value="VCI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://vci.org"/>
+    </telecom>
+  </contact>
+  <description value="A code system defining various credential types for SMART Health Cards"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="health-card"/>
+    <display value="A VC designed to convey a &quot;Health Card&quot; (i.e., clinical data bound to a subject's identity)"/>
+  </concept>
+  <concept>
+    <code value="covid19"/>
+    <display value="A Health Card designed to convey COVID-19 details"/>
+  </concept>
+  <concept>
+    <code value="monkeypox"/>
+    <display value="A Health Card designed to convey monkeypox details"/>
+  </concept>
+  <concept>
+    <code value="immunization"/>
+    <display value="A Health Card designed to convey immunization details"/>
+  </concept>
+  <concept>
+    <code value="laboratory"/>
+    <display value="A Health Card designed to convey laboratory results"/>
+  </concept>
+</CodeSystem>

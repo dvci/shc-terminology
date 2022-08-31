@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/ValueSet/immunization-orthopoxvirus-cvx> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "immunization-orthopoxvirus-cvx"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:url [ fhir:v "https://terminology.smarthealth.cards/ValueSet/immunization-orthopoxvirus-cvx"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2022.1"] ; # 
+  fhir:name [ fhir:v "ImmunizationOrthopoxvirusCvxValueSet"] ; # 
+  fhir:title [ fhir:v "Immunization / orthopoxvirus / CVX"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2022-09-11"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "VCI"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "VCI" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://vci.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Contains [CVX (\"vaccine administered\") codes](https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx) with recommended consumer-suitable displays for use in SMART Health Cards, with localized consumer friendly terms"] ; # 
+  fhir:copyright [ fhir:v "Creative Commons 0"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "206" ] ;
+         fhir:display [ fhir:v "Vaccinia, smallpox Mpox vaccine live, PF, SQ or ID injection" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Jynneos" ]
+         ] [
+           fhir:language [ fhir:v "en-EU" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Imvanex" ]
+         ] [
+           fhir:language [ fhir:v "en-CA" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Imvamune" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "75" ] ;
+         fhir:display [ fhir:v "vaccinia (smallpox)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "ACAM2000" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

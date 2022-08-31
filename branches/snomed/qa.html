@@ -1,0 +1,528 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = errors = 21, warn = 94, info = 1, 0 -->
+<head>
+  <title>SMARTHealthCardsTerminology : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for SMARTHealthCardsTerminology</h1>
+ <p>Generated Thu Sep 15 18:51:16 UTC 2022, FHIR version 4.0.1 for cards.smarthealth.terminology#0.1.0 (canonical = <a href="https://terminology.smarthealth.cards">https://terminology.smarthealth.cards</a> (<a href="https://terminology.smarthealth.cards/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.2.1</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = cards.smarthealth.terminology, Canonical = https://terminology.smarthealth.cards</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.1.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/shc-terminology/shc-terminology/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> cards.smarthealth.terminology</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://terminology.smarthealth.cards</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/shc-terminology/shc-terminology/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/4.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: org.vci.ig-template#0.1.0 -&gt; fhir.base.template#current</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://terminology.smarthealth.cards (Problem #1 with package-list.json at https://terminology.smarthealth.cards: Invalid HTTP response 404 from https://terminology.smarthealth.cards/package-list.json?nocache=1663267582360 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>Summary:</td><td> errors = 21, warn = 94, info = 1, broken links = 0</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_CodeSystem-designation-use"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-designation-use</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ImplementationGuide-cards.smarthealth.terminology"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ImplementationGuide-cards.smarthealth.terminology</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-covid-19-vaccine-snomed-value-set"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-covid-19-vaccine-snomed-value-set</b></a></td><td><b>0</b></td><td><b>88</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-qualitative-covid-lab-test-value-set"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-qualitative-covid-lab-test-value-set</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-qualitative-lab-test-result-value-set"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-qualitative-lab-test-result-value-set</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_covid-cvx"><b>/home/runner/work/shc-terminology/shc-terminology/input/vocabulary/covid-cvx</b></a></td><td><b>18</b></td><td><b>6</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_covid-mapping-cvx-air"><b>/home/runner/work/shc-terminology/shc-terminology/input/vocabulary/covid-mapping-cvx-air</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_CodeSystem-designation-use"> </a>
+<h2><a href="CodeSystem-designation-use.html">fsh-generated/resources/CodeSystem-designation-use.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem</b></td><td><b>information</b></td><td title=""><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ImplementationGuide-cards.smarthealth.terminology"> </a>
+<h2><a href="ImplementationGuide-cards.smarthealth.terminology.html">fsh-generated/resources/ImplementationGuide-cards.smarthealth.terminology.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"></div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-covid-19-vaccine-snomed-value-set"> </a>
+<h2><a href="ValueSet-covid-19-vaccine-snomed-value-set.html">fsh-generated/resources/ValueSet-covid-19-vaccine-snomed-value-set.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[0]</b></td><td><b>warning</b></td><td title=""><b>The code 1031000172108 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[1]</b></td><td><b>warning</b></td><td title=""><b>The code 10871000172106 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[2]</b></td><td><b>warning</b></td><td title=""><b>The code 10891000172107 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[3]</b></td><td><b>warning</b></td><td title=""><b>The code 10901000172106 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[4]</b></td><td><b>warning</b></td><td title=""><b>The code 1401000220108 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[5]</b></td><td><b>warning</b></td><td title=""><b>The code 1411000220106 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[6]</b></td><td><b>warning</b></td><td title=""><b>The code 1421000220104 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[7]</b></td><td><b>warning</b></td><td title=""><b>The code 28571000087109 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[8]</b></td><td><b>warning</b></td><td title=""><b>The code 28581000087106 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[9]</b></td><td><b>warning</b></td><td title=""><b>The code 28761000087108 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[10]</b></td><td><b>warning</b></td><td title=""><b>The code 28951000087107 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[11]</b></td><td><b>warning</b></td><td title=""><b>The code 28961000087105 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[12]</b></td><td><b>warning</b></td><td title=""><b>The code 29171000087106 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[13]</b></td><td><b>warning</b></td><td title=""><b>The code 30151000087105 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[14]</b></td><td><b>warning</b></td><td title=""><b>The code 31301000087101 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[15]</b></td><td><b>warning</b></td><td title=""><b>The code 31311000087104 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[16]</b></td><td><b>warning</b></td><td title=""><b>The code 31341000087103 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[17]</b></td><td><b>warning</b></td><td title=""><b>The code 31431000087100 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[18]</b></td><td><b>warning</b></td><td title=""><b>The code 33201000087108 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[19]</b></td><td><b>warning</b></td><td title=""><b>The code 33211000087105 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[20]</b></td><td><b>warning</b></td><td title=""><b>The code 33221000087102 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[21]</b></td><td><b>warning</b></td><td title=""><b>The code 33361000087101 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[22]</b></td><td><b>warning</b></td><td title=""><b>The code 33391000087109 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[23]</b></td><td><b>warning</b></td><td title=""><b>The code 33401000087107 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[24]</b></td><td><b>warning</b></td><td title=""><b>The code 33411000087109 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[25]</b></td><td><b>warning</b></td><td title=""><b>The code 33421000087101 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[26]</b></td><td><b>warning</b></td><td title=""><b>The code 33431000087104 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[27]</b></td><td><b>warning</b></td><td title=""><b>The code 33441000087105 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[28]</b></td><td><b>warning</b></td><td title=""><b>The code 33451000087108 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[29]</b></td><td><b>warning</b></td><td title=""><b>The code 33461000087106 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[30]</b></td><td><b>warning</b></td><td title=""><b>The code 33471000087102 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[31]</b></td><td><b>warning</b></td><td title=""><b>The code 33581000087104 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[32]</b></td><td><b>warning</b></td><td title=""><b>The code 33881000087102 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[33]</b></td><td><b>warning</b></td><td title=""><b>The code 34591000087100 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[34]</b></td><td><b>warning</b></td><td title=""><b>The code 34601000087108 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[35]</b></td><td><b>warning</b></td><td title=""><b>The code 34611000087105 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[36]</b></td><td><b>warning</b></td><td title=""><b>The code 34921000087108 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[37]</b></td><td><b>warning</b></td><td title=""><b>The code 384671000221101 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[38]</b></td><td><b>warning</b></td><td title=""><b>The code 399651000221108 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[39]</b></td><td><b>warning</b></td><td title=""><b>The code 399661000221105 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[40]</b></td><td><b>warning</b></td><td title=""><b>The code 399681000221103 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[41]</b></td><td><b>warning</b></td><td title=""><b>The code 399691000221100 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[42]</b></td><td><b>warning</b></td><td title=""><b>The code 399701000221100 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[43]</b></td><td><b>warning</b></td><td title=""><b>The code 399771000221108 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[44]</b></td><td><b>warning</b></td><td title=""><b>The code 399781000221106 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[45]</b></td><td><b>warning</b></td><td title=""><b>The code 399801000221105 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[46]</b></td><td><b>warning</b></td><td title=""><b>The code 399811000221108 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[47]</b></td><td><b>warning</b></td><td title=""><b>The code 399821000221103 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[48]</b></td><td><b>warning</b></td><td title=""><b>The code 399861000221106 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[49]</b></td><td><b>warning</b></td><td title=""><b>The code 399871000221102 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[50]</b></td><td><b>warning</b></td><td title=""><b>The code 399881000221104 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[51]</b></td><td><b>warning</b></td><td title=""><b>The code 399891000221101 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[52]</b></td><td><b>warning</b></td><td title=""><b>The code 399901000221102 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[53]</b></td><td><b>warning</b></td><td title=""><b>The code 399911000221104 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[54]</b></td><td><b>warning</b></td><td title=""><b>The code 424531000221101 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[55]</b></td><td><b>warning</b></td><td title=""><b>The code 424541000221108 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[56]</b></td><td><b>warning</b></td><td title=""><b>The code 424551000221105 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[57]</b></td><td><b>warning</b></td><td title=""><b>The code 424561000221107 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[58]</b></td><td><b>warning</b></td><td title=""><b>The code 424571000221103 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[59]</b></td><td><b>warning</b></td><td title=""><b>The code 424581000221100 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[60]</b></td><td><b>warning</b></td><td title=""><b>The code 424591000221102 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[61]</b></td><td><b>warning</b></td><td title=""><b>The code 424601000221107 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[62]</b></td><td><b>warning</b></td><td title=""><b>The code 424611000221105 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[63]</b></td><td><b>warning</b></td><td title=""><b>The code 424621000221100 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[64]</b></td><td><b>warning</b></td><td title=""><b>The code 424631000221102 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[65]</b></td><td><b>warning</b></td><td title=""><b>The code 424641000221109 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[66]</b></td><td><b>warning</b></td><td title=""><b>The code 424651000221106 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[67]</b></td><td><b>warning</b></td><td title=""><b>The code 424661000221108 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[68]</b></td><td><b>warning</b></td><td title=""><b>The code 424671000221104 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[69]</b></td><td><b>warning</b></td><td title=""><b>The code 424681000221101 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[70]</b></td><td><b>warning</b></td><td title=""><b>The code 424691000221103 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[71]</b></td><td><b>warning</b></td><td title=""><b>The code 424701000221103 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[72]</b></td><td><b>warning</b></td><td title=""><b>The code 424711000221100 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[73]</b></td><td><b>warning</b></td><td title=""><b>The code 424721000221105 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[74]</b></td><td><b>warning</b></td><td title=""><b>The code 424731000221108 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[75]</b></td><td><b>warning</b></td><td title=""><b>The code 424741000221101 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[76]</b></td><td><b>warning</b></td><td title=""><b>The code 424751000221104 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[77]</b></td><td><b>warning</b></td><td title=""><b>The code 424781000221109 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[78]</b></td><td><b>warning</b></td><td title=""><b>The code 424791000221107 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[79]</b></td><td><b>warning</b></td><td title=""><b>The code 424801000221108 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[80]</b></td><td><b>warning</b></td><td title=""><b>The code 424821000221101 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[81]</b></td><td><b>warning</b></td><td title=""><b>The code 424831000221103 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[82]</b></td><td><b>warning</b></td><td title=""><b>The code 424971000221108 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[83]</b></td><td><b>warning</b></td><td title=""><b>The code 425001000221100 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[84]</b></td><td><b>warning</b></td><td title=""><b>The code 425011000221102 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[85]</b></td><td><b>warning</b></td><td title=""><b>The code 425031000221105 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[86]</b></td><td><b>warning</b></td><td title=""><b>The code 425051000221101 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[87]</b></td><td><b>warning</b></td><td title=""><b>The code 62051000220105 is not valid in the system http://snomed.info/sct</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-qualitative-covid-lab-test-value-set"> </a>
+<h2><a href="ValueSet-qualitative-covid-lab-test-value-set.html">fsh-generated/resources/ValueSet-qualitative-covid-lab-test-value-set.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_ValueSet-qualitative-lab-test-result-value-set"> </a>
+<h2><a href="ValueSet-qualitative-lab-test-result-value-set.html">fsh-generated/resources/ValueSet-qualitative-lab-test-result-value-set.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_covid-cvx"> </a>
+<h2><a href="ValueSet-covid-cvx.html">input/vocabulary/covid-cvx.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[0].designation[0].use (l53/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[0].designation[1].use (l61/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[1].designation[0].use (l75/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[1].designation[1].use (l83/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[1].designation[2].use (l91/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[2].designation[0].use (l105/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[2].designation[1].use (l113/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[3].designation[0].use (l127/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[3].designation[1].use (l135/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[4].designation[0].use (l149/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[4].designation[1].use (l157/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[5].designation[0].use (l171/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[5].designation[1].use (l179/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[6].designation[0].use (l193/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[7].designation[0].use (l207/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[8].designation[0].use (l221/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[9].designation[0].use (l235/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[10].designation[0].use (l249/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[4]</b></td><td><b>warning</b></td><td title=""><b>The code 217 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[5]</b></td><td><b>warning</b></td><td title=""><b>The code 218 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[6]</b></td><td><b>warning</b></td><td title=""><b>The code 510 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[7]</b></td><td><b>warning</b></td><td title=""><b>The code 511 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[9]</b></td><td><b>warning</b></td><td title=""><b>The code 219 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[10]</b></td><td><b>warning</b></td><td title=""><b>The code 502 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_covid-mapping-cvx-air"> </a>
+<h2><a href="ConceptMap-covid-mapping-cvx-air.html">input/vocabulary/covid-mapping-cvx-air.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>ConceptMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/conceptmap.html">ConceptMap</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ConceptMap.where(url = 'https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ConceptMap.where(url = 'https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/vocabulary/covid-mapping-cvx-air</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://terminology.smarthealth.cards/ConceptMap/covid-mapping-cvx-air vs https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ConceptMap-covid-mapping-cvx-air.html">input/vocabulary/covid-mapping-cvx-air.json</a></td><td><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ConceptMap-covid-mapping-cvx-air.html">input/vocabulary/covid-mapping-cvx-air.json</a></td><td><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)</b></td>
+   </tr>
+</table>
+</body>
+</html>

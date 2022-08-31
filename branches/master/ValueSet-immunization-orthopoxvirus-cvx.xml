@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="immunization-orthopoxvirus-cvx"/>
+  <language value="en"/>
+  <url value="https://terminology.smarthealth.cards/ValueSet/immunization-orthopoxvirus-cvx"/>
+  <version value="2022.1"/>
+  <name value="ImmunizationOrthopoxvirusCvxValueSet"/>
+  <title value="Immunization / orthopoxvirus / CVX"/>
+  <status value="active"/>
+  <date value="2022-09-11"/>
+  <publisher value="VCI"/>
+  <contact>
+    <name value="VCI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://vci.org"/>
+    </telecom>
+  </contact>
+  <description value="Contains [CVX (&quot;vaccine administered&quot;) codes](https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx) with recommended consumer-suitable displays for use in SMART Health Cards, with localized consumer friendly terms"/>
+  <copyright value="Creative Commons 0"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+      <concept>
+        <code value="206"/>
+        <display value="Vaccinia, smallpox Mpox vaccine live, PF, SQ or ID injection"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="https://terminology.smarthealth.cards/CodeSystem/designation-use"/>
+          </use>
+          <value value="Jynneos"/>
+        </designation>
+        <designation>
+          <language value="en-EU"/>
+          <use>
+            <system value="https://terminology.smarthealth.cards/CodeSystem/designation-use"/>
+          </use>
+          <value value="Imvanex"/>
+        </designation>
+        <designation>
+          <language value="en-CA"/>
+          <use>
+            <system value="https://terminology.smarthealth.cards/CodeSystem/designation-use"/>
+          </use>
+          <value value="Imvamune"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="75"/>
+        <display value="vaccinia (smallpox)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="https://terminology.smarthealth.cards/CodeSystem/designation-use"/>
+          </use>
+          <value value="ACAM2000"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

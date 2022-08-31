@@ -1,0 +1,117 @@
+﻿SMARTHealthCardsTerminology : Validation Results
+=========================================
+
+err = 57, warn = 31, info = 1
+IG Publisher Version: 1.1.131
+Generated Sun Sep 11 11:03:13 UTC 2022. FHIR version 4.0.1 for cards.smarthealth.terminology#0.1.0 (canonical = https://terminology.smarthealth.cards)
+ Build Errors : 1 / 0 / 0
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-designation-use : 2 / 0 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-health-card : 4 / 0 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-identity-assurance-level : 4 / 0 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ImplementationGuide-cards.smarthealth.terminology : 0 / 0 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-qualitative-covid-lab-test-value-set : 0 / 0 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-qualitative-lab-test-result-value-set : 0 / 0 / 1
+ /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/covid-cvx : 40 / 31 / 1
+ /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/covid-mapping-cvx-air : 3 / 0 / 1
+ /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/monkeypox-cvx : 4 / 0 / 2
+</table>
+== n/a ==
+ERROR: /home/runner/work/shc-terminology/shc-terminology/output/index.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 231, column 12: The link 'ValueSet-covid-19-vaccine-snomed-value-set.html' for "SNOMED CT" cannot be resolved
+== fsh-generated/resources/CodeSystem-designation-use.json ==
+ERROR: CodeSystem/designation-use: CodeSystem.text.div: Rule txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Failed
+ERROR: CodeSystem/designation-use: CodeSystem.text.div: Illegal element name in the XHTML ('script')
+== fsh-generated/resources/CodeSystem-health-card.json ==
+ERROR: CodeSystem.where(url = 'https://smarthealth.cards#'): Conformance resource /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-health-card.json - the canonical URL (https://terminology.smarthealth.cards/CodeSystem/health-card) does not match the URL (https://smarthealth.cards#)
+ERROR: CodeSystem/health-card: CodeSystem.text.div: Rule txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Failed
+ERROR: CodeSystem/health-card: CodeSystem.text.div: Illegal element name in the XHTML ('script')
+ERROR: /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-health-card: URL Mismatch https://terminology.smarthealth.cards/CodeSystem/health-card vs https://smarthealth.cards#
+== fsh-generated/resources/CodeSystem-identity-assurance-level.json ==
+ERROR: CodeSystem.where(url = 'https://smarthealth.cards/ial'): Conformance resource /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-identity-assurance-level.json - the canonical URL (https://terminology.smarthealth.cards/CodeSystem/identity-assurance-level) does not match the URL (https://smarthealth.cards/ial)
+ERROR: CodeSystem/identity-assurance-level: CodeSystem.text.div: Rule txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Failed
+ERROR: CodeSystem/identity-assurance-level: CodeSystem.text.div: Illegal element name in the XHTML ('script')
+ERROR: /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-identity-assurance-level: URL Mismatch https://terminology.smarthealth.cards/CodeSystem/identity-assurance-level vs https://smarthealth.cards/ial
+== fsh-generated/resources/ImplementationGuide-cards.smarthealth.terminology.json ==
+== fsh-generated/resources/ValueSet-qualitative-covid-lab-test-value-set.json ==
+== fsh-generated/resources/ValueSet-qualitative-lab-test-result-value-set.json ==
+== input/vocabulary/covid-cvx.json ==
+ERROR: ValueSet.compose.include[0].concept[0].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[0].designation[1].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[1].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[2].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[2].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[2].designation[1].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[3].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[4].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[4].designation[1].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[5].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[5].designation[1].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[6].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[6].designation[1].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[7].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[8].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[9].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[10].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[11].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[12].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[13].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[14].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[15].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[16].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[17].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[18].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[19].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[20].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[21].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[22].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[23].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[24].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[25].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[26].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[27].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[28].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[29].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[30].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[31].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[32].designation[0].use: Unrecognised property '@use'
+WARNING: ValueSet/covid-cvx: ValueSet.compose.include[0].concept[2].display: value should not start or finish with whitespace 'COVID-19...mL '
+WARNING: ValueSet/covid-cvx: ValueSet.compose.include[0].concept[9].designation[0].value: value should not start or finish with whitespace 'Sanofi...COVID-19 '
+WARNING: ValueSet/covid-cvx: ValueSet.compose.include[0].concept[10].designation[0].value: value should not start or finish with whitespace 'Sanofi...COVID-19 '
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[5]: The code 217 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[6]: The code 218 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[7]: The code 219 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[8]: The code 221 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[9]: The code 225 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[10]: The code 226 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[11]: The code 227 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[12]: The code 228 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[13]: The code 229 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[14]: The code 300 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[15]: The code 301 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[16]: The code 501 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[17]: The code 502 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[18]: The code 503 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[19]: The code 504 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[20]: The code 505 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[21]: The code 506 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[22]: The code 507 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[23]: The code 508 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[24]: The code 509 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[25]: The code 510 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[26]: The code 511 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[27]: The code 512 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[28]: The code 513 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[29]: The code 514 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[30]: The code 515 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[31]: The code 516 is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/covid-cvx: ValueSet.compose[0].include[0].concept[32]: The code 517 is not valid in the system http://hl7.org/fhir/sid/cvx
+== input/vocabulary/covid-mapping-cvx-air.json ==
+ERROR: ConceptMap.where(url = 'https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air'): Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)
+ERROR: ConceptMap.where(url = 'https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air'): Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)
+ERROR: /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/covid-mapping-cvx-air: URL Mismatch https://terminology.smarthealth.cards/ConceptMap/covid-mapping-cvx-air vs https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air
+== input/vocabulary/monkeypox-cvx.json ==
+ERROR: ValueSet.compose.include[0].concept[0].designation[0].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[0].designation[1].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[0].designation[2].use: Unrecognised property '@use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[0].use: Unrecognised property '@use'
+INFORMATION: ValueSet/monkeypox-cvx: ValueSet.compose.include[0].concept[0].designation[1].language: The value provided ('en-EU') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#en-EU) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))

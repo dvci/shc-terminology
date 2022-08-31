@@ -1,0 +1,265 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/ConceptMap/covid-mapping-cvx-air> a fhir:ConceptMap;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "covid-mapping-cvx-air"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CovidCVXAirConceptMap (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)</h2><p>Mapping from (not specified) to (not specified)</p><p>DRAFT. Published on 2021-09-22 by VCI (VCI: <a href=\"https://vci.org\">https://vci.org</a>). Creative Commons 0</p><div><p>A Mapping between CVX and AIR Codes for Covid vaccinations. This mapping is bi-directional - one group for each direction</p>\n</div><br/><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td></tr><tr><td colspan=\"3\">Mapping from <code>https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats|20210222</code> to <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-CVX.html\">PH_VaccinesAdministeredCVX_CDC_NIP</a></td></tr><tr><td>COVAST (COVID-19 Vaccine AstraZeneca)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>210 (COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL)</td></tr><tr><td>COMIRN (Pfizer Comirnaty)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>208 (COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose)</td></tr><tr><td>MODERN (Moderna Spikevax)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>207 (COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose)</td></tr></table><table class=\"grid\"><tr><td colspan=\"2\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Target Concept Details</b></td></tr><tr><td colspan=\"2\"><b>Code</b> from <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-CVX.html\" title=\"http://hl7.org/fhir/sid/cvx\">PH_VaccinesAdministeredCVX_CDC_NIP</a></td><td/><td colspan=\"2\"><b>Code</b> from https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats|20210222</td></tr><tr><td style=\"border-right-width: 0px\">210</td><td style=\"border-left-width: 0px\">COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">COVAST</td><td style=\"border-left-width: 0px\">COVID-19 Vaccine AstraZeneca</td></tr><tr><td style=\"border-right-width: 0px\">208</td><td style=\"border-left-width: 0px\">COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">COMIRN</td><td style=\"border-left-width: 0px\">Pfizer Comirnaty</td></tr><tr><td style=\"border-right-width: 0px\">207</td><td style=\"border-left-width: 0px\">COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">MODERN</td><td style=\"border-left-width: 0px\">Moderna Spikevax</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">211</td><td style=\"border-left-width: 0px\">COVID-19 vaccine, Subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">212</td><td style=\"border-left-width: 0px\">COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">213</td><td style=\"border-left-width: 0px\">SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">217</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">218</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">219</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">500</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">501</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">502</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">503</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">504</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">505</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">506</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">507</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">508</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">509</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">510</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">511</td><td style=\"border-left-width: 0px\"></td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr></table></div>"
+  ];
+  fhir:ConceptMap.url [ fhir:value "https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air"];
+  fhir:ConceptMap.version [ fhir:value "0.1.0"];
+  fhir:ConceptMap.name [ fhir:value "CovidCVXAirConceptMap"];
+  fhir:ConceptMap.title [ fhir:value "Mapping between CVX and AIR Covid Codes"];
+  fhir:ConceptMap.status [ fhir:value "draft"];
+  fhir:ConceptMap.date [ fhir:value "2021-09-22"^^xsd:date];
+  fhir:ConceptMap.publisher [ fhir:value "VCI"];
+  fhir:ConceptMap.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "VCI" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://vci.org" ]
+     ]
+  ];
+  fhir:ConceptMap.description [ fhir:value "A Mapping between CVX and AIR Codes for Covid vaccinations. This mapping is bi-directional - one group for each direction"];
+  fhir:ConceptMap.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "AU" ]
+     ]
+  ];
+  fhir:ConceptMap.copyright [ fhir:value "Creative Commons 0"];
+  fhir:ConceptMap.group [
+     fhir:index 0;
+     fhir:ConceptMap.group.source [ fhir:value "https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats" ];
+     fhir:ConceptMap.group.sourceVersion [ fhir:value "20210222" ];
+     fhir:ConceptMap.group.target [ fhir:value "http://hl7.org/fhir/sid/cvx" ];
+     fhir:ConceptMap.group.element [
+       fhir:index 0;
+       fhir:ConceptMap.group.element.code [ fhir:value "COVAST" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19 Vaccine AstraZeneca" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "210" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ConceptMap.group.element.code [ fhir:value "COMIRN" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "Pfizer Comirnaty" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "208" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ConceptMap.group.element.code [ fhir:value "MODERN" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "Moderna Spikevax" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "207" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ConceptMap.group.source [ fhir:value "http://hl7.org/fhir/sid/cvx" ];
+     fhir:ConceptMap.group.target [ fhir:value "https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats" ];
+     fhir:ConceptMap.group.targetVersion [ fhir:value "20210222" ];
+     fhir:ConceptMap.group.element [
+       fhir:index 0;
+       fhir:ConceptMap.group.element.code [ fhir:value "210" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "COVAST" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "COVID-19 Vaccine AstraZeneca" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ConceptMap.group.element.code [ fhir:value "208" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "COMIRN" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Pfizer Comirnaty" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ConceptMap.group.element.code [ fhir:value "207" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "MODERN" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Moderna Spikevax" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ConceptMap.group.element.code [ fhir:value "211" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19 vaccine, Subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ConceptMap.group.element.code [ fhir:value "212" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:ConceptMap.group.element.code [ fhir:value "213" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:ConceptMap.group.element.code [ fhir:value "217" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:ConceptMap.group.element.code [ fhir:value "218" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:ConceptMap.group.element.code [ fhir:value "219" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:ConceptMap.group.element.code [ fhir:value "500" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19 Non-US Vaccine, Product Unknown" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:ConceptMap.group.element.code [ fhir:value "501" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19 IV Non-US Vaccine (QAZCOVID-IN)" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:ConceptMap.group.element.code [ fhir:value "502" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19 IV Non-US Vaccine (COVAXIN)" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:ConceptMap.group.element.code [ fhir:value "503" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19 LAV Non-US Vaccine (COVIVAC)" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 13;
+       fhir:ConceptMap.group.element.code [ fhir:value "504" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19 VVnr Non-US Vaccine (Sputnik Light)" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:ConceptMap.group.element.code [ fhir:value "505" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19 VVnr Non-US Vaccine (Sputnik V)" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 15;
+       fhir:ConceptMap.group.element.code [ fhir:value "506" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 16;
+       fhir:ConceptMap.group.element.code [ fhir:value "507" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 17;
+       fhir:ConceptMap.group.element.code [ fhir:value "508" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 18;
+       fhir:ConceptMap.group.element.code [ fhir:value "509" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19 PS Non-US Vaccine (EpiVacCorona)" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 19;
+       fhir:ConceptMap.group.element.code [ fhir:value "510" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ], [
+       fhir:index 20;
+       fhir:ConceptMap.group.element.code [ fhir:value "511" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "unmatched" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/ConceptMap/covid-mapping-cvx-air.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

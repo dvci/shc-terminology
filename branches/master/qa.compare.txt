@@ -1,0 +1,323 @@
+SMARTHealthCardsTerminology : Validation Results
+=========================================
+
+err = 123, warn = 154, info = 4
+$--
+Generated $--. FHIR version $-- for cards.smarthealth.terminology#$-- (canonical = https://terminology.smarthealth.cards)
+ Build Errors : 1 / 4 / 0
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-designation-use : 0 / 2 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-health-card : 2 / 2 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-identity-assurance-level : 2 / 2 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ImplementationGuide-cards.smarthealth.terminology : 0 / 0 / 3
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-immunization-all-cvx : 1 / 3 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-immunization-all-icd11 : 1 / 1 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-immunization-all-snomed : 1 / 2 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-immunization-covid-icd11 : 1 / 2 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-immunization-covid-snomed : 1 / 2 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-lab-qualitative-result : 1 / 2 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-lab-qualitative-test-covid : 1 / 2 / 1
+ /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-all : 46 / 53 / 1
+ /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-cvx : 53 / 58 / 1
+ /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-mapping-cvx-air : 3 / 5 / 1
+ /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-orthopoxvirus-all : 5 / 8 / 2
+ /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-orthopoxvirus-cvx : 5 / 6 / 2
+</table>
+== n/a ==
+ERROR: /home/runner/work/shc-terminology/shc-terminology/output/ValueSet-immunization-covid-cvx.html#/html/body/div/div/div/div/div/div/p/a at Line 219, column 199: The link 'https://terminology.smarthealth.cards/CodeSystem-designation-use.html' for "consumer-friendly" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-designation-use.json ==
+WARNING: CodeSystem/designation-use: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem/designation-use: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-health-card.json ==
+ERROR: CodeSystem.where(url = 'https://smarthealth.cards#'): Conformance resource /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-health-card.json - the canonical URL (https://terminology.smarthealth.cards/CodeSystem/health-card) does not match the URL (https://smarthealth.cards#)
+WARNING: CodeSystem/health-card: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem/health-card: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-health-card: URL Mismatch https://terminology.smarthealth.cards/CodeSystem/health-card vs https://smarthealth.cards#
+== fsh-generated/resources/CodeSystem-identity-assurance-level.json ==
+ERROR: CodeSystem.where(url = 'https://smarthealth.cards/ial'): Conformance resource /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-identity-assurance-level.json - the canonical URL (https://terminology.smarthealth.cards/CodeSystem/identity-assurance-level) does not match the URL (https://smarthealth.cards/ial)
+WARNING: CodeSystem/identity-assurance-level: CodeSystem: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: CodeSystem/identity-assurance-level: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+ERROR: /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-identity-assurance-level: URL Mismatch https://terminology.smarthealth.cards/CodeSystem/identity-assurance-level vs https://smarthealth.cards/ial
+== fsh-generated/resources/ImplementationGuide-cards.smarthealth.terminology.json ==
+INFORMATION: ImplementationGuide/cards.smarthealth.terminology: ImplementationGuide.definition.resource[6].description: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: ImplementationGuide/cards.smarthealth.terminology: ImplementationGuide.definition.resource[10].description: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/ValueSet-immunization-all-cvx.json ==
+WARNING: ValueSet/immunization-all-cvx: ValueSet.compose.include[0].concept[209].display: value should not start or finish with whitespace 'COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL '
+WARNING: ValueSet/immunization-all-cvx: ValueSet.compose.include[0].concept[256].display: value should not start or finish with whitespace 'Respiratory syncytial virus (RSV), unspecified '
+WARNING: ValueSet/immunization-all-cvx: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'immunization-all-cvx'): Unable to expand imported value set: No server available
+== fsh-generated/resources/ValueSet-immunization-all-icd11.json ==
+WARNING: ValueSet/immunization-all-icd11: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'immunization-all-icd11'): Unable to expand imported value set: No server available
+== fsh-generated/resources/ValueSet-immunization-all-snomed.json ==
+WARNING: ValueSet/immunization-all-snomed: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.version is mandatory, but it is not present
+WARNING: ValueSet/immunization-all-snomed: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'immunization-all-snomed'): Unable to expand imported value set: No server available
+== fsh-generated/resources/ValueSet-immunization-covid-icd11.json ==
+WARNING: ValueSet/immunization-covid-icd11: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet/immunization-covid-icd11: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'immunization-covid-icd11'): Unable to expand imported value set: No server available
+== fsh-generated/resources/ValueSet-immunization-covid-snomed.json ==
+WARNING: ValueSet/immunization-covid-snomed: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet/immunization-covid-snomed: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'immunization-covid-snomed'): Unable to expand imported value set: No server available
+== fsh-generated/resources/ValueSet-lab-qualitative-result.json ==
+WARNING: ValueSet/lab-qualitative-result: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet/lab-qualitative-result: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'lab-qualitative-result'): Unable to expand imported value set: No server available
+== fsh-generated/resources/ValueSet-lab-qualitative-test-covid.json ==
+WARNING: ValueSet/lab-qualitative-test-covid: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet/lab-qualitative-test-covid: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'lab-qualitative-test-covid'): Unable to expand imported value set: No server available
+== input/vocabulary/immunization-covid-all.json ==
+ERROR: ValueSet.compose.include[0].concept[0].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[0].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[2].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[2].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[2].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[3].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[4].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[4].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[5].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[5].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[6].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[6].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[7].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[8].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[9].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[10].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[11].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[12].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[13].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[14].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[15].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[16].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[17].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[18].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[19].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[20].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[21].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[22].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[23].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[24].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[25].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[26].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[27].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[28].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[29].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[30].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[31].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[32].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[33].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[34].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[35].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[36].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[37].designation[0].use: Unrecognized property 'use'
+WARNING: ValueSet/immunization-covid-all: ValueSet.language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.description: The markdown contains content that appears to be an embedded HTML tag starting at 'A '. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+WARNING: ValueSet/immunization-covid-all: ValueSet.copyright: The markdown contains content that appears to be an embedded HTML tag starting at 'Pl'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[0].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[0].designation[1].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[1].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[1].designation[1].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[1].designation[2].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[2].display: value should not start or finish with whitespace 'COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL '
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[2].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[2].designation[1].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[3].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[4].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[4].designation[1].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[5].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[5].designation[1].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[6].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[6].designation[1].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[7].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[8].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[9].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[9].designation[0].value: value should not start or finish with whitespace 'Sanofi COVID-19 '
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[10].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[10].designation[0].value: value should not start or finish with whitespace 'Sanofi COVID-19 '
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[11].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[12].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[13].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[14].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[15].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[16].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[17].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[18].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[19].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[20].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[21].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[22].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[23].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[24].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[25].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[26].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[27].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[28].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[29].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[30].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[31].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[32].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[33].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[34].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[35].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[36].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[37].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-all: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet/immunization-covid-all: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'immunization-covid-all'): Unable to expand imported value set: No server available
+== input/vocabulary/immunization-covid-cvx.json ==
+ERROR: ValueSet.compose.include[0].concept[0].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[0].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[2].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[2].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[2].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[3].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[4].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[4].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[5].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[5].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[6].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[6].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[7].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[8].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[9].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[10].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[11].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[12].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[13].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[14].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[15].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[16].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[17].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[18].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[19].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[20].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[21].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[22].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[23].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[24].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[25].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[26].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[27].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[28].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[29].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[30].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[31].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[32].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[33].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[34].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[35].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[36].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[37].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[38].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[39].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[40].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[41].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[42].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[43].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[44].designation[0].use: Unrecognized property 'use'
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[0].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[0].designation[1].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[1].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[1].designation[1].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[1].designation[2].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[2].display: value should not start or finish with whitespace 'COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL '
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[2].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[2].designation[1].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[3].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[4].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[4].designation[1].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[5].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[5].designation[1].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[6].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[6].designation[1].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[7].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[8].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[9].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[9].designation[0].value: value should not start or finish with whitespace 'Sanofi COVID-19 '
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[10].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[10].designation[0].value: value should not start or finish with whitespace 'Sanofi COVID-19 '
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[11].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[12].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[13].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[14].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[15].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[16].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[17].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[18].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[19].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[20].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[21].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[22].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[23].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[24].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[25].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[26].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[27].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[28].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[29].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[30].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[31].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[32].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[33].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[34].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[35].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[36].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[37].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[38].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[39].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[40].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[41].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[42].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[43].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[44].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-covid-cvx: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet/immunization-covid-cvx: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'immunization-covid-cvx'): Unable to expand imported value set: No server available
+== input/vocabulary/immunization-covid-mapping-cvx-air.json ==
+ERROR: ConceptMap.where(url = 'https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air'): Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/immunization-covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)
+ERROR: ConceptMap.where(url = 'https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air'): Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/immunization-covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)
+WARNING: ConceptMap/immunization-covid-mapping-cvx-air: ConceptMap.group[0].source: The Source Code System https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats is not fully defined and populated, and no sourceScope is specified, so the source code checking will not be performed
+WARNING: ConceptMap/immunization-covid-mapping-cvx-air: ConceptMap.group[0].target: Target Code System http://hl7.org/fhir/sid/cvx doesn't have all content (content = not-present), so the target codes cannot be checked
+WARNING: ConceptMap/immunization-covid-mapping-cvx-air: ConceptMap.group[1].source: Source Code System http://hl7.org/fhir/sid/cvx doesn't have all content (content = not-present), so the source codes cannot be checked
+WARNING: ConceptMap/immunization-covid-mapping-cvx-air: ConceptMap.group[1].target: The Target Code System https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats is not fully defined and populated, and no targetScope is specified, so the target code checking will not be performed
+WARNING: ConceptMap/immunization-covid-mapping-cvx-air: ConceptMap: Published concept maps SHOULD conform to the ShareableConceptMap profile, which says that the element ConceptMap.experimental is mandatory, but it is not present
+ERROR: /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-mapping-cvx-air: URL Mismatch https://terminology.smarthealth.cards/ConceptMap/immunization-covid-mapping-cvx-air vs https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air
+== input/vocabulary/immunization-orthopoxvirus-all.json ==
+ERROR: ValueSet.compose.include[0].concept[0].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[0].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[0].designation[2].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[0].use: Unrecognized property 'use'
+WARNING: ValueSet/immunization-orthopoxvirus-all: ValueSet.language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-orthopoxvirus-all: ValueSet.description: The markdown contains content that appears to be an embedded HTML tag starting at 'A '. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+WARNING: ValueSet/immunization-orthopoxvirus-all: ValueSet.copyright: The markdown contains content that appears to be an embedded HTML tag starting at 'Pl'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+WARNING: ValueSet/immunization-orthopoxvirus-all: ValueSet.compose.include[0].concept[0].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+INFORMATION: ValueSet/immunization-orthopoxvirus-all: ValueSet.compose.include[0].concept[0].designation[1].language: The value provided ('en-EU') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'en-EU' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#en-EU' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+WARNING: ValueSet/immunization-orthopoxvirus-all: ValueSet.compose.include[0].concept[0].designation[2].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-orthopoxvirus-all: ValueSet.compose.include[0].concept[1].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-orthopoxvirus-all: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet/immunization-orthopoxvirus-all: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'immunization-orthopoxvirus-all'): Unable to expand imported value set: No server available
+== input/vocabulary/immunization-orthopoxvirus-cvx.json ==
+ERROR: ValueSet.compose.include[0].concept[0].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[0].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[0].designation[2].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[0].use: Unrecognized property 'use'
+WARNING: ValueSet/immunization-orthopoxvirus-cvx: ValueSet.language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-orthopoxvirus-cvx: ValueSet.compose.include[0].concept[0].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+INFORMATION: ValueSet/immunization-orthopoxvirus-cvx: ValueSet.compose.include[0].concept[0].designation[1].language: The value provided ('en-EU') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'en-EU' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; The provided code '#en-EU' was not found in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')
+WARNING: ValueSet/immunization-orthopoxvirus-cvx: ValueSet.compose.include[0].concept[0].designation[2].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-orthopoxvirus-cvx: ValueSet.compose.include[0].concept[1].designation[0].language: Unable to validate code without using server because: Resolved system urn:ietf:bcp:47 (v2.0.1), but the definition doesn't include any codes, so the code has not been validated
+WARNING: ValueSet/immunization-orthopoxvirus-cvx: ValueSet: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: ValueSet/immunization-orthopoxvirus-cvx: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'immunization-orthopoxvirus-cvx'): Unable to expand imported value set: No server available

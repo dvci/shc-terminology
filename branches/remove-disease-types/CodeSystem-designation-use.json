@@ -1,0 +1,27 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "designation-use",
+  "url" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+  "version" : "1.0.0",
+  "name" : "DesignationUse",
+  "title" : "Designation Use",
+  "status" : "active",
+  "date" : "2023-06-01T21:01:58+00:00",
+  "publisher" : "VCI",
+  "contact" : [{
+    "name" : "VCI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://vci.org"
+    }]
+  }],
+  "description" : "Code system indicating how a display name should be used in our community-maintained localizations. This is NOT used in SMART Health Cards themselves -- it is just for the community-provided localizations ValueSets for displaying SMART Health Card codes in user interfaces.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "consumer-friendly",
+    "display" : "Consumer friendly",
+    "definition" : "Indicates the display name for a term that should be shown to consumers (e.g., to identify a vaccine in a SHC wallet app's user interface)."
+  }]
+}

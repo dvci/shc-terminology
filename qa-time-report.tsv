@@ -1,0 +1,17 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-cards.smarthealth.terminology.json	9171	-	0	0	0	0	0	0	9	205	0	0	0	0	0	0	0	1	0	0	235	144	0	0	1	10	0	1
+input/vocabulary/immunization-covid-all.json	43471	107	0	0	1	1	0	0	5	1	0	0	0	0	0	0	0	1	0	0	143	9208	0	0	0	3	0	1
+input/vocabulary/immunization-covid-mapping-cvx-air.json	7343	31	0	0	0	0	0	0	1	93	0	0	0	0	0	0	0	0	0	0	38	198	0	0	0	1	0	0
+input/vocabulary/immunization-covid-cvx.json	22957	57	0	0	0	0	0	0	2	98	0	0	0	0	0	0	0	0	0	0	138	212	0	0	0	4	0	0
+input/vocabulary/immunization-orthopoxvirus-cvx.json	2617	18	0	0	0	0	0	0	1	14	0	0	0	0	0	0	0	0	0	0	17	179	0	0	0	0	0	0
+input/vocabulary/immunization-orthopoxvirus-all.json	2656	19	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	136	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-identity-assurance-level.json	1586	19	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	116	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-immunization-all-icd11.json	21759	89	7	0	0	0	0	0	3	0	0	0	0	0	0	0	0	1	0	0	69	255	0	0	0	2	0	0
+fsh-generated/resources/ValueSet-immunization-covid-icd11.json	4525	25	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	15	223	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-lab-qualitative-test-covid.json	10701	41	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	35	154	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-lab-qualitative-result.json	4389	20	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	15	125	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-immunization-covid-snomed.json	17089	43	1	0	0	0	0	0	2	65	0	0	0	0	0	0	0	1	0	0	132	161	0	0	0	3	0	0
+fsh-generated/resources/ValueSet-immunization-all-snomed.json	839	15	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	117	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-immunization-all-cvx.json	28407	96	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	84	200	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-designation-use.json	866	15	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	5	69	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-health-card.json	1141	15	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	87	0	0	0	1	0	0

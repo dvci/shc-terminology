@@ -1,0 +1,12 @@
+{
+  "url" : "https://terminology.smarthealth.cards/ImplementationGuide/cards.smarthealth.terminology",
+  "name" : "SMARTHealthCardsTerminology",
+  "package-id" : "cards.smarthealth.terminology",
+  "ig-ver" : "0.1.0",
+  "date" : "Sun, 25 Jun, 2023 12:22:10 +0000",
+  "errs" : 116,
+  "warnings" : 50,
+  "hints" : 118,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)"
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="monkeypox-cvx"/>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p><b style="color: maroon">Exception generating Narrative: unexpected non-end of element null::a  at line 3 column 74</b></p></div>
+  </text>
+  <url value="https://terminology.smarthealth.cards/ValueSet/monkeypox-cvx"/>
+  <version value="0.1.0"/>
+  <name value="MonkeypoxCVXValueSet"/>
+  <title value="CVX Codes for monkeypox vaccines for use in Smart Health Cards"/>
+  <status value="draft"/>
+  <date value="2022-09-02"/>
+  <publisher value="VCI"/>
+  <contact>
+    <name value="VCI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://vci.org"/>
+    </telecom>
+  </contact>
+  <description value="A list of CVX codes with recommended consumer suitable displays for use in Smart Health Cards, with localized consumer friendly terms"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Creative Commons 0"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+      <concept>
+        <code value="206"/>
+        <display value="Vaccinia, smallpox monkeypox vaccine live, PF, SQ or ID injection"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="https://terminology.smarthealth.cards/CodeSystem/designation-use"/>
+          </use>
+          <value value="Jynneos"/>
+        </designation>
+        <designation>
+          <language value="en-EU"/>
+          <use>
+            <system value="https://terminology.smarthealth.cards/CodeSystem/designation-use"/>
+          </use>
+          <value value="Imvanex"/>
+        </designation>
+        <designation>
+          <language value="en-CA"/>
+          <use>
+            <system value="https://terminology.smarthealth.cards/CodeSystem/designation-use"/>
+          </use>
+          <value value="Imvamune"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="75"/>
+        <display value="vaccinia (smallpox)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="https://terminology.smarthealth.cards/CodeSystem/designation-use"/>
+          </use>
+          <value value="ACAM2000"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

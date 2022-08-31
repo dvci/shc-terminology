@@ -1,0 +1,28 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://smarthealth.cards#",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "HealthCardTypeCodeSystem",
+      "title" : "Health Card Type Code System",
+      "description" : "A code system to identify a SMART Health Card. Previously this code system was used to differentiate between different types of SMART Health Cards, but this has been deprecated. See [the SMART Health Cards spec](http://spec.smarthealth.cards/#healthwalletissuevc-operation) for details."
+    },
+    {
+      "url" : "https://smarthealth.cards/ial",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "IdentityAssuranceLevelCodeSystem",
+      "title" : "Identity Assurance Level Code System",
+      "description" : "Code representing identity assurance level, based on NIST 800-63-3"
+    },
+    {
+      "url" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "DesignationUse",
+      "title" : "Designation Use",
+      "description" : "Code system indicating how a display name should be used in our community-maintained localizations. This is NOT used in SMART Health Cards themselves -- it is just for the community-provided localizations ValueSets for displaying SMART Health Card codes in user interfaces."
+    }
+  ]
+}

@@ -1,0 +1,1035 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "immunization-covid-all",
+  "language" : "en",
+  "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-covid-all",
+  "version" : "20230616",
+  "name" : "ImmunizationCovidAllValueSet",
+  "title" : "Immunization / COVID / All codes",
+  "status" : "active",
+  "date" : "2023-06-16",
+  "publisher" : "VCI",
+  "contact" : [{
+    "name" : "VCI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://vci.org"
+    }]
+  }],
+  "description" : "A list of all immunization codes for COVID, combining the following ValueSets: <a href=\"ValueSet-immunization-covid-cvx.html\">ValueSet-immunization-covid-cvx.json</a>; <a href=\"ValueSet-immunization-covid-snomed.html\">ValueSet-immunization-covid-snomed.json</a>; <a href=\"ValueSet-immunization-covid-icd11.html\">ValueSet-immunization-covid-icd11.json</a>",
+  "copyright" : "Please see the following links for the copyright/legal information for each code system included here: <a href=\"ValueSet-immunization-covid-cvx.html\">ValueSet-immunization-covid-cvx.json</a>; <a href=\"ValueSet-immunization-covid-snomed.html\">ValueSet-immunization-covid-snomed.json</a>; <a href=\"ValueSet-immunization-covid-icd11.html\">ValueSet-immunization-covid-icd11.json</a>",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/cvx",
+      "concept" : [{
+        "code" : "207",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose",
+        "designation" : [{
+          "language" : "en-AU",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Moderna (Spikevax)"
+        },
+        {
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Moderna COVID-19 Vaccine"
+        }]
+      },
+      {
+        "code" : "208",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose",
+        "designation" : [{
+          "language" : "en-AU",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Pfizer (Comirnaty)"
+        },
+        {
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Pfizer-BioNTech COVID-19 Vaccine"
+        },
+        {
+          "language" : "en-NZ",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Pfizer-BioNTech COVID-19 Vaccine"
+        }]
+      },
+      {
+        "code" : "210",
+        "display" : "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL ",
+        "designation" : [{
+          "language" : "en-AU",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "AstraZeneca (Vaxzevria)"
+        },
+        {
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "AstraZeneca COVID-19 Vaccine"
+        }]
+      },
+      {
+        "code" : "211",
+        "display" : "COVID-19, subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Novavax COVID-19 Vaccine"
+        }]
+      },
+      {
+        "code" : "212",
+        "display" : "COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL",
+        "designation" : [{
+          "language" : "en-AU",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Janssen COVID-19 Vaccine"
+        },
+        {
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Janssen COVID-19 Vaccine"
+        }]
+      },
+      {
+        "code" : "217",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose",
+        "designation" : [{
+          "language" : "en-AU",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Pfizer (Comirnaty)"
+        },
+        {
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Pfizer-BioNTech COVID-19 Vaccine"
+        }]
+      },
+      {
+        "code" : "218",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose",
+        "designation" : [{
+          "language" : "en-AU",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Pfizer (Comirnaty) - Child dose"
+        },
+        {
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Pfizer-BioNTech COVID-19 Vaccine"
+        }]
+      },
+      {
+        "code" : "219",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled) COMIRNATY (BLA labeled)"
+        }]
+      },
+      {
+        "code" : "221",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL dose",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Moderna COVID-19 Vaccine (non-US Spikevax)"
+        }]
+      },
+      {
+        "code" : "225",
+        "display" : "COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 5mcg/0.5mL",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Sanofi COVID-19 "
+        }]
+      },
+      {
+        "code" : "226",
+        "display" : "COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 10mcg/0.5mL",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Sanofi COVID-19 "
+        }]
+      },
+      {
+        "code" : "227",
+        "display" : "COVID-19, mRNA, LNP-S, PF, pediatric 50 mcg/0.5 mL dose",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Moderna COVID-19 Vaccine (non-US Spikevax)"
+        }]
+      },
+      {
+        "code" : "228",
+        "display" : "COVID-19, mRNA, LNP-S, PF, pediatric 25 mcg/0.25 mL dose",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Moderna COVID-19 Vaccine (non-US Spikevax)"
+        }]
+      },
+      {
+        "code" : "229",
+        "display" : "COVID-19, mRNA, LNP-S, bivalent booster, PF, 50 mcg/0.5 mL or 25mcg/0.25 mL dose",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Moderna COVID-19 Vaccine (non-US Spikevax)"
+        }]
+      },
+      {
+        "code" : "230",
+        "display" : "COVID-19, mRNA, LNP-S, bivalent booster, PF, 10 mcg/0.2 mL",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Moderna COVID-19 Bivalent, Original + BA.4/BA.5 (Non-US Tradename Spikevax Bivalent)"
+        }]
+      },
+      {
+        "code" : "300",
+        "display" : "COVID-19, mRNA, LNP-S, bivalent booster, PF, 30 mcg/0.3 mL dose",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)"
+        }]
+      },
+      {
+        "code" : "301",
+        "display" : "COVID-19, mRNA, LNP-S, bivalent booster, PF, 10 mcg/0.2 mL dose",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)"
+        }]
+      },
+      {
+        "code" : "302",
+        "display" : "COVID-19, mRNA, LNP-S, bivalent, PF, 3 mcg/0.2 mL dose",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Pfizer-BioNTech COVID-19 Bivalent, Original + BA.4/BA.5 (Non-US Tradename COMIRNATY Bivalent)"
+        }]
+      },
+      {
+        "code" : "501",
+        "display" : "COVID-19 IV Non-US Vaccine (QAZCOVID-IN)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "COVID-19 IV Non-US Vaccine (QAZCOVID-IN)"
+        }]
+      },
+      {
+        "code" : "502",
+        "display" : "COVID-19 IV Non-US Vaccine (COVAXIN)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "COVAXIN (Bharat) COVID-19 Vaccine"
+        }]
+      },
+      {
+        "code" : "503",
+        "display" : "COVID-19 LAV Non-US Vaccine (COVIVAC)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "COVID-19 LAV Non-US Vaccine (COVIVAC)"
+        }]
+      },
+      {
+        "code" : "504",
+        "display" : "COVID-19 VVnr Non-US Vaccine (Sputnik Light)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "COVID-19 VVnr Non-US Vaccine (Sputnik Light)"
+        }]
+      },
+      {
+        "code" : "505",
+        "display" : "COVID-19 VVnr Non-US Vaccine (Sputnik V)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "COVID-19 VVnr Non-US Vaccine (Sputnik V)"
+        }]
+      },
+      {
+        "code" : "506",
+        "display" : "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)"
+        }]
+      },
+      {
+        "code" : "507",
+        "display" : "COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)"
+        }]
+      },
+      {
+        "code" : "508",
+        "display" : "COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)"
+        }]
+      },
+      {
+        "code" : "509",
+        "display" : "COVID-19 PS Non-US Vaccine (EpiVacCorona)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "COVID-19 PS Non-US Vaccine (EpiVacCorona)"
+        }]
+      },
+      {
+        "code" : "510",
+        "display" : "COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Sinopharm (BIBP) COVID-19 Vaccine"
+        }]
+      },
+      {
+        "code" : "511",
+        "display" : "COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Coronavac (Sinovac) COVID-19 Vaccine"
+        }]
+      },
+      {
+        "code" : "512",
+        "display" : "SARS-COV-2 COVID-19 VLP Non-US Vaccine (Medicago, Covifenz)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Covifenz"
+        }]
+      },
+      {
+        "code" : "513",
+        "display" : "SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)"
+        }]
+      },
+      {
+        "code" : "514",
+        "display" : "SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)"
+        }]
+      },
+      {
+        "code" : "515",
+        "display" : "SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)"
+        }]
+      },
+      {
+        "code" : "516",
+        "display" : "COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)"
+        }]
+      },
+      {
+        "code" : "517",
+        "display" : "SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)"
+        }]
+      },
+      {
+        "code" : "518",
+        "display" : "COVID-19 Inactivated, Non-US Vaccine (VLA2001, Valneva)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "COVID-19 Inactivated, Non-US Vaccine (VLA2001, Valneva)"
+        }]
+      },
+      {
+        "code" : "519",
+        "display" : "COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine (Spikevax Bivalent), Moderna",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Moderna COVID-19 Bivalent, Original + BA.1 (Non-US Tradename Spikevax Bivalent)"
+        }]
+      },
+      {
+        "code" : "520",
+        "display" : "COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine Product, Pfizer-BioNTech",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Pfizer COVID-19 Bivalent, Original + BA.1 (Non-US Tradename COMIRNATY Bivalent)"
+        }]
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "1031000172108",
+        "display" : "COVID-19 mRNA vaccine (BNT162b2) of Pfizer-BioNTech"
+      },
+      {
+        "code" : "10871000172106",
+        "display" : "COVID-19 mRNA vaccine (mRNA-1273) of Moderna"
+      },
+      {
+        "code" : "10891000172107",
+        "display" : "COVID-19 viral vector vaccine (AZD1222 (ChAdOx1-S recombinant)) of AstraZeneca, Oxford"
+      },
+      {
+        "code" : "10901000172106",
+        "display" : "COVID-19 viral vector vaccine (JNJ-78436735( Ad26.COV2-S recombinant)) of Johnson and Johnson, Janssens"
+      },
+      {
+        "code" : "125071000220108",
+        "display" : "COVID-19 mRNA Vaccine Pfizer-BioNTech 10 micrograms/dose concentrate for dispersion for injection"
+      },
+      {
+        "code" : "125081000220106",
+        "display" : "COVID-19 mRNA Vaccine Ready to Use Pfizer-BioNTech 30 micrograms/ 0.3 milliliter dose dispersion for injection"
+      },
+      {
+        "code" : "125091000220109",
+        "display" : "COVID-19 mRNA Ready to Use Adapted BA.1 Vaccine Pfizer-BioNTech 15 / 15 micrograms/ 0.3 milliliter dose dispersion for injection"
+      },
+      {
+        "code" : "125101000220104",
+        "display" : "COVID-19 mRNA Ready to Use Adapted BA.4 and BA.5 Vaccine Pfizer-BioNTech 15 / 15 micrograms/ 0.3 milliliter dose dispersion for injection"
+      },
+      {
+        "code" : "125111000220101",
+        "display" : "COVID-19 mRNA Adapted BA.1 Vaccine Moderna (50 micrograms/50 micrograms) / milliliter dispersion for injection"
+      },
+      {
+        "code" : "125121000220108",
+        "display" : "COVID-19 mRNA Adapted BA.4 nd BA.5 Vaccine Moderna (50 micrograms/50 micrograms) / milliliter dispersion for injection"
+      },
+      {
+        "code" : "1401000220108",
+        "display" : "COVID-19 Vaccine AstraZeneca 5 x10,000,000,000 viral particles/per 0.5ml dose for injection multidose vials"
+      },
+      {
+        "code" : "1411000220106",
+        "display" : "COVID-19 mRNA Vaccine Pfizer-BioNTech 30 micrograms per 0.3ml dose concentrate for suspension for injection multidose vials"
+      },
+      {
+        "code" : "1421000220104",
+        "display" : "COVID-19 mRNA Vaccine Moderna 0.1mg per 0.5mL dose dispersion for injection multidose vials"
+      },
+      {
+        "code" : "28571000087109",
+        "display" : "COVID-19 SPIKEVAX 0.20 mg/mL mRNA Mod"
+      },
+      {
+        "code" : "28581000087106",
+        "display" : "COVID-19 COMIRNATY 30 mcg/0.3 ml mRNA PB"
+      },
+      {
+        "code" : "28761000087108",
+        "display" : "COVID-19 VAXZEVRIA AZC"
+      },
+      {
+        "code" : "28951000087107",
+        "display" : "COVID-19 JANSSEN COVID-19 VACCINE Jan"
+      },
+      {
+        "code" : "28961000087105",
+        "display" : "COVID-19 COVISHIELD VP"
+      },
+      {
+        "code" : "29171000087106",
+        "display" : "COVID-19 NUVAXOVID NOV"
+      },
+      {
+        "code" : "30151000087105",
+        "display" : "COVID-19 COVIFENZ VLP MED"
+      },
+      {
+        "code" : "31301000087101",
+        "display" : "COVID-19 SINOPHARM-BIBP"
+      },
+      {
+        "code" : "31311000087104",
+        "display" : "COVID-19 CoronaVac"
+      },
+      {
+        "code" : "31341000087103",
+        "display" : "COVID-19 Sputnik V"
+      },
+      {
+        "code" : "31431000087100",
+        "display" : "COVID-19 Convidecia"
+      },
+      {
+        "code" : "33201000087108",
+        "display" : "COVID-19 SINOPHARM-WIBP"
+      },
+      {
+        "code" : "33211000087105",
+        "display" : "COVID-19 COVAXIN"
+      },
+      {
+        "code" : "33221000087102",
+        "display" : "COVID-19 mRNA CureVac"
+      },
+      {
+        "code" : "33361000087101",
+        "display" : "COVID-19 COMIRNATY pediatric 10 mcg/0.2 ml mRNA PB"
+      },
+      {
+        "code" : "33391000087109",
+        "display" : "COVID-19 Abdala"
+      },
+      {
+        "code" : "33401000087107",
+        "display" : "COVID-19 COVIran Barekat"
+      },
+      {
+        "code" : "33411000087109",
+        "display" : "COVID-19 CoviVac"
+      },
+      {
+        "code" : "33421000087101",
+        "display" : "COVID-19 EpiVacCorona"
+      },
+      {
+        "code" : "33431000087104",
+        "display" : "COVID-19 KCONVAC"
+      },
+      {
+        "code" : "33441000087105",
+        "display" : "COVID-19 Medgen-Dynavax-NIAID"
+      },
+      {
+        "code" : "33451000087108",
+        "display" : "COVID-19 QazCovid-in"
+      },
+      {
+        "code" : "33461000087106",
+        "display" : "COVID-19 Sputnik Light"
+      },
+      {
+        "code" : "33471000087102",
+        "display" : "COVID-19 ZIFIVAX"
+      },
+      {
+        "code" : "33581000087104",
+        "display" : "COVID-19 pediatric mRNA unspecified"
+      },
+      {
+        "code" : "33881000087102",
+        "display" : "COVID-19 COMIRNATY tris-sucrose 30 mcg/0.3 ml mRNA PB"
+      },
+      {
+        "code" : "34591000087100",
+        "display" : "COVID-19 Soberana 02"
+      },
+      {
+        "code" : "34601000087108",
+        "display" : "COVID-19 SpikoGen"
+      },
+      {
+        "code" : "34611000087105",
+        "display" : "COVID-19 COMIRNATY pediatric 3 mcg/0.2 ml mRNA PB"
+      },
+      {
+        "code" : "34921000087108",
+        "display" : "COVID-19 COVOVAX"
+      },
+      {
+        "code" : "35651000087105",
+        "display" : "COVID-19 SPIKEVAX 0.10 mg/mL mRNA Mod"
+      },
+      {
+        "code" : "37311000087109",
+        "display" : "COVID-19 SPIKEVAX Bivalent (Original / Omicron BA.1) 0.10 mg/mL mRNA Mod"
+      },
+      {
+        "code" : "37651000087101",
+        "display" : "COVID-19 SPIKEVAX Bivalent (Original / Omicron BA.4/BA.5) 0.10 mg/mL mRNA Mod"
+      },
+      {
+        "code" : "384671000221101",
+        "display" : "SINOPHARM - BIBP vacuna COVID-19 [SARS-COV-2 (células Vero) inactivado 1 dosis/0,5 ml] suspensión inyectable, vial de 0,5 ml (1 dosis), Sinopharm - Beijing Institute"
+      },
+      {
+        "code" : "399651000221108",
+        "display" : "vacuna COVID-19 virus entero inactivado 1 dosis/0,5 ml, suspensión inyectable, vial de 0,5 ml (1 dosis)"
+      },
+      {
+        "code" : "399661000221105",
+        "display" : "vacuna COVID-19 vector no replicante adenovirus de chimpancé 1 dosis/0,5 ml, solución inyectable, vial de 5 ml (10 dosis)"
+      },
+      {
+        "code" : "399681000221103",
+        "display" : "vacuna COVID-19 vector no replicante Adenovirus humano 5 1 dosis/0,5 ml, solución inyectable, vial de 3 ml (5 dosis)"
+      },
+      {
+        "code" : "399691000221100",
+        "display" : "vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, solución inyectable, vial de 3 ml (5 dosis)"
+      },
+      {
+        "code" : "399701000221100",
+        "display" : "vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, suspensión inyectable, vial de 3 ml (5 dosis)"
+      },
+      {
+        "code" : "399771000221108",
+        "display" : "COVISHIELD vacuna COVID-19 [ChAdOx1 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 5 ml (10 dosis), Serum Institute of India"
+      },
+      {
+        "code" : "399781000221106",
+        "display" : "VAXZEVRIA vacuna COVID-19 [ChAdOx1 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 5 ml (10 dosis), Astrazeneca"
+      },
+      {
+        "code" : "399801000221105",
+        "display" : "SPUTNIK V vacuna COVID-19 componente I [rAd 26 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 3 ml (5 dosis), Instituto Gamaleya"
+      },
+      {
+        "code" : "399811000221108",
+        "display" : "SPUTNIK V vacuna COVID-19 componente II [rAd 5 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 3 ml (5 dosis), Instituto Gamaleya"
+      },
+      {
+        "code" : "399821000221103",
+        "display" : "JANSSEN vacuna COVID-19 [rAd 26 SARS-CoV-2 S 1 dosis/0,5 ml] suspensión inyectable, vial de 3 ml (5 dosis), Janssen"
+      },
+      {
+        "code" : "399861000221106",
+        "display" : "vacuna COVID-19 ARNm 100 mcg/ml, suspensión inyectable, vial de 5,5 ml (10 dosis de 0,5 ml)"
+      },
+      {
+        "code" : "399871000221102",
+        "display" : "vacuna COVID-19 ARNm 100 mcg/ml, suspensión inyectable, vial de 7,5 ml (15 dosis de 0,5 ml)"
+      },
+      {
+        "code" : "399881000221104",
+        "display" : "vacuna COVID-19 ARNm 30 mcg/0,3 ml, suspensión inyectable, vial de 0,45 ml (6 dosis de 0,3 ml luego de dilución)"
+      },
+      {
+        "code" : "399891000221101",
+        "display" : "SPIKEVAX vacuna COVID-19 [SARS-CoV-2 S ARNm 100 mcg/0,5 ml] suspensión inyectable, vial de 5.5 ml (10 dosis), Moderna"
+      },
+      {
+        "code" : "399901000221102",
+        "display" : "SPIKEVAX vacuna COVID-19 [SARS-CoV-2 S ARNm 100 mcg/0,5 ml] suspensión inyectable, vial de 7,5 ml (15 dosis de 0,5 ml), Moderna"
+      },
+      {
+        "code" : "399911000221104",
+        "display" : "COMIRNATY vacuna COVID-19 [SARS-CoV-2 S ARNm 30 mcg/0,3 ml] suspensión inyectable, vial de 0,45 ml (6 dosis de 0,3 ml luego de dilución), Pfizer"
+      },
+      {
+        "code" : "424531000221101",
+        "display" : "vacuna COVID-19 virus entero inactivado 1 dosis/0,5 ml, suspensión inyectable"
+      },
+      {
+        "code" : "424541000221108",
+        "display" : "vacuna COVID-19 virus entero inactivado 1 dosis/0,5 ml, suspensión inyectable, vial de 1 ml (2 dosis)"
+      },
+      {
+        "code" : "424551000221105",
+        "display" : "SINOPHARM - BIBP vacuna COVID-19 [SARS-COV-2 (células Vero) inactivado 1 dosis/0,5 ml] suspensión inyectable, vial de 1 ml (2 dosis), Sinopharm - Beijing Institute"
+      },
+      {
+        "code" : "424561000221107",
+        "display" : "vacuna COVID-19 vector no replicante adenovirus de chimpancé 1 dosis/0,5 ml, solución inyectable"
+      },
+      {
+        "code" : "424571000221103",
+        "display" : "VAXZEVRIA vacuna COVID-19 vector viral no replicante"
+      },
+      {
+        "code" : "424581000221100",
+        "display" : "COVISHIELD vacuna COVID-19 vector viral no replicante"
+      },
+      {
+        "code" : "424591000221102",
+        "display" : "JANSSEN vacuna COVID-19 vector viral no replicante"
+      },
+      {
+        "code" : "424601000221107",
+        "display" : "vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, suspensión inyectable"
+      },
+      {
+        "code" : "424611000221105",
+        "display" : "vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, solución inyectable, vial de 0,5 ml (1 dosis)"
+      },
+      {
+        "code" : "424621000221100",
+        "display" : "vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, solución inyectable, vial de 1 ml (2 dosis)"
+      },
+      {
+        "code" : "424631000221102",
+        "display" : "vacuna COVID-19 vector no replicante Adenovirus humano 26 1 dosis/0,5 ml, solución inyectable"
+      },
+      {
+        "code" : "424641000221109",
+        "display" : "SPUTNIK V vacuna COVID-19 componente I [rAd 26 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 0,5 ml (1 dosis), Instituto Gamaleya"
+      },
+      {
+        "code" : "424651000221106",
+        "display" : "SPUTNIK V vacuna COVID-19 componente I [rAd 26 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 1 ml (2 dosis), Instituto Gamaleya"
+      },
+      {
+        "code" : "424661000221108",
+        "display" : "SPUTNIK V vacuna COVID-19 componente II [rAd 5 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 1 ml (2 dosis), Instituto Gamaleya"
+      },
+      {
+        "code" : "424671000221104",
+        "display" : "SPUTNIK V vacuna COVID-19 componente II [rAd 5 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 0,5 ml (1 dosis), Instituto Gamaleya"
+      },
+      {
+        "code" : "424681000221101",
+        "display" : "vacuna COVID-19 vector no replicante Adenovirus humano 5 1 dosis/0,5 ml, solución inyectable, vial de 1 ml (2 dosis)"
+      },
+      {
+        "code" : "424691000221103",
+        "display" : "vacuna COVID-19 vector no replicante Adenovirus humano 5 1 dosis/0,5 ml, solución inyectable, vial de 0,5 ml (1 dosis)"
+      },
+      {
+        "code" : "424701000221103",
+        "display" : "vacuna COVID-19 vector no replicante Adenovirus humano 5 1 dosis/0,5 ml, solución inyectable"
+      },
+      {
+        "code" : "424711000221100",
+        "display" : "SPUTNIK V vacuna COVID-19 vector viral no replicante"
+      },
+      {
+        "code" : "424721000221105",
+        "display" : "vacuna COVID-19 ARNm 100 mcg/0,5 ml, suspensión inyectable"
+      },
+      {
+        "code" : "424731000221108",
+        "display" : "SPIKEVAX vacuna COVID-19 ARNm"
+      },
+      {
+        "code" : "424741000221101",
+        "display" : "vacuna COVID-19 ARNm 30 mcg/0,3 ml, suspensión inyectable"
+      },
+      {
+        "code" : "424751000221104",
+        "display" : "COMIRNATY vacuna COVID-19 ARNm"
+      },
+      {
+        "code" : "424781000221109",
+        "display" : "CONVIDECIA vacuna COVID-19 [rAd 5 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 0,5 ml, (1 dosis), Cansino"
+      },
+      {
+        "code" : "424791000221107",
+        "display" : "CONVIDECIA vacuna COVID-19 [rAd 5 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 1,5 ml (3 dosis), Cansino"
+      },
+      {
+        "code" : "424801000221108",
+        "display" : "vacuna COVID-19 vector no replicante Adenovirus humano 5 1 dosis/0,5 ml, solución inyectable, vial de 1,5 ml (3 dosis)"
+      },
+      {
+        "code" : "424821000221101",
+        "display" : "SPUTNIK LIGTH vacuna COVID-19 vector viral no replicante"
+      },
+      {
+        "code" : "424831000221103",
+        "display" : "NOVAVAX vacuna COVID-19 proteína de espiga recombinante"
+      },
+      {
+        "code" : "424971000221108",
+        "display" : "ZYDUS CADILA vacuna COVID-19 ADN"
+      },
+      {
+        "code" : "425001000221100",
+        "display" : "SPUTNIK V componente I vacuna COVID-19 vector viral no replicante rAd 26"
+      },
+      {
+        "code" : "425011000221102",
+        "display" : "SPUTNIK V componente II vacuna COVID-19 vector viral no replicante rAd 5"
+      },
+      {
+        "code" : "425031000221105",
+        "display" : "VAXZEVRIA vacuna COVID-19 [ChAdOx1 SARS-CoV-2 S 1 dosis/0,5 ml] solución inyectable, vial de 4 ml (8 dosis), Astrazeneca"
+      },
+      {
+        "code" : "425051000221101",
+        "display" : "vacuna que contiene vector adenovirus de chimpancé no replicante que codifica proteína de espiga de SARS-CoV-2 1 dosis/0,5 ml, solución inyectable, vial de 4 ml (8 dosis)"
+      },
+      {
+        "code" : "62051000220105",
+        "display" : "Janssen COVID-19 Vaccine 0.5 millilitre suspension injection Janssen Inc"
+      }]
+    },
+    {
+      "system" : "http://id.who.int/icd11/mms",
+      "concept" : [{
+        "code" : "XM68M6",
+        "display" : "COVID-19 vaccines"
+      },
+      {
+        "code" : "XM1NL1",
+        "display" : "COVID-19 vaccine, inactivated virus"
+      },
+      {
+        "code" : "XM7HT3",
+        "display" : "CoronaVac®"
+      },
+      {
+        "code" : "XM8866",
+        "display" : "BBIBP-CorV"
+      },
+      {
+        "code" : "XM9TQ1",
+        "display" : "KCONVAC"
+      },
+      {
+        "code" : "XM1G90",
+        "display" : "Covaxin"
+      },
+      {
+        "code" : "XM85P5",
+        "display" : "Covi-Vac"
+      },
+      {
+        "code" : "XM9FQ7",
+        "display" : "Hayat-Vax"
+      },
+      {
+        "code" : "XM97N6",
+        "display" : "Qazvac"
+      },
+      {
+        "code" : "XM2YG8",
+        "display" : "COVIran Barakat"
+      },
+      {
+        "code" : "XM0K39",
+        "display" : "Covidful"
+      },
+      {
+        "code" : "XM1AU2",
+        "display" : "Sinopharm WIBP-CorV"
+      },
+      {
+        "code" : "XM5DF6",
+        "display" : "COVID-19 vaccine, live attenuated virus"
+      },
+      {
+        "code" : "XM9QW8",
+        "display" : "COVID-19 vaccine, non-replicating viral vector"
+      },
+      {
+        "code" : "XM4YL8",
+        "display" : "COVID-19 Vaccine AstraZeneca"
+      },
+      {
+        "code" : "XM97T2",
+        "display" : "Covishield®"
+      },
+      {
+        "code" : "XM6QV1",
+        "display" : "COVID-19 Vaccine Janssen"
+      },
+      {
+        "code" : "XM1AG7",
+        "display" : "Convidecia"
+      },
+      {
+        "code" : "XM5ZJ4",
+        "display" : "Gam-Covid-Vac"
+      },
+      {
+        "code" : "XM5QM6",
+        "display" : "Sputnik-Light"
+      },
+      {
+        "code" : "XM0CX4",
+        "display" : "COVID-19 vaccine, replicating viral vector"
+      },
+      {
+        "code" : "XM5JC5",
+        "display" : "COVID-19 vaccine, virus protein subunit"
+      },
+      {
+        "code" : "XM3CT4",
+        "display" : "Recombinant SARS-CoV-2 vaccine"
+      },
+      {
+        "code" : "XM3PG0",
+        "display" : "Soberana-02"
+      },
+      {
+        "code" : "XM4EC8",
+        "display" : "MVC-COV1901"
+      },
+      {
+        "code" : "XM6SZ8",
+        "display" : "EpiVacCorona"
+      },
+      {
+        "code" : "XM0RV9",
+        "display" : "Soberana Plus"
+      },
+      {
+        "code" : "XM3SK8",
+        "display" : "EpiVacCorona-N"
+      },
+      {
+        "code" : "XM9P21",
+        "display" : "SpikoGen"
+      },
+      {
+        "code" : "XM9T65",
+        "display" : "Novavax COVID-19 vaccine"
+      },
+      {
+        "code" : "XM9N08",
+        "display" : "Razi COV PARS"
+      },
+      {
+        "code" : "XM1J92",
+        "display" : "COVID-19 vaccine, virus like particle"
+      },
+      {
+        "code" : "XM6AT1",
+        "display" : "COVID-19 vaccine, DNA based"
+      },
+      {
+        "code" : "XM52P3",
+        "display" : "ZvCov-D"
+      },
+      {
+        "code" : "XM0GQ8",
+        "display" : "COVID-19 vaccine, RNA based"
+      },
+      {
+        "code" : "XM8NQ0",
+        "display" : "Comirnaty"
+      },
+      {
+        "code" : "XM3DT5",
+        "display" : "COVID-19 Vaccine Moderna"
+      }]
+    }]
+  }
+}

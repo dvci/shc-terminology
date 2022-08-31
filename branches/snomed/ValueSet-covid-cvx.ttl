@@ -1,0 +1,241 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/ValueSet/covid-cvx> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "covid-cvx"];
+  fhir:Resource.language [ fhir:value "en"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p><b style=\"color: maroon\">Exception generating Narrative: unexpected non-end of element null::a  at line 3 column 74</b></p></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://terminology.smarthealth.cards/ValueSet/covid-cvx"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "CovidCVXValueSet"];
+  fhir:ValueSet.title [ fhir:value "CVX Covid Codes for use in Smart Health Cards"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2021-09-22"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "VCI"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "VCI" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://vci.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "A list of CVX codes with recommended consumer suitable displays for use in Smart Health Cards, with localized consumer friendly terms"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "AU" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:ValueSet.copyright [ fhir:value "Creative Commons 0"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/sid/cvx" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "210" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-AU" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "AstraZeneca (Vaxzevria)" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "AstraZeneca COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "208" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-AU" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer (Comirnaty)" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer-BioNTech COVID-19 Vaccine" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-NZ" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer-BioNTech COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "207" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-AU" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Moderna (Spikevax)" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Moderna COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "212" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-AU" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Janssen COVID-19 Vaccine" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Janssen COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "217" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-AU" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer (Comirnaty)" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer-BioNTech COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "218" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-AU" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer (Comirnaty) - Child dose" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer-BioNTech COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "510" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sinopharm (BIBP) COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "511" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Coronavac (Sinovac) COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "211" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 vaccine, Subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Novavax COVID-19 Vaccine" ]
+         ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "219" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled) COMIRNATY (BLA labeled)" ]
+         ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "502" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "COVID-19 IV Non-US Vaccine (COVAXIN)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "COVAXIN (Bharat) COVID-19 Vaccine" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/ValueSet/covid-cvx.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

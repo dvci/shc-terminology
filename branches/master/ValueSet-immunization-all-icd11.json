@@ -1,0 +1,737 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "immunization-all-icd11",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n        \n            <p>\n                The following codes from the <code><a href=\"http://id.who.int/icd11/mms\">http://id.who.int/icd11/mms</a></code> code system are included:\n            </p>\n            <table class=\"table-striped table table-bordered\">\n                <tr>\n                    <th>Code</th>\n                    <th>Description(s)</th>\n                </tr>\n                \n                    <tr>\n                        <td><code>XM3KV2</code></td>\n                        <td>\n                            \n                                Bacterial vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM29K4</code></td>\n                        <td>\n                            \n                                Cholera vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM3Z26</code></td>\n                        <td>\n                            \n                                Cholera, inactivated, whole cell vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM72A0</code></td>\n                        <td>\n                            \n                                Cholera, live attenuated vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM1FT6</code></td>\n                        <td>\n                            \n                                Cholera, combinations with typhoid vaccine, inactivated, whole cell vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM11V3</code></td>\n                        <td>\n                            \n                                Haemophilus influenzae B vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM6RG9</code></td>\n                        <td>\n                            \n                                Hib, purified antigen conjugated vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM7F70</code></td>\n                        <td>\n                            \n                                Hib, combinations with toxoids vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM81F7</code></td>\n                        <td>\n                            \n                                Hib, combinations with pertussis and toxoids vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM0X86</code></td>\n                        <td>\n                            \n                                Hib, combinations with meningococcus C, conjugated vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM2WV4</code></td>\n                        <td>\n                            \n                                Meningococcal vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM92B2</code></td>\n                        <td>\n                            \n                                Meningococcal monovalent purified polysaccharides antigen vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM5LC2</code></td>\n                        <td>\n                            \n                                Meningococcal polyvalent purified polysaccharides antigen vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM3T39</code></td>\n                        <td>\n                            \n                                Meningococcus A, C, bivalent purified polysaccharides antigen vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM2AR0</code></td>\n                        <td>\n                            \n                                Meningococcus A, C, Y, W-135, tetravalent purified polysaccharides antigen vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM2EH7</code></td>\n                        <td>\n                            \n                                Meningococcus A, C, Y, W-135, tetravalent purified polysaccharides antigen conjugated vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM18Y8</code></td>\n                        <td>\n                            \n                                Meningococcus C, purified polysaccharides antigen conjugated vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM2280</code></td>\n                        <td>\n                            \n                                Meningococcus A, purified polysaccharides antigen conjugated vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9GJ1</code></td>\n                        <td>\n                            \n                                Meningococcus B, outer membrane vesicle vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM1X81</code></td>\n                        <td>\n                            \n                                Meningococcus B, multicomponent vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM37L5</code></td>\n                        <td>\n                            \n                                Meningococcus A, purified polysaccharides antigen vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM43M9</code></td>\n                        <td>\n                            \n                                Pertussis vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM45L8</code></td>\n                        <td>\n                            \n                                Pertussis, inactivated, whole cell vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM62J1</code></td>\n                        <td>\n                            \n                                Pertussis, purified antigen vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM2TK2</code></td>\n                        <td>\n                            \n                                Pertussis, inactivated, whole cell, combinations with toxoids vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM4082</code></td>\n                        <td>\n                            \n                                Pertussis, purified antigen, combinations with toxoids vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM2CV8</code></td>\n                        <td>\n                            \n                                Vaccines pertussis with diphtheria\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9EM7</code></td>\n                        <td>\n                            \n                                Pneumococcal vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9G97</code></td>\n                        <td>\n                            \n                                Pneumococcal conjugate (13-valent) vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM2249</code></td>\n                        <td>\n                            \n                                Pneumococcal polysaccharide 23-valent vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM91D7</code></td>\n                        <td>\n                            \n                                Pneumococcus, purified polysaccharides antigen vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM96S7</code></td>\n                        <td>\n                            \n                                Pneumococcus, purified polysaccharides antigen conjugated vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM4R39</code></td>\n                        <td>\n                            \n                                Pneumococcus purified polysaccharides antigen and Haemophilus influenzae, conjugated vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM5L44</code></td>\n                        <td>\n                            \n                                Tetanus vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM29H5</code></td>\n                        <td>\n                            \n                                Tetanus toxoid vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM1G86</code></td>\n                        <td>\n                            \n                                Tetanus toxoid, combinations with diphtheria toxoid vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9AK2</code></td>\n                        <td>\n                            \n                                Tetanus toxoid, combinations with tetanus immunoglobulin vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM31Q8</code></td>\n                        <td>\n                            \n                                Tetanus, diphtheria, acellular pertussis vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM1PB8</code></td>\n                        <td>\n                            \n                                Triple vaccines DPT\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9ZL9</code></td>\n                        <td>\n                            \n                                Pertussis vaccines (with diphtheria toxoid) (with tetanus toxoid)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9YH9</code></td>\n                        <td>\n                            \n                                Diphtheria toxoid with tetanus toxoid with pertussis component vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM32Q5</code></td>\n                        <td>\n                            \n                                Tetanus and diphtheria vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM4039</code></td>\n                        <td>\n                            \n                                Vaccines diphtheria with tetanus\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM8XH5</code></td>\n                        <td>\n                            \n                                Tetanus toxoid or vaccines toxoid with diphtheria toxoid\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM8BU8</code></td>\n                        <td>\n                            \n                                Typhoid vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM33K4</code></td>\n                        <td>\n                            \n                                Typhoid, oral, live attenuated vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM89G3</code></td>\n                        <td>\n                            \n                                Typhoid, inactivated, whole cell vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM3SF6</code></td>\n                        <td>\n                            \n                                Typhoid, purified polysaccharide antigen vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9UB1</code></td>\n                        <td>\n                            \n                                Typhoid-paratyphoid vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM3VD2</code></td>\n                        <td>\n                            \n                                Vaccines TAB\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM95H3</code></td>\n                        <td>\n                            \n                                Paratyphoid vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM8ZX8</code></td>\n                        <td>\n                            \n                                Plague vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM3796</code></td>\n                        <td>\n                            \n                                Plague, inactivated, whole cell vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9SW5</code></td>\n                        <td>\n                            \n                                Vaccines bacterial with other bacterial component\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM91J8</code></td>\n                        <td>\n                            \n                                Vaccines rickettsial\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM3JJ2</code></td>\n                        <td>\n                            \n                                Typhus (exanthematicus) vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM2NU8</code></td>\n                        <td>\n                            \n                                Typhus exanthematicus, inactivated, whole cell vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM4F19</code></td>\n                        <td>\n                            \n                                Vaccines rickettsial with bacterial component\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM0E84</code></td>\n                        <td>\n                            \n                                Rocky Mountain spotted fever vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM5926</code></td>\n                        <td>\n                            \n                                Vaccines bacterial mixed, not elsewhere classified\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM8NU9</code></td>\n                        <td>\n                            \n                                Anthrax vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM2C05</code></td>\n                        <td>\n                            \n                                Anthrax antigen vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM7PB3</code></td>\n                        <td>\n                            \n                                Brucellosis vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM7RX8</code></td>\n                        <td>\n                            \n                                Brucella antigen vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM8AW3</code></td>\n                        <td>\n                            \n                                Diphtheria vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM86V7</code></td>\n                        <td>\n                            \n                                Diphtheria toxoid vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM46V1</code></td>\n                        <td>\n                            \n                                Diphtheria vaccines combination including pertussis\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM39K8</code></td>\n                        <td>\n                            \n                                Diphtheria vaccines combination without pertussis\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM8YP9</code></td>\n                        <td>\n                            \n                                Diphtheria vaccines combination\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM4639</code></td>\n                        <td>\n                            \n                                Tuberculosis vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM8142</code></td>\n                        <td>\n                            \n                                Tuberculosis, live attenuated vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM61M7</code></td>\n                        <td>\n                            \n                                Viral vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM68M6</code></td>\n                        <td>\n                            \n                                COVID-19 vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM1NL1</code></td>\n                        <td>\n                            \n                                COVID-19 vaccines, inactivated virus\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM7HT3</code></td>\n                        <td>\n                            \n                                CoronaVac®\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM8866</code></td>\n                        <td>\n                            \n                                BBIBP-CorV\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9TQ1</code></td>\n                        <td>\n                            \n                                KCONVAC\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM1G90</code></td>\n                        <td>\n                            \n                                Covaxin\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM85P5</code></td>\n                        <td>\n                            \n                                Covi-Vac\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9FQ7</code></td>\n                        <td>\n                            \n                                Hayat-Vax\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM97N6</code></td>\n                        <td>\n                            \n                                QazVac\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM2YG8</code></td>\n                        <td>\n                            \n                                COVIran Barakat\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM0K39</code></td>\n                        <td>\n                            \n                                Covidful\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM1AU2</code></td>\n                        <td>\n                            \n                                Sinopharm WIBP-CorV\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM5DF6</code></td>\n                        <td>\n                            \n                                COVID-19 vaccines, live attenuated virus\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9QW8</code></td>\n                        <td>\n                            \n                                COVID-19 vaccines, non-replicating viral vector\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM4YL8</code></td>\n                        <td>\n                            \n                                COVID-19 Vaccine AstraZeneca\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM97T2</code></td>\n                        <td>\n                            \n                                Covishield®\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM6QV1</code></td>\n                        <td>\n                            \n                                COVID-19 Vaccine Janssen\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM1AG7</code></td>\n                        <td>\n                            \n                                Convidecia\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM5ZJ4</code></td>\n                        <td>\n                            \n                                Gam-Covid-Vac\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM5QM6</code></td>\n                        <td>\n                            \n                                Sputnik-Light\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM0CX4</code></td>\n                        <td>\n                            \n                                COVID-19 vaccines, replicating viral vector\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM5JC5</code></td>\n                        <td>\n                            \n                                COVID-19 vaccines, virus protein subunit\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM3CT4</code></td>\n                        <td>\n                            \n                                Recombinant SARS-CoV-2 vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM3PG0</code></td>\n                        <td>\n                            \n                                Soberana-02\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM4EC8</code></td>\n                        <td>\n                            \n                                MVC-COV1901\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM6SZ8</code></td>\n                        <td>\n                            \n                                EpiVacCorona\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM0RV9</code></td>\n                        <td>\n                            \n                                Soberana Plus\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM3SK8</code></td>\n                        <td>\n                            \n                                EpiVacCorona-N\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9P21</code></td>\n                        <td>\n                            \n                                SpikoGen\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9T65</code></td>\n                        <td>\n                            \n                                Novavax COVID-19 vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9N08</code></td>\n                        <td>\n                            \n                                Razi COV PARS\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM1J92</code></td>\n                        <td>\n                            \n                                COVID-19 vaccines, virus like particle\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM6AT1</code></td>\n                        <td>\n                            \n                                COVID-19 vaccines, DNA based\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM52P3</code></td>\n                        <td>\n                            \n                                ZyCov-D\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM0GQ8</code></td>\n                        <td>\n                            \n                                COVID-19 vaccines, RNA based\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM8NQ0</code></td>\n                        <td>\n                            \n                                Comirnaty®\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM3DT5</code></td>\n                        <td>\n                            \n                                COVID-19 Vaccine Moderna\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM38G7</code></td>\n                        <td>\n                            \n                                Dengue vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM7P50</code></td>\n                        <td>\n                            \n                                Ebola vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM0RC1</code></td>\n                        <td>\n                            \n                                Encephalitis vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM8MP6</code></td>\n                        <td>\n                            \n                                Encephalitis, tick borne, inactivated, whole virus\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM0LB5</code></td>\n                        <td>\n                            \n                                Encephalitis, Japanese, inactivated, whole virus\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM47S0</code></td>\n                        <td>\n                            \n                                Encephalitis, Japanese, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM1LR5</code></td>\n                        <td>\n                            \n                                Influenza vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM8857</code></td>\n                        <td>\n                            \n                                Influenza vaccines, inactivated, whole virus\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM5V64</code></td>\n                        <td>\n                            \n                                Influenza vaccines, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM8MP2</code></td>\n                        <td>\n                            \n                                Influenza vaccines, inactivated, split virus or surface antigen\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9E16</code></td>\n                        <td>\n                            \n                                Influenza vaccines, virus like particle\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM33X8</code></td>\n                        <td>\n                            \n                                Influenza, purified antigen\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM6LL6</code></td>\n                        <td>\n                            \n                                Hepatitis vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9V38</code></td>\n                        <td>\n                            \n                                Hepatitis B, purified antigen\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM2A12</code></td>\n                        <td>\n                            \n                                Hepatitis A, inactivated, whole virus\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM03Y7</code></td>\n                        <td>\n                            \n                                Combinations hepatitis vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM28X5</code></td>\n                        <td>\n                            \n                                Measles vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM8L15</code></td>\n                        <td>\n                            \n                                Measles, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9439</code></td>\n                        <td>\n                            \n                                Measles, combinations with mumps, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM8TF3</code></td>\n                        <td>\n                            \n                                Measles, combinations with mumps and rubella, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM21H2</code></td>\n                        <td>\n                            \n                                Measles, combinations with rubella, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM4AJ8</code></td>\n                        <td>\n                            \n                                Measles, combinations with mumps, rubella and varicella, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM1131</code></td>\n                        <td>\n                            \n                                Mumps vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM2340</code></td>\n                        <td>\n                            \n                                Mumps, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM0N50</code></td>\n                        <td>\n                            \n                                Poliomyelitis vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM4KG4</code></td>\n                        <td>\n                            \n                                Orimune\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM1Y59</code></td>\n                        <td>\n                            \n                                Vaccine sabin oral\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM2KH7</code></td>\n                        <td>\n                            \n                                Diplovax\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM0VX8</code></td>\n                        <td>\n                            \n                                Poliomyelitis oral, monovalent live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM0KZ1</code></td>\n                        <td>\n                            \n                                Poliomyelitis oral, trivalent, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM79H3</code></td>\n                        <td>\n                            \n                                Poliomyelitis oral, bivalent, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM5V19</code></td>\n                        <td>\n                            \n                                Poliomyelitis, trivalent, inactivated, whole virus\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM1CE0</code></td>\n                        <td>\n                            \n                                Rotavirus diarrhoea vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM4GV0</code></td>\n                        <td>\n                            \n                                Rota virus, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM4VG1</code></td>\n                        <td>\n                            \n                                Rota virus, pentavalent, live, reassorted\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM7PP1</code></td>\n                        <td>\n                            \n                                Rubella vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9PS9</code></td>\n                        <td>\n                            \n                                Rubella, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM3B09</code></td>\n                        <td>\n                            \n                                Rubella, combinations with mumps, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM8DG3</code></td>\n                        <td>\n                            \n                                Varicella zoster vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM0NS8</code></td>\n                        <td>\n                            \n                                Varicella, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM1SS1</code></td>\n                        <td>\n                            \n                                Zoster, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9QP0</code></td>\n                        <td>\n                            \n                                Papillomavirus vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM1821</code></td>\n                        <td>\n                            \n                                Papillomavirus (human types 6,11,16,18)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9BT4</code></td>\n                        <td>\n                            \n                                Papillomavirus (human types 16,18)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM5CE9</code></td>\n                        <td>\n                            \n                                Papillomavirus (human types 6,11,16,18,31,33,45,52,58)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM95R0</code></td>\n                        <td>\n                            \n                                Smallpox vaccine\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM6T09</code></td>\n                        <td>\n                            \n                                Rabies vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM7BE8</code></td>\n                        <td>\n                            \n                                Rabies, inactivated, whole virus\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM02Y0</code></td>\n                        <td>\n                            \n                                Respiratory syncytial virus vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM69P6</code></td>\n                        <td>\n                            \n                                Synagis\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM0N24</code></td>\n                        <td>\n                            \n                                Yellow fever vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM3418</code></td>\n                        <td>\n                            \n                                Yellow fever, live attenuated\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM7C66</code></td>\n                        <td>\n                            \n                                Bacterial and viral vaccines, combined\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM8AW1</code></td>\n                        <td>\n                            \n                                Diphtheria, poliomyelitis, tetanus vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM09Q7</code></td>\n                        <td>\n                            \n                                Diphtheria, pertussis, poliomyelitis, tetanus vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9744</code></td>\n                        <td>\n                            \n                                Diphtheria, rubella, tetanus vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM41N3</code></td>\n                        <td>\n                            \n                                Diphtheria, hepatitis B, pertussis, tetanus vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM1LX9</code></td>\n                        <td>\n                            \n                                Diphtheria, hemophilus influenzae B, pertussis, poliomyelitis, tetanus vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM3G68</code></td>\n                        <td>\n                            \n                                Diphtheria, hepatitis B, tetanus vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM32L7</code></td>\n                        <td>\n                            \n                                Hemophilus influenzae B and hepatitis B vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM3JA6</code></td>\n                        <td>\n                            \n                                Typhoid, hepatitis A vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM7JP3</code></td>\n                        <td>\n                            \n                                Diphtheria, hemophilus influenzae B, pertussis, tetanus, hepatitis B vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM0LT9</code></td>\n                        <td>\n                            \n                                Diphtheria, pertussis, poliomyelitis, tetanus, hepatitis B vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM5XP9</code></td>\n                        <td>\n                            \n                                Diphtheria, hemophilus influenzae B, pertussis, tetanus-hepatitis B, meningococcus A + C vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM21E6</code></td>\n                        <td>\n                            \n                                Diphtheria tetanus, acellular pertussis, inactivated polio virus, haemophilus Influenzae type B vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM84S1</code></td>\n                        <td>\n                            \n                                Diphtheria, hepatitis B, tetanus, acellular pertussis, inactivated polio virus, haemophilus Influenzae type B vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM9JP8</code></td>\n                        <td>\n                            \n                                Diphtheria, tetanus, acellular pertussis, inactivated polio virus vaccines\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>XM01H1</code></td>\n                        <td>\n                            \n                                Hemophilus influenzae B and poliomyelitis vaccines\n                            \n                        </td>\n                    </tr>\n                \n            </table>\n        \n</div>"
+  },
+  "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-all-icd11",
+  "version" : "2023-01",
+  "name" : "ImmunizationAllIcd11ValueSet",
+  "title" : "Immunization / All / ICD-11",
+  "status" : "draft",
+  "date" : "2024-11-22T10:51:11+00:00",
+  "publisher" : "VCI",
+  "contact" : [{
+    "name" : "VCI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://vci.org"
+    }]
+  }],
+  "description" : "Contains ICD-11 MMS codes from the [`2023-01` release](\nhttps://icd.who.int/icdapi/docs2/SupportedClassifications/) that are descendants of the Foundation element `164949870` (\"Vaccines\") according to the [ICD API](https://icd.who.int/icdapi). Generated on 2023-06-23.",
+  "copyright" : "International Classification of Diseases, Eleventh Revision (ICD-11), World Health Organization (WHO)\n2019/2021. <https://icd.who.int/browse11>. Licensed under [Creative Commons Attribution-NoDerivatives 3.0 IGO license\n(CC BY-ND 3.0 IGO)](https://creativecommons.org/licenses/by-nd/3.0/igo/).",
+  "compose" : {
+    "include" : [{
+      "system" : "http://id.who.int/icd11/mms",
+      "concept" : [{
+        "code" : "XM3KV2",
+        "display" : "Bacterial vaccines"
+      },
+      {
+        "code" : "XM29K4",
+        "display" : "Cholera vaccines"
+      },
+      {
+        "code" : "XM3Z26",
+        "display" : "Cholera, inactivated, whole cell vaccines"
+      },
+      {
+        "code" : "XM72A0",
+        "display" : "Cholera, live attenuated vaccines"
+      },
+      {
+        "code" : "XM1FT6",
+        "display" : "Cholera, combinations with typhoid vaccine, inactivated, whole cell vaccines"
+      },
+      {
+        "code" : "XM11V3",
+        "display" : "Haemophilus influenzae B vaccines"
+      },
+      {
+        "code" : "XM6RG9",
+        "display" : "Hib, purified antigen conjugated vaccines"
+      },
+      {
+        "code" : "XM7F70",
+        "display" : "Hib, combinations with toxoids vaccines"
+      },
+      {
+        "code" : "XM81F7",
+        "display" : "Hib, combinations with pertussis and toxoids vaccines"
+      },
+      {
+        "code" : "XM0X86",
+        "display" : "Hib, combinations with meningococcus C, conjugated vaccines"
+      },
+      {
+        "code" : "XM2WV4",
+        "display" : "Meningococcal vaccines"
+      },
+      {
+        "code" : "XM92B2",
+        "display" : "Meningococcal monovalent purified polysaccharides antigen vaccines"
+      },
+      {
+        "code" : "XM5LC2",
+        "display" : "Meningococcal polyvalent purified polysaccharides antigen vaccines"
+      },
+      {
+        "code" : "XM3T39",
+        "display" : "Meningococcus A, C, bivalent purified polysaccharides antigen vaccines"
+      },
+      {
+        "code" : "XM2AR0",
+        "display" : "Meningococcus A, C, Y, W-135, tetravalent purified polysaccharides antigen vaccines"
+      },
+      {
+        "code" : "XM2EH7",
+        "display" : "Meningococcus A, C, Y, W-135, tetravalent purified polysaccharides antigen conjugated vaccines"
+      },
+      {
+        "code" : "XM18Y8",
+        "display" : "Meningococcus C, purified polysaccharides antigen conjugated vaccines"
+      },
+      {
+        "code" : "XM2280",
+        "display" : "Meningococcus A, purified polysaccharides antigen conjugated vaccines"
+      },
+      {
+        "code" : "XM9GJ1",
+        "display" : "Meningococcus B, outer membrane vesicle vaccines"
+      },
+      {
+        "code" : "XM1X81",
+        "display" : "Meningococcus B, multicomponent vaccines"
+      },
+      {
+        "code" : "XM37L5",
+        "display" : "Meningococcus A, purified polysaccharides antigen vaccines"
+      },
+      {
+        "code" : "XM43M9",
+        "display" : "Pertussis vaccines"
+      },
+      {
+        "code" : "XM45L8",
+        "display" : "Pertussis, inactivated, whole cell vaccines"
+      },
+      {
+        "code" : "XM62J1",
+        "display" : "Pertussis, purified antigen vaccines"
+      },
+      {
+        "code" : "XM2TK2",
+        "display" : "Pertussis, inactivated, whole cell, combinations with toxoids vaccines"
+      },
+      {
+        "code" : "XM4082",
+        "display" : "Pertussis, purified antigen, combinations with toxoids vaccines"
+      },
+      {
+        "code" : "XM2CV8",
+        "display" : "Vaccines pertussis with diphtheria"
+      },
+      {
+        "code" : "XM9EM7",
+        "display" : "Pneumococcal vaccines"
+      },
+      {
+        "code" : "XM9G97",
+        "display" : "Pneumococcal conjugate (13-valent) vaccines"
+      },
+      {
+        "code" : "XM2249",
+        "display" : "Pneumococcal polysaccharide 23-valent vaccines"
+      },
+      {
+        "code" : "XM91D7",
+        "display" : "Pneumococcus, purified polysaccharides antigen vaccines"
+      },
+      {
+        "code" : "XM96S7",
+        "display" : "Pneumococcus, purified polysaccharides antigen conjugated vaccines"
+      },
+      {
+        "code" : "XM4R39",
+        "display" : "Pneumococcus purified polysaccharides antigen and Haemophilus influenzae, conjugated vaccines"
+      },
+      {
+        "code" : "XM5L44",
+        "display" : "Tetanus vaccines"
+      },
+      {
+        "code" : "XM29H5",
+        "display" : "Tetanus toxoid vaccines"
+      },
+      {
+        "code" : "XM1G86",
+        "display" : "Tetanus toxoid, combinations with diphtheria toxoid vaccines"
+      },
+      {
+        "code" : "XM9AK2",
+        "display" : "Tetanus toxoid, combinations with tetanus immunoglobulin vaccines"
+      },
+      {
+        "code" : "XM31Q8",
+        "display" : "Tetanus, diphtheria, acellular pertussis vaccines"
+      },
+      {
+        "code" : "XM1PB8",
+        "display" : "Triple vaccines DPT"
+      },
+      {
+        "code" : "XM9ZL9",
+        "display" : "Pertussis vaccines (with diphtheria toxoid) (with tetanus toxoid)"
+      },
+      {
+        "code" : "XM9YH9",
+        "display" : "Diphtheria toxoid with tetanus toxoid with pertussis component vaccines"
+      },
+      {
+        "code" : "XM32Q5",
+        "display" : "Tetanus and diphtheria vaccines"
+      },
+      {
+        "code" : "XM4039",
+        "display" : "Vaccines diphtheria with tetanus"
+      },
+      {
+        "code" : "XM8XH5",
+        "display" : "Tetanus toxoid or vaccines toxoid with diphtheria toxoid"
+      },
+      {
+        "code" : "XM8BU8",
+        "display" : "Typhoid vaccines"
+      },
+      {
+        "code" : "XM33K4",
+        "display" : "Typhoid, oral, live attenuated vaccines"
+      },
+      {
+        "code" : "XM89G3",
+        "display" : "Typhoid, inactivated, whole cell vaccines"
+      },
+      {
+        "code" : "XM3SF6",
+        "display" : "Typhoid, purified polysaccharide antigen vaccines"
+      },
+      {
+        "code" : "XM9UB1",
+        "display" : "Typhoid-paratyphoid vaccines"
+      },
+      {
+        "code" : "XM3VD2",
+        "display" : "Vaccines TAB"
+      },
+      {
+        "code" : "XM95H3",
+        "display" : "Paratyphoid vaccines"
+      },
+      {
+        "code" : "XM8ZX8",
+        "display" : "Plague vaccines"
+      },
+      {
+        "code" : "XM3796",
+        "display" : "Plague, inactivated, whole cell vaccines"
+      },
+      {
+        "code" : "XM9SW5",
+        "display" : "Vaccines bacterial with other bacterial component"
+      },
+      {
+        "code" : "XM91J8",
+        "display" : "Vaccines rickettsial"
+      },
+      {
+        "code" : "XM3JJ2",
+        "display" : "Typhus (exanthematicus) vaccines"
+      },
+      {
+        "code" : "XM2NU8",
+        "display" : "Typhus exanthematicus, inactivated, whole cell vaccines"
+      },
+      {
+        "code" : "XM4F19",
+        "display" : "Vaccines rickettsial with bacterial component"
+      },
+      {
+        "code" : "XM0E84",
+        "display" : "Rocky Mountain spotted fever vaccines"
+      },
+      {
+        "code" : "XM5926",
+        "display" : "Vaccines bacterial mixed, not elsewhere classified"
+      },
+      {
+        "code" : "XM8NU9",
+        "display" : "Anthrax vaccines"
+      },
+      {
+        "code" : "XM2C05",
+        "display" : "Anthrax antigen vaccines"
+      },
+      {
+        "code" : "XM7PB3",
+        "display" : "Brucellosis vaccines"
+      },
+      {
+        "code" : "XM7RX8",
+        "display" : "Brucella antigen vaccines"
+      },
+      {
+        "code" : "XM8AW3",
+        "display" : "Diphtheria vaccines"
+      },
+      {
+        "code" : "XM86V7",
+        "display" : "Diphtheria toxoid vaccines"
+      },
+      {
+        "code" : "XM46V1",
+        "display" : "Diphtheria vaccines combination including pertussis"
+      },
+      {
+        "code" : "XM39K8",
+        "display" : "Diphtheria vaccines combination without pertussis"
+      },
+      {
+        "code" : "XM8YP9",
+        "display" : "Diphtheria vaccines combination"
+      },
+      {
+        "code" : "XM4639",
+        "display" : "Tuberculosis vaccines"
+      },
+      {
+        "code" : "XM8142",
+        "display" : "Tuberculosis, live attenuated vaccines"
+      },
+      {
+        "code" : "XM61M7",
+        "display" : "Viral vaccines"
+      },
+      {
+        "code" : "XM68M6",
+        "display" : "COVID-19 vaccines"
+      },
+      {
+        "code" : "XM1NL1",
+        "display" : "COVID-19 vaccines, inactivated virus"
+      },
+      {
+        "code" : "XM7HT3",
+        "display" : "CoronaVac®"
+      },
+      {
+        "code" : "XM8866",
+        "display" : "BBIBP-CorV"
+      },
+      {
+        "code" : "XM9TQ1",
+        "display" : "KCONVAC"
+      },
+      {
+        "code" : "XM1G90",
+        "display" : "Covaxin"
+      },
+      {
+        "code" : "XM85P5",
+        "display" : "Covi-Vac"
+      },
+      {
+        "code" : "XM9FQ7",
+        "display" : "Hayat-Vax"
+      },
+      {
+        "code" : "XM97N6",
+        "display" : "QazVac"
+      },
+      {
+        "code" : "XM2YG8",
+        "display" : "COVIran Barakat"
+      },
+      {
+        "code" : "XM0K39",
+        "display" : "Covidful"
+      },
+      {
+        "code" : "XM1AU2",
+        "display" : "Sinopharm WIBP-CorV"
+      },
+      {
+        "code" : "XM5DF6",
+        "display" : "COVID-19 vaccines, live attenuated virus"
+      },
+      {
+        "code" : "XM9QW8",
+        "display" : "COVID-19 vaccines, non-replicating viral vector"
+      },
+      {
+        "code" : "XM4YL8",
+        "display" : "COVID-19 Vaccine AstraZeneca"
+      },
+      {
+        "code" : "XM97T2",
+        "display" : "Covishield®"
+      },
+      {
+        "code" : "XM6QV1",
+        "display" : "COVID-19 Vaccine Janssen"
+      },
+      {
+        "code" : "XM1AG7",
+        "display" : "Convidecia"
+      },
+      {
+        "code" : "XM5ZJ4",
+        "display" : "Gam-Covid-Vac"
+      },
+      {
+        "code" : "XM5QM6",
+        "display" : "Sputnik-Light"
+      },
+      {
+        "code" : "XM0CX4",
+        "display" : "COVID-19 vaccines, replicating viral vector"
+      },
+      {
+        "code" : "XM5JC5",
+        "display" : "COVID-19 vaccines, virus protein subunit"
+      },
+      {
+        "code" : "XM3CT4",
+        "display" : "Recombinant SARS-CoV-2 vaccines"
+      },
+      {
+        "code" : "XM3PG0",
+        "display" : "Soberana-02"
+      },
+      {
+        "code" : "XM4EC8",
+        "display" : "MVC-COV1901"
+      },
+      {
+        "code" : "XM6SZ8",
+        "display" : "EpiVacCorona"
+      },
+      {
+        "code" : "XM0RV9",
+        "display" : "Soberana Plus"
+      },
+      {
+        "code" : "XM3SK8",
+        "display" : "EpiVacCorona-N"
+      },
+      {
+        "code" : "XM9P21",
+        "display" : "SpikoGen"
+      },
+      {
+        "code" : "XM9T65",
+        "display" : "Novavax COVID-19 vaccines"
+      },
+      {
+        "code" : "XM9N08",
+        "display" : "Razi COV PARS"
+      },
+      {
+        "code" : "XM1J92",
+        "display" : "COVID-19 vaccines, virus like particle"
+      },
+      {
+        "code" : "XM6AT1",
+        "display" : "COVID-19 vaccines, DNA based"
+      },
+      {
+        "code" : "XM52P3",
+        "display" : "ZyCov-D"
+      },
+      {
+        "code" : "XM0GQ8",
+        "display" : "COVID-19 vaccines, RNA based"
+      },
+      {
+        "code" : "XM8NQ0",
+        "display" : "Comirnaty®"
+      },
+      {
+        "code" : "XM3DT5",
+        "display" : "COVID-19 Vaccine Moderna"
+      },
+      {
+        "code" : "XM38G7",
+        "display" : "Dengue vaccines"
+      },
+      {
+        "code" : "XM7P50",
+        "display" : "Ebola vaccines"
+      },
+      {
+        "code" : "XM0RC1",
+        "display" : "Encephalitis vaccines"
+      },
+      {
+        "code" : "XM8MP6",
+        "display" : "Encephalitis, tick borne, inactivated, whole virus"
+      },
+      {
+        "code" : "XM0LB5",
+        "display" : "Encephalitis, Japanese, inactivated, whole virus"
+      },
+      {
+        "code" : "XM47S0",
+        "display" : "Encephalitis, Japanese, live attenuated"
+      },
+      {
+        "code" : "XM1LR5",
+        "display" : "Influenza vaccines"
+      },
+      {
+        "code" : "XM8857",
+        "display" : "Influenza vaccines, inactivated, whole virus"
+      },
+      {
+        "code" : "XM5V64",
+        "display" : "Influenza vaccines, live attenuated"
+      },
+      {
+        "code" : "XM8MP2",
+        "display" : "Influenza vaccines, inactivated, split virus or surface antigen"
+      },
+      {
+        "code" : "XM9E16",
+        "display" : "Influenza vaccines, virus like particle"
+      },
+      {
+        "code" : "XM33X8",
+        "display" : "Influenza, purified antigen"
+      },
+      {
+        "code" : "XM6LL6",
+        "display" : "Hepatitis vaccines"
+      },
+      {
+        "code" : "XM9V38",
+        "display" : "Hepatitis B, purified antigen"
+      },
+      {
+        "code" : "XM2A12",
+        "display" : "Hepatitis A, inactivated, whole virus"
+      },
+      {
+        "code" : "XM03Y7",
+        "display" : "Combinations hepatitis vaccines"
+      },
+      {
+        "code" : "XM28X5",
+        "display" : "Measles vaccines"
+      },
+      {
+        "code" : "XM8L15",
+        "display" : "Measles, live attenuated"
+      },
+      {
+        "code" : "XM9439",
+        "display" : "Measles, combinations with mumps, live attenuated"
+      },
+      {
+        "code" : "XM8TF3",
+        "display" : "Measles, combinations with mumps and rubella, live attenuated"
+      },
+      {
+        "code" : "XM21H2",
+        "display" : "Measles, combinations with rubella, live attenuated"
+      },
+      {
+        "code" : "XM4AJ8",
+        "display" : "Measles, combinations with mumps, rubella and varicella, live attenuated"
+      },
+      {
+        "code" : "XM1131",
+        "display" : "Mumps vaccines"
+      },
+      {
+        "code" : "XM2340",
+        "display" : "Mumps, live attenuated"
+      },
+      {
+        "code" : "XM0N50",
+        "display" : "Poliomyelitis vaccines"
+      },
+      {
+        "code" : "XM4KG4",
+        "display" : "Orimune"
+      },
+      {
+        "code" : "XM1Y59",
+        "display" : "Vaccine sabin oral"
+      },
+      {
+        "code" : "XM2KH7",
+        "display" : "Diplovax"
+      },
+      {
+        "code" : "XM0VX8",
+        "display" : "Poliomyelitis oral, monovalent live attenuated"
+      },
+      {
+        "code" : "XM0KZ1",
+        "display" : "Poliomyelitis oral, trivalent, live attenuated"
+      },
+      {
+        "code" : "XM79H3",
+        "display" : "Poliomyelitis oral, bivalent, live attenuated"
+      },
+      {
+        "code" : "XM5V19",
+        "display" : "Poliomyelitis, trivalent, inactivated, whole virus"
+      },
+      {
+        "code" : "XM1CE0",
+        "display" : "Rotavirus diarrhoea vaccines"
+      },
+      {
+        "code" : "XM4GV0",
+        "display" : "Rota virus, live attenuated"
+      },
+      {
+        "code" : "XM4VG1",
+        "display" : "Rota virus, pentavalent, live, reassorted"
+      },
+      {
+        "code" : "XM7PP1",
+        "display" : "Rubella vaccines"
+      },
+      {
+        "code" : "XM9PS9",
+        "display" : "Rubella, live attenuated"
+      },
+      {
+        "code" : "XM3B09",
+        "display" : "Rubella, combinations with mumps, live attenuated"
+      },
+      {
+        "code" : "XM8DG3",
+        "display" : "Varicella zoster vaccines"
+      },
+      {
+        "code" : "XM0NS8",
+        "display" : "Varicella, live attenuated"
+      },
+      {
+        "code" : "XM1SS1",
+        "display" : "Zoster, live attenuated"
+      },
+      {
+        "code" : "XM9QP0",
+        "display" : "Papillomavirus vaccines"
+      },
+      {
+        "code" : "XM1821",
+        "display" : "Papillomavirus (human types 6,11,16,18)"
+      },
+      {
+        "code" : "XM9BT4",
+        "display" : "Papillomavirus (human types 16,18)"
+      },
+      {
+        "code" : "XM5CE9",
+        "display" : "Papillomavirus (human types 6,11,16,18,31,33,45,52,58)"
+      },
+      {
+        "code" : "XM95R0",
+        "display" : "Smallpox vaccine"
+      },
+      {
+        "code" : "XM6T09",
+        "display" : "Rabies vaccines"
+      },
+      {
+        "code" : "XM7BE8",
+        "display" : "Rabies, inactivated, whole virus"
+      },
+      {
+        "code" : "XM02Y0",
+        "display" : "Respiratory syncytial virus vaccines"
+      },
+      {
+        "code" : "XM69P6",
+        "display" : "Synagis"
+      },
+      {
+        "code" : "XM0N24",
+        "display" : "Yellow fever vaccines"
+      },
+      {
+        "code" : "XM3418",
+        "display" : "Yellow fever, live attenuated"
+      },
+      {
+        "code" : "XM7C66",
+        "display" : "Bacterial and viral vaccines, combined"
+      },
+      {
+        "code" : "XM8AW1",
+        "display" : "Diphtheria, poliomyelitis, tetanus vaccines"
+      },
+      {
+        "code" : "XM09Q7",
+        "display" : "Diphtheria, pertussis, poliomyelitis, tetanus vaccines"
+      },
+      {
+        "code" : "XM9744",
+        "display" : "Diphtheria, rubella, tetanus vaccines"
+      },
+      {
+        "code" : "XM41N3",
+        "display" : "Diphtheria, hepatitis B, pertussis, tetanus vaccines"
+      },
+      {
+        "code" : "XM1LX9",
+        "display" : "Diphtheria, hemophilus influenzae B, pertussis, poliomyelitis, tetanus vaccines"
+      },
+      {
+        "code" : "XM3G68",
+        "display" : "Diphtheria, hepatitis B, tetanus vaccines"
+      },
+      {
+        "code" : "XM32L7",
+        "display" : "Hemophilus influenzae B and hepatitis B vaccines"
+      },
+      {
+        "code" : "XM3JA6",
+        "display" : "Typhoid, hepatitis A vaccines"
+      },
+      {
+        "code" : "XM7JP3",
+        "display" : "Diphtheria, hemophilus influenzae B, pertussis, tetanus, hepatitis B vaccines"
+      },
+      {
+        "code" : "XM0LT9",
+        "display" : "Diphtheria, pertussis, poliomyelitis, tetanus, hepatitis B vaccines"
+      },
+      {
+        "code" : "XM5XP9",
+        "display" : "Diphtheria, hemophilus influenzae B, pertussis, tetanus-hepatitis B, meningococcus A + C vaccines"
+      },
+      {
+        "code" : "XM21E6",
+        "display" : "Diphtheria tetanus, acellular pertussis, inactivated polio virus, haemophilus Influenzae type B vaccines"
+      },
+      {
+        "code" : "XM84S1",
+        "display" : "Diphtheria, hepatitis B, tetanus, acellular pertussis, inactivated polio virus, haemophilus Influenzae type B vaccines"
+      },
+      {
+        "code" : "XM9JP8",
+        "display" : "Diphtheria, tetanus, acellular pertussis, inactivated polio virus vaccines"
+      },
+      {
+        "code" : "XM01H1",
+        "display" : "Hemophilus influenzae B and poliomyelitis vaccines"
+      }]
+    }]
+  }
+}

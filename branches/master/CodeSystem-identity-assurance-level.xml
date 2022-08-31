@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="identity-assurance-level"/>
+  <url value="https://smarthealth.cards/ial"/>
+  <version value="1.0.0"/>
+  <name value="IdentityAssuranceLevelCodeSystem"/>
+  <title value="Identity Assurance Level Code System"/>
+  <status value="draft"/>
+  <date value="2024-11-22T10:51:11+00:00"/>
+  <publisher value="VCI"/>
+  <contact>
+    <name value="VCI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://vci.org"/>
+    </telecom>
+  </contact>
+  <description value="Code representing identity assurance level, based on NIST 800-63-3"/>
+  <copyright value="Copyright Computational Health Informatics Program, Boston Children's Hospital, Boston, MA as part of the [SMART Health Cards Framework](https://smarthealth.cards/ial). Licensed under CC-BY 4.0 (&lt;https://creativecommons.org/licenses/by/4.0/&gt;)."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="IAL1"/>
+    <display value="Name and birth date were self-asserted."/>
+  </concept>
+  <concept>
+    <code value="IAL1.2"/>
+    <display value="An unspecified ID was used to verify name and birth date."/>
+  </concept>
+  <concept>
+    <code value="IAL1.4"/>
+    <display value="A US state-issued photo ID or nationally-issued photo ID was used to verify name and birth date."/>
+  </concept>
+  <concept>
+    <code value="IAL2"/>
+    <display value="Either remote or in-person identity proofing is required. IAL2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in NIST Special Publication 800-63A."/>
+  </concept>
+  <concept>
+    <code value="IAL3"/>
+    <display value="In-person identity proofing is required. Identifying attributes must be verified by an authorized CSP representative through examination of physical documentation as described in NIST Special Publication 800-63A."/>
+  </concept>
+</CodeSystem>

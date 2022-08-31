@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="immunization-all-cvx"/>
+  <url value="https://terminology.smarthealth.cards/ValueSet/immunization-all-cvx"/>
+  <version value="20230623"/>
+  <name value="ImmunizationAllCvxValueSet"/>
+  <title value="Immunization / All / CVX"/>
+  <status value="draft"/>
+  <date value="2023-07-06T15:10:39+00:00"/>
+  <publisher value="VCI"/>
+  <contact>
+    <name value="VCI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://vci.org"/>
+    </telecom>
+  </contact>
+  <description value="Contains all CVX codes from &lt;https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx&gt; as of 2023-06-23."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+      <concept>
+        <code value="54"/>
+        <display value="adenovirus, type 4"/>
+      </concept>
+      <concept>
+        <code value="55"/>
+        <display value="adenovirus, type 7"/>
+      </concept>
+      <concept>
+        <code value="82"/>
+        <display value="adenovirus, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="24"/>
+        <display value="anthrax"/>
+      </concept>
+      <concept>
+        <code value="19"/>
+        <display value="BCG"/>
+      </concept>
+      <concept>
+        <code value="27"/>
+        <display value="botulinum antitoxin"/>
+      </concept>
+      <concept>
+        <code value="26"/>
+        <display value="cholera, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="29"/>
+        <display value="CMVIG"/>
+      </concept>
+      <concept>
+        <code value="56"/>
+        <display value="dengue fever tetravalent"/>
+      </concept>
+      <concept>
+        <code value="12"/>
+        <display value="diphtheria antitoxin"/>
+      </concept>
+      <concept>
+        <code value="28"/>
+        <display value="DT (pediatric)"/>
+      </concept>
+      <concept>
+        <code value="20"/>
+        <display value="DTaP"/>
+      </concept>
+      <concept>
+        <code value="106"/>
+        <display value="DTaP, 5 pertussis antigens"/>
+      </concept>
+      <concept>
+        <code value="107"/>
+        <display value="DTaP, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="110"/>
+        <display value="DTaP-Hep B-IPV"/>
+      </concept>
+      <concept>
+        <code value="50"/>
+        <display value="DTaP-Hib"/>
+      </concept>
+      <concept>
+        <code value="120"/>
+        <display value="DTaP-Hib-IPV"/>
+      </concept>
+      <concept>
+        <code value="130"/>
+        <display value="DTaP-IPV"/>
+      </concept>
+      <concept>
+        <code value="1"/>
+        <display value="DTP"/>
+      </concept>
+      <concept>
+        <code value="22"/>
+        <display value="DTP-Hib"/>
+      </concept>
+      <concept>
+        <code value="102"/>
+        <display value="DTP-Hib-Hep B"/>
+      </concept>
+      <concept>
+        <code value="57"/>
+        <display value="hantavirus"/>
+      </concept>
+      <concept>
+        <code value="52"/>
+        <display value="Hep A, adult"/>
+      </concept>
+      <concept>
+        <code value="83"/>
+        <display value="Hep A, ped/adol, 2 dose"/>
+      </concept>
+      <concept>
+        <code value="84"/>
+        <display value="Hep A, ped/adol, 3 dose"/>
+      </concept>
+      <concept>
+        <code value="31"/>
+        <display value="Hep A, pediatric, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="85"/>
+        <display value="Hep A, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="104"/>
+        <display value="Hep A-Hep B"/>
+      </concept>
+      <concept>
+        <code value="30"/>
+        <display value="HBIG"/>
+      </concept>
+      <concept>
+        <code value="8"/>
+        <display value="Hep B, adolescent or pediatric"/>
+      </concept>
+      <concept>
+        <code value="42"/>
+        <display value="Hep B, adolescent/high risk infant"/>
+      </concept>
+      <concept>
+        <code value="43"/>
+        <display value="Hep B, adult"/>
+      </concept>
+      <concept>
+        <code value="44"/>
+        <display value="Hep B, dialysis"/>
+      </concept>
+      <concept>
+        <code value="45"/>
+        <display value="Hep B, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="58"/>
+        <display value="Hep C"/>
+      </concept>
+      <concept>
+        <code value="59"/>
+        <display value="Hep E"/>
+      </concept>
+      <concept>
+        <code value="60"/>
+        <display value="herpes simplex 2"/>
+      </concept>
+      <concept>
+        <code value="46"/>
+        <display value="Hib (PRP-D)"/>
+      </concept>
+      <concept>
+        <code value="47"/>
+        <display value="Hib (HbOC)"/>
+      </concept>
+      <concept>
+        <code value="48"/>
+        <display value="Hib (PRP-T)"/>
+      </concept>
+      <concept>
+        <code value="49"/>
+        <display value="Hib (PRP-OMP)"/>
+      </concept>
+      <concept>
+        <code value="17"/>
+        <display value="Hib, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="51"/>
+        <display value="Hib-Hep B"/>
+      </concept>
+      <concept>
+        <code value="61"/>
+        <display value="HIV"/>
+      </concept>
+      <concept>
+        <code value="118"/>
+        <display value="HPV, bivalent"/>
+      </concept>
+      <concept>
+        <code value="62"/>
+        <display value="HPV, quadrivalent"/>
+      </concept>
+      <concept>
+        <code value="86"/>
+        <display value="IG"/>
+      </concept>
+      <concept>
+        <code value="87"/>
+        <display value="IGIV"/>
+      </concept>
+      <concept>
+        <code value="14"/>
+        <display value="IG, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="111"/>
+        <display value="influenza, live, intranasal"/>
+      </concept>
+      <concept>
+        <code value="15"/>
+        <display value="influenza, split (incl. purified surface antigen)"/>
+      </concept>
+      <concept>
+        <code value="16"/>
+        <display value="influenza, whole"/>
+      </concept>
+      <concept>
+        <code value="88"/>
+        <display value="influenza, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="123"/>
+        <display value="influenza, H5N1-1203"/>
+      </concept>
+      <concept>
+        <code value="10"/>
+        <display value="IPV"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="OPV"/>
+      </concept>
+      <concept>
+        <code value="89"/>
+        <display value="polio, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="39"/>
+        <display value="Japanese encephalitis SC"/>
+      </concept>
+      <concept>
+        <code value="63"/>
+        <display value="Junin virus"/>
+      </concept>
+      <concept>
+        <code value="64"/>
+        <display value="leishmaniasis"/>
+      </concept>
+      <concept>
+        <code value="65"/>
+        <display value="leprosy"/>
+      </concept>
+      <concept>
+        <code value="66"/>
+        <display value="Lyme disease"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="MMR"/>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="M/R"/>
+      </concept>
+      <concept>
+        <code value="94"/>
+        <display value="MMRV"/>
+      </concept>
+      <concept>
+        <code value="67"/>
+        <display value="malaria"/>
+      </concept>
+      <concept>
+        <code value="5"/>
+        <display value="measles"/>
+      </concept>
+      <concept>
+        <code value="68"/>
+        <display value="melanoma"/>
+      </concept>
+      <concept>
+        <code value="32"/>
+        <display value="meningococcal MPSV4"/>
+      </concept>
+      <concept>
+        <code value="103"/>
+        <display value="meningococcal C conjugate"/>
+      </concept>
+      <concept>
+        <code value="114"/>
+        <display value="meningococcal MCV4P"/>
+      </concept>
+      <concept>
+        <code value="108"/>
+        <display value="meningococcal ACWY, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="7"/>
+        <display value="mumps"/>
+      </concept>
+      <concept>
+        <code value="69"/>
+        <display value="parainfluenza-3"/>
+      </concept>
+      <concept>
+        <code value="11"/>
+        <display value="pertussis"/>
+      </concept>
+      <concept>
+        <code value="23"/>
+        <display value="plague"/>
+      </concept>
+      <concept>
+        <code value="33"/>
+        <display value="pneumococcal polysaccharide PPV23"/>
+      </concept>
+      <concept>
+        <code value="100"/>
+        <display value="pneumococcal conjugate PCV 7"/>
+      </concept>
+      <concept>
+        <code value="109"/>
+        <display value="pneumococcal, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="70"/>
+        <display value="Q fever"/>
+      </concept>
+      <concept>
+        <code value="18"/>
+        <display value="rabies, intramuscular injection"/>
+      </concept>
+      <concept>
+        <code value="40"/>
+        <display value="rabies, intradermal injection"/>
+      </concept>
+      <concept>
+        <code value="90"/>
+        <display value="rabies, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="72"/>
+        <display value="rheumatic fever"/>
+      </concept>
+      <concept>
+        <code value="73"/>
+        <display value="Rift Valley fever"/>
+      </concept>
+      <concept>
+        <code value="34"/>
+        <display value="RIG"/>
+      </concept>
+      <concept>
+        <code value="119"/>
+        <display value="rotavirus, monovalent"/>
+      </concept>
+      <concept>
+        <code value="122"/>
+        <display value="rotavirus, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="116"/>
+        <display value="rotavirus, pentavalent"/>
+      </concept>
+      <concept>
+        <code value="74"/>
+        <display value="rotavirus, tetravalent"/>
+      </concept>
+      <concept>
+        <code value="71"/>
+        <display value="RSV-IGIV"/>
+      </concept>
+      <concept>
+        <code value="93"/>
+        <display value="RSV-MAb"/>
+      </concept>
+      <concept>
+        <code value="6"/>
+        <display value="rubella"/>
+      </concept>
+      <concept>
+        <code value="38"/>
+        <display value="rubella/mumps"/>
+      </concept>
+      <concept>
+        <code value="76"/>
+        <display value="Staphylococcus bacterio lysate"/>
+      </concept>
+      <concept>
+        <code value="113"/>
+        <display value="Td (adult), 5 Lf tetanus toxoid, preservative free, adsorbed"/>
+      </concept>
+      <concept>
+        <code value="9"/>
+        <display value="Td (adult), 2 Lf tetanus toxoid, preservative free, adsorbed"/>
+      </concept>
+      <concept>
+        <code value="115"/>
+        <display value="Tdap"/>
+      </concept>
+      <concept>
+        <code value="35"/>
+        <display value="tetanus toxoid, adsorbed"/>
+      </concept>
+      <concept>
+        <code value="112"/>
+        <display value="tetanus toxoid, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="77"/>
+        <display value="Tick-borne encephalitis vaccine (non-US)"/>
+      </concept>
+      <concept>
+        <code value="13"/>
+        <display value="TIG"/>
+      </concept>
+      <concept>
+        <code value="95"/>
+        <display value="TST-OT tine test"/>
+      </concept>
+      <concept>
+        <code value="96"/>
+        <display value="TST-PPD intradermal"/>
+      </concept>
+      <concept>
+        <code value="97"/>
+        <display value="TST-PPD tine test"/>
+      </concept>
+      <concept>
+        <code value="98"/>
+        <display value="TST, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="78"/>
+        <display value="tularemia vaccine"/>
+      </concept>
+      <concept>
+        <code value="91"/>
+        <display value="typhoid, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="25"/>
+        <display value="typhoid, oral"/>
+      </concept>
+      <concept>
+        <code value="41"/>
+        <display value="typhoid, parenteral"/>
+      </concept>
+      <concept>
+        <code value="53"/>
+        <display value="typhoid, parenteral, AKD (U.S. military)"/>
+      </concept>
+      <concept>
+        <code value="101"/>
+        <display value="typhoid, ViCPs"/>
+      </concept>
+      <concept>
+        <code value="75"/>
+        <display value="vaccinia (smallpox)"/>
+      </concept>
+      <concept>
+        <code value="105"/>
+        <display value="vaccinia (smallpox) diluted"/>
+      </concept>
+      <concept>
+        <code value="79"/>
+        <display value="vaccinia immune globulin"/>
+      </concept>
+      <concept>
+        <code value="21"/>
+        <display value="varicella"/>
+      </concept>
+      <concept>
+        <code value="81"/>
+        <display value="VEE, inactivated"/>
+      </concept>
+      <concept>
+        <code value="80"/>
+        <display value="VEE, live"/>
+      </concept>
+      <concept>
+        <code value="92"/>
+        <display value="VEE, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="36"/>
+        <display value="VZIG"/>
+      </concept>
+      <concept>
+        <code value="117"/>
+        <display value="VZIG (IND)"/>
+      </concept>
+      <concept>
+        <code value="37"/>
+        <display value="yellow fever"/>
+      </concept>
+      <concept>
+        <code value="121"/>
+        <display value="zoster live"/>
+      </concept>
+      <concept>
+        <code value="998"/>
+        <display value="no vaccine administered"/>
+      </concept>
+      <concept>
+        <code value="999"/>
+        <display value="unknown"/>
+      </concept>
+      <concept>
+        <code value="99"/>
+        <display value="RESERVED - do not use"/>
+      </concept>
+      <concept>
+        <code value="133"/>
+        <display value="Pneumococcal conjugate PCV 13"/>
+      </concept>
+      <concept>
+        <code value="134"/>
+        <display value="Japanese Encephalitis IM"/>
+      </concept>
+      <concept>
+        <code value="137"/>
+        <display value="HPV, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="136"/>
+        <display value="Meningococcal MCV4O"/>
+      </concept>
+      <concept>
+        <code value="135"/>
+        <display value="Influenza, high dose seasonal"/>
+      </concept>
+      <concept>
+        <code value="131"/>
+        <display value="typhus, historical"/>
+      </concept>
+      <concept>
+        <code value="132"/>
+        <display value="DTaP-IPV-HIB-HEP B, historical"/>
+      </concept>
+      <concept>
+        <code value="128"/>
+        <display value="Novel Influenza-H1N1-09, all formulations"/>
+      </concept>
+      <concept>
+        <code value="125"/>
+        <display value="Novel Influenza-H1N1-09, nasal"/>
+      </concept>
+      <concept>
+        <code value="126"/>
+        <display value="Novel influenza-H1N1-09, preservative-free"/>
+      </concept>
+      <concept>
+        <code value="127"/>
+        <display value="Novel influenza-H1N1-09"/>
+      </concept>
+      <concept>
+        <code value="138"/>
+        <display value="Td (adult)"/>
+      </concept>
+      <concept>
+        <code value="139"/>
+        <display value="Td(adult) unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="140"/>
+        <display value="Influenza, seasonal, injectable, preservative free"/>
+      </concept>
+      <concept>
+        <code value="129"/>
+        <display value="Japanese Encephalitis, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="141"/>
+        <display value="Influenza, seasonal, injectable"/>
+      </concept>
+      <concept>
+        <code value="142"/>
+        <display value="tetanus toxoid, not adsorbed"/>
+      </concept>
+      <concept>
+        <code value="143"/>
+        <display value="Adenovirus types 4 and 7"/>
+      </concept>
+      <concept>
+        <code value="144"/>
+        <display value="influenza, seasonal, intradermal, preservative free"/>
+      </concept>
+      <concept>
+        <code value="145"/>
+        <display value="RSV-MAb (new)"/>
+      </concept>
+      <concept>
+        <code value="146"/>
+        <display value="DTaP,IPV,Hib,HepB"/>
+      </concept>
+      <concept>
+        <code value="147"/>
+        <display value="meningococcal MCV4, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="148"/>
+        <display value="Meningococcal C/Y-HIB PRP"/>
+      </concept>
+      <concept>
+        <code value="149"/>
+        <display value="influenza, live, intranasal, quadrivalent"/>
+      </concept>
+      <concept>
+        <code value="150"/>
+        <display value="influenza, injectable, quadrivalent, preservative free"/>
+      </concept>
+      <concept>
+        <code value="151"/>
+        <display value="influenza nasal, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="152"/>
+        <display value="Pneumococcal Conjugate, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="153"/>
+        <display value="Influenza, injectable, MDCK, preservative free"/>
+      </concept>
+      <concept>
+        <code value="154"/>
+        <display value="Hep A, IG"/>
+      </concept>
+      <concept>
+        <code value="155"/>
+        <display value="influenza, recombinant, injectable, preservative free"/>
+      </concept>
+      <concept>
+        <code value="156"/>
+        <display value="Rho(D)-IG"/>
+      </concept>
+      <concept>
+        <code value="157"/>
+        <display value="Rho(D) -IG IM"/>
+      </concept>
+      <concept>
+        <code value="158"/>
+        <display value="influenza, injectable, quadrivalent"/>
+      </concept>
+      <concept>
+        <code value="159"/>
+        <display value="Rho(D) - Unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="160"/>
+        <display value="Influenza A monovalent (H5N1), ADJUVANTED-2013"/>
+      </concept>
+      <concept>
+        <code value="801"/>
+        <display value="AS03 Adjuvant"/>
+      </concept>
+      <concept>
+        <code value="161"/>
+        <display value="Influenza, injectable,quadrivalent, preservative free, pediatric"/>
+      </concept>
+      <concept>
+        <code value="162"/>
+        <display value="meningococcal B, recombinant"/>
+      </concept>
+      <concept>
+        <code value="163"/>
+        <display value="meningococcal B, OMV"/>
+      </concept>
+      <concept>
+        <code value="164"/>
+        <display value="meningococcal B, unspecified"/>
+      </concept>
+      <concept>
+        <code value="165"/>
+        <display value="HPV9"/>
+      </concept>
+      <concept>
+        <code value="166"/>
+        <display value="influenza, intradermal, quadrivalent, preservative free"/>
+      </concept>
+      <concept>
+        <code value="167"/>
+        <display value="meningococcal, unknown serogroups"/>
+      </concept>
+      <concept>
+        <code value="168"/>
+        <display value="influenza, trivalent, adjuvanted"/>
+      </concept>
+      <concept>
+        <code value="169"/>
+        <display value="Hep A, live attenuated"/>
+      </concept>
+      <concept>
+        <code value="170"/>
+        <display value="DTAP/IPV/HIB - non-US"/>
+      </concept>
+      <concept>
+        <code value="171"/>
+        <display value="Influenza, injectable, MDCK, preservative free, quadrivalent"/>
+      </concept>
+      <concept>
+        <code value="172"/>
+        <display value="cholera, WC-rBS"/>
+      </concept>
+      <concept>
+        <code value="173"/>
+        <display value="cholera, BivWC"/>
+      </concept>
+      <concept>
+        <code value="174"/>
+        <display value="cholera, live attenuated"/>
+      </concept>
+      <concept>
+        <code value="175"/>
+        <display value="Rabies - IM Diploid cell culture"/>
+      </concept>
+      <concept>
+        <code value="176"/>
+        <display value="Rabies - IM fibroblast culture"/>
+      </concept>
+      <concept>
+        <code value="177"/>
+        <display value="PCV10"/>
+      </concept>
+      <concept>
+        <code value="178"/>
+        <display value="OPV bivalent"/>
+      </concept>
+      <concept>
+        <code value="179"/>
+        <display value="OPV ,monovalent, unspecified"/>
+      </concept>
+      <concept>
+        <code value="180"/>
+        <display value="tetanus immune globulin"/>
+      </concept>
+      <concept>
+        <code value="181"/>
+        <display value="anthrax immune globulin"/>
+      </concept>
+      <concept>
+        <code value="182"/>
+        <display value="OPV, Unspecified"/>
+      </concept>
+      <concept>
+        <code value="183"/>
+        <display value="Yellow fever vaccine - alt"/>
+      </concept>
+      <concept>
+        <code value="184"/>
+        <display value="Yellow fever, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="185"/>
+        <display value="influenza, recombinant, quadrivalent,injectable, preservative free"/>
+      </concept>
+      <concept>
+        <code value="186"/>
+        <display value="Influenza, injectable, MDCK, quadrivalent, preservative"/>
+      </concept>
+      <concept>
+        <code value="187"/>
+        <display value="zoster recombinant"/>
+      </concept>
+      <concept>
+        <code value="188"/>
+        <display value="zoster, unspecified formulation"/>
+      </concept>
+      <concept>
+        <code value="189"/>
+        <display value="HepB-CpG"/>
+      </concept>
+      <concept>
+        <code value="190"/>
+        <display value="Typhoid conjugate vaccine (TCV)"/>
+      </concept>
+      <concept>
+        <code value="191"/>
+        <display value="meningococcal A polysaccharide (non-US)"/>
+      </concept>
+      <concept>
+        <code value="192"/>
+        <display value="meningococcal AC polysaccharide (non-US)"/>
+      </concept>
+      <concept>
+        <code value="193"/>
+        <display value="Hep A-Hep B, pediatric/adolescent"/>
+      </concept>
+      <concept>
+        <code value="194"/>
+        <display value="Influenza, Southern Hemisphere"/>
+      </concept>
+      <concept>
+        <code value="195"/>
+        <display value="DT, IPV adsorbed"/>
+      </concept>
+      <concept>
+        <code value="196"/>
+        <display value="Td, adsorbed, preservative free, adult use, Lf unspecified"/>
+      </concept>
+      <concept>
+        <code value="197"/>
+        <display value="influenza, high-dose, quadrivalent"/>
+      </concept>
+      <concept>
+        <code value="200"/>
+        <display value="influenza, Southern Hemisphere, pediatric, preservative free"/>
+      </concept>
+      <concept>
+        <code value="201"/>
+        <display value="influenza, Southern Hemisphere, preservative free"/>
+      </concept>
+      <concept>
+        <code value="202"/>
+        <display value="influenza, Southern Hemisphere, quadrivalent, with preservative"/>
+      </concept>
+      <concept>
+        <code value="198"/>
+        <display value="DTP-hepB-Hib Pentavalent Non-US"/>
+      </concept>
+      <concept>
+        <code value="203"/>
+        <display value="meningococcal conjugate quadrivalent, MenACWY-TT (MCV4)"/>
+      </concept>
+      <concept>
+        <code value="205"/>
+        <display value="Influenza vaccine, quadrivalent, adjuvanted"/>
+      </concept>
+      <concept>
+        <code value="206"/>
+        <display value="Vaccinia, smallpox Mpox vaccine live, PF, SQ or ID injection"/>
+      </concept>
+      <concept>
+        <code value="207"/>
+        <display value="COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose"/>
+      </concept>
+      <concept>
+        <code value="208"/>
+        <display value="COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose"/>
+      </concept>
+      <concept>
+        <code value="213"/>
+        <display value="SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED"/>
+      </concept>
+      <concept>
+        <code value="210"/>
+        <display value="COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL "/>
+      </concept>
+      <concept>
+        <code value="212"/>
+        <display value="COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL"/>
+      </concept>
+      <concept>
+        <code value="204"/>
+        <display value="Ebola Zaire vaccine, live, recombinant, 1mL dose"/>
+      </concept>
+      <concept>
+        <code value="214"/>
+        <display value="Ebola, unspecified"/>
+      </concept>
+      <concept>
+        <code value="211"/>
+        <display value="COVID-19, subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL"/>
+      </concept>
+      <concept>
+        <code value="500"/>
+        <display value="COVID-19 Non-US Vaccine, Product Unknown"/>
+      </concept>
+      <concept>
+        <code value="501"/>
+        <display value="COVID-19 IV Non-US Vaccine (QAZCOVID-IN)"/>
+      </concept>
+      <concept>
+        <code value="502"/>
+        <display value="COVID-19 IV Non-US Vaccine (COVAXIN)"/>
+      </concept>
+      <concept>
+        <code value="503"/>
+        <display value="COVID-19 LAV Non-US Vaccine (COVIVAC)"/>
+      </concept>
+      <concept>
+        <code value="504"/>
+        <display value="COVID-19 VVnr Non-US Vaccine (Sputnik Light)"/>
+      </concept>
+      <concept>
+        <code value="505"/>
+        <display value="COVID-19 VVnr Non-US Vaccine (Sputnik V)"/>
+      </concept>
+      <concept>
+        <code value="506"/>
+        <display value="COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology"/>
+      </concept>
+      <concept>
+        <code value="507"/>
+        <display value="COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)"/>
+      </concept>
+      <concept>
+        <code value="508"/>
+        <display value="COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)"/>
+      </concept>
+      <concept>
+        <code value="509"/>
+        <display value="COVID-19 PS Non-US Vaccine (EpiVacCorona)"/>
+      </concept>
+      <concept>
+        <code value="510"/>
+        <display value="COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)"/>
+      </concept>
+      <concept>
+        <code value="511"/>
+        <display value="COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)"/>
+      </concept>
+      <concept>
+        <code value="215"/>
+        <display value="Pneumococcal conjugate PCV15, polysaccharide CRM197 conjugate, adjuvant, PF"/>
+      </concept>
+      <concept>
+        <code value="216"/>
+        <display value="Pneumococcal conjugate PCV20, polysaccharide CRM197 conjugate, adjuvant, PF"/>
+      </concept>
+      <concept>
+        <code value="219"/>
+        <display value="COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose"/>
+      </concept>
+      <concept>
+        <code value="217"/>
+        <display value="COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose"/>
+      </concept>
+      <concept>
+        <code value="218"/>
+        <display value="COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose"/>
+      </concept>
+      <concept>
+        <code value="220"/>
+        <display value="HepB recombinant, 3-antigen, Al(OH)3"/>
+      </concept>
+      <concept>
+        <code value="221"/>
+        <display value="COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL dose"/>
+      </concept>
+      <concept>
+        <code value="222"/>
+        <display value="Tick-borne encephalitis, unspecified"/>
+      </concept>
+      <concept>
+        <code value="223"/>
+        <display value="Tick-borne encephalitis, inactivated, PF, 0.25mL"/>
+      </concept>
+      <concept>
+        <code value="224"/>
+        <display value="Tick-borne encephalitis, inactivated, PF, 0.5mL"/>
+      </concept>
+      <concept>
+        <code value="225"/>
+        <display value="COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 5mcg/0.5mL"/>
+      </concept>
+      <concept>
+        <code value="226"/>
+        <display value="COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 10mcg/0.5mL"/>
+      </concept>
+      <concept>
+        <code value="512"/>
+        <display value="SARS-COV-2 COVID-19 VLP Non-US Vaccine (Medicago, Covifenz)"/>
+      </concept>
+      <concept>
+        <code value="513"/>
+        <display value="SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)"/>
+      </concept>
+      <concept>
+        <code value="514"/>
+        <display value="SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)"/>
+      </concept>
+      <concept>
+        <code value="515"/>
+        <display value="SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)"/>
+      </concept>
+      <concept>
+        <code value="516"/>
+        <display value="COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)"/>
+      </concept>
+      <concept>
+        <code value="517"/>
+        <display value="SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)"/>
+      </concept>
+      <concept>
+        <code value="227"/>
+        <display value="COVID-19, mRNA, LNP-S, PF, pediatric 50 mcg/0.5 mL dose"/>
+      </concept>
+      <concept>
+        <code value="228"/>
+        <display value="COVID-19, mRNA, LNP-S, PF, pediatric 25 mcg/0.25 mL dose"/>
+      </concept>
+      <concept>
+        <code value="229"/>
+        <display value="COVID-19, mRNA, LNP-S, bivalent, PF, 50 mcg/0.5 mL or 25mcg/0.25 mL dose"/>
+      </concept>
+      <concept>
+        <code value="301"/>
+        <display value="COVID-19, mRNA, LNP-S, bivalent, PF, 10 mcg/0.2 mL dose"/>
+      </concept>
+      <concept>
+        <code value="300"/>
+        <display value="COVID-19, mRNA, LNP-S, bivalent, PF, 30 mcg/0.3 mL dose"/>
+      </concept>
+      <concept>
+        <code value="230"/>
+        <display value="COVID-19, mRNA, LNP-S, bivalent, PF, 10 mcg/0.2 mL"/>
+      </concept>
+      <concept>
+        <code value="518"/>
+        <display value="COVID-19 Inactivated, Non-US Vaccine (VLA2001, Valneva)"/>
+      </concept>
+      <concept>
+        <code value="519"/>
+        <display value="COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine (Spikevax Bivalent), Moderna"/>
+      </concept>
+      <concept>
+        <code value="520"/>
+        <display value="COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine Product, Pfizer-BioNTech"/>
+      </concept>
+      <concept>
+        <code value="521"/>
+        <display value="COVID-19 SP, protein-based, adjuvanted (VidPrevtyn Beta), Sanofi-GSK"/>
+      </concept>
+      <concept>
+        <code value="231"/>
+        <display value="influenza, Southern Hemisphere, high-dose, quadrivalent"/>
+      </concept>
+      <concept>
+        <code value="303"/>
+        <display value="RSV, recombinant, protein subunit RSVpreF, adjuvant reconstituted, 0.5 mL, PF"/>
+      </concept>
+      <concept>
+        <code value="304"/>
+        <display value="Respiratory syncytial virus (RSV), unspecified "/>
+      </concept>
+      <concept>
+        <code value="302"/>
+        <display value="COVID-19, mRNA, LNP-S, bivalent, PF, 3 mcg/0.2 mL dose"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

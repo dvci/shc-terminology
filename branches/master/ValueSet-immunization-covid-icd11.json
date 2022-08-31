@@ -1,0 +1,169 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "immunization-covid-icd11",
+  "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-covid-icd11",
+  "version" : "2023-01",
+  "name" : "ImmunizationCovidIcd11ValueSet",
+  "title" : "Immunization / COVID / ICD-11",
+  "status" : "draft",
+  "date" : "2024-11-22T10:51:11+00:00",
+  "publisher" : "VCI",
+  "contact" : [{
+    "name" : "VCI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://vci.org"
+    }]
+  }],
+  "description" : "Contains ICD-11 MMS codes from the [`2023-01` release](https://icd.who.int/icdapi/docs2/SupportedClassifications/) that are descendants of `XM68M6` (\"COVID-19 Vaccines\").",
+  "copyright" : "International Classification of Diseases, Eleventh Revision (ICD-11), World Health Organization (WHO) 2019/2021. <https://icd.who.int/browse11>. Licensed under [Creative Commons Attribution-NoDerivatives 3.0 IGO licence (CC BY-ND 3.0 IGO)](https://creativecommons.org/licenses/by-nd/3.0/igo/).",
+  "compose" : {
+    "include" : [{
+      "system" : "http://id.who.int/icd11/mms",
+      "concept" : [{
+        "code" : "XM1NL1",
+        "display" : "COVID-19 vaccines, inactivated virus"
+      },
+      {
+        "code" : "XM7HT3",
+        "display" : "CoronaVac®"
+      },
+      {
+        "code" : "XM8866",
+        "display" : "BBIBP-CorV"
+      },
+      {
+        "code" : "XM9TQ1",
+        "display" : "KCONVAC"
+      },
+      {
+        "code" : "XM1G90",
+        "display" : "Covaxin"
+      },
+      {
+        "code" : "XM85P5",
+        "display" : "Covi-Vac"
+      },
+      {
+        "code" : "XM9FQ7",
+        "display" : "Hayat-Vax"
+      },
+      {
+        "code" : "XM97N6",
+        "display" : "QazVac"
+      },
+      {
+        "code" : "XM2YG8",
+        "display" : "COVIran Barakat"
+      },
+      {
+        "code" : "XM0K39",
+        "display" : "Covidful"
+      },
+      {
+        "code" : "XM1AU2",
+        "display" : "Sinopharm WIBP-CorV"
+      },
+      {
+        "code" : "XM5DF6",
+        "display" : "COVID-19 vaccines, live attenuated virus"
+      },
+      {
+        "code" : "XM9QW8",
+        "display" : "COVID-19 vaccines, non-replicating viral vector"
+      },
+      {
+        "code" : "XM4YL8",
+        "display" : "COVID-19 Vaccine AstraZeneca"
+      },
+      {
+        "code" : "XM97T2",
+        "display" : "Covishield®"
+      },
+      {
+        "code" : "XM6QV1",
+        "display" : "COVID-19 Vaccine Janssen"
+      },
+      {
+        "code" : "XM1AG7",
+        "display" : "Convidecia"
+      },
+      {
+        "code" : "XM5ZJ4",
+        "display" : "Gam-Covid-Vac"
+      },
+      {
+        "code" : "XM5QM6",
+        "display" : "Sputnik-Light"
+      },
+      {
+        "code" : "XM0CX4",
+        "display" : "COVID-19 vaccines, replicating viral vector"
+      },
+      {
+        "code" : "XM5JC5",
+        "display" : "COVID-19 vaccines, virus protein subunit"
+      },
+      {
+        "code" : "XM3CT4",
+        "display" : "Recombinant SARS-CoV-2 vaccines"
+      },
+      {
+        "code" : "XM3PG0",
+        "display" : "Soberana-02"
+      },
+      {
+        "code" : "XM4EC8",
+        "display" : "MVC-COV1901"
+      },
+      {
+        "code" : "XM6SZ8",
+        "display" : "EpiVacCorona"
+      },
+      {
+        "code" : "XM0RV9",
+        "display" : "Soberana Plus"
+      },
+      {
+        "code" : "XM3SK8",
+        "display" : "EpiVacCorona-N"
+      },
+      {
+        "code" : "XM9P21",
+        "display" : "SpikoGen"
+      },
+      {
+        "code" : "XM9T65",
+        "display" : "Novavax COVID-19 vaccines"
+      },
+      {
+        "code" : "XM9N08",
+        "display" : "Razi COV PARS"
+      },
+      {
+        "code" : "XM1J92",
+        "display" : "COVID-19 vaccines, virus like particle"
+      },
+      {
+        "code" : "XM6AT1",
+        "display" : "COVID-19 vaccines, DNA based"
+      },
+      {
+        "code" : "XM52P3",
+        "display" : "ZyCov-D"
+      },
+      {
+        "code" : "XM0GQ8",
+        "display" : "COVID-19 vaccines, RNA based"
+      },
+      {
+        "code" : "XM8NQ0",
+        "display" : "Comirnaty®"
+      },
+      {
+        "code" : "XM3DT5",
+        "display" : "COVID-19 Vaccine Moderna"
+      }]
+    }]
+  }
+}

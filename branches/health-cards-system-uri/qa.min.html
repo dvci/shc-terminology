@@ -1,0 +1,480 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = errors = 57, warn = 31, info = 1, 1 -->
+<head>
+  <title>SMARTHealthCardsTerminology : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for SMARTHealthCardsTerminology</h1>
+ <p>Generated Sun Sep 11 11:03:13 UTC 2022, FHIR version 4.0.1 for cards.smarthealth.terminology#0.1.0 (canonical = <a href="https://terminology.smarthealth.cards">https://terminology.smarthealth.cards</a> (<a href="https://terminology.smarthealth.cards/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.131</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = cards.smarthealth.terminology, Canonical = https://terminology.smarthealth.cards</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.1.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/shc-terminology/shc-terminology/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> cards.smarthealth.terminology</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://terminology.smarthealth.cards</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/shc-terminology/shc-terminology/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">3.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/3.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: org.vci.ig-template#0.1.0 -&gt; fhir.base.template#current</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://terminology.smarthealth.cards (Problem #1 with package-list.json at https://terminology.smarthealth.cards: Invalid HTTP response 404 from https://terminology.smarthealth.cards/package-list.json?nocache=1662893901557 (Not Found) (content in /tmp/fhir-http-2.log))</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>Summary:</td><td> errors = 57, warn = 31, info = 1, broken links = 1</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_CodeSystem-designation-use"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-designation-use</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_CodeSystem-health-card"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-health-card</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_CodeSystem-identity-assurance-level"><b>/home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-identity-assurance-level</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_covid-cvx"><b>/home/runner/work/shc-terminology/shc-terminology/input/vocabulary/covid-cvx</b></a></td><td><b>40</b></td><td><b>31</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_covid-mapping-cvx-air"><b>/home/runner/work/shc-terminology/shc-terminology/input/vocabulary/covid-mapping-cvx-air</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_monkeypox-cvx"><b>/home/runner/work/shc-terminology/shc-terminology/input/vocabulary/monkeypox-cvx</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l314">output/index.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 231, column 12</a></b></td><td><b>error</b></td><td><b>The link 'ValueSet-covid-19-vaccine-snomed-value-set.html' for &quot;SNOMED CT&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_CodeSystem-designation-use"> </a>
+<h2><a href="CodeSystem-designation-use.html">fsh-generated/resources/CodeSystem-designation-use.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem.text.div</b></td><td><b>error</b></td><td title="Rule txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Failed"><b>Rule txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, &lt;a&gt; elements (either name or href), images and internally contained style attributes' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem.text.div</b></td><td><b>error</b></td><td title="XHTML_XHTML_Element_Illegal"><b>Illegal element name in the XHTML ('script')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_CodeSystem-health-card"> </a>
+<h2><a href="CodeSystem-health-card.html">fsh-generated/resources/CodeSystem-health-card.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem.where(url = 'https://smarthealth.cards#')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-health-card.json - the canonical URL (https://terminology.smarthealth.cards/CodeSystem/health-card) does not match the URL (https://smarthealth.cards#)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem.text.div</b></td><td><b>error</b></td><td title="Rule txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Failed"><b>Rule txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, &lt;a&gt; elements (either name or href), images and internally contained style attributes' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem.text.div</b></td><td><b>error</b></td><td title="XHTML_XHTML_Element_Illegal"><b>Illegal element name in the XHTML ('script')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated/resources/CodeSystem-health-card</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://terminology.smarthealth.cards/CodeSystem/health-card vs https://smarthealth.cards#</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_fsh-generated_resources_CodeSystem-identity-assurance-level"> </a>
+<h2><a href="CodeSystem-identity-assurance-level.html">fsh-generated/resources/CodeSystem-identity-assurance-level.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem.where(url = 'https://smarthealth.cards/ial')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-identity-assurance-level.json - the canonical URL (https://terminology.smarthealth.cards/CodeSystem/identity-assurance-level) does not match the URL (https://smarthealth.cards/ial)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem.text.div</b></td><td><b>error</b></td><td title="Rule txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes' Failed"><b>Rule txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, &lt;a&gt; elements (either name or href), images and internally contained style attributes' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem.text.div</b></td><td><b>error</b></td><td title="XHTML_XHTML_Element_Illegal"><b>Illegal element name in the XHTML ('script')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated/resources/CodeSystem-identity-assurance-level</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://terminology.smarthealth.cards/CodeSystem/identity-assurance-level vs https://smarthealth.cards/ial</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_covid-cvx"> </a>
+<h2><a href="ValueSet-covid-cvx.html">input/vocabulary/covid-cvx.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[0].designation[0].use (l53/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[0].designation[1].use (l61/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[1].designation[0].use (l75/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[1].designation[1].use (l83/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[1].designation[2].use (l91/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[2].designation[0].use (l105/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[2].designation[1].use (l113/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[3].designation[0].use (l127/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[4].designation[0].use (l141/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[4].designation[1].use (l149/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[5].designation[0].use (l163/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[5].designation[1].use (l171/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[6].designation[0].use (l185/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[6].designation[1].use (l193/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[7].designation[0].use (l207/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[8].designation[0].use (l221/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[9].designation[0].use (l235/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[10].designation[0].use (l249/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[11].designation[0].use (l263/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[12].designation[0].use (l277/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[13].designation[0].use (l291/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[14].designation[0].use (l305/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[15].designation[0].use (l319/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[16].designation[0].use (l333/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[17].designation[0].use (l347/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[18].designation[0].use (l361/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[19].designation[0].use (l375/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[20].designation[0].use (l389/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[21].designation[0].use (l403/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[22].designation[0].use (l417/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[23].designation[0].use (l431/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[24].designation[0].use (l445/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[25].designation[0].use (l459/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[26].designation[0].use (l473/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[27].designation[0].use (l487/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[28].designation[0].use (l501/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[29].designation[0].use (l515/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[30].designation[0].use (l529/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[31].designation[0].use (l543/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[32].designation[0].use (l557/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose.include[0].concept[2].display</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'COVID-19...mL '</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose.include[0].concept[9].designation[0].value</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Sanofi...COVID-19 '</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose.include[0].concept[10].designation[0].value</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace 'Sanofi...COVID-19 '</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[5]</b></td><td><b>warning</b></td><td title=""><b>The code 217 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[6]</b></td><td><b>warning</b></td><td title=""><b>The code 218 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[7]</b></td><td><b>warning</b></td><td title=""><b>The code 219 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[8]</b></td><td><b>warning</b></td><td title=""><b>The code 221 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[9]</b></td><td><b>warning</b></td><td title=""><b>The code 225 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[10]</b></td><td><b>warning</b></td><td title=""><b>The code 226 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[11]</b></td><td><b>warning</b></td><td title=""><b>The code 227 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[12]</b></td><td><b>warning</b></td><td title=""><b>The code 228 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[13]</b></td><td><b>warning</b></td><td title=""><b>The code 229 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[14]</b></td><td><b>warning</b></td><td title=""><b>The code 300 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[15]</b></td><td><b>warning</b></td><td title=""><b>The code 301 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[16]</b></td><td><b>warning</b></td><td title=""><b>The code 501 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[17]</b></td><td><b>warning</b></td><td title=""><b>The code 502 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[18]</b></td><td><b>warning</b></td><td title=""><b>The code 503 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[19]</b></td><td><b>warning</b></td><td title=""><b>The code 504 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[20]</b></td><td><b>warning</b></td><td title=""><b>The code 505 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[21]</b></td><td><b>warning</b></td><td title=""><b>The code 506 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[22]</b></td><td><b>warning</b></td><td title=""><b>The code 507 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[23]</b></td><td><b>warning</b></td><td title=""><b>The code 508 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[24]</b></td><td><b>warning</b></td><td title=""><b>The code 509 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[25]</b></td><td><b>warning</b></td><td title=""><b>The code 510 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[26]</b></td><td><b>warning</b></td><td title=""><b>The code 511 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[27]</b></td><td><b>warning</b></td><td title=""><b>The code 512 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[28]</b></td><td><b>warning</b></td><td title=""><b>The code 513 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[29]</b></td><td><b>warning</b></td><td title=""><b>The code 514 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[30]</b></td><td><b>warning</b></td><td title=""><b>The code 515 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[31]</b></td><td><b>warning</b></td><td title=""><b>The code 516 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0].concept[32]</b></td><td><b>warning</b></td><td title=""><b>The code 517 is not valid in the system http://hl7.org/fhir/sid/cvx</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_covid-mapping-cvx-air"> </a>
+<h2><a href="ConceptMap-covid-mapping-cvx-air.html">input/vocabulary/covid-mapping-cvx-air.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>ConceptMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/conceptmap.html">ConceptMap</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ConceptMap.where(url = 'https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ConceptMap.where(url = 'https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/vocabulary/covid-mapping-cvx-air</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://terminology.smarthealth.cards/ConceptMap/covid-mapping-cvx-air vs https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_home_runner_work_shc-terminology_shc-terminology_input_vocabulary_monkeypox-cvx"> </a>
+<h2><a href="ValueSet-monkeypox-cvx.html">input/vocabulary/monkeypox-cvx.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[0].designation[0].use (l49/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[0].designation[1].use (l57/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[0].designation[2].use (l65/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.compose.include[0].concept[1].designation[0].use (l79/c18)</b></td><td><b>error</b></td><td title=""><b>Unrecognised property '@use'</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet.compose.include[0].concept[0].designation[1].language</b></td><td><b>information</b></td><td><b>The value provided ('en-EU') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#en-EU) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b> (<a href="qa-tx.html#l41">see Tx log</a>)</td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-health-card.html">fsh-generated/resources/CodeSystem-health-card.json</a></td><td><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-health-card.json - the canonical URL (https://terminology.smarthealth.cards/CodeSystem/health-card) does not match the URL (https://smarthealth.cards#)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-identity-assurance-level.html">fsh-generated/resources/CodeSystem-identity-assurance-level.json</a></td><td><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-identity-assurance-level.json - the canonical URL (https://terminology.smarthealth.cards/CodeSystem/identity-assurance-level) does not match the URL (https://smarthealth.cards/ial)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ConceptMap-covid-mapping-cvx-air.html">input/vocabulary/covid-mapping-cvx-air.json</a></td><td><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ConceptMap-covid-mapping-cvx-air.html">input/vocabulary/covid-mapping-cvx-air.json</a></td><td><b>Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_18"> </a>
+<h2>Terminology_TX_NoValid_18</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-monkeypox-cvx.html">input/vocabulary/monkeypox-cvx.json</a></td><td><b>The value provided ('en-EU') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#en-EU) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_String_WS"> </a>
+<h2>Type_Specific_Checks_DT_String_WS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-covid-cvx.html">input/vocabulary/covid-cvx.json</a></td><td><b>value should not start or finish with whitespace 'COVID-19...mL '</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-covid-cvx.html">input/vocabulary/covid-cvx.json</a></td><td><b>value should not start or finish with whitespace 'Sanofi...COVID-19 '</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ValueSet-covid-cvx.html">input/vocabulary/covid-cvx.json</a></td><td><b>value should not start or finish with whitespace 'Sanofi...COVID-19 '</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="XHTML_XHTML_Element_Illegal"> </a>
+<h2>XHTML_XHTML_Element_Illegal</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-designation-use.html">fsh-generated/resources/CodeSystem-designation-use.json</a></td><td><b>Illegal element name in the XHTML ('script')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-health-card.html">fsh-generated/resources/CodeSystem-health-card.json</a></td><td><b>Illegal element name in the XHTML ('script')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-identity-assurance-level.html">fsh-generated/resources/CodeSystem-identity-assurance-level.json</a></td><td><b>Illegal element name in the XHTML ('script')</b></td>
+   </tr>
+</table>
+</body>
+</html>

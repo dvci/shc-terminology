@@ -1,0 +1,107 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-all-cvx",
+      "version" : "20230920",
+      "status" : "draft",
+      "name" : "ImmunizationAllCvxValueSet",
+      "title" : "Immunization / All / CVX",
+      "description" : "Contains all CVX codes from <https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx> as of 2023-09-20.",
+      "systems" : ["http://hl7.org/fhir/sid/cvx"]
+    },
+    {
+      "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-all-icd11",
+      "version" : "2023-01",
+      "status" : "draft",
+      "name" : "ImmunizationAllIcd11ValueSet",
+      "title" : "Immunization / All / ICD-11",
+      "description" : "Contains ICD-11 MMS codes from the [`2023-01` release](\nhttps://icd.who.int/icdapi/docs2/SupportedClassifications/) that are descendants of the Foundation element `164949870` (\"Vaccines\") according to the [ICD API](https://icd.who.int/icdapi). Generated on 2023-06-23.",
+      "systems" : ["http://id.who.int/icd11/mms"]
+    },
+    {
+      "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-all-snomed",
+      "version" : null,
+      "status" : "draft",
+      "name" : "ImmunizationAllSnomedValueSet",
+      "title" : "Immunization / All / SNOMED CT",
+      "description" : "Contains descendants of SNOMED CT concept `787859002` \"Vaccine product (medicinal product)\". Note that codes from _any_ SNOMED CT extension are valid as long as they descend from this concept.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-covid-all",
+      "version" : "20230616",
+      "status" : "active",
+      "name" : "ImmunizationCovidAllValueSet",
+      "title" : "Immunization / COVID / All codes",
+      "description" : "A list of all immunization codes for COVID, combining the following ValueSets: <a href=\"ValueSet-immunization-covid-cvx.html\">ValueSet-immunization-covid-cvx.json</a>; <a href=\"ValueSet-immunization-covid-snomed.html\">ValueSet-immunization-covid-snomed.json</a>; <a href=\"ValueSet-immunization-covid-icd11.html\">ValueSet-immunization-covid-icd11.json</a>",
+      "systems" : [
+        "http://id.who.int/icd11/mms",
+        "http://snomed.info/sct",
+        "http://hl7.org/fhir/sid/cvx"
+      ]
+    },
+    {
+      "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-covid-cvx",
+      "version" : "2023.1",
+      "status" : "active",
+      "name" : "ImmunizationCovidCvxValueSet",
+      "title" : "Immunization / COVID / CVX",
+      "description" : "Contains [CVX (\"vaccine administered\") codes](https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx) with recommended consumer-suitable display text for use in SMART Health Cards, with localized consumer friendly terms",
+      "systems" : ["http://hl7.org/fhir/sid/cvx"]
+    },
+    {
+      "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-covid-icd11",
+      "version" : "2023-01",
+      "status" : "draft",
+      "name" : "ImmunizationCovidIcd11ValueSet",
+      "title" : "Immunization / COVID / ICD-11",
+      "description" : "Contains ICD-11 MMS codes from the [`2023-01` release](https://icd.who.int/icdapi/docs2/SupportedClassifications/) that are descendants of `XM68M6` (\"COVID-19 Vaccines\").",
+      "systems" : ["http://id.who.int/icd11/mms"]
+    },
+    {
+      "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-covid-snomed",
+      "version" : "2023.1",
+      "status" : "draft",
+      "name" : "ImmunizationCovidSnomedValueSet",
+      "title" : "Immunization / COVID / SNOMED CT",
+      "description" : "Contains SNOMED CT codes that identify specific COVID-19 vaccines for use in SMART Health Cards.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-orthopoxvirus-all",
+      "version" : "20230601",
+      "status" : "active",
+      "name" : "ImmunizationOrthopoxvirusAllValueSet",
+      "title" : "Immunization / orthopoxvirus / All codes",
+      "description" : "A list of all immunization codes for orthopoxvirus, combining the following ValueSets: <a href=\"ValueSet-immunization-orthopoxvirus-cvx.html\">ValueSet-immunization-orthopoxvirus-cvx.json</a>",
+      "systems" : ["http://hl7.org/fhir/sid/cvx"]
+    },
+    {
+      "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-orthopoxvirus-cvx",
+      "version" : "2022.1",
+      "status" : "active",
+      "name" : "ImmunizationOrthopoxvirusCvxValueSet",
+      "title" : "Immunization / orthopoxvirus / CVX",
+      "description" : "Contains [CVX (\"vaccine administered\") codes](https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx) with recommended consumer-suitable displays for use in SMART Health Cards, with localized consumer friendly terms",
+      "systems" : ["http://hl7.org/fhir/sid/cvx"]
+    },
+    {
+      "url" : "https://terminology.smarthealth.cards/ValueSet/lab-qualitative-result",
+      "version" : "2023.1",
+      "status" : "draft",
+      "name" : "LabQualitativeResultValueSet",
+      "title" : "Qualitative infectious disease-related lab test result codes",
+      "description" : "This value set includes a codes to identify the results of qualitative lab tests related to infectious diseases.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://terminology.smarthealth.cards/ValueSet/lab-qualitative-test-covid",
+      "version" : "2023.1",
+      "status" : "draft",
+      "name" : "LabQualitativeTestCovidValueSet",
+      "title" : "LOINCs identifying qualitative COVID lab tests",
+      "description" : "This value set includes a subset of the LOINCs found at <https://loinc.org/sars-cov-2-and-covid-19/> that identify COVID-19-related laboratory tests. Only those laboratory tests that include qualitative results we believe to be useful in SMART Health Cards are included.",
+      "systems" : ["http://loinc.org"]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="identity-assurance-level"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+<script>
+    let pTags = Array.from(document.getElementsByTagName(&quot;p&quot;));
+    pTags.filter(function(x) { return x.textContent.includes('This Code system is referenced in the content logical definition of the following value sets:')}).forEach(function(t) { t.style.display = &quot;none&quot;});
+    pTags.filter(function(x) { return x.textContent.includes('This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)')}).forEach(function(t) {t.style.display = &quot;none&quot;});
+</script>
+<div>
+    <table class="table-striped table table-bordered">
+        <tr>
+            <th>Code</th>
+            <th>Description(s)</th>
+        </tr>
+        
+            <tr>
+                <td><code>IAL1</code></td>
+                <td>
+                    
+                        Name and birth date were self-asserted.
+                    
+                </td>
+            </tr>
+        
+            <tr>
+                <td><code>IAL1.2</code></td>
+                <td>
+                    
+                        An unspecified ID was used to verify name and birth date.
+                    
+                </td>
+            </tr>
+        
+            <tr>
+                <td><code>IAL1.4</code></td>
+                <td>
+                    
+                        A US state-issued photo ID or nationally-issued photo ID was used to verify name and birth date.
+                    
+                </td>
+            </tr>
+        
+            <tr>
+                <td><code>IAL2</code></td>
+                <td>
+                    
+                        Either remote or in-person identity proofing is required. IAL2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in NIST Special Publication 800-63A.
+                    
+                </td>
+            </tr>
+        
+            <tr>
+                <td><code>IAL3</code></td>
+                <td>
+                    
+                        In-person identity proofing is required. Identifying attributes must be verified by an authorized CSP representative through examination of physical documentation as described in NIST Special Publication 800-63A.
+                    
+                </td>
+            </tr>
+        
+    </table>
+</div></div>
+  </text>
+  <url value="https://smarthealth.cards/ial"/>
+  <version value="0.1.0"/>
+  <name value="IdentityAssuranceLevelCodeSystem"/>
+  <title value="Identity Assurance Level Code System"/>
+  <status value="active"/>
+  <date value="2022-09-02T20:55:52+00:00"/>
+  <publisher value="VCI"/>
+  <contact>
+    <name value="VCI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://vci.org"/>
+    </telecom>
+  </contact>
+  <description value="Code representing identity assurance level, based on NIST 800-63-3"/>
+  <copyright value="Copyright Computational Health Informatics Program, Boston Children's Hospital, Boston, MA as part of the [SMART Health Cards Framework](https://smarthealth.cards/ial). Licensed under CC-BY 4.0 (&lt;https://creativecommons.org/licenses/by/4.0/&gt;)."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="IAL1"/>
+    <display value="Name and birth date were self-asserted."/>
+  </concept>
+  <concept>
+    <code value="IAL1.2"/>
+    <display value="An unspecified ID was used to verify name and birth date."/>
+  </concept>
+  <concept>
+    <code value="IAL1.4"/>
+    <display value="A US state-issued photo ID or nationally-issued photo ID was used to verify name and birth date."/>
+  </concept>
+  <concept>
+    <code value="IAL2"/>
+    <display value="Either remote or in-person identity proofing is required. IAL2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in NIST Special Publication 800-63A."/>
+  </concept>
+  <concept>
+    <code value="IAL3"/>
+    <display value="In-person identity proofing is required. Identifying attributes must be verified by an authorized CSP representative through examination of physical documentation as described in NIST Special Publication 800-63A."/>
+  </concept>
+</CodeSystem>

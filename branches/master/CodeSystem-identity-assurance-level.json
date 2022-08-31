@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "identity-assurance-level",
+  "url" : "https://smarthealth.cards/ial",
+  "version" : "1.0.0",
+  "name" : "IdentityAssuranceLevelCodeSystem",
+  "title" : "Identity Assurance Level Code System",
+  "status" : "draft",
+  "date" : "2024-11-22T10:51:11+00:00",
+  "publisher" : "VCI",
+  "contact" : [{
+    "name" : "VCI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://vci.org"
+    }]
+  }],
+  "description" : "Code representing identity assurance level, based on NIST 800-63-3",
+  "copyright" : "Copyright Computational Health Informatics Program, Boston Children's Hospital, Boston, MA as part of the [SMART Health Cards Framework](https://smarthealth.cards/ial). Licensed under CC-BY 4.0 (<https://creativecommons.org/licenses/by/4.0/>).",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "IAL1",
+    "display" : "Name and birth date were self-asserted."
+  },
+  {
+    "code" : "IAL1.2",
+    "display" : "An unspecified ID was used to verify name and birth date."
+  },
+  {
+    "code" : "IAL1.4",
+    "display" : "A US state-issued photo ID or nationally-issued photo ID was used to verify name and birth date."
+  },
+  {
+    "code" : "IAL2",
+    "display" : "Either remote or in-person identity proofing is required. IAL2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in NIST Special Publication 800-63A."
+  },
+  {
+    "code" : "IAL3",
+    "display" : "In-person identity proofing is required. Identifying attributes must be verified by an authorized CSP representative through examination of physical documentation as described in NIST Special Publication 800-63A."
+  }]
+}

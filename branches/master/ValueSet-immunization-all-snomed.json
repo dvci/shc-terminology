@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "immunization-all-snomed",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n        \n            <p>\n                The following codes from the <code><a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\">http://snomed.info/sct</a></code> code system are included:\n            </p>\n            <table class=\"table-striped table table-bordered\">\n                <tr>\n                    <th>Code</th>\n                    <th>Description(s)</th>\n                </tr>\n                \n            </table>\n        \n</div>"
+  },
+  "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-all-snomed",
+  "name" : "ImmunizationAllSnomedValueSet",
+  "title" : "Immunization / All / SNOMED CT",
+  "status" : "draft",
+  "date" : "2024-11-22T10:51:11+00:00",
+  "publisher" : "VCI",
+  "contact" : [{
+    "name" : "VCI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://vci.org"
+    }]
+  }],
+  "description" : "Contains descendants of SNOMED CT concept `787859002` \"Vaccine product (medicinal product)\". Note that codes from _any_ SNOMED CT extension are valid as long as they descend from this concept.",
+  "copyright" : "© 2002+ International Health Terminology Standards Development Organisation (IHTSDO)",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "787859002"
+      }]
+    }]
+  }
+}

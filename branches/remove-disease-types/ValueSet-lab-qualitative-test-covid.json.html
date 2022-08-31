@@ -1,0 +1,616 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>CARDS.SMARTHEALTH.TERMINOLOGY\LOINCs identifying qualitative COVID lab tests - JSON Representation - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/fix-fonts.css" rel="stylesheet"/>
+    <link href="assets/css/smart-health-cards.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.3"}
+    h3,h4,h5,h6{--heading-prefix:"2.3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">SMART Health Cards: Terminology</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>LOINCs identifying qualitative COVID lab tests</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">SMART Health Cards: Terminology - Local Development build (v0.1.0). See the <a href="https://terminology.smarthealth.cards/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-lab-qualitative-test-covid.html">Narrative Content</a>
+  </li>
+
+
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: LOINCs identifying qualitative COVID lab tests - JSON Representation</h2>
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2023-06-01
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-lab-qualitative-test-covid.json" no-download="true">Raw json</a> | <a href="ValueSet-lab-qualitative-test-covid.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; overflow: hidden"><code>
+{
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "lab-qualitative-test-covid",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;\n        \n            &lt;p&gt;\n                The following codes from the &lt;code&gt;&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-v3-loinc.html\&quot;&gt;Logical Observation Identifiers, Names and Codes (LOINC)&lt;/a&gt;&lt;/code&gt; code system are included:\n            &lt;/p&gt;\n            &lt;table class=\&quot;table-striped table table-bordered\&quot;&gt;\n                &lt;tr&gt;\n                    &lt;th&gt;Code&lt;/th&gt;\n                    &lt;th&gt;Description(s)&lt;/th&gt;\n                &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94307-6&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 N gene Spec Ql NAA N1\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94308-4&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 N gene Spec Ql NAA N2\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94309-2&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 RNA Spec Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94310-0&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-related CoV N Spec Ql NAA N3\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94314-2&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 RdRp Spec Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94315-9&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-rel CoV E gene Spec Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94316-7&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 N gene Spec Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94500-6&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 RNA Resp Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94502-2&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-rel CoV RNA Resp Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94507-1&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 IgG SerPlBld Ql IA.rapid\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94508-9&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 IgM SerPlBld Ql IA.rapid\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94532-9&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-rel CoV+MERS RNA Resp Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94533-7&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 N gene Resp Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94534-5&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 RdRp Resp Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94547-7&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 IgG+IgM SerPl Ql IA\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94558-4&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 Ag Resp Ql IA.rapid\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94559-2&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 ORF1ab Resp Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94562-6&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 IgA SerPl Ql IA\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94563-4&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 IgG SerPl Ql IA\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94564-2&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 IgM SerPl Ql IA\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94565-9&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 RNA Nph Ql NAA+non-probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94639-2&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 ORF1ab Spec Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94640-0&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 S gene Resp Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94641-8&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 S gene Spec Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94647-5&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARSr-CoV RNA Spec Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94660-8&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 RNA SerPl Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94661-6&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 Ab SerPl-Imp\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94756-4&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 N gene Resp Ql NAA N1\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94757-2&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 N gene Resp Ql NAA N2\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94758-0&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-rel CoV E gene Resp Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94759-8&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 RNA Nph Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94760-6&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 N gene Nph Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94761-4&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 IgG DBS Ql IA\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94762-2&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 Ab SerPl Ql IA\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94763-0&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 Spec Ql Cult\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94765-5&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-rel CoV E gene SerPl Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94766-3&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 N gene SerPl Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94767-1&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 S gene SerPl Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94768-9&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 IgA SerPlBld Ql IA.rapid\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94822-4&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 RNA Sal Ql Seq\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;94845-5&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 RNA Sal Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;95125-1&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 IgA+IgM SerPl Ql IA\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;95209-3&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV+SARS-CoV-2 Ag Resp Ql IA.rapid\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;95406-5&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 RNA Nose Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;95409-9&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 N gene Nose Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;95411-5&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 NAb Ser Ql pVNT\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;95416-4&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 IgM DBS Ql IA\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;95423-0&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                FLUABV + SARS-CoV-2 Resp NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;95424-8&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 RNA Resp Ql Seq\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;95425-5&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 N gene Sal Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;95542-7&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 Ab SerPlBld Ql IA.rapid\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;95608-6&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 RNA Resp Ql NAA+non-probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;95609-4&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 S gene Resp Ql Seq\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;95823-1&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-rel CoV E gene Sal Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;95824-9&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 ORF1ab Sal Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;95825-6&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 Ab DBS Ql IA\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;95970-0&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 TCRB Bld Ql Seq\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;95971-8&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 IFN-g Bld Ql\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;96091-4&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 RdRp Sal Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;96119-3&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 Ag Upper resp Ql IA\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;96120-1&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 RdRp Lower resp Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;96121-9&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-rel CoV E gene Low resp Ql NAA+prb\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;96122-7&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-rel CoV E gene Upper resp Ql NAA+prb\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;96123-5&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 RdRp Upper resp Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;96448-6&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 N gene Sal Ql NAA N1\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;96603-6&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 S RBD NAb SerPl Ql sVNT\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;96752-1&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 S gene mut Spec Ql\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;96763-8&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 E gene Resp Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;96765-3&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 S gene Sal Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;96797-6&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 RNA OPA wash Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;96829-7&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 RNA Spec Donr Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;96957-6&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 M gene Upper resp Ql NAA+prb\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;96958-4&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 N gene Sal Ql NAA N2\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;96986-5&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 N gene Nose Ql NAA+non-probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;97097-0&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 Ag Upper resp Ql IA.rapid\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;97098-8&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 Nsp2 Upper resp Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;98069-8&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 Ab Sal Ql IA.rapid\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;98131-6&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 ORF1b Resp Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;98132-4&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 ORF1a Resp Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;98493-0&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 ORF1b Sal Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;98494-8&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 ORF1a Sal Ql NAA+probe\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;99596-9&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 N IgG SerPl Ql IA\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;99597-7&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 S IgG SerPl Ql IA\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;99772-6&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                SARS-CoV-2 IFN-g Bld-Imp\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n            &lt;/table&gt;\n        \n&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://terminology.smarthealth.cards/ValueSet/lab-qualitative-test-covid",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "2022.2",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "LabQualitativeTestCovidValueSet",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "LOINCs identifying qualitative COVID lab tests",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2023-06-01T21:01:58+00:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "VCI",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "VCI",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://vci.org"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "This value set includes a subset of the LOINCs found at &lt;https://loinc.org/sars-cov-2-and-covid-19/&gt; that identify COVID-19-related laboratory tests. Only those laboratory tests that include qualitative results we believe to be useful in SMART Health Cards are included.",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.copyright">copyright</a>" : "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://loinc.org",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94307-6",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 N gene Spec Ql NAA N1"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94308-4",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 N gene Spec Ql NAA N2"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94309-2",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 RNA Spec Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94310-0",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-related CoV N Spec Ql NAA N3"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94314-2",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 RdRp Spec Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94315-9",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-rel CoV E gene Spec Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94316-7",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 N gene Spec Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94500-6",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 RNA Resp Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94502-2",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-rel CoV RNA Resp Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94507-1",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 IgG SerPlBld Ql IA.rapid"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94508-9",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 IgM SerPlBld Ql IA.rapid"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94532-9",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-rel CoV+MERS RNA Resp Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94533-7",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 N gene Resp Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94534-5",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 RdRp Resp Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94547-7",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 IgG+IgM SerPl Ql IA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94558-4",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 Ag Resp Ql IA.rapid"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94559-2",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 ORF1ab Resp Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94562-6",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 IgA SerPl Ql IA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94563-4",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 IgG SerPl Ql IA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94564-2",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 IgM SerPl Ql IA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94565-9",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 RNA Nph Ql NAA+non-probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94639-2",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 ORF1ab Spec Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94640-0",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 S gene Resp Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94641-8",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 S gene Spec Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94647-5",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARSr-CoV RNA Spec Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94660-8",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 RNA SerPl Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94661-6",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 Ab SerPl-Imp"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94756-4",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 N gene Resp Ql NAA N1"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94757-2",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 N gene Resp Ql NAA N2"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94758-0",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-rel CoV E gene Resp Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94759-8",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 RNA Nph Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94760-6",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 N gene Nph Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94761-4",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 IgG DBS Ql IA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94762-2",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 Ab SerPl Ql IA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94763-0",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 Spec Ql Cult"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94765-5",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-rel CoV E gene SerPl Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94766-3",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 N gene SerPl Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94767-1",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 S gene SerPl Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94768-9",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 IgA SerPlBld Ql IA.rapid"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94822-4",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 RNA Sal Ql Seq"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "94845-5",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 RNA Sal Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "95125-1",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 IgA+IgM SerPl Ql IA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "95209-3",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV+SARS-CoV-2 Ag Resp Ql IA.rapid"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "95406-5",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 RNA Nose Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "95409-9",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 N gene Nose Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "95411-5",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 NAb Ser Ql pVNT"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "95416-4",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 IgM DBS Ql IA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "95423-0",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "FLUABV + SARS-CoV-2 Resp NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "95424-8",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 RNA Resp Ql Seq"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "95425-5",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 N gene Sal Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "95542-7",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 Ab SerPlBld Ql IA.rapid"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "95608-6",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 RNA Resp Ql NAA+non-probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "95609-4",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 S gene Resp Ql Seq"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "95823-1",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-rel CoV E gene Sal Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "95824-9",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 ORF1ab Sal Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "95825-6",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 Ab DBS Ql IA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "95970-0",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 TCRB Bld Ql Seq"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "95971-8",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 IFN-g Bld Ql"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "96091-4",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 RdRp Sal Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "96119-3",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 Ag Upper resp Ql IA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "96120-1",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 RdRp Lower resp Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "96121-9",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-rel CoV E gene Low resp Ql NAA+prb"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "96122-7",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-rel CoV E gene Upper resp Ql NAA+prb"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "96123-5",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 RdRp Upper resp Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "96448-6",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 N gene Sal Ql NAA N1"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "96603-6",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 S RBD NAb SerPl Ql sVNT"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "96752-1",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 S gene mut Spec Ql"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "96763-8",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 E gene Resp Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "96765-3",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 S gene Sal Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "96797-6",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 RNA OPA wash Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "96829-7",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 RNA Spec Donr Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "96957-6",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 M gene Upper resp Ql NAA+prb"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "96958-4",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 N gene Sal Ql NAA N2"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "96986-5",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 N gene Nose Ql NAA+non-probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "97097-0",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 Ag Upper resp Ql IA.rapid"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "97098-8",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 Nsp2 Upper resp Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "98069-8",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 Ab Sal Ql IA.rapid"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "98131-6",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 ORF1b Resp Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "98132-4",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 ORF1a Resp Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "98493-0",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 ORF1b Sal Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "98494-8",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 ORF1a Sal Ql NAA+probe"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "99596-9",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 N IgG SerPl Ql IA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "99597-7",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 S IgG SerPl Ql IA"
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "99772-6",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "SARS-CoV-2 IFN-g Bld-Imp"
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://vci.org">VCI</a>.  Package cards.smarthealth.terminology#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 1, 2023 21:01+0000">2023-06-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

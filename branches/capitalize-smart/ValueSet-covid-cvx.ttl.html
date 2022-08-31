@@ -1,0 +1,684 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <title>CARDS.SMARTHEALTH.TERMINOLOGY\CVX Covid Codes for use in SMART Health Cards - TTL Representation - FHIR v4.0.1
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="http://hl7.org/fhir" />
+
+    <link href="fhir.css" rel="stylesheet" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet" />
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet" />
+    <link href="assets/css/pygments-manni.css" rel="stylesheet" />
+    <link href="assets/css/jquery-ui.css" rel="stylesheet" />
+    <link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/fix-fonts.css" rel="stylesheet"/>
+    <link href="assets/css/smart-health-cards.css" rel="stylesheet" />
+
+    <script>
+        // Set tab based on the anchor in URL
+        var hash = window.location.hash;
+        try {
+            if(hash == "#tab-diff") sessionStorage.setItem('fhir-resource-tab-index', 1);
+            if(hash == "#tab-snapshot") sessionStorage.setItem('fhir-resource-tab-index', 2);
+            if(hash == "#tab-ms") sessionStorage.setItem('fhir-resource-tab-index', 3);
+
+            // Default to snapshot tab
+            if(!sessionStorage.getItem('fhir-resource-tab-index')) sessionStorage.setItem('fhir-resource-tab-index', 2);
+        } catch(e) { }
+
+        // Make it so that clicking the tabs also sets the anchor in the url
+        document.addEventListener("DOMContentLoaded", function() {
+            $('#tabs .ui-tabs-nav li').click(function() {
+                var id = $(this).children('a').attr('id');
+                if(id == "ui-id-2") window.location.hash = "#tab-diff";
+                if(id == "ui-id-3") window.location.hash = "#tab-snapshot";
+                if(id == "ui-id-4") window.location.hash = "#tab-ms";
+            })
+        });
+    </script>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+        href="assets/ico/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+        href="assets/ico/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+        href="assets/ico/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed"
+        href="assets/ico/apple-touch-icon-57-precomposed.png" />
+    <link rel="shortcut icon" href="assets/ico/favicon.png" />
+</head>
+
+<body onload="document.body.style.opacity='1'">
+    
+    <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">
+        h2 {
+            --heading-prefix:"2.3"
+        }
+
+        h3,
+        h4,
+        h5,
+        h6 {
+            --heading-prefix:"2.3"
+        }
+    </style>
+    <div id="segment-header" class="segment">
+        <!-- segment-header -->
+        <div class="container">
+            <!-- container -->
+            <!-- Placeholder for child template header declarations -->
+
+            
+            <div id="ig-status">
+                <p><span
+                        style="">SMART Health Cards: Terminology</span><br />0.1.0
+                    - ci-build</p>
+            </div>
+        </div> <!-- /container -->
+    </div> <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">
+        <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">
+            <!-- container -->
+            <!-- HEADER CONTENT -->
+
+            <nav class="navbar navbar-inverse">
+                <!--status-bar-->
+                <div class="container">
+                    <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse"
+                        type="button">
+                        <span class="icon-bar"> </span>
+                        <span class="icon-bar"> </span>
+                        <span class="icon-bar"> </span>
+                    </button>
+                    <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+                    <div class="nav-collapse collapse navbar-inverse-collapse">
+                        <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+                    </div> <!-- /.nav-collapse -->
+                </div> <!-- /.container -->
+            </nav> <!-- /.navbar -->
+            <!-- /HEADER CONTENT -->
+        </div> <!-- /container -->
+    </div> <!-- /segment-navbar -->
+    <!--status-bar-->
+    <div id="segment-breadcrumb" class="segment">
+        <!-- segment-breadcrumb -->
+        <div class="container">
+            <!-- container -->
+            <ul class="breadcrumb">
+                <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CVX Covid Codes for use in SMART Health Cards</b></li>
+            </ul>
+        </div> <!-- /container -->
+    </div> <!-- /segment-breadcrumb -->
+
+    <div id="segment-content">
+        <!-- segment-content -->
+        <div class="container">
+            <!-- container -->
+            <div class="row">
+                <div class="inner-wrapper">
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">SMART Health Cards: Terminology - Local Development build (v0.1.0). See the <a href="https://terminology.smarthealth.cards/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-covid-cvx.html">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="ValueSet-covid-cvx.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-covid-cvx.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: CVX Covid Codes for use in SMART Health Cards - TTL Representation</h2>
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2021-09-22
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-covid-cvx.ttl" no-download="true">Raw ttl</a> | <a href="ValueSet-covid-cvx.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:ValueSet;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;covid-cvx&quot;];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.language">fhir:Resource.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en&quot;];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">fhir:DomainResource.text</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;extensions&quot; ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; xml:lang=\&quot;en\&quot; lang=\&quot;en\&quot;&gt;\n        \n            &lt;p&gt;Include these codes as defined in &lt;a href=\&quot;http://hl7.org/fhir/sid/cvx\&quot;&gt;&lt;code&gt;http://hl7.org/fhir/sid/cvx&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;\n            &lt;table class=\&quot;table-striped table table-bordered\&quot;&gt;\n                &lt;tr&gt;\n                    &lt;th&gt;Code&lt;/th&gt;\n                    &lt;th&gt;Description(s)&lt;/th&gt;\n                &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;207&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-AU&lt;/code&gt;:\n                                        Moderna (Spikevax)\n                                    &lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Moderna COVID-19 Vaccine\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;208&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-AU&lt;/code&gt;:\n                                        Pfizer (Comirnaty)\n                                    &lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Pfizer-BioNTech COVID-19 Vaccine\n                                    &lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-NZ&lt;/code&gt;:\n                                        Pfizer-BioNTech COVID-19 Vaccine\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;210&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL &lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-AU&lt;/code&gt;:\n                                        AstraZeneca (Vaxzevria)\n                                    &lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        AstraZeneca COVID-19 Vaccine\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;211&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19, subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Novavax COVID-19 Vaccine\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;212&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-AU&lt;/code&gt;:\n                                        Janssen COVID-19 Vaccine\n                                    &lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Janssen COVID-19 Vaccine\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;217&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-AU&lt;/code&gt;:\n                                        Pfizer (Comirnaty)\n                                    &lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Pfizer-BioNTech COVID-19 Vaccine\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;218&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-AU&lt;/code&gt;:\n                                        Pfizer (Comirnaty) - Child dose\n                                    &lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Pfizer-BioNTech COVID-19 Vaccine\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;219&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Pfizer-BioNTech COVID-19 Vaccine (EUA labeled) COMIRNATY (BLA labeled)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;221&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL dose&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Moderna COVID-19 Vaccine (non-US Spikevax)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;225&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 5mcg/0.5mL&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Sanofi COVID-19 \n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;226&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 10mcg/0.5mL&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Sanofi COVID-19 \n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;227&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19, mRNA, LNP-S, PF, pediatric 50 mcg/0.5 mL dose&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Moderna COVID-19 Vaccine (non-US Spikevax)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;228&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19, mRNA, LNP-S, PF, pediatric 25 mcg/0.25 mL dose&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Moderna COVID-19 Vaccine (non-US Spikevax)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;229&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19, mRNA, LNP-S, bivalent booster, PF, 50 mcg/0.5 mL or 25mcg/0.25 mL dose&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Moderna COVID-19 Vaccine (non-US Spikevax)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;300&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19, mRNA, LNP-S, bivalent booster, PF, 30 mcg/0.3 mL dose&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;301&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19, mRNA, LNP-S, bivalent booster, PF, 10 mcg/0.2 mL dose&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;501&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19 IV Non-US Vaccine (QAZCOVID-IN)&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        COVID-19 IV Non-US Vaccine (QAZCOVID-IN)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;502&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19 IV Non-US Vaccine (COVAXIN)&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        COVAXIN (Bharat) COVID-19 Vaccine\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;503&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19 LAV Non-US Vaccine (COVIVAC)&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        COVID-19 LAV Non-US Vaccine (COVIVAC)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;504&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19 VVnr Non-US Vaccine (Sputnik Light)&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        COVID-19 VVnr Non-US Vaccine (Sputnik Light)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;505&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19 VVnr Non-US Vaccine (Sputnik V)&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        COVID-19 VVnr Non-US Vaccine (Sputnik V)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;506&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;507&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;508&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;509&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19 PS Non-US Vaccine (EpiVacCorona)&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        COVID-19 PS Non-US Vaccine (EpiVacCorona)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;510&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Sinopharm (BIBP) COVID-19 Vaccine\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;511&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Coronavac (Sinovac) COVID-19 Vaccine\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;512&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: SARS-COV-2 COVID-19 VLP Non-US Vaccine (Medicago, Covifenz)&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        Covifenz\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;513&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;514&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;515&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;516&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n                    &lt;tr&gt;\n                        &lt;td&gt;&lt;code&gt;517&lt;/code&gt;&lt;/td&gt;\n                        &lt;td&gt;\n                            \n                                &lt;ul&gt;\n                                    &lt;li&gt;Default: SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)&lt;/li&gt;\n                                    \n                                    &lt;li&gt;\n                                        &lt;code&gt;en-US&lt;/code&gt;:\n                                        SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)\n                                    &lt;/li&gt;\n                                    \n                                &lt;/ul&gt;\n                            \n                        &lt;/td&gt;\n                    &lt;/tr&gt;\n                \n            &lt;/table&gt;\n        \n&lt;/div&gt;&quot;
+  ];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:ValueSet.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/ValueSet/covid-cvx&quot;];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:ValueSet.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.1.0&quot;];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:ValueSet.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;CovidCVXValueSet&quot;];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">fhir:ValueSet.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;CVX Covid Codes for use in SMART Health Cards&quot;];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:ValueSet.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:ValueSet.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2021-09-22&quot;^^xsd:date];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:ValueSet.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;VCI&quot;];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:ValueSet.contact</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;VCI&quot; ];
+     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;https://vci.org&quot; ]     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">fhir:ValueSet.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;A list of CVX codes with recommended consumer suitable displays for use in SMART Health Cards, with localized consumer friendly terms&quot;];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">fhir:ValueSet.jurisdiction</a> [
+     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;urn:iso:std:iso:3166&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;AU&quot; ]     ], [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;urn:iso:std:iso:3166&quot; ];
+       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;US&quot; ]     ]
+  ];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.copyright">fhir:ValueSet.copyright</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:value</a> &quot;Creative Commons 0&quot;];
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:ValueSet.compose</a> [
+     <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:ValueSet.compose.include</a> [
+       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:ValueSet.compose.include.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/sid/cvx&quot; ];
+       <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">fhir:ValueSet.compose.include.concept</a> [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;207&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-AU&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Moderna (Spikevax)&quot; ]         ], [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Moderna COVID-19 Vaccine&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;208&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-AU&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Pfizer (Comirnaty)&quot; ]         ], [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Pfizer-BioNTech COVID-19 Vaccine&quot; ]         ], [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-NZ&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Pfizer-BioNTech COVID-19 Vaccine&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;210&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL &quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-AU&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;AstraZeneca (Vaxzevria)&quot; ]         ], [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;AstraZeneca COVID-19 Vaccine&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;211&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19, subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Novavax COVID-19 Vaccine&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 4;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;212&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-AU&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Janssen COVID-19 Vaccine&quot; ]         ], [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Janssen COVID-19 Vaccine&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 5;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;217&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-AU&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Pfizer (Comirnaty)&quot; ]         ], [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Pfizer-BioNTech COVID-19 Vaccine&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 6;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;218&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-AU&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Pfizer (Comirnaty) - Child dose&quot; ]         ], [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Pfizer-BioNTech COVID-19 Vaccine&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 7;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;219&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Pfizer-BioNTech COVID-19 Vaccine (EUA labeled) COMIRNATY (BLA labeled)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 8;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;221&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL dose&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Moderna COVID-19 Vaccine (non-US Spikevax)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 9;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;225&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 5mcg/0.5mL&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Sanofi COVID-19 &quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 10;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;226&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 10mcg/0.5mL&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Sanofi COVID-19 &quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 11;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;227&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19, mRNA, LNP-S, PF, pediatric 50 mcg/0.5 mL dose&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Moderna COVID-19 Vaccine (non-US Spikevax)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 12;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;228&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19, mRNA, LNP-S, PF, pediatric 25 mcg/0.25 mL dose&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Moderna COVID-19 Vaccine (non-US Spikevax)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 13;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;229&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19, mRNA, LNP-S, bivalent booster, PF, 50 mcg/0.5 mL or 25mcg/0.25 mL dose&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Moderna COVID-19 Vaccine (non-US Spikevax)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 14;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;300&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19, mRNA, LNP-S, bivalent booster, PF, 30 mcg/0.3 mL dose&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 15;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;301&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19, mRNA, LNP-S, bivalent booster, PF, 10 mcg/0.2 mL dose&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 16;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;501&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 IV Non-US Vaccine (QAZCOVID-IN)&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 IV Non-US Vaccine (QAZCOVID-IN)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 17;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;502&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 IV Non-US Vaccine (COVAXIN)&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVAXIN (Bharat) COVID-19 Vaccine&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 18;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;503&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 LAV Non-US Vaccine (COVIVAC)&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 LAV Non-US Vaccine (COVIVAC)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 19;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;504&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 VVnr Non-US Vaccine (Sputnik Light)&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 VVnr Non-US Vaccine (Sputnik Light)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 20;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;505&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 VVnr Non-US Vaccine (Sputnik V)&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 VVnr Non-US Vaccine (Sputnik V)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 21;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;506&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 22;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;507&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 23;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;508&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 24;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;509&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 PS Non-US Vaccine (EpiVacCorona)&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 PS Non-US Vaccine (EpiVacCorona)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 25;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;510&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Sinopharm (BIBP) COVID-19 Vaccine&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 26;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;511&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Coronavac (Sinovac) COVID-19 Vaccine&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 27;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;512&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SARS-COV-2 COVID-19 VLP Non-US Vaccine (Medicago, Covifenz)&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Covifenz&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 28;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;513&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 29;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;514&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 30;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;515&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 31;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;516&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)&quot; ]         ]       ], [
+         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 32;
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">fhir:ValueSet.compose.include.concept.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;517&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">fhir:ValueSet.compose.include.concept.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)&quot; ];
+         <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">fhir:ValueSet.compose.include.concept.designation</a> [
+           <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">fhir:ValueSet.compose.include.concept.designation.language</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;en-US&quot; ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.use">fhir:ValueSet.compose.include.concept.designation.use</a> [
+             <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://terminology.smarthealth.cards/CodeSystem/designation-use&quot; ]           ];
+           <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">fhir:ValueSet.compose.include.concept.designation.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)&quot; ]         ]       ]     ]
+  ].
+
+# - ontology header ------------------------------------------------------------
+
+ a owl:Ontology;
+  owl:imports fhir:fhir.ttl.
+
+</code></pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://vci.org">VCI</a>.  Package cards.smarthealth.terminology#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 1, 2022 17:36+0000">2022-09-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

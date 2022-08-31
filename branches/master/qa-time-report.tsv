@@ -1,0 +1,17 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-cards.smarthealth.terminology.json	9001	-	0	0	0	0	0	0	11	107	0	0	0	0	0	0	0	0	0	0	148	93	0	0	1	6	0	1
+fsh-generated/resources/CodeSystem-designation-use.json	866	17	1	0	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	17	1649	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-health-card.json	1141	15	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	16	66	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-identity-assurance-level.json	1586	15	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	14	55	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-immunization-all-cvx.json	29596	21	0	0	0	0	0	0	7	114	0	0	0	0	0	0	0	1	0	0	278	5155	0	0	0	8	0	1
+fsh-generated/resources/ValueSet-immunization-all-icd11.json	21759	19	6	0	0	0	0	0	4	61	0	0	0	0	0	0	0	1	0	0	205	167	0	0	0	5	0	0
+fsh-generated/resources/ValueSet-immunization-all-snomed.json	839	14	0	0	0	0	0	0	1	8	0	0	0	0	0	0	0	0	0	0	12	83	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-immunization-covid-icd11.json	4525	15	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	18	97	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-immunization-covid-snomed.json	17089	16	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	49	128	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-lab-qualitative-result.json	4106	15	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	25	95	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-lab-qualitative-test-covid.json	10596	17	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	32	57	0	0	0	0	0	0
+input/vocabulary/immunization-covid-all.json	43471	23	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	1	0	0	107	88	0	0	0	3	0	1
+input/vocabulary/immunization-covid-cvx.json	26376	9	1	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	58	57	0	0	0	2	0	0
+input/vocabulary/immunization-covid-mapping-cvx-air.json	7343	6	0	0	0	0	0	0	2	25	0	0	0	0	0	0	0	0	0	0	40	23	0	0	0	2	0	0
+input/vocabulary/immunization-orthopoxvirus-all.json	2656	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	34	0	0	0	0	0	0
+input/vocabulary/immunization-orthopoxvirus-cvx.json	2612	5	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	11	36	0	0	0	0	0	0

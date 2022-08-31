@@ -1,0 +1,86 @@
+[
+  {
+    "id" : "immunization-covid-mapping-cvx-air",
+    "type" : "ConceptMap",
+    "url" : "https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air",
+    "version" : "2022.1",
+    "name" : "ImmunizationCovidCVXAirConceptMap"
+  },
+  {
+    "id" : "health-card",
+    "type" : "CodeSystem",
+    "url" : "https://smarthealth.cards#",
+    "version" : "1.1.0",
+    "name" : "HealthCardTypeCodeSystem"
+  },
+  {
+    "id" : "identity-assurance-level",
+    "type" : "CodeSystem",
+    "url" : "https://smarthealth.cards/ial",
+    "version" : "1.0.0",
+    "name" : "IdentityAssuranceLevelCodeSystem"
+  },
+  {
+    "id" : "designation-use",
+    "type" : "CodeSystem",
+    "url" : "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+    "version" : "1.0.0",
+    "name" : "DesignationUse"
+  },
+  {
+    "id" : "cards.smarthealth.terminology",
+    "type" : "ImplementationGuide",
+    "url" : "https://terminology.smarthealth.cards/ImplementationGuide/cards.smarthealth.terminology",
+    "version" : "0.1.0",
+    "name" : "SMARTHealthCardsTerminology"
+  },
+  {
+    "id" : "immunization-covid-all",
+    "type" : "ValueSet",
+    "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-covid-all",
+    "version" : "20230601",
+    "name" : "ImmunizationCovidAllValueSet"
+  },
+  {
+    "id" : "immunization-covid-cvx",
+    "type" : "ValueSet",
+    "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-covid-cvx",
+    "version" : "2023.1",
+    "name" : "ImmunizationCovidCvxValueSet"
+  },
+  {
+    "id" : "immunization-covid-snomed",
+    "type" : "ValueSet",
+    "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-covid-snomed",
+    "version" : "2023.1",
+    "name" : "ImmunizationCovidSnomedValueSet"
+  },
+  {
+    "id" : "immunization-orthopoxvirus-all",
+    "type" : "ValueSet",
+    "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-orthopoxvirus-all",
+    "version" : "20230601",
+    "name" : "ImmunizationOrthopoxvirusAllValueSet"
+  },
+  {
+    "id" : "immunization-orthopoxvirus-cvx",
+    "type" : "ValueSet",
+    "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-orthopoxvirus-cvx",
+    "version" : "2022.1",
+    "name" : "ImmunizationOrthopoxvirusCvxValueSet"
+  },
+  {
+    "id" : "lab-qualitative-result",
+    "type" : "ValueSet",
+    "url" : "https://terminology.smarthealth.cards/ValueSet/lab-qualitative-result",
+    "version" : "2022.2",
+    "name" : "LabQualitativeResultValueSet"
+  },
+  {
+    "id" : "lab-qualitative-test-covid",
+    "type" : "ValueSet",
+    "url" : "https://terminology.smarthealth.cards/ValueSet/lab-qualitative-test-covid",
+    "version" : "2022.2",
+    "name" : "LabQualitativeTestCovidValueSet"
+  }
+]

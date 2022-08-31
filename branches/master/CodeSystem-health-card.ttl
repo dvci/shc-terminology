@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/CodeSystem/health-card> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "health-card"] ; # 
+  fhir:url [ fhir:v "https://smarthealth.cards#"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
+  fhir:name [ fhir:v "HealthCardTypeCodeSystem"] ; # 
+  fhir:title [ fhir:v "Health Card Type Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-11-22T10:51:11+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "VCI"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "VCI" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://vci.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A code system to identify a SMART Health Card. Previously this code system was used to differentiate between different types of SMART Health Cards, but this has been deprecated. See [the SMART Health Cards spec](http://spec.smarthealth.cards/#healthwalletissuevc-operation) for details."] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "health-card" ] ;
+     fhir:display [ fhir:v "A VC designed to convey a \"Health Card\" (i.e., clinical data bound to a subject's identity)" ]
+  ] [
+     fhir:code [ fhir:v "covid19" ] ;
+     fhir:display [ fhir:v "[DEPRECATED] A Health Card designed to convey COVID-19 details" ]
+  ] [
+     fhir:code [ fhir:v "immunization" ] ;
+     fhir:display [ fhir:v "[DEPRECATED] A Health Card designed to convey immunization details" ]
+  ] [
+     fhir:code [ fhir:v "laboratory" ] ;
+     fhir:display [ fhir:v "[DEPRECATED] A Health Card designed to convey laboratory results" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
