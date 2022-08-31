@@ -1,0 +1,65 @@
+[
+  {
+    "id": "covid-mapping-cvx-air",
+    "type": "ConceptMap",
+    "url": "https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air",
+    "version": "0.1.0",
+    "name": "CovidCVXAirConceptMap"
+  },
+  {
+    "id": "health-card",
+    "type": "CodeSystem",
+    "url": "https://smarthealth.cards#",
+    "version": "0.1.0",
+    "name": "HealthCardTypeCodeSystem"
+  },
+  {
+    "id": "identity-assurance-level",
+    "type": "CodeSystem",
+    "url": "https://smarthealth.cards/ial",
+    "version": "0.1.0",
+    "name": "IdentityAssuranceLevelCodeSystem"
+  },
+  {
+    "id": "designation-use",
+    "type": "CodeSystem",
+    "url": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+    "version": "0.1.0",
+    "name": "DesignationUse"
+  },
+  {
+    "id": "cards.smarthealth.terminology",
+    "type": "ImplementationGuide",
+    "url": "https://terminology.smarthealth.cards/ImplementationGuide/cards.smarthealth.terminology",
+    "version": "0.1.0",
+    "name": "SMARTHealthCardsTerminology"
+  },
+  {
+    "id": "covid-cvx",
+    "type": "ValueSet",
+    "url": "https://terminology.smarthealth.cards/ValueSet/covid-cvx",
+    "version": "0.1.0",
+    "name": "CovidCVXValueSet"
+  },
+  {
+    "id": "monkeypox-cvx",
+    "type": "ValueSet",
+    "url": "https://terminology.smarthealth.cards/ValueSet/monkeypox-cvx",
+    "version": "0.1.0",
+    "name": "MonkeypoxCVXValueSet"
+  },
+  {
+    "id": "qualitative-covid-lab-test-value-set",
+    "type": "ValueSet",
+    "url": "https://terminology.smarthealth.cards/ValueSet/qualitative-covid-lab-test-value-set",
+    "version": "0.1.0",
+    "name": "QualitativeCovidLabTestValueSet"
+  },
+  {
+    "id": "qualitative-lab-test-result-value-set",
+    "type": "ValueSet",
+    "url": "https://terminology.smarthealth.cards/ValueSet/qualitative-lab-test-result-value-set",
+    "version": "0.1.0",
+    "name": "QualitativeLabTestResultValueSet"
+  }
+]

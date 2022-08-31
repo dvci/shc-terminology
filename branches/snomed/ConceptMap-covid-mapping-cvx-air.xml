@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="covid-mapping-cvx-air"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CovidCVXAirConceptMap (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)</h2><p>Mapping from (not specified) to (not specified)</p><p>DRAFT. Published on 2021-09-22 by VCI (VCI: <a href="https://vci.org">https://vci.org</a>). Creative Commons 0</p><div><p>A Mapping between CVX and AIR Codes for Covid vaccinations. This mapping is bi-directional - one group for each direction</p>
+</div><br/><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td colspan="3">Mapping from <code>https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats|20210222</code> to <a href="http://terminology.hl7.org/4.0.0/CodeSystem-CVX.html">PH_VaccinesAdministeredCVX_CDC_NIP</a></td></tr><tr><td>COVAST (COVID-19 Vaccine AstraZeneca)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>210 (COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL)</td></tr><tr><td>COMIRN (Pfizer Comirnaty)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>208 (COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose)</td></tr><tr><td>MODERN (Moderna Spikevax)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td>207 (COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose)</td></tr></table><table class="grid"><tr><td colspan="2"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan="2"><b>Target Concept Details</b></td></tr><tr><td colspan="2"><b>Code</b> from <a href="http://terminology.hl7.org/4.0.0/CodeSystem-CVX.html" title="http://hl7.org/fhir/sid/cvx">PH_VaccinesAdministeredCVX_CDC_NIP</a></td><td/><td colspan="2"><b>Code</b> from https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats|20210222</td></tr><tr><td style="border-right-width: 0px">210</td><td style="border-left-width: 0px">COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">COVAST</td><td style="border-left-width: 0px">COVID-19 Vaccine AstraZeneca</td></tr><tr><td style="border-right-width: 0px">208</td><td style="border-left-width: 0px">COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">COMIRN</td><td style="border-left-width: 0px">Pfizer Comirnaty</td></tr><tr><td style="border-right-width: 0px">207</td><td style="border-left-width: 0px">COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">MODERN</td><td style="border-left-width: 0px">Moderna Spikevax</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">211</td><td style="border-left-width: 0px">COVID-19 vaccine, Subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL</td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">212</td><td style="border-left-width: 0px">COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL</td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">213</td><td style="border-left-width: 0px">SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED</td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">217</td><td style="border-left-width: 0px"></td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">218</td><td style="border-left-width: 0px"></td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">219</td><td style="border-left-width: 0px"></td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">500</td><td style="border-left-width: 0px"></td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">501</td><td style="border-left-width: 0px"></td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">502</td><td style="border-left-width: 0px"></td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">503</td><td style="border-left-width: 0px"></td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">504</td><td style="border-left-width: 0px"></td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">505</td><td style="border-left-width: 0px"></td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">506</td><td style="border-left-width: 0px"></td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">507</td><td style="border-left-width: 0px"></td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">508</td><td style="border-left-width: 0px"></td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">509</td><td style="border-left-width: 0px"></td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">510</td><td style="border-left-width: 0px"></td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">511</td><td style="border-left-width: 0px"></td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr></table></div>
+  </text>
+  <url value="https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air"/>
+  <version value="0.1.0"/>
+  <name value="CovidCVXAirConceptMap"/>
+  <title value="Mapping between CVX and AIR Covid Codes"/>
+  <status value="draft"/>
+  <date value="2021-09-22"/>
+  <publisher value="VCI"/>
+  <contact>
+    <name value="VCI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://vci.org"/>
+    </telecom>
+  </contact>
+  <description value="A Mapping between CVX and AIR Codes for Covid vaccinations. This mapping is bi-directional - one group for each direction"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="AU"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Creative Commons 0"/>
+  <group>
+    <source value="https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats"/>
+    <sourceVersion value="20210222"/>
+    <target value="http://hl7.org/fhir/sid/cvx"/>
+    <element>
+      <code value="COVAST"/>
+      <display value="COVID-19 Vaccine AstraZeneca"/>
+      <target>
+        <code value="210"/>
+        <display value="COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="COMIRN"/>
+      <display value="Pfizer Comirnaty"/>
+      <target>
+        <code value="208"/>
+        <display value="COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="MODERN"/>
+      <display value="Moderna Spikevax"/>
+      <target>
+        <code value="207"/>
+        <display value="COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="http://hl7.org/fhir/sid/cvx"/>
+    <target value="https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats"/>
+    <targetVersion value="20210222"/>
+    <element>
+      <code value="210"/>
+      <display value="COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL"/>
+      <target>
+        <code value="COVAST"/>
+        <display value="COVID-19 Vaccine AstraZeneca"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="208"/>
+      <display value="COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose"/>
+      <target>
+        <code value="COMIRN"/>
+        <display value="Pfizer Comirnaty"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="207"/>
+      <display value="COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose"/>
+      <target>
+        <code value="MODERN"/>
+        <display value="Moderna Spikevax"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="211"/>
+      <display value="COVID-19 vaccine, Subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="212"/>
+      <display value="COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="213"/>
+      <display value="SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="217"/>
+      <display value="COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="218"/>
+      <display value="COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="219"/>
+      <display value="COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="500"/>
+      <display value="COVID-19 Non-US Vaccine, Product Unknown"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="501"/>
+      <display value="COVID-19 IV Non-US Vaccine (QAZCOVID-IN)"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="502"/>
+      <display value="COVID-19 IV Non-US Vaccine (COVAXIN)"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="503"/>
+      <display value="COVID-19 LAV Non-US Vaccine (COVIVAC)"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="504"/>
+      <display value="COVID-19 VVnr Non-US Vaccine (Sputnik Light)"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="505"/>
+      <display value="COVID-19 VVnr Non-US Vaccine (Sputnik V)"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="506"/>
+      <display value="COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="507"/>
+      <display value="COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="508"/>
+      <display value="COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="509"/>
+      <display value="COVID-19 PS Non-US Vaccine (EpiVacCorona)"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="510"/>
+      <display value="COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="511"/>
+      <display value="COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

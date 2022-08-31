@@ -1,0 +1,692 @@
+{
+  "date" : "Sun, 25 Jun, 2023 12:22:10 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-cards.smarthealth.terminology.json",
+      "size" : 9171,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 82
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 14
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 111
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 761
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 147
+        },
+        {
+          "activity" : "generate2",
+          "start" : 28,
+          "length" : 82
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "input/vocabulary/immunization-orthopoxvirus-cvx.json",
+      "size" : 2617,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 13
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 22,
+          "length" : 1
+        },
+        {
+          "activity" : "scan",
+          "start" : 22,
+          "length" : 1
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 22,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 23
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 24
+        },
+        {
+          "activity" : "validate",
+          "start" : 23,
+          "length" : 370
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 26
+        },
+        {
+          "activity" : "generate2",
+          "start" : 28,
+          "length" : 6454
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 37,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/vocabulary/immunization-orthopoxvirus-all.json",
+      "size" : 2656,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 11
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 13
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 8
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 25,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 117
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/vocabulary/immunization-covid-cvx.json",
+      "size" : 22957,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 28
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 62
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 44
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 70
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 114
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 210
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 46,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/vocabulary/immunization-covid-mapping-cvx-air.json",
+      "size" : 7343,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 17
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 27
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 16
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 52
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 30
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 31
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 67
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/vocabulary/immunization-covid-all.json",
+      "size" : 43471,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 49
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 133
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 125
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 98
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 200
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-immunization-all-cvx.json",
+      "size" : 28407,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 50
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 88
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 34
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 25,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 25,
+          "length" : 59
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 184
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-identity-assurance-level.json",
+      "size" : 1586,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 28
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 23,
+          "length" : 42
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 78
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-immunization-covid-snomed.json",
+      "size" : 17089,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 24
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 46
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 23,
+          "length" : 40
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 23
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 111
+        },
+        {
+          "activity" : "generate2",
+          "start" : 35,
+          "length" : 121
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-designation-use.json",
+      "size" : 866,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 23,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 4
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 67
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-immunization-covid-icd11.json",
+      "size" : 4525,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 14
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 37
+        },
+        {
+          "activity" : "validate",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 94
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-immunization-all-icd11.json",
+      "size" : 21759,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 35
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 22,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 42
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 23
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 47
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 138
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 41,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 46,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-lab-qualitative-result.json",
+      "size" : 4389,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 11
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 18
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 23,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 177
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-immunization-all-snomed.json",
+      "size" : 839,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 3
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 66
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-lab-qualitative-test-covid.json",
+      "size" : 10701,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 21
+        },
+        {
+          "activity" : "load",
+          "start" : 23,
+          "length" : 24
+        },
+        {
+          "activity" : "validate",
+          "start" : 24,
+          "length" : 11
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 24
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 88
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 42,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-health-card.json",
+      "size" : 1141,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 22,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 22,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 23,
+          "length" : 4
+        },
+        {
+          "activity" : "checkConformanceResources2",
+          "start" : 25,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 26,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 36,
+          "length" : 49
+        }
+      ]
+    }
+  ]
+}

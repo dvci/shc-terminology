@@ -1,0 +1,94 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/ValueSet/monkeypox-cvx> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "monkeypox-cvx"];
+  fhir:Resource.language [ fhir:value "en"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p><b style=\"color: maroon\">Exception generating Narrative: unexpected non-end of element null::a  at line 3 column 74</b></p></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://terminology.smarthealth.cards/ValueSet/monkeypox-cvx"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "MonkeypoxCVXValueSet"];
+  fhir:ValueSet.title [ fhir:value "CVX Codes for monkeypox vaccines for use in Smart Health Cards"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2022-09-02"^^xsd:date];
+  fhir:ValueSet.publisher [ fhir:value "VCI"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "VCI" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://vci.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "A list of CVX codes with recommended consumer suitable displays for use in Smart Health Cards, with localized consumer friendly terms"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "US" ]
+     ]
+  ];
+  fhir:ValueSet.copyright [ fhir:value "Creative Commons 0"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.org/fhir/sid/cvx" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "206" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Vaccinia, smallpox monkeypox vaccine live, PF, SQ or ID injection" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Jynneos" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-EU" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Imvanex" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-CA" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Imvamune" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "75" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "vaccinia (smallpox)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en-US" ];
+           fhir:ValueSet.compose.include.concept.designation.use [
+             fhir:Coding.system [ fhir:value "https://terminology.smarthealth.cards/CodeSystem/designation-use" ]
+           ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "ACAM2000" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/ValueSet/monkeypox-cvx.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

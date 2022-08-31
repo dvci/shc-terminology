@@ -1,0 +1,72 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "immunization-orthopoxvirus-cvx",
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n        \n            <p>\n                The following codes from the <code><a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-CVX.html\">PH_VaccinesAdministeredCVX_CDC_NIP</a></code> code system are included:\n            </p>\n            <table class=\"table-striped table table-bordered\">\n                <tr>\n                    <th>Code</th>\n                    <th>Description(s)</th>\n                </tr>\n                \n                    <tr>\n                        <td><code>206</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: Vaccinia, smallpox monkeypox vaccine live, PF, SQ or ID injection</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Jynneos\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-EU</code>:\n                                        Imvanex\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-CA</code>:\n                                        Imvamune\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>75</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: vaccinia (smallpox)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        ACAM2000\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n            </table>\n        \n</div>"
+  },
+  "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-orthopoxvirus-cvx",
+  "version" : "2022.1",
+  "name" : "ImmunizationOrthopoxvirusCvxValueSet",
+  "title" : "Immunization / orthopoxvirus / CVX",
+  "status" : "active",
+  "date" : "2022-09-11",
+  "publisher" : "VCI",
+  "contact" : [{
+    "name" : "VCI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://vci.org"
+    }]
+  }],
+  "description" : "Contains [CVX (\"vaccine administered\") codes](https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx) with recommended consumer-suitable displays for use in SMART Health Cards, with localized consumer friendly terms",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "copyright" : "Creative Commons 0",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/cvx",
+      "concept" : [{
+        "code" : "206",
+        "display" : "Vaccinia, smallpox monkeypox vaccine live, PF, SQ or ID injection",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Jynneos"
+        },
+        {
+          "language" : "en-EU",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Imvanex"
+        },
+        {
+          "language" : "en-CA",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Imvamune"
+        }]
+      },
+      {
+        "code" : "75",
+        "display" : "vaccinia (smallpox)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "ACAM2000"
+        }]
+      }]
+    }]
+  }
+}

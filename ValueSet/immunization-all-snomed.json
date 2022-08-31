@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "immunization-all-snomed",
+  "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-all-snomed",
+  "name" : "ImmunizationAllSnomedValueSet",
+  "title" : "Immunization / All / SNOMED CT",
+  "status" : "draft",
+  "date" : "2023-07-06T15:10:39+00:00",
+  "publisher" : "VCI",
+  "contact" : [{
+    "name" : "VCI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://vci.org"
+    }]
+  }],
+  "description" : "Contains descendants of SNOMED CT concept `787859002` \"Vaccine product (medicinal product)\". Note that codes from _any_ SNOMED CT extension are valid as long as they descend from this concept.",
+  "copyright" : "© 2002+ International Health Terminology Standards Development Organisation (IHTSDO)",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "787859002"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,1056 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "immunization-all-cvx",
+  "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-all-cvx",
+  "version" : "20230623",
+  "name" : "ImmunizationAllCvxValueSet",
+  "title" : "Immunization / All / CVX",
+  "status" : "draft",
+  "date" : "2023-07-06T15:10:39+00:00",
+  "publisher" : "VCI",
+  "contact" : [{
+    "name" : "VCI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://vci.org"
+    }]
+  }],
+  "description" : "Contains all CVX codes from <https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx> as of 2023-06-23.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/cvx",
+      "concept" : [{
+        "code" : "54",
+        "display" : "adenovirus, type 4"
+      },
+      {
+        "code" : "55",
+        "display" : "adenovirus, type 7"
+      },
+      {
+        "code" : "82",
+        "display" : "adenovirus, unspecified formulation"
+      },
+      {
+        "code" : "24",
+        "display" : "anthrax"
+      },
+      {
+        "code" : "19",
+        "display" : "BCG"
+      },
+      {
+        "code" : "27",
+        "display" : "botulinum antitoxin"
+      },
+      {
+        "code" : "26",
+        "display" : "cholera, unspecified formulation"
+      },
+      {
+        "code" : "29",
+        "display" : "CMVIG"
+      },
+      {
+        "code" : "56",
+        "display" : "dengue fever tetravalent"
+      },
+      {
+        "code" : "12",
+        "display" : "diphtheria antitoxin"
+      },
+      {
+        "code" : "28",
+        "display" : "DT (pediatric)"
+      },
+      {
+        "code" : "20",
+        "display" : "DTaP"
+      },
+      {
+        "code" : "106",
+        "display" : "DTaP, 5 pertussis antigens"
+      },
+      {
+        "code" : "107",
+        "display" : "DTaP, unspecified formulation"
+      },
+      {
+        "code" : "110",
+        "display" : "DTaP-Hep B-IPV"
+      },
+      {
+        "code" : "50",
+        "display" : "DTaP-Hib"
+      },
+      {
+        "code" : "120",
+        "display" : "DTaP-Hib-IPV"
+      },
+      {
+        "code" : "130",
+        "display" : "DTaP-IPV"
+      },
+      {
+        "code" : "1",
+        "display" : "DTP"
+      },
+      {
+        "code" : "22",
+        "display" : "DTP-Hib"
+      },
+      {
+        "code" : "102",
+        "display" : "DTP-Hib-Hep B"
+      },
+      {
+        "code" : "57",
+        "display" : "hantavirus"
+      },
+      {
+        "code" : "52",
+        "display" : "Hep A, adult"
+      },
+      {
+        "code" : "83",
+        "display" : "Hep A, ped/adol, 2 dose"
+      },
+      {
+        "code" : "84",
+        "display" : "Hep A, ped/adol, 3 dose"
+      },
+      {
+        "code" : "31",
+        "display" : "Hep A, pediatric, unspecified formulation"
+      },
+      {
+        "code" : "85",
+        "display" : "Hep A, unspecified formulation"
+      },
+      {
+        "code" : "104",
+        "display" : "Hep A-Hep B"
+      },
+      {
+        "code" : "30",
+        "display" : "HBIG"
+      },
+      {
+        "code" : "8",
+        "display" : "Hep B, adolescent or pediatric"
+      },
+      {
+        "code" : "42",
+        "display" : "Hep B, adolescent/high risk infant"
+      },
+      {
+        "code" : "43",
+        "display" : "Hep B, adult"
+      },
+      {
+        "code" : "44",
+        "display" : "Hep B, dialysis"
+      },
+      {
+        "code" : "45",
+        "display" : "Hep B, unspecified formulation"
+      },
+      {
+        "code" : "58",
+        "display" : "Hep C"
+      },
+      {
+        "code" : "59",
+        "display" : "Hep E"
+      },
+      {
+        "code" : "60",
+        "display" : "herpes simplex 2"
+      },
+      {
+        "code" : "46",
+        "display" : "Hib (PRP-D)"
+      },
+      {
+        "code" : "47",
+        "display" : "Hib (HbOC)"
+      },
+      {
+        "code" : "48",
+        "display" : "Hib (PRP-T)"
+      },
+      {
+        "code" : "49",
+        "display" : "Hib (PRP-OMP)"
+      },
+      {
+        "code" : "17",
+        "display" : "Hib, unspecified formulation"
+      },
+      {
+        "code" : "51",
+        "display" : "Hib-Hep B"
+      },
+      {
+        "code" : "61",
+        "display" : "HIV"
+      },
+      {
+        "code" : "118",
+        "display" : "HPV, bivalent"
+      },
+      {
+        "code" : "62",
+        "display" : "HPV, quadrivalent"
+      },
+      {
+        "code" : "86",
+        "display" : "IG"
+      },
+      {
+        "code" : "87",
+        "display" : "IGIV"
+      },
+      {
+        "code" : "14",
+        "display" : "IG, unspecified formulation"
+      },
+      {
+        "code" : "111",
+        "display" : "influenza, live, intranasal"
+      },
+      {
+        "code" : "15",
+        "display" : "influenza, split (incl. purified surface antigen)"
+      },
+      {
+        "code" : "16",
+        "display" : "influenza, whole"
+      },
+      {
+        "code" : "88",
+        "display" : "influenza, unspecified formulation"
+      },
+      {
+        "code" : "123",
+        "display" : "influenza, H5N1-1203"
+      },
+      {
+        "code" : "10",
+        "display" : "IPV"
+      },
+      {
+        "code" : "2",
+        "display" : "OPV"
+      },
+      {
+        "code" : "89",
+        "display" : "polio, unspecified formulation"
+      },
+      {
+        "code" : "39",
+        "display" : "Japanese encephalitis SC"
+      },
+      {
+        "code" : "63",
+        "display" : "Junin virus"
+      },
+      {
+        "code" : "64",
+        "display" : "leishmaniasis"
+      },
+      {
+        "code" : "65",
+        "display" : "leprosy"
+      },
+      {
+        "code" : "66",
+        "display" : "Lyme disease"
+      },
+      {
+        "code" : "3",
+        "display" : "MMR"
+      },
+      {
+        "code" : "4",
+        "display" : "M/R"
+      },
+      {
+        "code" : "94",
+        "display" : "MMRV"
+      },
+      {
+        "code" : "67",
+        "display" : "malaria"
+      },
+      {
+        "code" : "5",
+        "display" : "measles"
+      },
+      {
+        "code" : "68",
+        "display" : "melanoma"
+      },
+      {
+        "code" : "32",
+        "display" : "meningococcal MPSV4"
+      },
+      {
+        "code" : "103",
+        "display" : "meningococcal C conjugate"
+      },
+      {
+        "code" : "114",
+        "display" : "meningococcal MCV4P"
+      },
+      {
+        "code" : "108",
+        "display" : "meningococcal ACWY, unspecified formulation"
+      },
+      {
+        "code" : "7",
+        "display" : "mumps"
+      },
+      {
+        "code" : "69",
+        "display" : "parainfluenza-3"
+      },
+      {
+        "code" : "11",
+        "display" : "pertussis"
+      },
+      {
+        "code" : "23",
+        "display" : "plague"
+      },
+      {
+        "code" : "33",
+        "display" : "pneumococcal polysaccharide PPV23"
+      },
+      {
+        "code" : "100",
+        "display" : "pneumococcal conjugate PCV 7"
+      },
+      {
+        "code" : "109",
+        "display" : "pneumococcal, unspecified formulation"
+      },
+      {
+        "code" : "70",
+        "display" : "Q fever"
+      },
+      {
+        "code" : "18",
+        "display" : "rabies, intramuscular injection"
+      },
+      {
+        "code" : "40",
+        "display" : "rabies, intradermal injection"
+      },
+      {
+        "code" : "90",
+        "display" : "rabies, unspecified formulation"
+      },
+      {
+        "code" : "72",
+        "display" : "rheumatic fever"
+      },
+      {
+        "code" : "73",
+        "display" : "Rift Valley fever"
+      },
+      {
+        "code" : "34",
+        "display" : "RIG"
+      },
+      {
+        "code" : "119",
+        "display" : "rotavirus, monovalent"
+      },
+      {
+        "code" : "122",
+        "display" : "rotavirus, unspecified formulation"
+      },
+      {
+        "code" : "116",
+        "display" : "rotavirus, pentavalent"
+      },
+      {
+        "code" : "74",
+        "display" : "rotavirus, tetravalent"
+      },
+      {
+        "code" : "71",
+        "display" : "RSV-IGIV"
+      },
+      {
+        "code" : "93",
+        "display" : "RSV-MAb"
+      },
+      {
+        "code" : "6",
+        "display" : "rubella"
+      },
+      {
+        "code" : "38",
+        "display" : "rubella/mumps"
+      },
+      {
+        "code" : "76",
+        "display" : "Staphylococcus bacterio lysate"
+      },
+      {
+        "code" : "113",
+        "display" : "Td (adult), 5 Lf tetanus toxoid, preservative free, adsorbed"
+      },
+      {
+        "code" : "9",
+        "display" : "Td (adult), 2 Lf tetanus toxoid, preservative free, adsorbed"
+      },
+      {
+        "code" : "115",
+        "display" : "Tdap"
+      },
+      {
+        "code" : "35",
+        "display" : "tetanus toxoid, adsorbed"
+      },
+      {
+        "code" : "112",
+        "display" : "tetanus toxoid, unspecified formulation"
+      },
+      {
+        "code" : "77",
+        "display" : "Tick-borne encephalitis vaccine (non-US)"
+      },
+      {
+        "code" : "13",
+        "display" : "TIG"
+      },
+      {
+        "code" : "95",
+        "display" : "TST-OT tine test"
+      },
+      {
+        "code" : "96",
+        "display" : "TST-PPD intradermal"
+      },
+      {
+        "code" : "97",
+        "display" : "TST-PPD tine test"
+      },
+      {
+        "code" : "98",
+        "display" : "TST, unspecified formulation"
+      },
+      {
+        "code" : "78",
+        "display" : "tularemia vaccine"
+      },
+      {
+        "code" : "91",
+        "display" : "typhoid, unspecified formulation"
+      },
+      {
+        "code" : "25",
+        "display" : "typhoid, oral"
+      },
+      {
+        "code" : "41",
+        "display" : "typhoid, parenteral"
+      },
+      {
+        "code" : "53",
+        "display" : "typhoid, parenteral, AKD (U.S. military)"
+      },
+      {
+        "code" : "101",
+        "display" : "typhoid, ViCPs"
+      },
+      {
+        "code" : "75",
+        "display" : "vaccinia (smallpox)"
+      },
+      {
+        "code" : "105",
+        "display" : "vaccinia (smallpox) diluted"
+      },
+      {
+        "code" : "79",
+        "display" : "vaccinia immune globulin"
+      },
+      {
+        "code" : "21",
+        "display" : "varicella"
+      },
+      {
+        "code" : "81",
+        "display" : "VEE, inactivated"
+      },
+      {
+        "code" : "80",
+        "display" : "VEE, live"
+      },
+      {
+        "code" : "92",
+        "display" : "VEE, unspecified formulation"
+      },
+      {
+        "code" : "36",
+        "display" : "VZIG"
+      },
+      {
+        "code" : "117",
+        "display" : "VZIG (IND)"
+      },
+      {
+        "code" : "37",
+        "display" : "yellow fever"
+      },
+      {
+        "code" : "121",
+        "display" : "zoster live"
+      },
+      {
+        "code" : "998",
+        "display" : "no vaccine administered"
+      },
+      {
+        "code" : "999",
+        "display" : "unknown"
+      },
+      {
+        "code" : "99",
+        "display" : "RESERVED - do not use"
+      },
+      {
+        "code" : "133",
+        "display" : "Pneumococcal conjugate PCV 13"
+      },
+      {
+        "code" : "134",
+        "display" : "Japanese Encephalitis IM"
+      },
+      {
+        "code" : "137",
+        "display" : "HPV, unspecified formulation"
+      },
+      {
+        "code" : "136",
+        "display" : "Meningococcal MCV4O"
+      },
+      {
+        "code" : "135",
+        "display" : "Influenza, high dose seasonal"
+      },
+      {
+        "code" : "131",
+        "display" : "typhus, historical"
+      },
+      {
+        "code" : "132",
+        "display" : "DTaP-IPV-HIB-HEP B, historical"
+      },
+      {
+        "code" : "128",
+        "display" : "Novel Influenza-H1N1-09, all formulations"
+      },
+      {
+        "code" : "125",
+        "display" : "Novel Influenza-H1N1-09, nasal"
+      },
+      {
+        "code" : "126",
+        "display" : "Novel influenza-H1N1-09, preservative-free"
+      },
+      {
+        "code" : "127",
+        "display" : "Novel influenza-H1N1-09"
+      },
+      {
+        "code" : "138",
+        "display" : "Td (adult)"
+      },
+      {
+        "code" : "139",
+        "display" : "Td(adult) unspecified formulation"
+      },
+      {
+        "code" : "140",
+        "display" : "Influenza, seasonal, injectable, preservative free"
+      },
+      {
+        "code" : "129",
+        "display" : "Japanese Encephalitis, unspecified formulation"
+      },
+      {
+        "code" : "141",
+        "display" : "Influenza, seasonal, injectable"
+      },
+      {
+        "code" : "142",
+        "display" : "tetanus toxoid, not adsorbed"
+      },
+      {
+        "code" : "143",
+        "display" : "Adenovirus types 4 and 7"
+      },
+      {
+        "code" : "144",
+        "display" : "influenza, seasonal, intradermal, preservative free"
+      },
+      {
+        "code" : "145",
+        "display" : "RSV-MAb (new)"
+      },
+      {
+        "code" : "146",
+        "display" : "DTaP,IPV,Hib,HepB"
+      },
+      {
+        "code" : "147",
+        "display" : "meningococcal MCV4, unspecified formulation"
+      },
+      {
+        "code" : "148",
+        "display" : "Meningococcal C/Y-HIB PRP"
+      },
+      {
+        "code" : "149",
+        "display" : "influenza, live, intranasal, quadrivalent"
+      },
+      {
+        "code" : "150",
+        "display" : "influenza, injectable, quadrivalent, preservative free"
+      },
+      {
+        "code" : "151",
+        "display" : "influenza nasal, unspecified formulation"
+      },
+      {
+        "code" : "152",
+        "display" : "Pneumococcal Conjugate, unspecified formulation"
+      },
+      {
+        "code" : "153",
+        "display" : "Influenza, injectable, MDCK, preservative free"
+      },
+      {
+        "code" : "154",
+        "display" : "Hep A, IG"
+      },
+      {
+        "code" : "155",
+        "display" : "influenza, recombinant, injectable, preservative free"
+      },
+      {
+        "code" : "156",
+        "display" : "Rho(D)-IG"
+      },
+      {
+        "code" : "157",
+        "display" : "Rho(D) -IG IM"
+      },
+      {
+        "code" : "158",
+        "display" : "influenza, injectable, quadrivalent"
+      },
+      {
+        "code" : "159",
+        "display" : "Rho(D) - Unspecified formulation"
+      },
+      {
+        "code" : "160",
+        "display" : "Influenza A monovalent (H5N1), ADJUVANTED-2013"
+      },
+      {
+        "code" : "801",
+        "display" : "AS03 Adjuvant"
+      },
+      {
+        "code" : "161",
+        "display" : "Influenza, injectable,quadrivalent, preservative free, pediatric"
+      },
+      {
+        "code" : "162",
+        "display" : "meningococcal B, recombinant"
+      },
+      {
+        "code" : "163",
+        "display" : "meningococcal B, OMV"
+      },
+      {
+        "code" : "164",
+        "display" : "meningococcal B, unspecified"
+      },
+      {
+        "code" : "165",
+        "display" : "HPV9"
+      },
+      {
+        "code" : "166",
+        "display" : "influenza, intradermal, quadrivalent, preservative free"
+      },
+      {
+        "code" : "167",
+        "display" : "meningococcal, unknown serogroups"
+      },
+      {
+        "code" : "168",
+        "display" : "influenza, trivalent, adjuvanted"
+      },
+      {
+        "code" : "169",
+        "display" : "Hep A, live attenuated"
+      },
+      {
+        "code" : "170",
+        "display" : "DTAP/IPV/HIB - non-US"
+      },
+      {
+        "code" : "171",
+        "display" : "Influenza, injectable, MDCK, preservative free, quadrivalent"
+      },
+      {
+        "code" : "172",
+        "display" : "cholera, WC-rBS"
+      },
+      {
+        "code" : "173",
+        "display" : "cholera, BivWC"
+      },
+      {
+        "code" : "174",
+        "display" : "cholera, live attenuated"
+      },
+      {
+        "code" : "175",
+        "display" : "Rabies - IM Diploid cell culture"
+      },
+      {
+        "code" : "176",
+        "display" : "Rabies - IM fibroblast culture"
+      },
+      {
+        "code" : "177",
+        "display" : "PCV10"
+      },
+      {
+        "code" : "178",
+        "display" : "OPV bivalent"
+      },
+      {
+        "code" : "179",
+        "display" : "OPV ,monovalent, unspecified"
+      },
+      {
+        "code" : "180",
+        "display" : "tetanus immune globulin"
+      },
+      {
+        "code" : "181",
+        "display" : "anthrax immune globulin"
+      },
+      {
+        "code" : "182",
+        "display" : "OPV, Unspecified"
+      },
+      {
+        "code" : "183",
+        "display" : "Yellow fever vaccine - alt"
+      },
+      {
+        "code" : "184",
+        "display" : "Yellow fever, unspecified formulation"
+      },
+      {
+        "code" : "185",
+        "display" : "influenza, recombinant, quadrivalent,injectable, preservative free"
+      },
+      {
+        "code" : "186",
+        "display" : "Influenza, injectable, MDCK, quadrivalent, preservative"
+      },
+      {
+        "code" : "187",
+        "display" : "zoster recombinant"
+      },
+      {
+        "code" : "188",
+        "display" : "zoster, unspecified formulation"
+      },
+      {
+        "code" : "189",
+        "display" : "HepB-CpG"
+      },
+      {
+        "code" : "190",
+        "display" : "Typhoid conjugate vaccine (TCV)"
+      },
+      {
+        "code" : "191",
+        "display" : "meningococcal A polysaccharide (non-US)"
+      },
+      {
+        "code" : "192",
+        "display" : "meningococcal AC polysaccharide (non-US)"
+      },
+      {
+        "code" : "193",
+        "display" : "Hep A-Hep B, pediatric/adolescent"
+      },
+      {
+        "code" : "194",
+        "display" : "Influenza, Southern Hemisphere"
+      },
+      {
+        "code" : "195",
+        "display" : "DT, IPV adsorbed"
+      },
+      {
+        "code" : "196",
+        "display" : "Td, adsorbed, preservative free, adult use, Lf unspecified"
+      },
+      {
+        "code" : "197",
+        "display" : "influenza, high-dose, quadrivalent"
+      },
+      {
+        "code" : "200",
+        "display" : "influenza, Southern Hemisphere, pediatric, preservative free"
+      },
+      {
+        "code" : "201",
+        "display" : "influenza, Southern Hemisphere, preservative free"
+      },
+      {
+        "code" : "202",
+        "display" : "influenza, Southern Hemisphere, quadrivalent, with preservative"
+      },
+      {
+        "code" : "198",
+        "display" : "DTP-hepB-Hib Pentavalent Non-US"
+      },
+      {
+        "code" : "203",
+        "display" : "meningococcal conjugate quadrivalent, MenACWY-TT (MCV4)"
+      },
+      {
+        "code" : "205",
+        "display" : "Influenza vaccine, quadrivalent, adjuvanted"
+      },
+      {
+        "code" : "206",
+        "display" : "Vaccinia, smallpox Mpox vaccine live, PF, SQ or ID injection"
+      },
+      {
+        "code" : "207",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose"
+      },
+      {
+        "code" : "208",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose"
+      },
+      {
+        "code" : "213",
+        "display" : "SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED"
+      },
+      {
+        "code" : "210",
+        "display" : "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL "
+      },
+      {
+        "code" : "212",
+        "display" : "COVID-19 vaccine, vector-nr, rS-Ad26, PF, 0.5 mL"
+      },
+      {
+        "code" : "204",
+        "display" : "Ebola Zaire vaccine, live, recombinant, 1mL dose"
+      },
+      {
+        "code" : "214",
+        "display" : "Ebola, unspecified"
+      },
+      {
+        "code" : "211",
+        "display" : "COVID-19, subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL"
+      },
+      {
+        "code" : "500",
+        "display" : "COVID-19 Non-US Vaccine, Product Unknown"
+      },
+      {
+        "code" : "501",
+        "display" : "COVID-19 IV Non-US Vaccine (QAZCOVID-IN)"
+      },
+      {
+        "code" : "502",
+        "display" : "COVID-19 IV Non-US Vaccine (COVAXIN)"
+      },
+      {
+        "code" : "503",
+        "display" : "COVID-19 LAV Non-US Vaccine (COVIVAC)"
+      },
+      {
+        "code" : "504",
+        "display" : "COVID-19 VVnr Non-US Vaccine (Sputnik Light)"
+      },
+      {
+        "code" : "505",
+        "display" : "COVID-19 VVnr Non-US Vaccine (Sputnik V)"
+      },
+      {
+        "code" : "506",
+        "display" : "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology"
+      },
+      {
+        "code" : "507",
+        "display" : "COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)"
+      },
+      {
+        "code" : "508",
+        "display" : "COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)"
+      },
+      {
+        "code" : "509",
+        "display" : "COVID-19 PS Non-US Vaccine (EpiVacCorona)"
+      },
+      {
+        "code" : "510",
+        "display" : "COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)"
+      },
+      {
+        "code" : "511",
+        "display" : "COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)"
+      },
+      {
+        "code" : "215",
+        "display" : "Pneumococcal conjugate PCV15, polysaccharide CRM197 conjugate, adjuvant, PF"
+      },
+      {
+        "code" : "216",
+        "display" : "Pneumococcal conjugate PCV20, polysaccharide CRM197 conjugate, adjuvant, PF"
+      },
+      {
+        "code" : "219",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose"
+      },
+      {
+        "code" : "217",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose, tris-sucrose"
+      },
+      {
+        "code" : "218",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 10 mcg/0.2 mL dose, tris-sucrose"
+      },
+      {
+        "code" : "220",
+        "display" : "HepB recombinant, 3-antigen, Al(OH)3"
+      },
+      {
+        "code" : "221",
+        "display" : "COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL dose"
+      },
+      {
+        "code" : "222",
+        "display" : "Tick-borne encephalitis, unspecified"
+      },
+      {
+        "code" : "223",
+        "display" : "Tick-borne encephalitis, inactivated, PF, 0.25mL"
+      },
+      {
+        "code" : "224",
+        "display" : "Tick-borne encephalitis, inactivated, PF, 0.5mL"
+      },
+      {
+        "code" : "225",
+        "display" : "COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 5mcg/0.5mL"
+      },
+      {
+        "code" : "226",
+        "display" : "COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 10mcg/0.5mL"
+      },
+      {
+        "code" : "512",
+        "display" : "SARS-COV-2 COVID-19 VLP Non-US Vaccine (Medicago, Covifenz)"
+      },
+      {
+        "code" : "513",
+        "display" : "SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)"
+      },
+      {
+        "code" : "514",
+        "display" : "SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)"
+      },
+      {
+        "code" : "515",
+        "display" : "SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)"
+      },
+      {
+        "code" : "516",
+        "display" : "COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)"
+      },
+      {
+        "code" : "517",
+        "display" : "SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)"
+      },
+      {
+        "code" : "227",
+        "display" : "COVID-19, mRNA, LNP-S, PF, pediatric 50 mcg/0.5 mL dose"
+      },
+      {
+        "code" : "228",
+        "display" : "COVID-19, mRNA, LNP-S, PF, pediatric 25 mcg/0.25 mL dose"
+      },
+      {
+        "code" : "229",
+        "display" : "COVID-19, mRNA, LNP-S, bivalent, PF, 50 mcg/0.5 mL or 25mcg/0.25 mL dose"
+      },
+      {
+        "code" : "301",
+        "display" : "COVID-19, mRNA, LNP-S, bivalent, PF, 10 mcg/0.2 mL dose"
+      },
+      {
+        "code" : "300",
+        "display" : "COVID-19, mRNA, LNP-S, bivalent, PF, 30 mcg/0.3 mL dose"
+      },
+      {
+        "code" : "230",
+        "display" : "COVID-19, mRNA, LNP-S, bivalent, PF, 10 mcg/0.2 mL"
+      },
+      {
+        "code" : "518",
+        "display" : "COVID-19 Inactivated, Non-US Vaccine (VLA2001, Valneva)"
+      },
+      {
+        "code" : "519",
+        "display" : "COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine (Spikevax Bivalent), Moderna"
+      },
+      {
+        "code" : "520",
+        "display" : "COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine Product, Pfizer-BioNTech"
+      },
+      {
+        "code" : "521",
+        "display" : "COVID-19 SP, protein-based, adjuvanted (VidPrevtyn Beta), Sanofi-GSK"
+      },
+      {
+        "code" : "231",
+        "display" : "influenza, Southern Hemisphere, high-dose, quadrivalent"
+      },
+      {
+        "code" : "303",
+        "display" : "RSV, recombinant, protein subunit RSVpreF, adjuvant reconstituted, 0.5 mL, PF"
+      },
+      {
+        "code" : "304",
+        "display" : "Respiratory syncytial virus (RSV), unspecified "
+      },
+      {
+        "code" : "302",
+        "display" : "COVID-19, mRNA, LNP-S, bivalent, PF, 3 mcg/0.2 mL dose"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="health-card"/>
+  <url value="https://smarthealth.cards#"/>
+  <version value="2.0.0"/>
+  <name value="HealthCardTypeCodeSystem"/>
+  <title value="Health Card Type Code System"/>
+  <status value="draft"/>
+  <date value="2023-07-06T15:10:39+00:00"/>
+  <publisher value="VCI"/>
+  <contact>
+    <name value="VCI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://vci.org"/>
+    </telecom>
+  </contact>
+  <description value="A code system to identify a SMART Health Card. Previously this code system was used to differentiate between different types of SMART Health Cards, but this has been deprecated. See [the SMART Health Cards spec](http://spec.smarthealth.cards/#healthwalletissuevc-operation) for details."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="health-card"/>
+    <display value="A VC designed to convey a &quot;Health Card&quot; (i.e., clinical data bound to a subject's identity)"/>
+  </concept>
+  <concept>
+    <code value="covid19"/>
+    <display value="[DEPRECATED] A Health Card designed to convey COVID-19 details"/>
+  </concept>
+  <concept>
+    <code value="immunization"/>
+    <display value="[DEPRECATED] A Health Card designed to convey immunization details"/>
+  </concept>
+  <concept>
+    <code value="laboratory"/>
+    <display value="[DEPRECATED] A Health Card designed to convey laboratory results"/>
+  </concept>
+</CodeSystem>

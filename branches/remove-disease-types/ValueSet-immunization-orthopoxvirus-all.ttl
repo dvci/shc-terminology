@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/ValueSet/immunization-orthopoxvirus-all> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "immunization-orthopoxvirus-all"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n        \n            <p>\n                The following codes from the <code><a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-CVX.html\">PH_VaccinesAdministeredCVX_CDC_NIP</a></code> code system are included:\n            </p>\n            <table class=\"table-striped table table-bordered\">\n                <tr>\n                    <th>Code</th>\n                    <th>Description(s)</th>\n                </tr>\n                \n                    <tr>\n                        <td><code>206</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: Vaccinia, smallpox monkeypox vaccine live, PF, SQ or ID injection</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        Jynneos\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-EU</code>:\n                                        Imvanex\n                                    </li>\n                                    \n                                    <li>\n                                        <code>en-CA</code>:\n                                        Imvamune\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>75</code></td>\n                        <td>\n                            \n                                <ul>\n                                    <li>Default: vaccinia (smallpox)</li>\n                                    \n                                    <li>\n                                        <code>en-US</code>:\n                                        ACAM2000\n                                    </li>\n                                    \n                                </ul>\n                            \n                        </td>\n                    </tr>\n                \n            </table>\n        \n</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://terminology.smarthealth.cards/ValueSet/immunization-orthopoxvirus-all"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "20230601"] ; # 
+  fhir:name [ fhir:v "ImmunizationOrthopoxvirusAllValueSet"] ; # 
+  fhir:title [ fhir:v "Immunization / orthopoxvirus / All codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-06-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "VCI"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "VCI" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://vci.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A list of all immunization codes for orthopoxvirus, combining the following ValueSets: <a href=\"ValueSet-immunization-orthopoxvirus-cvx.html\">ValueSet-immunization-orthopoxvirus-cvx.json</a>"] ; # 
+  fhir:copyright [ fhir:v "Please see the following links for the copyright/legal information for each code system included here: <a href=\"ValueSet-immunization-orthopoxvirus-cvx.html\">ValueSet-immunization-orthopoxvirus-cvx.json</a>"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/cvx"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "206" ] ;
+         fhir:display [ fhir:v "Vaccinia, smallpox monkeypox vaccine live, PF, SQ or ID injection" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Jynneos" ]
+         ] [
+           fhir:language [ fhir:v "en-EU" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Imvanex" ]
+         ] [
+           fhir:language [ fhir:v "en-CA" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "Imvamune" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "75" ] ;
+         fhir:display [ fhir:v "vaccinia (smallpox)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:use [
+             fhir:system [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI ]
+           ] ;
+           fhir:value [ fhir:v "ACAM2000" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

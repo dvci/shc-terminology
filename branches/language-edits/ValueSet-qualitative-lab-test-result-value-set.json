@@ -1,0 +1,122 @@
+{
+  "resourceType": "ValueSet",
+  "id": "qualitative-lab-test-result-value-set",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n        \n            <p>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a>:</p>\n            <table class=\"table-striped table table-bordered\">\n                <tr>\n                    <th>Code</th>\n                    <th>Description(s)</th>\n                </tr>\n                \n                    <tr>\n                        <td><code>LA28480-4</code></td>\n                        <td>\n                            \n                                Ab not detected\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>LA28481-2</code></td>\n                        <td>\n                            \n                                Past infection\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>LA28482-0</code></td>\n                        <td>\n                            \n                                Recent infection\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>LA4259-3</code></td>\n                        <td>\n                            \n                                Borderline\n                            \n                        </td>\n                    </tr>\n                \n            </table>\n        \n            <p>Include these codes as defined in <a href=\"http://snomed.info/sct\"><code>http://snomed.info/sct</code></a>:</p>\n            <table class=\"table-striped table table-bordered\">\n                <tr>\n                    <th>Code</th>\n                    <th>Description(s)</th>\n                </tr>\n                \n                    <tr>\n                        <td><code>10828004</code></td>\n                        <td>\n                            \n                                Positive (qualifier value)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>11214006</code></td>\n                        <td>\n                            \n                                Reactive (qualifier value)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>125154007</code></td>\n                        <td>\n                            \n                                Specimen unsatisfactory for evaluation (finding)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>131194007</code></td>\n                        <td>\n                            \n                                Non-reactive (qualifier value)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>260373001</code></td>\n                        <td>\n                            \n                                Detected (qualifier value)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>260385009</code></td>\n                        <td>\n                            \n                                Negative (qualifier value)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>260415000</code></td>\n                        <td>\n                            \n                                Not detected (qualifier value)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>407479009</code></td>\n                        <td>\n                            \n                                Influenza A virus (organism)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>407480007</code></td>\n                        <td>\n                            \n                                Influenza B virus (organism)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>415684004</code></td>\n                        <td>\n                            \n                                Suspected (qualifier value)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>419984006</code></td>\n                        <td>\n                            \n                                Inconclusive (qualifier value)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>42425007</code></td>\n                        <td>\n                            \n                                Equivocal (qualifier value)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>455371000124106</code></td>\n                        <td>\n                            \n                                Invalid result (qualifier value)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>720735008</code></td>\n                        <td>\n                            \n                                Presumptive positive (qualifier value)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>82334004</code></td>\n                        <td>\n                            \n                                Indeterminate (qualifier value)\n                            \n                        </td>\n                    </tr>\n                \n                    <tr>\n                        <td><code>840533007</code></td>\n                        <td>\n                            \n                                Severe acute respiratory syndrome coronavirus 2 (organism)\n                            \n                        </td>\n                    </tr>\n                \n            </table>\n        \n</div>"
+  },
+  "url": "https://terminology.smarthealth.cards/ValueSet/qualitative-lab-test-result-value-set",
+  "version": "0.1.0",
+  "name": "QualitativeLabTestResultValueSet",
+  "title": "Qualitative infectious disease-related lab test result codes",
+  "status": "active",
+  "date": "2022-09-02T20:55:52+00:00",
+  "publisher": "VCI",
+  "contact": [
+    {
+      "name": "VCI",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://vci.org"
+        }
+      ]
+    }
+  ],
+  "description": "This value set includes a codes to identify the results of qualitative lab tests related to infectious diseases.",
+  "copyright": "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc\n\nThe SNOMED CT codes in this ValueSet are made available by SNOMED International to users at no cost, and are licensed under the Creative Commons Attribution 4.0 International License.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA28480-4",
+            "display": "Ab not detected"
+          },
+          {
+            "code": "LA28481-2",
+            "display": "Past infection"
+          },
+          {
+            "code": "LA28482-0",
+            "display": "Recent infection"
+          },
+          {
+            "code": "LA4259-3",
+            "display": "Borderline"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "10828004",
+            "display": "Positive (qualifier value)"
+          },
+          {
+            "code": "11214006",
+            "display": "Reactive (qualifier value)"
+          },
+          {
+            "code": "125154007",
+            "display": "Specimen unsatisfactory for evaluation (finding)"
+          },
+          {
+            "code": "131194007",
+            "display": "Non-reactive (qualifier value)"
+          },
+          {
+            "code": "260373001",
+            "display": "Detected (qualifier value)"
+          },
+          {
+            "code": "260385009",
+            "display": "Negative (qualifier value)"
+          },
+          {
+            "code": "260415000",
+            "display": "Not detected (qualifier value)"
+          },
+          {
+            "code": "407479009",
+            "display": "Influenza A virus (organism)"
+          },
+          {
+            "code": "407480007",
+            "display": "Influenza B virus (organism)"
+          },
+          {
+            "code": "415684004",
+            "display": "Suspected (qualifier value)"
+          },
+          {
+            "code": "419984006",
+            "display": "Inconclusive (qualifier value)"
+          },
+          {
+            "code": "42425007",
+            "display": "Equivocal (qualifier value)"
+          },
+          {
+            "code": "455371000124106",
+            "display": "Invalid result (qualifier value)"
+          },
+          {
+            "code": "720735008",
+            "display": "Presumptive positive (qualifier value)"
+          },
+          {
+            "code": "82334004",
+            "display": "Indeterminate (qualifier value)"
+          },
+          {
+            "code": "840533007",
+            "display": "Severe acute respiratory syndrome coronavirus 2 (organism)"
+          }
+        ]
+      }
+    ]
+  }
+}

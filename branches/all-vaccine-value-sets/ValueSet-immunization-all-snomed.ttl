@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/ValueSet/immunization-all-snomed> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "immunization-all-snomed"] ; # 
+  fhir:url [ fhir:v "https://terminology.smarthealth.cards/ValueSet/immunization-all-snomed"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "ImmunizationAllSnomedValueSet"] ; # 
+  fhir:title [ fhir:v "Immunization / All / SNOMED CT"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-06-25T12:22:10+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "VCI"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "VCI" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://vci.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Contains descendants of SNOMED CT concept `787859002` \"Vaccine product (medicinal product)\". Note that codes from _any_ SNOMED CT extension are valid as long as they descend from this concept."] ; # 
+  fhir:copyright [ fhir:v "© 2002+ International Health Terminology Standards Development Organisation (IHTSDO)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "787859002" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

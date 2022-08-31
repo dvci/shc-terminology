@@ -1,0 +1,92 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/ValueSet/lab-qualitative-result> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "lab-qualitative-result"] ; # 
+  fhir:url [ fhir:v "https://terminology.smarthealth.cards/ValueSet/lab-qualitative-result"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2022.2"] ; # 
+  fhir:name [ fhir:v "LabQualitativeResultValueSet"] ; # 
+  fhir:title [ fhir:v "Qualitative infectious disease-related lab test result codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-06-25T12:22:10+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "VCI"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "VCI" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://vci.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This value set includes a codes to identify the results of qualitative lab tests related to infectious diseases."] ; # 
+  fhir:copyright [ fhir:v "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc\n\nThe SNOMED CT codes in this ValueSet are part of SNOMED GPS, which is produced by SNOMED International under the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/).\n\nAdditional information about this license specific to SNOMED International's release of the GPS:\n\n- SNOMED CT is © and ® SNOMED International. The right to maintain the GPS remains vested exclusively in SNOMED International.\n- The Licensee can redistribute the GPS.\n- The Licensee can create derivatives or implementation-related products and services based on the GPS.\n- The Licensee cannot claim that SNOMED International or any of its Members endorses the Licensee's derivative because it uses content from the GPS.\n- Neither SNOMED International nor any of the contributors accept any liability for the Licensee's use or redistribution of the GPS.\n- SNOMED CT® was originally created by the College of American Pathologists.\n\nWithout obtaining prior written permission from SNOMED International, you are expressly prohibited from using, distributing or reproducing the SNOMED International, SNOMED CT or SNOMED GPS logo, service mark or trademark. Please review all terms and conditions of use [here](http://www.snomed.org/terms-and-conditions)."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA28481-2" ] ;
+         fhir:display [ fhir:v "Past infection" ]
+       ] [
+         fhir:code [ fhir:v "LA28482-0" ] ;
+         fhir:display [ fhir:v "Recent infection" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "10828004" ] ;
+         fhir:display [ fhir:v "Positive (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "11214006" ] ;
+         fhir:display [ fhir:v "Reactive (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "125154007" ] ;
+         fhir:display [ fhir:v "Specimen unsatisfactory for evaluation (finding)" ]
+       ] [
+         fhir:code [ fhir:v "131194007" ] ;
+         fhir:display [ fhir:v "Non-reactive (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "260373001" ] ;
+         fhir:display [ fhir:v "Detected (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "260385009" ] ;
+         fhir:display [ fhir:v "Negative (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "260415000" ] ;
+         fhir:display [ fhir:v "Not detected (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "407479009" ] ;
+         fhir:display [ fhir:v "Influenza A virus (organism)" ]
+       ] [
+         fhir:code [ fhir:v "407480007" ] ;
+         fhir:display [ fhir:v "Influenza B virus (organism)" ]
+       ] [
+         fhir:code [ fhir:v "415684004" ] ;
+         fhir:display [ fhir:v "Suspected (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "419984006" ] ;
+         fhir:display [ fhir:v "Inconclusive (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "42425007" ] ;
+         fhir:display [ fhir:v "Equivocal (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "455371000124106" ] ;
+         fhir:display [ fhir:v "Invalid result (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "720735008" ] ;
+         fhir:display [ fhir:v "Presumptive positive (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "82334004" ] ;
+         fhir:display [ fhir:v "Indeterminate (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "840533007" ] ;
+         fhir:display [ fhir:v "Severe acute respiratory syndrome coronavirus 2 (organism)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

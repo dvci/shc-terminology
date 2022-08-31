@@ -1,0 +1,37 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "designation-use",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<script>\n    let pTags = Array.from(document.getElementsByTagName(&quot;p&quot;));\n    pTags.filter(function(x) { return x.textContent.includes('This Code system is referenced in the content logical definition of the following value sets:')}).forEach(function(t) { t.style.display = &quot;none&quot;});\n    pTags.filter(function(x) { return x.textContent.includes('This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)')}).forEach(function(t) {t.style.display = &quot;none&quot;});\n</script>\n<div>\n    <table class=\"table-striped table table-bordered\">\n        <tr>\n            <th>Code</th>\n            <th>Description(s)</th>\n        </tr>\n        \n            <tr>\n                <td><code>consumer-friendly</code></td>\n                <td>\n                    \n                        Consumer friendly\n                    \n                </td>\n            </tr>\n        \n    </table>\n</div></div>"
+  },
+  "url": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+  "version": "0.1.0",
+  "name": "DesignationUse",
+  "title": "SMART Health Card Terminology Designation Use",
+  "status": "active",
+  "date": "2022-09-11T10:58:22+00:00",
+  "publisher": "VCI",
+  "contact": [
+    {
+      "name": "VCI",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://vci.org"
+        }
+      ]
+    }
+  ],
+  "description": "Identifies the designation would be used SMART Health Card terminology",
+  "caseSensitive": false,
+  "content": "complete",
+  "count": 1,
+  "concept": [
+    {
+      "code": "consumer-friendly",
+      "display": "Consumer friendly",
+      "definition": "Indicates the display name for a term that should be shown to consumers (e.g., to identify a vaccine in a SHC wallet app's user interface)."
+    }
+  ]
+}

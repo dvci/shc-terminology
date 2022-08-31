@@ -1,0 +1,131 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/ValueSet/qualitative-lab-test-result-value-set> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "qualitative-lab-test-result-value-set"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b style=\"color: maroon\">Exception generating Narrative: unexpected non-end of element null::a  at line 3 column 74</b></p></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://terminology.smarthealth.cards/ValueSet/qualitative-lab-test-result-value-set"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "QualitativeLabTestResultValueSet"];
+  fhir:ValueSet.title [ fhir:value "Qualitative infectious disease-related lab test result codes"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2022-09-11T10:58:22+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "VCI"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "VCI" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://vci.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "This value set includes a codes to identify the results of qualitative lab tests related to infectious diseases."];
+  fhir:ValueSet.copyright [ fhir:value "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc\n\nThe SNOMED CT codes in this ValueSet are made available by SNOMED International to users at no cost, and are licensed under the Creative Commons Attribution 4.0 International License."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA28480-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ab not detected" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA28481-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Past infection" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA28482-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Recent infection" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA4259-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Borderline" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10828004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Positive (qualifier value)" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11214006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reactive (qualifier value)" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "125154007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specimen unsatisfactory for evaluation (finding)" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "131194007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Non-reactive (qualifier value)" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260373001" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Detected (qualifier value)" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260385009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Negative (qualifier value)" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "260415000" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Not detected (qualifier value)" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "407479009" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Influenza A virus (organism)" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "407480007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Influenza B virus (organism)" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "415684004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Suspected (qualifier value)" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "419984006" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Inconclusive (qualifier value)" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "42425007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Equivocal (qualifier value)" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "455371000124106" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Invalid result (qualifier value)" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "720735008" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Presumptive positive (qualifier value)" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82334004" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Indeterminate (qualifier value)" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "840533007" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Severe acute respiratory syndrome coronavirus 2 (organism)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/ValueSet/qualitative-lab-test-result-value-set.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="designation-use"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+<script>
+    let pTags = Array.from(document.getElementsByTagName(&quot;p&quot;));
+    pTags.filter(function(x) { return x.textContent.includes('This Code system is referenced in the content logical definition of the following value sets:')}).forEach(function(t) { t.style.display = &quot;none&quot;});
+    pTags.filter(function(x) { return x.textContent.includes('This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)')}).forEach(function(t) {t.style.display = &quot;none&quot;});
+</script>
+<div>
+    <table class="table-striped table table-bordered">
+        <tr>
+            <th>Code</th>
+            <th>Description(s)</th>
+        </tr>
+        
+            <tr>
+                <td><code>consumer-friendly</code></td>
+                <td>
+                    
+                        Consumer friendly
+                    
+                </td>
+            </tr>
+        
+    </table>
+</div></div>
+  </text>
+  <url value="https://terminology.smarthealth.cards/CodeSystem/designation-use"/>
+  <version value="0.1.0"/>
+  <name value="DesignationUse"/>
+  <title value="SMART Health Card Terminology Designation Use"/>
+  <status value="active"/>
+  <date value="2022-09-01T17:36:34+00:00"/>
+  <publisher value="VCI"/>
+  <contact>
+    <name value="VCI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://vci.org"/>
+    </telecom>
+  </contact>
+  <description value="Identifies the designation would be used SMART Health Card terminology"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="consumer-friendly"/>
+    <display value="Consumer friendly"/>
+    <definition value="Indicates the display name for a term that should be shown to consumers (e.g., to identify a vaccine in a SHC wallet app's user interface)."/>
+  </concept>
+</CodeSystem>

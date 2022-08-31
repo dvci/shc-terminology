@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>CARDS.SMARTHEALTH.TERMINOLOGY\Home - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/fix-fonts.css" rel="stylesheet"/>
+    <link href="assets/css/smart-health-cards.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">SMART Health Cards: Terminology</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SMART Health Cards: Terminology - Local Development build (v0.1.0). See the <a href="https://terminology.smarthealth.cards/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://terminology.smarthealth.cards/ImplementationGuide/cards.smarthealth.terminology<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://terminology.smarthealth.cards/ImplementationGuide/cards.smarthealth.terminology"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://terminology.smarthealth.cards/ImplementationGuide/cards.smarthealth.terminology|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2023-06-25
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">SMARTHealthCardsTerminology</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#use-case-specific-terminology" id="markdown-toc-use-case-specific-terminology">Use Case-Specific Terminology</a></li>
+  <li><a href="#terminology-for-all-smart-health-cards" id="markdown-toc-terminology-for-all-smart-health-cards">Terminology for All SMART Health Cards</a></li>
+  <li><a href="#terminology-versioning" id="markdown-toc-terminology-versioning">Terminology Versioning</a></li>
+  <li><a href="#contact-information" id="markdown-toc-contact-information">Contact Information</a></li>
+  <li><a href="#contributing" id="markdown-toc-contributing">Contributing</a></li>
+</ul>
+
+</div>
+<p>This website is a community-maintained terminology resource for implementers of <a href="https://smarthealth.cards/">SMART Health Cards</a>.</p>
+
+<p>It provides both human-readable terminology resources, as well as computable versions in the form of <a href="https://www.json.org">JSON</a> representations of <a href="https://www.hl7.org/fhir/resource.html">FHIR Resources</a>.</p>
+
+<h3 id="use-case-specific-terminology">Use Case-Specific Terminology</h3>
+
+<p>FHIR Implementation Guides (IGs) are used to specify the FHIR payload within SMART Health Cards.</p>
+
+<h4 id="vaccination--testing-ig">Vaccination &amp; Testing IG</h4>
+
+<p>The <a href="https://vci.org/ig/vaccination-and-testing">SMART Health Cards: Vaccination &amp; Testing Implementation Guide</a> describes the patient information and clinical data contained in SMART Health Cards related to vaccinations and qualitative laboratory testing for infectious diseases. Terminology relevant to these use cases is described in the table below.</p>
+
+<table class="table-striped table table-bordered">
+  <thead>
+    <tr>
+      <th style="text-align: left">Type</th>
+      <th>Description</th>
+      <th style="text-align: left">Relevant terminology</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Immunization</td>
+      <td style="text-align: left">COVID-19 immunization</td>
+      <td style="text-align: left">
+        <p><strong>Identifying vaccines:</strong></p>
+        <ul>
+          <li><a href="ValueSet-immunization-covid-cvx.html">CVX</a></li>
+          <li><a href="ValueSet-immunization-covid-icd11.html">ICD-11</a></li>
+          <li><a href="ValueSet-immunization-covid-snomed.html">SNOMED CT</a></li>
+        </ul>
+        <p>A <a href="ValueSet-immunization-covid-all.html">unified ValueSet combining the above is provided for convenience</a>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Immunization</td>
+      <td style="text-align: left">
+        Orthopoxvirus (smallpox and mpox) immunization
+      </td>
+      <td style="text-align: left">
+        <p><strong>Identifying vaccines:</strong></p>
+        <ul>
+          <li><a href="ValueSet-immunization-orthopoxvirus-cvx.html">CVX</a></li>
+          <li>ICD-11 (forthcoming)</li>
+          <li>SNOMED CT (forthcoming)</li>
+        </ul>
+        <p>A <a href="ValueSet-immunization-orthopoxvirus-all.html">unified ValueSet combining the above is provided for convenience</a>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Immunization</td>
+      <td style="text-align: left">
+        Any immunization
+      </td>
+      <td style="text-align: left">
+        <p><strong>Identifying vaccines:</strong></p>
+        <ul>
+          <li><a href="ValueSet-immunization-all-cvx.html">CVX</a></li>
+          <li><a href="ValueSet-immunization-all-icd11.html">ICD-11</a></li>
+          <li><a href="ValueSet-immunization-all-snomed.html">SNOMED CT</a></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Observation</td>
+      <td style="text-align: left">COVID-19 qualitative laboratory test</td>
+      <td style="text-align: left">
+        <p><strong>Identifying laboratory tests:</strong></p>
+        <ul>
+          <li><a href="ValueSet-lab-qualitative-test-covid.html">LOINC - COVID-19-related qualitative laboratory tests</a></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Observation</td>
+      <td style="text-align: left">
+        Qualitative laboratory test results for infectious diseases (including
+        COVID-19)
+      </td>
+      <td style="text-align: left">
+        <p><strong>Identifying laboratory test results:</strong></p>
+        <ul>
+          <li><a href="ValueSet-lab-qualitative-result.html">SNOMED CT - qualitative laboratory test results</a></li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="terminology-for-all-smart-health-cards">Terminology for All SMART Health Cards</h3>
+
+<h4 id="identity-assurance-level">Identity Assurance Level</h4>
+
+<p>The codes in <a href="CodeSystem-identity-assurance-level.html">this CodeSystem</a> may be used by Issuers of SMART Health Cards to record if/how a patient’s identity was verified at the point of care. For example, if a patient showed their driver’s license to verify their name and date of birth when getting a vaccination, this would correspond to <code class="language-plaintext highlighter-rouge">IAL1.4</code>.</p>
+
+<h4 id="health-card"><code class="language-plaintext highlighter-rouge">#health-card</code></h4>
+
+<p>SMART Health Cards are identified by a <code class="language-plaintext highlighter-rouge">vc.type</code> value of <code class="language-plaintext highlighter-rouge">https://smarthealth.cards#health-card</code>, which is defined <a href="CodeSystem-health-card.html">in this CodeSystem</a>. See the <a href="https://spec.smarthealth.cards/#health-cards-are-encoded-as-compact-serialization-json-web-signatures-jws">SMART Health Cards specification</a> for more information.</p>
+
+<h3 id="terminology-versioning">Terminology Versioning</h3>
+
+<p>ValueSets from medical terminology (e.g., CVX, LOINC, etc.) are versioned using a <code class="language-plaintext highlighter-rouge">YYYY.n</code> format where <code class="language-plaintext highlighter-rouge">YYYY</code> is the year a given version was created and <code class="language-plaintext highlighter-rouge">n</code> is an incremented integer.</p>
+
+<p>Unified terminology ValueSets (e.g., <a href="ValueSet-immunization-covid-all.html">all COVID-19 vaccine codes</a>) are versioned with the date they were generated (e.g., <code class="language-plaintext highlighter-rouge">20230101</code> for generation on Jan 1, 2023).</p>
+
+<p>Other terminology resources are versioned with <a href="https://semver.org/">semantic versioning</a>.</p>
+
+<p>(Semantic versioning is not used for the medical terminology ValueSets because that there is no notion of “incompatible” changes, meaning that the first semantic versioning digit representing the “major” version would <em>never</em> be incremented. This would eventually lead to version numbers like <code class="language-plaintext highlighter-rouge">1.1234.0</code>.)</p>
+
+<h3 id="contact-information">Contact Information</h3>
+
+<p>For technical questions, please post on the <a href="https://chat.fhir.org/#narrow/stream/284830-smart.2Fhealth-cards">smart/health-cards Zulip stream at chat.fhir.org</a> (free account required).</p>
+
+<p>This website is maintained for the SMART Health Card implementer community by <a href="https://vci.org">VCI</a>.</p>
+
+<h3 id="contributing">Contributing</h3>
+
+<p>The source code for this website and the FHIR resources contained within are available on GitHub, and community contributions are welcome. Please see <a href="https://github.com/dvci/shc-terminology/">https://github.com/dvci/shc-terminology/</a> for details.</p>
+
+<style>
+/* Hide metadata table at top of page */
+.colsd {
+  display: none;
+}
+/* Hide toc */
+.markdown-toc {
+  display: none;
+}
+</style>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://vci.org">VCI</a>.  Package cards.smarthealth.terminology#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 25, 2023 12:22+0000">2023-06-25</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/CodeSystem/designation-use> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "designation-use"] ; # 
+  fhir:url [ fhir:v "https://terminology.smarthealth.cards/CodeSystem/designation-use"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "DesignationUse"] ; # 
+  fhir:title [ fhir:v "Designation Use"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-07-06T15:10:39+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "VCI"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "VCI" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://vci.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code system indicating how a display name should be used in our community-maintained localizations. This is NOT used in SMART Health Cards themselves -- it is just for the community-provided localizations ValueSets for displaying SMART Health Card codes in user interfaces."] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "consumer-friendly" ] ;
+     fhir:display [ fhir:v "Consumer friendly" ] ;
+     fhir:definition [ fhir:v "Indicates the display name for a term that should be shown to consumers (e.g., to identify a vaccine in a SHC wallet app's user interface)." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

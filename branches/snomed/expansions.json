@@ -1,0 +1,743 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "0dfb5d4e-de84-433d-832a-83eb1ca4f3a9",
+  "meta" : {
+    "lastUpdated" : "2022-09-15T18:46:22.833+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://terminology.smarthealth.cards/ValueSet/covid-19-vaccine-snomed-value-set",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "covid-19-vaccine-snomed-value-set",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n        \n</div>"
+      },
+      "url" : "https://terminology.smarthealth.cards/ValueSet/covid-19-vaccine-snomed-value-set",
+      "version" : "0.1.0",
+      "name" : "Covid19VaccineSNOMEDValueSet",
+      "title" : "SNOMED CT codes identifying COVID-19 vaccines",
+      "status" : "active",
+      "date" : "2022-09-15T18:46:22+00:00",
+      "publisher" : "VCI",
+      "contact" : [{
+        "name" : "VCI",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://vci.org"
+        }]
+      }],
+      "description" : "Contains SNOMED CT codes that identify specific COVID-19 vaccines for use in SMART Health Cards.",
+      "copyright" : "© 2021 International Health Terminology Standards Development Organisation. All rights reserved. SNOMED CT® was originally created by the College of American Pathologists.\n\nThe SNOMED-CT® concepts in this ValueSet are produced by SNOMED International under the terms of the Creative Commons Attribution 4.0 International Public License.",
+      "expansion" : {
+        "identifier" : "urn:uuid:20f7f039-9ea7-48c4-b89d-379eb865df9c",
+        "timestamp" : "2022-09-15T18:46:46+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://terminology.smarthealth.cards/ValueSet/qualitative-covid-lab-test-value-set",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "qualitative-covid-lab-test-value-set",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n        \n</div>"
+      },
+      "url" : "https://terminology.smarthealth.cards/ValueSet/qualitative-covid-lab-test-value-set",
+      "version" : "0.1.0",
+      "name" : "QualitativeCovidLabTestValueSet",
+      "title" : "LOINCs identifying qualitative COVID lab tests",
+      "status" : "active",
+      "date" : "2022-09-15T18:46:22+00:00",
+      "publisher" : "VCI",
+      "contact" : [{
+        "name" : "VCI",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://vci.org"
+        }]
+      }],
+      "description" : "This value set includes a subset of the LOINCs found at <https://loinc.org/sars-cov-2-and-covid-19/> that identify COVID-19-related laboratory tests. Only those laboratory tests that include qualitative results we believe to be useful in SMART Health Cards are included.",
+      "copyright" : "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc",
+      "expansion" : {
+        "identifier" : "urn:uuid:71110a80-045e-454b-9f77-f9e9daf4a47b",
+        "timestamp" : "2022-09-15T18:46:47+00:00",
+        "total" : 84,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "94822-4",
+          "display" : "SARS-CoV-2 RNA Sal Ql Seq"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94762-2",
+          "display" : "SARS-CoV-2 Ab SerPl Ql IA"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94761-4",
+          "display" : "SARS-CoV-2 IgG DBS Ql IA"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94757-2",
+          "display" : "SARS-CoV-2 N gene Resp Ql NAA N2"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94756-4",
+          "display" : "SARS-CoV-2 N gene Resp Ql NAA N1"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94768-9",
+          "display" : "SARS-CoV-2 IgA SerPlBld Ql IA.rapid"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94767-1",
+          "display" : "SARS-CoV-2 S gene SerPl Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94763-0",
+          "display" : "SARS-CoV-2 Spec Ql Cult"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94760-6",
+          "display" : "SARS-CoV-2 N gene Nph Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94759-8",
+          "display" : "SARS-CoV-2 RNA Nph Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94758-0",
+          "display" : "SARS-rel CoV E gene Resp Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94661-6",
+          "display" : "SARS-CoV-2 Ab SerPl-Imp"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94660-8",
+          "display" : "SARS-CoV-2 RNA SerPl Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "96797-6",
+          "display" : "SARS-CoV-2 RNA OPA wash Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94647-5",
+          "display" : "SARSr-CoV RNA Spec Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94641-8",
+          "display" : "SARS-CoV-2 S gene Spec Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94640-0",
+          "display" : "SARS-CoV-2 S gene Resp Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94639-2",
+          "display" : "SARS-CoV-2 ORF1ab Spec Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94563-4",
+          "display" : "SARS-CoV-2 IgG SerPl Ql IA"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "95971-8",
+          "display" : "SARS-CoV-2 IFN-g Bld Ql"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "95970-0",
+          "display" : "SARS-CoV-2 TCRB Bld Ql Seq"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "95825-6",
+          "display" : "SARS-CoV-2 Ab DBS Ql IA"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "96123-5",
+          "display" : "SARS-CoV-2 RdRp Upper resp Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "96122-7",
+          "display" : "SARS-rel CoV E gene Upper resp Ql NAA+prb"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "96121-9",
+          "display" : "SARS-rel CoV E gene Low resp Ql NAA+prb"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "95411-5",
+          "display" : "SARS-CoV-2 NAb Ser Ql pVNT"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "95409-9",
+          "display" : "SARS-CoV-2 N gene Nose Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "95406-5",
+          "display" : "SARS-CoV-2 RNA Nose Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "96120-1",
+          "display" : "SARS-CoV-2 RdRp Lower resp Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "96119-3",
+          "display" : "SARS-CoV-2 Ag Upper resp Ql IA"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "95609-4",
+          "display" : "SARS-CoV-2 S gene Resp Ql Seq"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "95608-6",
+          "display" : "SARS-CoV-2 RNA Resp Ql NAA+non-probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "95209-3",
+          "display" : "SARS-CoV+SARS-CoV-2 Ag Resp Ql IA.rapid"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "95125-1",
+          "display" : "SARS-CoV-2 IgA+IgM SerPl Ql IA"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "96448-6",
+          "display" : "SARS-CoV-2 N gene Sal Ql NAA N1"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "96603-6",
+          "display" : "SARS-CoV-2 S RBD NAb SerPl Ql sVNT"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "95416-4",
+          "display" : "SARS-CoV-2 IgM DBS Ql IA"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "95425-5",
+          "display" : "SARS-CoV-2 N gene Sal Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94845-5",
+          "display" : "SARS-CoV-2 RNA Sal Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "96829-7",
+          "display" : "SARS-CoV-2 RNA Spec Donr Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "96752-1",
+          "display" : "SARS-CoV-2 S gene mut Spec Ql"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "96986-5",
+          "display" : "SARS-CoV-2 N gene Nose Ql NAA+non-probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "96957-6",
+          "display" : "SARS-CoV-2 M gene Upper resp Ql NAA+prb"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "96958-4",
+          "display" : "SARS-CoV-2 N gene Sal Ql NAA N2"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94766-3",
+          "display" : "SARS-CoV-2 N gene SerPl Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94765-5",
+          "display" : "SARS-rel CoV E gene SerPl Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "96091-4",
+          "display" : "SARS-CoV-2 RdRp Sal Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94565-9",
+          "display" : "SARS-CoV-2 RNA Nph Ql NAA+non-probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94564-2",
+          "display" : "SARS-CoV-2 IgM SerPl Ql IA"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94562-6",
+          "display" : "SARS-CoV-2 IgA SerPl Ql IA"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94559-2",
+          "display" : "SARS-CoV-2 ORF1ab Resp Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94558-4",
+          "display" : "SARS-CoV-2 Ag Resp Ql IA.rapid"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94547-7",
+          "display" : "SARS-CoV-2 IgG+IgM SerPl Ql IA"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94534-5",
+          "display" : "SARS-CoV-2 RdRp Resp Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94533-7",
+          "display" : "SARS-CoV-2 N gene Resp Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94532-9",
+          "display" : "SARS-rel CoV+MERS RNA Resp Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94508-9",
+          "display" : "SARS-CoV-2 IgM SerPlBld Ql IA.rapid"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94507-1",
+          "display" : "SARS-CoV-2 IgG SerPlBld Ql IA.rapid"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94502-2",
+          "display" : "SARS-rel CoV RNA Resp Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94500-6",
+          "display" : "SARS-CoV-2 RNA Resp Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94316-7",
+          "display" : "SARS-CoV-2 N gene Spec Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94315-9",
+          "display" : "SARS-rel CoV E gene Spec Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94314-2",
+          "display" : "SARS-CoV-2 RdRp Spec Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94310-0",
+          "display" : "SARS-related CoV N Spec Ql NAA N3"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94309-2",
+          "display" : "SARS-CoV-2 RNA Spec Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94308-4",
+          "display" : "SARS-CoV-2 N gene Spec Ql NAA N2"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "94307-6",
+          "display" : "SARS-CoV-2 N gene Spec Ql NAA N1"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "95824-9",
+          "display" : "SARS-CoV-2 ORF1ab Sal Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "95823-1",
+          "display" : "SARS-rel CoV E gene Sal Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "95542-7",
+          "display" : "SARS-CoV-2 Ab SerPlBld Ql IA.rapid"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "95424-8",
+          "display" : "SARS-CoV-2 RNA Resp Ql Seq"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "95423-0",
+          "display" : "FLUABV + SARS-CoV-2 Resp NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "97097-0",
+          "display" : "SARS-CoV-2 Ag Upper resp Ql IA.rapid"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "97098-8",
+          "display" : "SARS-CoV-2 Nsp2 Upper resp Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "96763-8",
+          "display" : "SARS-CoV-2 E gene Resp Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "96765-3",
+          "display" : "SARS-CoV-2 S gene Sal Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "99772-6",
+          "display" : "SARS-CoV-2 IFN-g Bld-Imp"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "98132-4",
+          "display" : "SARS-CoV-2 ORF1a Resp Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "98069-8",
+          "display" : "SARS-CoV-2 Ab Sal Ql IA.rapid"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "99596-9",
+          "display" : "SARS-CoV-2 N IgG SerPl Ql IA"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "99597-7",
+          "display" : "SARS-CoV-2 S IgG SerPl Ql IA"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "98493-0",
+          "display" : "SARS-CoV-2 ORF1b Sal Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "98494-8",
+          "display" : "SARS-CoV-2 ORF1a Sal Ql NAA+probe"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "98131-6",
+          "display" : "SARS-CoV-2 ORF1b Resp Ql NAA+probe"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://terminology.smarthealth.cards/ValueSet/qualitative-lab-test-result-value-set",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "qualitative-lab-test-result-value-set",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n        \n</div>"
+      },
+      "url" : "https://terminology.smarthealth.cards/ValueSet/qualitative-lab-test-result-value-set",
+      "version" : "0.1.0",
+      "name" : "QualitativeLabTestResultValueSet",
+      "title" : "Qualitative infectious disease-related lab test result codes",
+      "status" : "active",
+      "date" : "2022-09-15T18:46:22+00:00",
+      "publisher" : "VCI",
+      "contact" : [{
+        "name" : "VCI",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://vci.org"
+        }]
+      }],
+      "description" : "This value set includes a codes to identify the results of qualitative lab tests related to infectious diseases.",
+      "copyright" : "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc\n\nThe SNOMED CT codes in this ValueSet are made available by SNOMED International to users at no cost, and are licensed under the Creative Commons Attribution 4.0 International License.",
+      "expansion" : {
+        "identifier" : "urn:uuid:b040cd5e-da4c-4a81-9557-75e2a4e20842",
+        "timestamp" : "2022-09-15T18:46:47+00:00",
+        "total" : 20,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA28480-4",
+          "display" : "Ab not detected"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA28481-2",
+          "display" : "Past infection"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA28482-0",
+          "display" : "Recent infection"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA4259-3",
+          "display" : "Borderline"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "10828004",
+          "display" : "Positive (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "11214006",
+          "display" : "Reactive (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "125154007",
+          "display" : "Specimen unsatisfactory for evaluation (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "131194007",
+          "display" : "Non-reactive (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "260373001",
+          "display" : "Detected (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "260385009",
+          "display" : "Negative (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "260415000",
+          "display" : "Not detected (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "407479009",
+          "display" : "Influenza A virus (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "407480007",
+          "display" : "Influenza B virus (organism)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "415684004",
+          "display" : "Suspected (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "419984006",
+          "display" : "Inconclusive (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "42425007",
+          "display" : "Equivocal (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "455371000124106",
+          "display" : "Invalid result (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "720735008",
+          "display" : "Presumptive positive (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "82334004",
+          "display" : "Indeterminate (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "840533007",
+          "display" : "Severe acute respiratory syndrome coronavirus 2 (organism)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://terminology.smarthealth.cards/ValueSet/covid-cvx",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "covid-cvx",
+      "language" : "en",
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n        \n</div>"
+      },
+      "url" : "https://terminology.smarthealth.cards/ValueSet/covid-cvx",
+      "version" : "0.1.0",
+      "name" : "CovidCVXValueSet",
+      "title" : "CVX Covid Codes for use in Smart Health Cards",
+      "status" : "draft",
+      "date" : "2021-09-22",
+      "publisher" : "VCI",
+      "contact" : [{
+        "name" : "VCI",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://vci.org"
+        }]
+      }],
+      "description" : "A list of CVX codes with recommended consumer suitable displays for use in Smart Health Cards, with localized consumer friendly terms",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "AU"
+        },
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }]
+      }],
+      "copyright" : "Creative Commons 0",
+      "expansion" : {
+        "identifier" : "urn:uuid:11b3a7a0-d882-4204-8f94-9cebeb1d57df",
+        "timestamp" : "2022-09-15T18:46:48+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/sid/cvx|20210406"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/sid/cvx",
+          "code" : "210",
+          "display" : "AstraZeneca (Vaxzevria)"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/cvx",
+          "code" : "208",
+          "display" : "Pfizer (Comirnaty)"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/cvx",
+          "code" : "207",
+          "display" : "Moderna (Spikevax)"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/cvx",
+          "code" : "212",
+          "display" : "Janssen COVID-19 Vaccine"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/cvx",
+          "code" : "211",
+          "display" : "Novavax COVID-19 Vaccine"
+        }]
+      }
+    }
+  }]
+}

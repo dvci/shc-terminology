@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://terminology.smarthealth.cards/CodeSystem/identity-assurance-level> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "identity-assurance-level"] ; # 
+  fhir:url [ fhir:v "https://smarthealth.cards/ial"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "IdentityAssuranceLevelCodeSystem"] ; # 
+  fhir:title [ fhir:v "Identity Assurance Level Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-07-06T15:10:39+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "VCI"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "VCI" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://vci.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code representing identity assurance level, based on NIST 800-63-3"] ; # 
+  fhir:copyright [ fhir:v "Copyright Computational Health Informatics Program, Boston Children's Hospital, Boston, MA as part of the [SMART Health Cards Framework](https://smarthealth.cards/ial). Licensed under CC-BY 4.0 (<https://creativecommons.org/licenses/by/4.0/>)."] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "IAL1" ] ;
+     fhir:display [ fhir:v "Name and birth date were self-asserted." ]
+  ] [
+     fhir:code [ fhir:v "IAL1.2" ] ;
+     fhir:display [ fhir:v "An unspecified ID was used to verify name and birth date." ]
+  ] [
+     fhir:code [ fhir:v "IAL1.4" ] ;
+     fhir:display [ fhir:v "A US state-issued photo ID or nationally-issued photo ID was used to verify name and birth date." ]
+  ] [
+     fhir:code [ fhir:v "IAL2" ] ;
+     fhir:display [ fhir:v "Either remote or in-person identity proofing is required. IAL2 requires identifying attributes to have been verified in person or remotely using, at a minimum, the procedures given in NIST Special Publication 800-63A." ]
+  ] [
+     fhir:code [ fhir:v "IAL3" ] ;
+     fhir:display [ fhir:v "In-person identity proofing is required. Identifying attributes must be verified by an authorized CSP representative through examination of physical documentation as described in NIST Special Publication 800-63A." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

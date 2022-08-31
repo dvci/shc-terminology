@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="monkeypox-cvx"/>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+        
+            <p>Include these codes as defined in <a href="http://hl7.org/fhir/sid/cvx"><code>http://hl7.org/fhir/sid/cvx</code></a>:</p>
+            <table class="table-striped table table-bordered">
+                <tr>
+                    <th>Code</th>
+                    <th>Description(s)</th>
+                </tr>
+                
+                    <tr>
+                        <td><code>206</code></td>
+                        <td>
+                            
+                                <ul>
+                                    <li>Default: Vaccinia, smallpox monkeypox vaccine live, PF, SQ or ID injection</li>
+                                    
+                                    <li>
+                                        <code>en-US</code>:
+                                        JYNNEOS
+                                    </li>
+                                    
+                                </ul>
+                            
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td><code>75</code></td>
+                        <td>
+                            
+                                <ul>
+                                    <li>Default: vaccinia (smallpox)</li>
+                                    
+                                    <li>
+                                        <code>en-US</code>:
+                                        ACAM2000
+                                    </li>
+                                    
+                                </ul>
+                            
+                        </td>
+                    </tr>
+                
+            </table>
+        
+</div>
+  </text>
+  <url value="https://terminology.smarthealth.cards/ValueSet/monkeypox-cvx"/>
+  <version value="0.1.0"/>
+  <name value="MonkeypoxCVXValueSet"/>
+  <title value="CVX Codes for monkeypox vaccines for use in Smart Health Cards"/>
+  <status value="draft"/>
+  <date value="2022-09-02"/>
+  <publisher value="VCI"/>
+  <contact>
+    <name value="VCI"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://vci.org"/>
+    </telecom>
+  </contact>
+  <description value="A list of CVX codes with recommended consumer suitable displays for use in SMART Health Cards, with localized consumer friendly terms"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Creative Commons 0"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+      <concept>
+        <code value="206"/>
+        <display value="Vaccinia, smallpox monkeypox vaccine live, PF, SQ or ID injection"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="https://terminology.smarthealth.cards/CodeSystem/designation-use"/>
+          </use>
+          <value value="JYNNEOS"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="75"/>
+        <display value="vaccinia (smallpox)"/>
+        <designation>
+          <language value="en-US"/>
+          <use>
+            <system value="https://terminology.smarthealth.cards/CodeSystem/designation-use"/>
+          </use>
+          <value value="ACAM2000"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

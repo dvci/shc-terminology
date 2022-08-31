@@ -1,0 +1,431 @@
+﻿SMARTHealthCardsTerminology : Validation Results
+=========================================
+
+err = 105, warn = 287, info = 6
+IG Publisher Version: 1.3.13
+Generated Thu Jun 01 21:06:48 UTC 2023. FHIR version 4.0.1 for cards.smarthealth.terminology#0.1.0 (canonical = https://terminology.smarthealth.cards)
+ Build Errors : 0 / 4 / 0
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-designation-use : 0 / 1 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-health-card : 2 / 1 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-identity-assurance-level : 2 / 1 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ImplementationGuide-cards.smarthealth.terminology : 0 / 0 / 3
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-immunization-covid-snomed : 0 / 98 / 2
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-lab-qualitative-result : 0 / 1 / 1
+ /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/ValueSet-lab-qualitative-test-covid : 0 / 1 / 1
+ /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-all : 45 / 136 / 2
+ /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-cvx : 45 / 37 / 1
+ /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-mapping-cvx-air : 3 / 3 / 1
+ /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-orthopoxvirus-all : 4 / 3 / 2
+ /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-orthopoxvirus-cvx : 4 / 1 / 2
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-designation-use.json ==
+WARNING: CodeSystem/designation-use: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-health-card.json ==
+ERROR: CodeSystem.where(url = 'https://smarthealth.cards#'): Conformance resource /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-health-card.json - the canonical URL (https://terminology.smarthealth.cards/CodeSystem/health-card) does not match the URL (https://smarthealth.cards#)
+WARNING: CodeSystem/health-card: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+ERROR: /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-health-card: URL Mismatch https://terminology.smarthealth.cards/CodeSystem/health-card vs https://smarthealth.cards#
+== fsh-generated/resources/CodeSystem-identity-assurance-level.json ==
+ERROR: CodeSystem.where(url = 'https://smarthealth.cards/ial'): Conformance resource /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-identity-assurance-level.json - the canonical URL (https://terminology.smarthealth.cards/CodeSystem/identity-assurance-level) does not match the URL (https://smarthealth.cards/ial)
+WARNING: CodeSystem/identity-assurance-level: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+ERROR: /home/runner/work/shc-terminology/shc-terminology/fsh-generated/resources/CodeSystem-identity-assurance-level: URL Mismatch https://terminology.smarthealth.cards/CodeSystem/identity-assurance-level vs https://smarthealth.cards/ial
+== fsh-generated/resources/ImplementationGuide-cards.smarthealth.terminology.json ==
+INFORMATION: ImplementationGuide/cards.smarthealth.terminology: ImplementationGuide.definition.resource[6].description: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: ImplementationGuide/cards.smarthealth.terminology: ImplementationGuide.definition.resource[9].description: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/ValueSet-immunization-covid-snomed.json ==
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[0]: The code '1031000172108' is not valid in the system http://snomed.info/sct
+INFORMATION: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[0]: Unable to find code 1031000172108 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20230131); Unknown Code '1031000172108' in the system 'http://snomed.info/sct'; The provided code http://snomed.info/sct#1031000172108 is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server)
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[1]: The code '10871000172106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[2]: The code '10891000172107' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[3]: The code '10901000172106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[4]: The code '125071000220108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[5]: The code '125081000220106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[6]: The code '125091000220109' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[7]: The code '125101000220104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[8]: The code '125111000220101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[9]: The code '125121000220108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[10]: The code '1401000220108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[11]: The code '1411000220106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[12]: The code '1421000220104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[13]: The code '28571000087109' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[14]: The code '28581000087106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[15]: The code '28761000087108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[16]: The code '28951000087107' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[17]: The code '28961000087105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[18]: The code '29171000087106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[19]: The code '30151000087105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[20]: The code '31301000087101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[21]: The code '31311000087104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[22]: The code '31341000087103' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[23]: The code '31431000087100' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[24]: The code '33201000087108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[25]: The code '33211000087105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[26]: The code '33221000087102' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[27]: The code '33361000087101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[28]: The code '33391000087109' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[29]: The code '33401000087107' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[30]: The code '33411000087109' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[31]: The code '33421000087101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[32]: The code '33431000087104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[33]: The code '33441000087105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[34]: The code '33451000087108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[35]: The code '33461000087106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[36]: The code '33471000087102' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[37]: The code '33581000087104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[38]: The code '33881000087102' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[39]: The code '34591000087100' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[40]: The code '34601000087108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[41]: The code '34611000087105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[42]: The code '34921000087108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[43]: The code '35651000087105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[44]: The code '37311000087109' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[45]: The code '37651000087101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[46]: The code '384671000221101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[47]: The code '399651000221108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[48]: The code '399661000221105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[49]: The code '399681000221103' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[50]: The code '399691000221100' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[51]: The code '399701000221100' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[52]: The code '399771000221108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[53]: The code '399781000221106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[54]: The code '399801000221105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[55]: The code '399811000221108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[56]: The code '399821000221103' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[57]: The code '399861000221106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[58]: The code '399871000221102' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[59]: The code '399881000221104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[60]: The code '399891000221101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[61]: The code '399901000221102' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[62]: The code '399911000221104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[63]: The code '424531000221101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[64]: The code '424541000221108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[65]: The code '424551000221105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[66]: The code '424561000221107' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[67]: The code '424571000221103' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[68]: The code '424581000221100' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[69]: The code '424591000221102' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[70]: The code '424601000221107' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[71]: The code '424611000221105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[72]: The code '424621000221100' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[73]: The code '424631000221102' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[74]: The code '424641000221109' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[75]: The code '424651000221106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[76]: The code '424661000221108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[77]: The code '424671000221104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[78]: The code '424681000221101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[79]: The code '424691000221103' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[80]: The code '424701000221103' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[81]: The code '424711000221100' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[82]: The code '424721000221105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[83]: The code '424731000221108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[84]: The code '424741000221101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[85]: The code '424751000221104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[86]: The code '424781000221109' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[87]: The code '424791000221107' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[88]: The code '424801000221108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[89]: The code '424821000221101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[90]: The code '424831000221103' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[91]: The code '424971000221108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[92]: The code '425001000221100' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[93]: The code '425011000221102' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[94]: The code '425031000221105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[95]: The code '425051000221101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet.compose[0].include[0].concept[96]: The code '62051000220105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-snomed: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-lab-qualitative-result.json ==
+WARNING: ValueSet/lab-qualitative-result: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-lab-qualitative-test-covid.json ==
+WARNING: ValueSet/lab-qualitative-test-covid: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== input/vocabulary/immunization-covid-all.json ==
+ERROR: ValueSet.compose.include[0].concept[0].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[0].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[2].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[2].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[2].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[3].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[4].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[4].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[5].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[5].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[6].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[6].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[7].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[8].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[9].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[10].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[11].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[12].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[13].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[14].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[15].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[16].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[17].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[18].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[19].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[20].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[21].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[22].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[23].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[24].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[25].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[26].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[27].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[28].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[29].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[30].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[31].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[32].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[33].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[34].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[35].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[36].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[37].designation[0].use: Unrecognized property 'use'
+WARNING: ValueSet/immunization-covid-all: ValueSet.description: The markdown contains content that appears to be an embedded HTML tag starting at 'A '. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+WARNING: ValueSet/immunization-covid-all: ValueSet.copyright: The markdown contains content that appears to be an embedded HTML tag starting at 'Pl'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[2].display: value should not start or finish with whitespace 'COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL '
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[9].designation[0].value: value should not start or finish with whitespace 'Sanofi COVID-19 '
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose.include[0].concept[10].designation[0].value: value should not start or finish with whitespace 'Sanofi COVID-19 '
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[5]: The code '217' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[6]: The code '218' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[7]: The code '219' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[8]: The code '221' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[9]: The code '225' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[10]: The code '226' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[11]: The code '227' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[12]: The code '228' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[13]: The code '229' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[14]: The code '230' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[15]: The code '300' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[16]: The code '301' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[17]: The code '302' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[18]: The code '501' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[19]: The code '502' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[20]: The code '503' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[21]: The code '504' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[22]: The code '505' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[23]: The code '506' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[24]: The code '507' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[25]: The code '508' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[26]: The code '509' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[27]: The code '510' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[28]: The code '511' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[29]: The code '512' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[30]: The code '513' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[31]: The code '514' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[32]: The code '515' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[33]: The code '516' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[34]: The code '517' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[35]: The code '518' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[36]: The code '519' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[0].concept[37]: The code '520' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[0]: The code '1031000172108' is not valid in the system http://snomed.info/sct
+INFORMATION: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[0]: Unable to find code 1031000172108 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20230131); Unknown Code '1031000172108' in the system 'http://snomed.info/sct'; The provided code http://snomed.info/sct#1031000172108 is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server)
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[1]: The code '10871000172106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[2]: The code '10891000172107' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[3]: The code '10901000172106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[4]: The code '125071000220108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[5]: The code '125081000220106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[6]: The code '125091000220109' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[7]: The code '125101000220104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[8]: The code '125111000220101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[9]: The code '125121000220108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[10]: The code '1401000220108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[11]: The code '1411000220106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[12]: The code '1421000220104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[13]: The code '28571000087109' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[14]: The code '28581000087106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[15]: The code '28761000087108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[16]: The code '28951000087107' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[17]: The code '28961000087105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[18]: The code '29171000087106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[19]: The code '30151000087105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[20]: The code '31301000087101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[21]: The code '31311000087104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[22]: The code '31341000087103' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[23]: The code '31431000087100' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[24]: The code '33201000087108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[25]: The code '33211000087105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[26]: The code '33221000087102' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[27]: The code '33361000087101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[28]: The code '33391000087109' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[29]: The code '33401000087107' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[30]: The code '33411000087109' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[31]: The code '33421000087101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[32]: The code '33431000087104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[33]: The code '33441000087105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[34]: The code '33451000087108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[35]: The code '33461000087106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[36]: The code '33471000087102' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[37]: The code '33581000087104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[38]: The code '33881000087102' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[39]: The code '34591000087100' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[40]: The code '34601000087108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[41]: The code '34611000087105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[42]: The code '34921000087108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[43]: The code '35651000087105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[44]: The code '37311000087109' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[45]: The code '37651000087101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[46]: The code '384671000221101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[47]: The code '399651000221108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[48]: The code '399661000221105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[49]: The code '399681000221103' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[50]: The code '399691000221100' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[51]: The code '399701000221100' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[52]: The code '399771000221108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[53]: The code '399781000221106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[54]: The code '399801000221105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[55]: The code '399811000221108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[56]: The code '399821000221103' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[57]: The code '399861000221106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[58]: The code '399871000221102' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[59]: The code '399881000221104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[60]: The code '399891000221101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[61]: The code '399901000221102' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[62]: The code '399911000221104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[63]: The code '424531000221101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[64]: The code '424541000221108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[65]: The code '424551000221105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[66]: The code '424561000221107' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[67]: The code '424571000221103' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[68]: The code '424581000221100' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[69]: The code '424591000221102' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[70]: The code '424601000221107' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[71]: The code '424611000221105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[72]: The code '424621000221100' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[73]: The code '424631000221102' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[74]: The code '424641000221109' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[75]: The code '424651000221106' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[76]: The code '424661000221108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[77]: The code '424671000221104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[78]: The code '424681000221101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[79]: The code '424691000221103' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[80]: The code '424701000221103' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[81]: The code '424711000221100' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[82]: The code '424721000221105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[83]: The code '424731000221108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[84]: The code '424741000221101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[85]: The code '424751000221104' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[86]: The code '424781000221109' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[87]: The code '424791000221107' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[88]: The code '424801000221108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[89]: The code '424821000221101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[90]: The code '424831000221103' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[91]: The code '424971000221108' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[92]: The code '425001000221100' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[93]: The code '425011000221102' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[94]: The code '425031000221105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[95]: The code '425051000221101' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet.compose[0].include[1].concept[96]: The code '62051000220105' is not valid in the system http://snomed.info/sct
+WARNING: ValueSet/immunization-covid-all: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== input/vocabulary/immunization-covid-cvx.json ==
+ERROR: ValueSet.compose.include[0].concept[0].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[0].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[2].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[2].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[2].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[3].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[4].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[4].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[5].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[5].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[6].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[6].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[7].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[8].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[9].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[10].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[11].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[12].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[13].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[14].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[15].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[16].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[17].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[18].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[19].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[20].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[21].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[22].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[23].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[24].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[25].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[26].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[27].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[28].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[29].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[30].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[31].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[32].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[33].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[34].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[35].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[36].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[37].designation[0].use: Unrecognized property 'use'
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[2].display: value should not start or finish with whitespace 'COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL '
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[9].designation[0].value: value should not start or finish with whitespace 'Sanofi COVID-19 '
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose.include[0].concept[10].designation[0].value: value should not start or finish with whitespace 'Sanofi COVID-19 '
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[5]: The code '217' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[6]: The code '218' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[7]: The code '219' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[8]: The code '221' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[9]: The code '225' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[10]: The code '226' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[11]: The code '227' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[12]: The code '228' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[13]: The code '229' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[14]: The code '230' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[15]: The code '300' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[16]: The code '301' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[17]: The code '302' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[18]: The code '501' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[19]: The code '502' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[20]: The code '503' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[21]: The code '504' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[22]: The code '505' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[23]: The code '506' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[24]: The code '507' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[25]: The code '508' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[26]: The code '509' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[27]: The code '510' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[28]: The code '511' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[29]: The code '512' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[30]: The code '513' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[31]: The code '514' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[32]: The code '515' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[33]: The code '516' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[34]: The code '517' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[35]: The code '518' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[36]: The code '519' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet.compose[0].include[0].concept[37]: The code '520' is not valid in the system http://hl7.org/fhir/sid/cvx
+WARNING: ValueSet/immunization-covid-cvx: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== input/vocabulary/immunization-covid-mapping-cvx-air.json ==
+ERROR: ConceptMap.where(url = 'https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air'): Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/immunization-covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)
+ERROR: ConceptMap.where(url = 'https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air'): Conformance resource /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-mapping-cvx-air.json - the canonical URL (https://terminology.smarthealth.cards/ConceptMap/immunization-covid-mapping-cvx-air) does not match the URL (https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air)
+WARNING: ConceptMap/immunization-covid-mapping-cvx-air: ConceptMap.group[0].source: Unknown Source Code System https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats, so the source codes cannot be checked
+WARNING: ConceptMap/immunization-covid-mapping-cvx-air: ConceptMap.group[1].target: Unknown Target Code System https://www.humanservices.gov.au/organisations/health-professionals/enablers/air-vaccine-code-formats, so the target codes cannot be checked
+WARNING: ConceptMap/immunization-covid-mapping-cvx-air: ConceptMap: The ShareableConceptMap profile says that the experimental element is mandatory, but it is not present. Published concept maps SHOULD conform to the ShareableConceptMap profile
+ERROR: /home/runner/work/shc-terminology/shc-terminology/input/vocabulary/immunization-covid-mapping-cvx-air: URL Mismatch https://terminology.smarthealth.cards/ConceptMap/immunization-covid-mapping-cvx-air vs https://github.com/dvci/shc-terminology/ConceptMap/covid-mapping-cvx-air
+== input/vocabulary/immunization-orthopoxvirus-all.json ==
+ERROR: ValueSet.compose.include[0].concept[0].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[0].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[0].designation[2].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[0].use: Unrecognized property 'use'
+WARNING: ValueSet/immunization-orthopoxvirus-all: ValueSet.description: The markdown contains content that appears to be an embedded HTML tag starting at 'A '. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+WARNING: ValueSet/immunization-orthopoxvirus-all: ValueSet.copyright: The markdown contains content that appears to be an embedded HTML tag starting at 'Pl'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+INFORMATION: ValueSet/immunization-orthopoxvirus-all: ValueSet.compose.include[0].concept[0].designation[1].language: The value provided ('en-EU') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set) (error message = The provided code urn:ietf:bcp:47#en-EU is not in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1' (from Tx-Server))
+WARNING: ValueSet/immunization-orthopoxvirus-all: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== input/vocabulary/immunization-orthopoxvirus-cvx.json ==
+ERROR: ValueSet.compose.include[0].concept[0].designation[0].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[0].designation[1].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[0].designation[2].use: Unrecognized property 'use'
+ERROR: ValueSet.compose.include[0].concept[1].designation[0].use: Unrecognized property 'use'
+INFORMATION: ValueSet/immunization-orthopoxvirus-cvx: ValueSet.compose.include[0].concept[0].designation[1].language: The value provided ('en-EU') is not in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set) (error message = The provided code urn:ietf:bcp:47#en-EU is not in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1' (from Tx-Server))
+WARNING: ValueSet/immunization-orthopoxvirus-cvx: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile

@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "immunization-orthopoxvirus-all",
+  "language" : "en",
+  "url" : "https://terminology.smarthealth.cards/ValueSet/immunization-orthopoxvirus-all",
+  "version" : "20230601",
+  "name" : "ImmunizationOrthopoxvirusAllValueSet",
+  "title" : "Immunization / orthopoxvirus / All codes",
+  "status" : "active",
+  "date" : "2023-06-01",
+  "publisher" : "VCI",
+  "contact" : [{
+    "name" : "VCI",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://vci.org"
+    }]
+  }],
+  "description" : "A list of all immunization codes for orthopoxvirus, combining the following ValueSets: <a href=\"ValueSet-immunization-orthopoxvirus-cvx.html\">ValueSet-immunization-orthopoxvirus-cvx.json</a>",
+  "copyright" : "Please see the following links for the copyright/legal information for each code system included here: <a href=\"ValueSet-immunization-orthopoxvirus-cvx.html\">ValueSet-immunization-orthopoxvirus-cvx.json</a>",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/cvx",
+      "concept" : [{
+        "code" : "206",
+        "display" : "Vaccinia, smallpox monkeypox vaccine live, PF, SQ or ID injection",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Jynneos"
+        },
+        {
+          "language" : "en-EU",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Imvanex"
+        },
+        {
+          "language" : "en-CA",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "Imvamune"
+        }]
+      },
+      {
+        "code" : "75",
+        "display" : "vaccinia (smallpox)",
+        "designation" : [{
+          "language" : "en-US",
+          "use" : {
+            "system" : "https://terminology.smarthealth.cards/CodeSystem/designation-use"
+          },
+          "value" : "ACAM2000"
+        }]
+      }]
+    }]
+  }
+}

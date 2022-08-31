@@ -1,0 +1,36 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "designation-use",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://terminology.smarthealth.cards/CodeSystem/designation-use</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">consumer-friendly<a name=\"designation-use-consumer-friendly\"> </a></td><td>Consumer friendly</td><td>Indicates the display name for a term that should be shown to consumers (e.g., to identify a vaccine in a SHC wallet app's user interface).</td></tr></table></div>"
+  },
+  "url": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+  "version": "0.1.0",
+  "name": "DesignationUse",
+  "title": "SMART Health Card Terminology Designation Use",
+  "status": "active",
+  "date": "2022-09-15T18:46:22+00:00",
+  "publisher": "VCI",
+  "contact": [
+    {
+      "name": "VCI",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://vci.org"
+        }
+      ]
+    }
+  ],
+  "description": "Identifies the designation would be used SMART Health Card terminology",
+  "content": "complete",
+  "count": 1,
+  "concept": [
+    {
+      "code": "consumer-friendly",
+      "display": "Consumer friendly",
+      "definition": "Indicates the display name for a term that should be shown to consumers (e.g., to identify a vaccine in a SHC wallet app's user interface)."
+    }
+  ]
+}
