@@ -42,8 +42,8 @@
         "system": "http://hl7.org/fhir/sid/cvx",
         "concept": [
           {
-            "code": "210",
-            "display": "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL",
+            "code": "207",
+            "display": "COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose",
             "designation": [
               {
                 "language": "en-AU",
@@ -51,7 +51,7 @@
                   "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                   "use": "consumer-friendly"
                 },
-                "value": "AstraZeneca (Vaxzevria)"
+                "value": "Moderna (Spikevax)"
               },
               {
                 "language": "en-US",
@@ -59,7 +59,7 @@
                   "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                   "use": "consumer-friendly"
                 },
-                "value": "AstraZeneca COVID-19 Vaccine"
+                "value": "Moderna COVID-19 Vaccine"
               }
             ]
           },
@@ -94,8 +94,8 @@
             ]
           },
           {
-            "code": "207",
-            "display": "COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose",
+            "code": "210",
+            "display": "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL",
             "designation": [
               {
                 "language": "en-AU",
@@ -103,7 +103,7 @@
                   "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                   "use": "consumer-friendly"
                 },
-                "value": "Moderna (Spikevax)"
+                "value": "AstraZeneca (Vaxzevria)"
               },
               {
                 "language": "en-US",
@@ -111,7 +111,21 @@
                   "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                   "use": "consumer-friendly"
                 },
-                "value": "Moderna COVID-19 Vaccine"
+                "value": "AstraZeneca COVID-19 Vaccine"
+              }
+            ]
+          },
+          {
+            "code": "211",
+            "display": "COVID-19 vaccine, Subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Novavax COVID-19 Vaccine"
               }
             ]
           },
@@ -182,48 +196,6 @@
             ]
           },
           {
-            "code": "510",
-            "display": "COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)",
-            "designation": [
-              {
-                "language": "en-US",
-                "use": {
-                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                  "use": "consumer-friendly"
-                },
-                "value": "Sinopharm (BIBP) COVID-19 Vaccine"
-              }
-            ]
-          },
-          {
-            "code": "511",
-            "display": "COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)",
-            "designation": [
-              {
-                "language": "en-US",
-                "use": {
-                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                  "use": "consumer-friendly"
-                },
-                "value": "Coronavac (Sinovac) COVID-19 Vaccine"
-              }
-            ]
-          },
-          {
-            "code": "211",
-            "display": "COVID-19 vaccine, Subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL",
-            "designation": [
-              {
-                "language": "en-US",
-                "use": {
-                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                  "use": "consumer-friendly"
-                },
-                "value": "Novavax COVID-19 Vaccine"
-              }
-            ]
-          },
-          {
             "code": "219",
             "display": "COVID-19, mRNA, LNP-S, PF, 3 mcg/0.2 mL dose, tris-sucrose",
             "designation": [
@@ -248,6 +220,34 @@
                   "use": "consumer-friendly"
                 },
                 "value": "COVAXIN (Bharat) COVID-19 Vaccine"
+              }
+            ]
+          },
+          {
+            "code": "510",
+            "display": "COVID-19 IV Non-US Vaccine (BIBP, Sinopharm)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Sinopharm (BIBP) COVID-19 Vaccine"
+              }
+            ]
+          },
+          {
+            "code": "511",
+            "display": "COVID-19 IV Non-US Vaccine (CoronaVac, Sinovac)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Coronavac (Sinovac) COVID-19 Vaccine"
               }
             ]
           }
