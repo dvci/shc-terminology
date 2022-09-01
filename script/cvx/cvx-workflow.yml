@@ -1,0 +1,35 @@
+name: CVX Update
+
+on:
+  schedul
+    - cron: 0 0 1 * *
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: checkout branch
+      uses: actions/checkout@v3
+      with:
+        ref: cvx-parsing-update 
+    - name: run python script
+      run: python cvx_parsing.py
+      # deploy output to sub-directory indicated by the tag or branch that triggered this workflow, used for testing
+      # triggered manually by dispatch of selected branch
+      # will be overwritten with next deployment to main
+    - name: commit changes
+      run: |
+        git add -A
+        git commit -m "update cvx"
+    - name: push changes
+      uses: ad-m/github-push-action@v0.6.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main  
+    - name: Create pull request
+    #https://github.com/marketplace/actions/create-pull-request
+      uses: peter-evans/create-pull-request@v4
+      with:
+        branch: create-pull-request/cvx-parsing-update
+        team-reviewers: shc-terminology-maintainers

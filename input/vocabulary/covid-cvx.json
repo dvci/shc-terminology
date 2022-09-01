@@ -43,7 +43,7 @@
         "concept": [
           {
             "code": "207",
-            "display": "COVID-19, mRNA, LNP-S, PF, 100 mcg or 50 mcg dose",
+            "display": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose",
             "designation": [
               {
                 "language": "en-AU",
@@ -95,7 +95,7 @@
           },
           {
             "code": "210",
-            "display": "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL",
+            "display": "COVID-19 vaccine, vector-nr, rS-ChAdOx1, PF, 0.5 mL ",
             "designation": [
               {
                 "language": "en-AU",
@@ -117,7 +117,7 @@
           },
           {
             "code": "211",
-            "display": "COVID-19 vaccine, Subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL",
+            "display": "COVID-19, subunit, rS-nanoparticle+Matrix-M1 Adjuvant, PF, 0.5 mL",
             "designation": [
               {
                 "language": "en-US",
@@ -210,6 +210,132 @@
             ]
           },
           {
+            "code": "221",
+            "display": "COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL dose",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Moderna COVID-19 Vaccine (non-US Spikevax)"
+              }
+            ]
+          },
+          {
+            "code": "225",
+            "display": "COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 5mcg/0.5mL",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Sanofi COVID-19 "
+              }
+            ]
+          },
+          {
+            "code": "226",
+            "display": "COVID-19, D614, recomb, preS dTM, AS03 adjuvant add, PF, 10mcg/0.5mL",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Sanofi COVID-19 "
+              }
+            ]
+          },
+          {
+            "code": "227",
+            "display": "COVID-19, mRNA, LNP-S, PF, pediatric 50 mcg/0.5 mL dose",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Moderna COVID-19 Vaccine (non-US Spikevax)"
+              }
+            ]
+          },
+          {
+            "code": "228",
+            "display": "COVID-19, mRNA, LNP-S, PF, pediatric 25 mcg/0.25 mL dose",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Moderna COVID-19 Vaccine (non-US Spikevax)"
+              }
+            ]
+          },
+          {
+            "code": "229",
+            "display": "COVID-19, mRNA, LNP-S, bivalent booster, PF, 50 mcg/0.5 mL or 25mcg/0.25 mL dose",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Moderna COVID-19 Vaccine (non-US Spikevax)"
+              }
+            ]
+          },
+          {
+            "code": "300",
+            "display": "COVID-19, mRNA, LNP-S, bivalent booster, PF, 30 mcg/0.3 mL dose",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)"
+              }
+            ]
+          },
+          {
+            "code": "301",
+            "display": "COVID-19, mRNA, LNP-S, bivalent booster, PF, 10 mcg/0.2 mL dose",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)"
+              }
+            ]
+          },
+          {
+            "code": "501",
+            "display": "COVID-19 IV Non-US Vaccine (QAZCOVID-IN)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "COVID-19 IV Non-US Vaccine (QAZCOVID-IN)"
+              }
+            ]
+          },
+          {
             "code": "502",
             "display": "COVID-19 IV Non-US Vaccine (COVAXIN)",
             "designation": [
@@ -220,6 +346,104 @@
                   "use": "consumer-friendly"
                 },
                 "value": "COVAXIN (Bharat) COVID-19 Vaccine"
+              }
+            ]
+          },
+          {
+            "code": "503",
+            "display": "COVID-19 LAV Non-US Vaccine (COVIVAC)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "COVID-19 LAV Non-US Vaccine (COVIVAC)"
+              }
+            ]
+          },
+          {
+            "code": "504",
+            "display": "COVID-19 VVnr Non-US Vaccine (Sputnik Light)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "COVID-19 VVnr Non-US Vaccine (Sputnik Light)"
+              }
+            ]
+          },
+          {
+            "code": "505",
+            "display": "COVID-19 VVnr Non-US Vaccine (Sputnik V)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "COVID-19 VVnr Non-US Vaccine (Sputnik V)"
+              }
+            ]
+          },
+          {
+            "code": "506",
+            "display": "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)"
+              }
+            ]
+          },
+          {
+            "code": "507",
+            "display": "COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom Biopharm + Inst of Micro, Chinese Acad of Sciences)"
+              }
+            ]
+          },
+          {
+            "code": "508",
+            "display": "COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "COVID-19 PS Non-US Vaccine (Jiangsu Province Centers for Disease Control and Prevention)"
+              }
+            ]
+          },
+          {
+            "code": "509",
+            "display": "COVID-19 PS Non-US Vaccine (EpiVacCorona)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "COVID-19 PS Non-US Vaccine (EpiVacCorona)"
               }
             ]
           },
@@ -248,6 +472,90 @@
                   "use": "consumer-friendly"
                 },
                 "value": "Coronavac (Sinovac) COVID-19 Vaccine"
+              }
+            ]
+          },
+          {
+            "code": "512",
+            "display": "SARS-COV-2 COVID-19 VLP Non-US Vaccine (Medicago, Covifenz)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Covifenz"
+              }
+            ]
+          },
+          {
+            "code": "513",
+            "display": "SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "SARS-COV-2 COVID-19 PS Non-US Vaccine (Anhui Zhifei Longcom, Zifivax)"
+              }
+            ]
+          },
+          {
+            "code": "514",
+            "display": "SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "SARS-COV-2 COVID-19 DNA Non-US Vaccine (Zydus Cadila, ZyCoV-D)"
+              }
+            ]
+          },
+          {
+            "code": "515",
+            "display": "SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "SARS-COV-2 COVID-19 PS Non-US Vaccine (Medigen, MVC-COV1901)"
+              }
+            ]
+          },
+          {
+            "code": "516",
+            "display": "COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "COV-2 COVID-19 Inactivated Non-US Vaccine Product (Minhai Biotechnology Co, KCONVAC)"
+              }
+            ]
+          },
+          {
+            "code": "517",
+            "display": "SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)"
               }
             ]
           }

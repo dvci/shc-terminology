@@ -1,0 +1,4 @@
+# CVX codes that are manually excluded from ValueSets produced by cvx_parsing.py
+# Usually this is due to lack of specificity
+- "213" # SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED
+- "500" # COVID-19 Non-US Vaccine, Product Unknown
