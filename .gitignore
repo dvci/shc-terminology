@@ -5,7 +5,6 @@ Thumbs.db
 /output
 /temp
 /template
-/script/*
 !/script/validate*
 !/script/artifacts-for-jira-spec
 .vscode
