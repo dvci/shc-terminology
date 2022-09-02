@@ -1,0 +1,72 @@
+{
+  "resourceType": "ValueSet",
+  "id": "monkeypox-cvx",
+  "language": "en",
+  "url": "https://terminology.smarthealth.cards/ValueSet/monkeypox-cvx",
+  "version": "4.0.1",
+  "name": "MonkeypoxCVXValueSet",
+  "title": "CVX Codes for monkeypox vaccines for use in Smart Health Cards",
+  "status": "draft",
+  "date": "2022-09-02",
+  "publisher": "https://vci.org",
+  "contact": [
+    {
+      "name": "VCI",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "vci-ig@mitre.org"
+        }
+      ]
+    }
+  ],
+  "description": "A list of CVX codes with recommended consumer suitable displays for use in Smart Health Cards, with localized consumer friendly terms",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "US"
+        }
+      ]
+    }
+  ],
+  "copyright": "Creative Commons 0",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/cvx",
+        "concept": [
+          {
+            "code": "206",
+            "display": "Vaccinia, smallpox monkeypox vaccine live, PF, SQ or ID injection",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "JYNNEOS"
+              }
+            ]
+          },
+          {
+            "code": "75",
+            "display": "vaccinia (smallpox)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "ACAM2000"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -6,12 +6,14 @@ Typically, SMART Health Cards for vaccines use either [CVX](https://www2.cdc.gov
 
 The following ValueSets are provided to assist implementers wishing to identify vaccines for specific diseases:
 
-{:.table-striped.table.table-bordered}
-|Disease|ValueSet|
-|-|-|
-|COVID-19|[CVX](ValueSet-covid-cvx.html)|
-|COVID-19|ICD-11 (forthcoming)|
-|COVID-19|[SNOMED CT](ValueSet-covid-19-vaccine-snomed-value-set.html)|
+* **COVID-19**
+  * [CVX](ValueSet-covid-cvx.html)
+  * ICD-11 (forthcoming)
+  * [SNOMED CT](ValueSet-covid-19-vaccine-snomed-value-set.html)
+* **Monkeypox**
+  * [CVX](ValueSet-monkeypox-cvx.html)
+  * ICD-11 (forthcoming)
+  * SNOMED CT (forthcoming)
 
 ### Infectious disease-related laboratory testing
 

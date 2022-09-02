@@ -207,6 +207,7 @@ def update_value_set(value_set, new_cvx, cvx_product_names):
 def main():
     logging.basicConfig(encoding='utf-8', level=logging.INFO)
 
+    # COVID
     COVID_VALUE_SET = 'covid-cvx.json'
 
     # Retrieve newest CVX file from CDC
@@ -214,6 +215,26 @@ def main():
 
     # Filter to just COVID-related
     new_cvx = filter_cvx(new_cvx, ['covid'])
+
+    # Retrieve newest product name file from CDC
+    cvx_product_names = retrieve_new_cvx_product_names()
+
+    # Load in existing value set
+    value_set = read_value_set(COVID_VALUE_SET)
+
+    # Update value set
+    value_set = update_value_set(value_set, new_cvx, cvx_product_names)
+    write_value_set(COVID_VALUE_SET, value_set)
+
+
+    # Monkeypox
+    COVID_VALUE_SET = 'monkeypox-cvx.json'
+
+    # Retrieve newest CVX file from CDC
+    new_cvx = retrieve_new_cvx()
+
+    # Filter to just COVID-related
+    new_cvx = filter_cvx(new_cvx, ['monkeypox', 'smallpox'])
 
     # Retrieve newest product name file from CDC
     cvx_product_names = retrieve_new_cvx_product_names()
