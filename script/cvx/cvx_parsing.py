@@ -193,14 +193,12 @@ def update_value_set(value_set, new_cvx, cvx_product_names):
 
         if not [d for d in value_set['compose']['include'][0]['concept'][i]['designation'] if d['language'] == 'en-US']:
             value_set['compose']['include'][0]['concept'][i]['designation'].append({
-                {
-                    "language": "en-US",
-                    "use": {
-                        "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
-                        "use": "consumer-friendly"
-                    },
-                    "value": cvx_product_name(cvx_code, new_cvx, cvx_product_names)
-                }
+                "language": "en-US",
+                "use": {
+                    "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                    "use": "consumer-friendly"
+                },
+                "value": cvx_product_name(cvx_code, new_cvx, cvx_product_names)
             })
 
     return value_set
