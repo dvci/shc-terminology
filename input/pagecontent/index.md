@@ -2,7 +2,7 @@ The following FHIR resources are provided as a community resource for implemente
 
 ### Vaccines
 
-Typically, SMART Health Cards for vaccines use either [CVX](https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx) or [SNOMED CT](https://www.snomed.org/) to identify the administered vaccine. [ICD-11](https://icdcdn.who.int/icd11referenceguide/en/html/index.html) may also be used. For more details please see [the SMART Health Cards Vaccination Profile](https://vci.org/ig/vaccination-and-testing/StructureDefinition-shc-vaccination-dm.html) for more information.
+SMART Health Cards for vaccines typically use either [CVX](https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx) or [SNOMED CT](https://www.snomed.org/) to identify the administered vaccine, and occasionally [ICD-11](https://icdcdn.who.int/icd11referenceguide/en/html/index.html) may also be used. For more details please see [the SMART Health Cards Vaccination Profile](https://vci.org/ig/vaccination-and-testing/StructureDefinition-shc-vaccination-dm.html).
 
 The following ValueSets are provided to assist implementers wishing to identify vaccines for specific diseases:
 
@@ -42,7 +42,7 @@ The [health card type code system](CodeSystem-health-card.html) contains the cod
 
 ### Contact Information
 
-For technical questions, please post on the [smart/health-cards Zulip stream at chat.fhir.org](https://chat.fhir.org/#narrow/stream/284830-smart.2Fhealth-cards) (free account required).
+For technical questions, please post on the [smart/health-cards Zulip stream at chat.fhir.org](https://chat.fhir.org/#narrow/stream/284830-smart.2Fhealth-cards) (a free account is required).
 
 This website is maintained by [VCI](https://vci.org).
 
