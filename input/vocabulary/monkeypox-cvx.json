@@ -57,6 +57,14 @@
                 },
                 "value": "Imvanex"
               },
+              {
+                "language": "en-CA",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Imvamune"
+              }
             ]
           },
           {
