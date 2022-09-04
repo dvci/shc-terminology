@@ -2,6 +2,39 @@
 
 This is the source code for <https://terminology.smarthealth.cards>.
 
+## Localization
+
+"Consumer friendly" display text localizations may be added to the ValueSet resources in this repository. For example, see the [COVID CVX value set](https://github.com/dvci/shc-terminology/blob/main/input/vocabulary/covid-cvx.json), which includes localization like the following example under the `designation` element:
+
+```json
+{
+  "code": "207",
+  "display": "COVID-19, mRNA, LNP-S, PF, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose",
+  "designation": [
+    {
+      "language": "en-AU",
+      "use": {
+        "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+        "use": "consumer-friendly"
+      },
+      "value": "Moderna (Spikevax)"
+    },
+    {
+      "language": "en-US",
+      "use": {
+        "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+        "use": "consumer-friendly"
+      },
+      "value": "Moderna COVID-19 Vaccine"
+    }
+  ]
+}
+```
+
+Localizations are scoped using `designation.language`, which is a [IETF BCP 47 language tag](https://en.wikipedia.org/wiki/IETF_language_tag). The FHIR spec provides a [list of common BCP 47 language tags](https://www.hl7.org/fhir/valueset-languages.html), but any BCP 47 tag may be used. Use the broadest applicable tag for a given localization.
+
+Ideally localizations will be based on authoritative sources, e.g., documentation from a jurisdiction's government agency that approves pharmaceuticals for use. However, localizations in this repository are community-provided, and therefore may not be correct. If you notice a problem, please fix it in a pull request or use the chat.fhir.org link below to notify the community. If you contribute a localization, please document the source/justification for localization additions or changes in the commit message ([example](https://github.com/dvci/shc-terminology/commit/91d7ee11467da7c50fda89711ab8d1e2499b10f4).
+
 ## Contributing
 
 Pull requests are welcome.
