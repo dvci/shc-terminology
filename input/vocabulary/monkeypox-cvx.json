@@ -47,8 +47,8 @@
                   "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
                   "use": "consumer-friendly"
                 },
-                "value": "JYNNEOS"
-              }
+                "value": "Jynneos"
+              },
               {
                 "language": "en-EU",
                 "use": {
