@@ -49,6 +49,14 @@
                 },
                 "value": "JYNNEOS"
               }
+              {
+                "language": "en-EU",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Imvanex"
+              },
             ]
           },
           {
