@@ -2,7 +2,7 @@ CodeSystem: HealthCardTypeCodeSystem
 Id: health-card
 Title: "Health Card Type Code System"
 Description: "A code system defining various credential types for SMART Health Cards"
-* ^url =  https://smarthealth.cards
+* ^url =  https://smarthealth.cards#
 * ^caseSensitive = false
 * #health-card "A VC designed to convey a \"Health Card\" (i.e., clinical data bound to a subject's identity)"
 * #covid19 "A Health Card designed to convey COVID-19 details"
