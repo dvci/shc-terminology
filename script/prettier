@@ -1,0 +1,4 @@
+#! /usr/bin/env bash
+
+git_dir=$( git rev-parse --git-dir )
+prettier --write "$git_dir"/../input/vocabulary/*.json
