@@ -1,6 +1,6 @@
 ### Usage
     
-Whenever possible, SNOMED CT codes SHALL be be used. If no equivalent code is available, LOINCs MAY be used as a fallback. 
+Whenever possible, SNOMED CT codes SHALL be be used. If no equivalent code is available, LOINC codes MAY be used as a fallback. 
 
 A concept map is forthcoming. Until then, here is a human-readable crosswalk between the relevant SNOEMD CT codes and LOINCs:
 

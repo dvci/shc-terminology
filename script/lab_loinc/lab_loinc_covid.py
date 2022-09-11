@@ -242,7 +242,7 @@ Alias: $loinc = http://loinc.org
 ValueSet: QualitativeCovidLabTestValueSet
 Id: qualitative-covid-lab-test-value-set
 Title: "LOINCs identifying qualitative COVID lab tests"
-Description: "This value set includes a subset of the LOINCs found at <{LOINC_COVID_URL}> that identify COVID-19-related laboratory tests. Only those laboratory tests that include qualitative results we believe to be useful in SMART Health Cards are included."
+Description: "This value set includes a subset of the LOINCs found at {LOINC_COVID_URL} that identify COVID-19-related laboratory tests. Only those laboratory tests that include qualitative results we believe to be useful in SMART Health Cards are included."
 
 
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
@@ -254,7 +254,7 @@ Description: "This value set includes a subset of the LOINCs found at <{LOINC_CO
 
     intro = '''### Usage
     
-This value set includes a subset of the LOINCs found at <{LOINC_COVID_URL}> that identify COVID-19-related laboratory tests. Only those laboratory tests that include qualitative results we believe to be useful in SMART Health Cards are included.
+This value set includes a subset of the LOINC codes found at <{LOINC_COVID_URL}> that identify COVID-19-related laboratory tests. Only those laboratory tests that include qualitative results we believe to be useful in SMART Health Cards are included.
 
 The purpose of this value set is to provide Issuers guidance on what LOINCs Verifiers are likely to expect in a COVID-19-related SMART Health Card. It is possible to construct a fully valid SMART Health Card that identifies a laboratory test with a LOINC *not* in this list, but it may be less likely that a Verifier will have included such a LOINC in their logic for processing the SMART Health Card data.
 
