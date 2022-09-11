@@ -36,6 +36,14 @@ The [health card type code system](CodeSystem-health-card.html) contains the cod
 
 ----
 
+### Versioning
+
+ValueSets from medical terminology (e.g., CVX, LOINC, etc.) are versioned using a `YYYY.n` format where `YYYY` is the year a given version was created and `n` is an incremented integer.
+
+Other terminology resources are versioned with [semantic versioning](https://semver.org/).
+
+(Semantic versioning is not used for the medical terminology ValueSets because that there is no notion of "incompatible" changes, meaning that the first semantic versioning digit representing the "major" version would _never_ be incremented. This would eventually lead to version numbers like `1.1234.0`.)
+
 ### Contact Information
 
 For technical questions, please post on the [smart/health-cards Zulip stream at chat.fhir.org](https://chat.fhir.org/#narrow/stream/284830-smart.2Fhealth-cards) (free account required).

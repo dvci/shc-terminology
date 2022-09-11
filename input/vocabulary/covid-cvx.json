@@ -3,11 +3,11 @@
   "id": "covid-cvx",
   "language": "en",
   "url": "https://terminology.smarthealth.cards/ValueSet/covid-cvx",
-  "version": "4.0.1",
+  "version": "2022.1",
   "name": "CovidCVXValueSet",
   "title": "CVX Covid Codes for use in SMART Health Cards",
-  "status": "draft",
-  "date": "2021-09-22",
+  "date": "2022-09-11",
+  "status": "active",
   "publisher": "Health Intersections",
   "contact": [
     {

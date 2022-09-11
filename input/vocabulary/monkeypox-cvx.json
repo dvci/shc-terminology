@@ -3,11 +3,11 @@
   "id": "monkeypox-cvx",
   "language": "en",
   "url": "https://terminology.smarthealth.cards/ValueSet/monkeypox-cvx",
-  "version": "4.0.1",
+  "version": "2022.1",
   "name": "MonkeypoxCVXValueSet",
   "title": "CVX Codes for monkeypox vaccines for use in Smart Health Cards",
-  "status": "draft",
-  "date": "2022-09-02",
+  "date": "2022-09-11",
+  "status": "active",
   "publisher": "https://vci.org",
   "contact": [
     {
