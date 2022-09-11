@@ -1,7 +1,7 @@
 CodeSystem: DesignationUse
 Id: designation-use
-Title: "SMART Health Card Terminology Designation Use"
-Description: "Identifies the designation would be used SMART Health Card terminology"
+Title: "Designation Use"
+Description: "Code system indicating how a display name should be used in our community-maintained localizations. This is NOT used in SMART Health Cards themselves -- it is just for the community-provided localizations ValueSets for displaying SMART Health Card codes in user interfaces."
 
 * ^caseSensitive = false
 * #consumer-friendly "Consumer friendly"

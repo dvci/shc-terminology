@@ -34,10 +34,6 @@ The [health card type code system](CodeSystem-health-card.html) contains the cod
 
 [These codes](CodeSystem-identity-assurance-level.html) may be used by Issuers of SMART Health Cards to record if/how a patient's identity was verified at the point of care. For example, if a patient showed their driver's license to verify their name and date of birth when getting a vaccination, this would correspond to `IAL1.4`.
 
-### Designation Use
-
-[The `consumer-friendly` code in this code system](CodeSystem-designation-use.html) is used in a [ValueSet's designation element](https://www.hl7.org/fhir/valueset-definitions.html#ValueSet.compose.include.concept.designation) to define how that designation should be used. 
-
 ----
 
 ### Contact Information
