@@ -18,7 +18,7 @@ Disable until these issues are resolved.
   --footer-container-bg-color: #7952b3;
   --stripe-bg-color: #7952b3; /* 5. Header strip color */
 
-  --btn-hover-color: #9b2fdd;  /* 6. Menu button hover color */
+  --btn-hover-color: #976fd3;  /* 6. Menu button hover color */
   --btn-active-color: #da0c23; /* 7. Menu button active color */
   --btn-text-color: #e6e6e6; /* 8. Menu button text color */
   --btn-gradient-start-color: #428bca; /* 9. Menu item gradient start color */
@@ -45,12 +45,22 @@ Disable until these issues are resolved.
 #ig-status {
     text-align: left;
     padding-left: 12px;
+    height: inherit; /* override 50px fixed height */
 }
 
 /* Controls the IG title at the top of each page */
 #ig-status span {
-    font-size: 2.5rem;
+    font-size: 2.5rem !important; /* override inline style */
     font-weight: bold;
+}
+
+/* Hides the version number/tag */
+#ig-status span:nth-of-type(2) {
+    display: none !important;
+}
+
+#ig-status br {
+    display: none;
 }
 
 /* Cosmetic change to slim the stripe behind the navbar */

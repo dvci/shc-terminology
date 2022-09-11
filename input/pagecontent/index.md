@@ -1,4 +1,6 @@
-The following FHIR resources are provided as a community resource for implementers of [SMART Health Cards](https://smarthealth.cards/).
+This website is a community-maintained terminology resource for implementers of [SMART Health Cards](https://smarthealth.cards/).
+
+It provides both human-readable terminology resources, as well as computable versions in the form of [JSON](https://www.json.org) representations of [FHIR Resources](https://www.hl7.org/fhir/resource.html).
 
 ### Vaccines
 
@@ -48,8 +50,15 @@ Other terminology resources are versioned with [semantic versioning](https://sem
 
 For technical questions, please post on the [smart/health-cards Zulip stream at chat.fhir.org](https://chat.fhir.org/#narrow/stream/284830-smart.2Fhealth-cards) (free account required).
 
-This website is maintained by [VCI](https://vci.org).
+This website is maintained for the SMART Health Card implementer community by [VCI](https://vci.org).
 
 ### Contributing
 
 The source code for this website and the FHIR resources contained within are available on GitHub, and community contributions are welcome. Please see <https://github.com/dvci/shc-terminology/> for details.
+
+<style>
+/* Hide metadata table at top of page */
+.colsd {
+  display: none;
+}
+</style>
