@@ -252,7 +252,7 @@ Description: "This value set includes a subset of the LOINCs found at <{LOINC_CO
 {fsh_included_lab_tests}
 '''
 
-    intro = '''### Usage
+    intro = f'''### Usage
     
 This value set includes a subset of the LOINCs found at <{LOINC_COVID_URL}> that identify COVID-19-related laboratory tests. Only those laboratory tests that include qualitative results we believe to be useful in SMART Health Cards are included.
 
