@@ -313,9 +313,10 @@ Title: "Qualitative infectious disease-related lab test result codes"
 Description: "This value set includes a codes to identify the results of qualitative lab tests related to infectious diseases."
 
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc
-* ^version = "{old_version}"
 
 The SNOMED CT codes in this ValueSet are made available by SNOMED International to users at no cost, and are licensed under the Creative Commons Attribution 4.0 International License."
+
+* ^version = "{old_version}"
 
 {results_fsh}
 '''
