@@ -11,7 +11,9 @@ Id: covid-19-vaccine-snomed-value-set
 Title: "SNOMED CT codes identifying COVID-19 vaccines"
 Description: "Contains SNOMED CT codes that identify specific COVID-19 vaccines for use in SMART Health Cards."
 
-* ^copyright = "The SNOMED CT codes in this ValueSet are made available by SNOMED International to users at no cost, and are licensed under the Creative Commons Attribution 4.0 International License."
+* ^copyright = "© 2021 International Health Terminology Standards Development Organisation. All rights reserved. SNOMED CT® was originally created by the College of American Pathologists.
+
+The SNOMED-CT® concepts in this ValueSet are produced by SNOMED International under the terms of the Creative Commons Attribution 4.0 International Public License."
 
 * $snomed#1031000172108 "COVID-19 mRNA vaccine (BNT162b2) of Pfizer-BioNTech"
 * $snomed#10871000172106 "COVID-19 mRNA vaccine (mRNA-1273) of Moderna"
