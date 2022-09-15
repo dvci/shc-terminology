@@ -58,7 +58,9 @@ jobs:
 
       # Grab the latest version of the IG Publisher and stick in the right folder
       - name: Download IG Publisher
-        run: mkdir -p $GITHUB_WORKSPACE/input-cache && curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o $GITHUB_WORKSPACE/input-cache/publisher.jar
+        # run: mkdir -p $GITHUB_WORKSPACE/input-cache && curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o $GITHUB_WORKSPACE/input-cache/publisher.jar
+        # Fix to working version of IG publisher temporarily
+        run: mkdir -p $GITHUB_WORKSPACE/input-cache && curl -L https://github.com/HL7/fhir-ig-publisher/releases/download/1.1.128/publisher.jar -o $GITHUB_WORKSPACE/input-cache/publisher.jar
 
       # Run the IG publisher
       - name: Run IG Publisher
