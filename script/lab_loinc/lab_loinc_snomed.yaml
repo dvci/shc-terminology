@@ -67,11 +67,15 @@
   snomed: 455371000124106
   snomed_display: Invalid result (qualifier value)
 
-# Part of LL6182-1 (Reactive|Non-Reactive|Invalid|Borderline), no obvious SNOMED equivalency
+# Part of LL6182-1 (Reactive|Non-Reactive|Invalid|Borderline)
 # Used in 99772-6 (SARS-CoV-2 stimulated gamma interferon [Interpretation] in Blood Qualitative)
+# This is a test to determine immune response to SARS-CoV-2. The interpretation of "borderline"
+# in this context is closest to SNOMED concept 419984006 "Inconclusive (qualifier value)".
+# This equivalency is not provided by SNOMED/LOINC.
 - loinc: LA4259-3
   loinc_display: Borderline
-  snomed: false
+  snomed: 419984006
+  snomed_display: Inconclusive (qualifier value)
 
 # LL4772-1 (Recent or past infection)
 # Used in 94661-6 (SARS-CoV-2 (COVID-19) Ab [Interpretation] in Serum or Plasma)
@@ -80,15 +84,24 @@
 #         93871-2 (Borrelia miyamotoi IgG+IgM Ab [Interpretation] in Serum or Plasma)
 #         88456-9 (California encephalitis virus IgG+IgM Ab [Interpretation] in Serum Qualitative by Immunofluorescence)
 #         90365-8 (Chlamydia trachomatis L1 Ab.IgG+IgA+IgM Interpretation in Serum by Immunoassay)
+#
+# These are NOT equivalencies provided by SNOMED/LOINC, but are close enough for SHC use cases.
 - loinc: LA28480-4
   loinc_display: Ab not detected
-  snomed: false
+  snomed: 260415000
+  snomed_display: Not detected (qualifier value)
 - loinc: LA28481-2
   loinc_display: Past infection
   snomed: false
+  # Waiting for the addition of this to GPS
+  # snomed: 410588008
+  # snomed_display: Past - time unspecified (qualifier value)
 - loinc: LA28482-0
   loinc_display: Recent infection
   snomed: false
+  # Waiting for the addition of this to GPS
+  # snomed: 6493001
+  # snomed_display: Recent (qualifier value)
 
 # LL5604-5 (SARS-CoV-2|FLUAV|FLUAB|Not det|Unsat|Invalid)
 # Not a generic lab test but used for COVID, so including anyway

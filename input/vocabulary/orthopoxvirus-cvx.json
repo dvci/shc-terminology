@@ -1,10 +1,10 @@
 {
   "resourceType": "ValueSet",
-  "id": "monkeypox-cvx",
+  "id": "orthopoxvirus-cvx",
   "language": "en",
-  "url": "https://terminology.smarthealth.cards/ValueSet/monkeypox-cvx",
+  "url": "https://terminology.smarthealth.cards/ValueSet/orthopoxvirus-cvx",
   "version": "2022.1",
-  "name": "MonkeypoxCVXValueSet",
+  "name": "OrthopoxvirusCVXValueSet",
   "title": "CVX Codes for monkeypox vaccines for use in Smart Health Cards",
   "date": "2022-09-11",
   "status": "active",

@@ -227,8 +227,8 @@ def main():
     write_value_set(COVID_VALUE_SET, value_set)
 
 
-    # Monkeypox
-    COVID_VALUE_SET = 'monkeypox-cvx.json'
+    # Monkeypox/Smallpox
+    COVID_VALUE_SET = 'orthopoxvirus-cvx.json'
 
     # Retrieve newest CVX file from CDC
     new_cvx = retrieve_new_cvx()

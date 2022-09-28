@@ -4,5 +4,7 @@
 For example, all SMART Health Cards have the value `https://smarthealth.cards#health-card` in `vc.type` array. Additional values may also be included in this array. For more information, please see the [SMART Health Card specification](https://spec.smarthealth.cards/#health-cards-are-encoded-as-compact-serialization-json-web-signatures-jws).
 </div>
 
+Disease specific credential types are deprecated in favor of a terminology-based approach. See <a href="#">TBD</a> for details.
+
 <a href="https://github.com/dvci/shc-terminology/blob/main/input/fsh/health-card.fsh" class="btn btn-primary btn-lg">Edit on GitHub</a>
 

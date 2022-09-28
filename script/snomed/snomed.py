@@ -62,8 +62,9 @@ def aggregate_covid19_vaccine_snomed_releases():
 
     # TODO need to add UK codes once we verify it's ok to create a system-to-system account
     codes = get_covid19_vaccine_snomed_canada() + get_covid19_vaccine_snomed_belgium() + get_covid19_vaccine_snomed_ireland() + get_covid19_vaccine_snomed_argentina()
+    print(f'{len(codes)} codes found.')
 
-    # Exclude non-specific int'l codes for COVID vaccines
+# Exclude non-specific int'l codes for COVID vaccines
     excluded_codes = get_snomed_covid19_vaccine_international()
 
     codes = [c for c in codes if c['conceptId'] not in [d['conceptId'] for d in excluded_codes]]
