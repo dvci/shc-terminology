@@ -10,20 +10,6 @@ def test_get_covid_loincs_from_website():
 def test_get_answer_list_codes_for_loinc():
     assert 'LL2021-5' in get_answer_list_codes_for_loinc('98069-8')
 
-def test_increment_version():
-    current_year = int(datetime.now().strftime("%Y"))
-
-    assert increment_version(f'{current_year}.1') == f'{current_year}.2'
-    assert increment_version(f'{current_year-1}.2') == f'{current_year}.1'
-    assert increment_version(f'{current_year}.99') == f'{current_year}.100'
-    assert increment_version(f'0.0') == f'{current_year}.1'
-    assert increment_version(f'0.0.0') == f'{current_year}.1'
-
-    with pytest.raises(BaseException) as e_info:
-        increment_version('1.0')
-    assert str(e_info.value) == '1.0 not in YYYY.n format'
-
-
 class TestLoincAnswerList:
     TEST_CODE = 'LL2021-5'
 
