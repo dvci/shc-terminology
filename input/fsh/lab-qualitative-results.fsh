@@ -15,7 +15,7 @@ Description: "This value set includes a codes to identify the results of qualita
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc
 
 The SNOMED CT codes in this ValueSet are part of SNOMED GPS, which is produced by SNOMED International under the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/).
-  
+
 Additional information about this license specific to SNOMED International's release of the GPS:
 
 - SNOMED CT is © and ® SNOMED International. The right to maintain the GPS remains vested exclusively in SNOMED International.

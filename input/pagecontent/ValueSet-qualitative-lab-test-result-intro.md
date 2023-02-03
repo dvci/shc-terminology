@@ -1,5 +1,5 @@
 ### Usage
-    
+
 Use of SNOMED CT concepts for representing laboratory test results is preferred. For convenience, the table below provides equivalencies between SNOMED CT concepts and LOINC answers.
 
 {:.table-striped.table.table-bordered}
