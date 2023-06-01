@@ -2,27 +2,31 @@ This website is a community-maintained terminology resource for implementers of 
 
 It provides both human-readable terminology resources, as well as computable versions in the form of [JSON](https://www.json.org) representations of [FHIR Resources](https://www.hl7.org/fhir/resource.html).
 
-### Terminology for All Health Cards
+### Use Case-Specific Terminology
 
-#### Credential Types
+FHIR Implementation Guides (IGs) are used to specify the FHIR payload within SMART Health Cards.
 
-SMART Health Cards are identified by one or more [credential types described in this CodeSystem](CodeSystem-health-card.html) (see the [SMART Health Cards specification](https://spec.smarthealth.cards/#health-cards-are-encoded-as-compact-serialization-json-web-signatures-jws) for more information). Each combination of credential types may be associated with a FHIR Implementation Guide and/or type-specific terminology. This site provides support for the latter.
+#### Vaccination & Testing IG
+
+The [SMART Health Cards: Vaccination & Testing Implementation Guide](https://vci.org/ig/vaccination-and-testing) describes the patient information and clinical data contained in SMART Health Cards related to vaccinations and qualitative laboratory testing for infectious diseases. Terminology relevant to these use cases is described in the table below.
+
+{% include credential_types.html %}
+
+### Terminology for All SMART Health Cards
 
 #### Identity Assurance Level
 
 The codes in [this CodeSystem](CodeSystem-identity-assurance-level.html) may be used by Issuers of SMART Health Cards to record if/how a patient's identity was verified at the point of care. For example, if a patient showed their driver's license to verify their name and date of birth when getting a vaccination, this would correspond to `IAL1.4`.
 
-### Terminology by FHIR Implementation Guide (IG)
+#### `#health-card`
 
-#### Vaccination & Testing IG
-
-The [SMART Health Cards: Vaccination & Testing Implementation Guide](https://vci.org/ig/vaccination-and-testing) describes the patient information and clinical data contained in [`#immunization`](CodeSystem-health-card.html) and [`#laboratory`](CodeSystem-health-card.html)-type SMART Health Cards related to infectious diseases.
-
-{% include credential_types.html %}
+SMART Health Cards are identified by a `vc.type` value of `https://smarthealth.cards#health-card`, which is defined [in this CodeSystem](CodeSystem-health-card.html). See the [SMART Health Cards specification](https://spec.smarthealth.cards/#health-cards-are-encoded-as-compact-serialization-json-web-signatures-jws) for more information.
 
 ### Terminology Versioning
 
 ValueSets from medical terminology (e.g., CVX, LOINC, etc.) are versioned using a `YYYY.n` format where `YYYY` is the year a given version was created and `n` is an incremented integer.
+
+Unified terminology ValueSets (e.g., [all COVID-19 vaccine codes](ValueSet-immunization-covid-all.html)) are versioned with the date they were generated (e.g., `20230101` for generation on Jan 1, 2023).
 
 Other terminology resources are versioned with [semantic versioning](https://semver.org/).
 
