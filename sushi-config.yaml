@@ -22,7 +22,7 @@ publisher:
 parameters:
   excludettl: true
   excludexml: true
-  "liquid-path": liquid
+  "path-liquid": liquid
   "apply-version": false
   no-narrative:
     - ValueSet/covid-cvx
