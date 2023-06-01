@@ -115,9 +115,9 @@ def get_covid19_vaccine_fsh(codes, version):
 //
 Alias: $snomed = http://snomed.info/sct
 
-ValueSet: Covid19VaccineSNOMEDValueSet
-Id: covid-19-vaccine-snomed-value-set
-Title: "SNOMED CT codes identifying COVID-19 vaccines"
+ValueSet: ImmunizationCovidSnomedValueSet
+Id: immunization-covid-snomed
+Title: "Immunization / COVID / SNOMED CT"
 Description: "Contains SNOMED CT codes that identify specific COVID-19 vaccines for use in SMART Health Cards."
 
 * ^copyright = "© 2021 International Health Terminology Standards Development Organisation. All rights reserved. SNOMED CT® was originally created by the College of American Pathologists.
@@ -136,7 +136,7 @@ def main():
     dirname = os.path.dirname(__file__)
 
     # Write FSH
-    filename = os.path.join(dirname, '../../input/fsh/covid-vaccine-snomed.fsh')
+    filename = os.path.join(dirname, '../../input/fsh/immunization-covid-snomed.fsh')
 
     # Get current file to determine version
     with open(filename, 'r') as f:
@@ -156,7 +156,7 @@ def main():
         f.write(new_fsh)
 
     # Write intro Markdown to file
-    filename = os.path.join(dirname, '../../input/pagecontent/ValueSet-covid-19-vaccine-snomed-value-set-intro.md')
+    filename = os.path.join(dirname, '../../input/pagecontent/ValueSet-immunization-covid-snomed-intro.md')
     with open(filename, 'w') as f:
         f.write(get_covid19_vaccine_intro(df))
 

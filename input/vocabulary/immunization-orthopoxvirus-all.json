@@ -1,17 +1,17 @@
 {
   "resourceType": "ValueSet",
-  "id": "orthopoxvirus-cvx",
+  "id": "immunization-orthopoxvirus-all",
   "language": "en",
-  "url": "https://terminology.smarthealth.cards/ValueSet/orthopoxvirus-cvx",
-  "version": "2022.1",
-  "name": "OrthopoxvirusCVXValueSet",
-  "title": "CVX Codes for monkeypox vaccines for use in Smart Health Cards",
-  "date": "2022-09-11",
+  "url": "https://terminology.smarthealth.cards/ValueSet/immunization-orthopoxvirus-all",
+  "version": "20230601",
+  "name": "ImmunizationOrthopoxvirusAllValueSet",
+  "title": "Immunization / orthopoxvirus / All codes",
+  "date": "2023-06-01",
   "status": "active",
-  "publisher": "https://vci.org",
+  "publisher": "terminology.smarthealth.cards",
   "contact": [
     {
-      "name": "VCI",
+      "name": "SMART Health Cards",
       "telecom": [
         {
           "system": "email",
@@ -20,18 +20,8 @@
       ]
     }
   ],
-  "description": "A list of CVX codes with recommended consumer suitable displays for use in Smart Health Cards, with localized consumer friendly terms",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "US"
-        }
-      ]
-    }
-  ],
-  "copyright": "Creative Commons 0",
+  "description": "A list of all immunization codes for orthopoxvirus, combining the following ValueSets: <a href=\"ValueSet-immunization-orthopoxvirus-cvx.html\">ValueSet-immunization-orthopoxvirus-cvx.json</a>",
+  "copyright": "Please see the following links for the copyright/legal information for each code system included here: <a href=\"ValueSet-immunization-orthopoxvirus-cvx.html\">ValueSet-immunization-orthopoxvirus-cvx.json</a>",
   "compose": {
     "include": [
       {

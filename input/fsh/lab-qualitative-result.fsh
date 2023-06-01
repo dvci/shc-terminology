@@ -7,8 +7,8 @@
 Alias: $snomed = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 
-ValueSet: QualitativeLabTestResultValueSet
-Id: qualitative-lab-test-result
+ValueSet: LabQualitativeResultValueSet
+Id: lab-qualitative-result
 Title: "Qualitative infectious disease-related lab test result codes"
 Description: "This value set includes a codes to identify the results of qualitative lab tests related to infectious diseases."
 

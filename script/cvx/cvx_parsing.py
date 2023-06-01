@@ -209,7 +209,7 @@ def main():
 
     # COVID
     logging.info("\n\nBeginning COVID")
-    COVID_VALUE_SET = 'covid-cvx.json'
+    COVID_VALUE_SET = 'immunization-covid-cvx.json'
 
     # Retrieve newest CVX file from CDC
     new_cvx = retrieve_new_cvx()
@@ -230,7 +230,7 @@ def main():
 
     # Monkeypox/Smallpox
     logging.info("\n\nBeginning mpx")
-    COVID_VALUE_SET = 'orthopoxvirus-cvx.json'
+    COVID_VALUE_SET = 'immunization-orthopoxvirus-cvx.json'
 
     # Retrieve newest CVX file from CDC
     new_cvx = retrieve_new_cvx()

@@ -6,9 +6,9 @@
 //
 Alias: $snomed = http://snomed.info/sct
 
-ValueSet: Covid19VaccineSNOMEDValueSet
-Id: covid-19-vaccine-snomed-value-set
-Title: "SNOMED CT codes identifying COVID-19 vaccines"
+ValueSet: ImmunizationCovidSnomedValueSet
+Id: immunization-covid-snomed
+Title: "Immunization / COVID / SNOMED CT"
 Description: "Contains SNOMED CT codes that identify specific COVID-19 vaccines for use in SMART Health Cards."
 
 * ^copyright = "© 2021 International Health Terminology Standards Development Organisation. All rights reserved. SNOMED CT® was originally created by the College of American Pathologists.

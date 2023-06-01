@@ -6,8 +6,8 @@
 //
 Alias: $loinc = http://loinc.org
 
-ValueSet: QualitativeCovidLabTestValueSet
-Id: qualitative-covid-lab-test
+ValueSet: LabQualitativeTestCovidValueSet
+Id: lab-qualitative-test-covid
 Title: "LOINCs identifying qualitative COVID lab tests"
 Description: "This value set includes a subset of the LOINCs found at <https://loinc.org/sars-cov-2-and-covid-19/> that identify COVID-19-related laboratory tests. Only those laboratory tests that include qualitative results we believe to be useful in SMART Health Cards are included."
 
