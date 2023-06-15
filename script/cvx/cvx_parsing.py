@@ -16,7 +16,7 @@ def retrieve_new_cvx():
     CVX = 'https://www2a.cdc.gov/vaccines/iis/iisstandards/downloads/cvx.txt'
 
     # retrieve flat file data
-    response = requests.get(CVX, verify=False)
+    response = requests.get(CVX)
 
     response.encoding = 'utf-8'
 
@@ -55,7 +55,7 @@ def retrieve_new_cvx_product_names():
     PRODUCT = 'https://www2a.cdc.gov/vaccines/iis/iisstandards/downloads/TRADENAME.txt'
 
     # retrieve flat file data
-    response = requests.get(PRODUCT, verify=False)
+    response = requests.get(PRODUCT)
 
     # extract content and write to a file
     with open('name_cdc.txt', 'w') as outfile:
@@ -208,7 +208,8 @@ def main():
     logging.basicConfig(encoding='utf-8', level=logging.INFO)
 
     # COVID
-    COVID_VALUE_SET = 'covid-cvx.json'
+    logging.info("\n\nBeginning COVID")
+    COVID_VALUE_SET = 'immunization-covid-cvx.json'
 
     # Retrieve newest CVX file from CDC
     new_cvx = retrieve_new_cvx()
@@ -227,8 +228,9 @@ def main():
     write_value_set(COVID_VALUE_SET, value_set)
 
 
-    # Monkeypox
-    COVID_VALUE_SET = 'monkeypox-cvx.json'
+    # Monkeypox/Smallpox
+    logging.info("\n\nBeginning mpx")
+    COVID_VALUE_SET = 'immunization-orthopoxvirus-cvx.json'
 
     # Retrieve newest CVX file from CDC
     new_cvx = retrieve_new_cvx()

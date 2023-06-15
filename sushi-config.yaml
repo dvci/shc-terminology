@@ -22,13 +22,13 @@ publisher:
 parameters:
   excludettl: true
   excludexml: true
-  "liquid-path": liquid
+  "path-liquid": liquid
   "apply-version": false
   no-narrative:
     - ValueSet/covid-cvx
-    - ValueSet/qualitative-covid-lab-test-value-set
-    - ValueSet/qualitative-lab-test-result-value-set
-    - ValueSet/monkeypox-cvx
+    - ValueSet/qualitative-covid-lab-test
+    - ValueSet/qualitative-lab-test-result
+    - ValueSet/orthopoxvirus-cvx
     - CodeSystem/designation-use
     - CodeSystem/health-card
     - CodeSystem/identity-assurance-level

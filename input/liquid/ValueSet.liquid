@@ -1,6 +1,8 @@
 <div xmlns="http://www.w3.org/1999/xhtml">
         {% loop incl in ValueSet.compose.include %}
-            <p>Include these codes as defined in <a href="{{ incl.system }}"><code>{{ incl.system }}</code></a>:</p>
+            <p>
+                The following codes from the <code>{{ incl.system }}</code> code system are included:
+            </p>
             <table class="table-striped table table-bordered">
                 <tr>
                     <th>Code</th>

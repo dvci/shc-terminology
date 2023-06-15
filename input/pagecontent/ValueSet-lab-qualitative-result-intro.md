@@ -1,8 +1,6 @@
 ### Usage
-    
-Whenever possible, SNOMED CT codes SHALL be be used. If no equivalent code is available, LOINCs MAY be used as a fallback. 
 
-A concept map is forthcoming. Until then, here is a human-readable crosswalk between the relevant SNOEMD CT codes and LOINCs:
+Use of SNOMED CT concepts for representing laboratory test results is preferred. For convenience, the table below provides equivalencies between SNOMED CT concepts and LOINC answers.
 
 {:.table-striped.table.table-bordered}
 |SNOMED-CT|LOINC Answer|
@@ -20,8 +18,8 @@ A concept map is forthcoming. Until then, here is a human-readable crosswalk bet
 |`415684004`<br>Suspected (qualifier value)|`LA15291-0`<br>Suspected|
 |`125154007`<br>Specimen unsatisfactory for evaluation (finding)|`LA13548-5`<br>Specimen unsatisfactory for evaluation|
 |`455371000124106`<br>Invalid result (qualifier value)|`LA15841-2`<br>Invalid|
-|*No equivalent*|`LA4259-3`<br>Borderline|
-|*No equivalent*|`LA28480-4`<br>Ab not detected|
+|`419984006`<br>Inconclusive (qualifier value)|`LA4259-3`<br>Borderline|
+|`260415000`<br>Not detected (qualifier value)|`LA28480-4`<br>Ab not detected|
 |*No equivalent*|`LA28481-2`<br>Past infection|
 |*No equivalent*|`LA28482-0`<br>Recent infection|
 |`407479009`<br>Influenza A virus (organism)|`LA11919-0`<br>Influenza A virus|

@@ -6,14 +6,14 @@
 //
 Alias: $loinc = http://loinc.org
 
-ValueSet: QualitativeCovidLabTestValueSet
-Id: qualitative-covid-lab-test-value-set
+ValueSet: LabQualitativeTestCovidValueSet
+Id: lab-qualitative-test-covid
 Title: "LOINCs identifying qualitative COVID lab tests"
 Description: "This value set includes a subset of the LOINCs found at <https://loinc.org/sars-cov-2-and-covid-19/> that identify COVID-19-related laboratory tests. Only those laboratory tests that include qualitative results we believe to be useful in SMART Health Cards are included."
 
 
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
-* ^version = "2022.1"
+* ^version = "2022.2"
 
 
 * $loinc#94307-6 "SARS-CoV-2 N gene Spec Ql NAA N1"

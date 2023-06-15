@@ -1,12 +1,12 @@
 {
   "resourceType": "ValueSet",
-  "id": "covid-cvx",
+  "id": "immunization-covid-cvx",
   "language": "en",
-  "url": "https://terminology.smarthealth.cards/ValueSet/covid-cvx",
-  "version": "2022.1",
-  "name": "CovidCVXValueSet",
-  "title": "CVX Covid Codes for use in SMART Health Cards",
-  "date": "2022-09-11",
+  "url": "https://terminology.smarthealth.cards/ValueSet/immunization-covid-cvx",
+  "version": "2023.1",
+  "name": "ImmunizationCovidCvxValueSet",
+  "title": "Immunization / COVID / CVX",
+  "date": "2023-02-03",
   "status": "active",
   "publisher": "Health Intersections",
   "contact": [
@@ -20,7 +20,7 @@
       ]
     }
   ],
-  "description": "A list of CVX codes with recommended consumer suitable displays for use in SMART Health Cards, with localized consumer friendly terms",
+  "description": "Contains [CVX (\"vaccine administered\") codes](https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx) with recommended consumer-suitable display text for use in SMART Health Cards, with localized consumer friendly terms",
   "jurisdiction": [
     {
       "coding": [
@@ -294,6 +294,20 @@
             ]
           },
           {
+            "code": "230",
+            "display": "COVID-19, mRNA, LNP-S, bivalent booster, PF, 10 mcg/0.2 mL",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Moderna COVID-19 Bivalent, Original + BA.4/BA.5 (Non-US Tradename Spikevax Bivalent)"
+              }
+            ]
+          },
+          {
             "code": "300",
             "display": "COVID-19, mRNA, LNP-S, bivalent booster, PF, 30 mcg/0.3 mL dose",
             "designation": [
@@ -318,6 +332,20 @@
                   "use": "consumer-friendly"
                 },
                 "value": "Pfizer-BioNTech COVID-19 Vaccine (EUA labeled)  COMIRNATY (BLA labeled)"
+              }
+            ]
+          },
+          {
+            "code": "302",
+            "display": "COVID-19, mRNA, LNP-S, bivalent, PF, 3 mcg/0.2 mL dose",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Pfizer-BioNTech COVID-19 Bivalent, Original + BA.4/BA.5 (Non-US Tradename COMIRNATY Bivalent)"
               }
             ]
           },
@@ -393,7 +421,7 @@
           },
           {
             "code": "506",
-            "display": "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology)",
+            "display": "COVID-19 VVnr Non-US Vaccine (CanSino Biological Inc./Beijing Institute of Biotechnology",
             "designation": [
               {
                 "language": "en-US",
@@ -556,6 +584,48 @@
                   "use": "consumer-friendly"
                 },
                 "value": "SARS-COV-2 COVID-19 PS Non-US Vaccine (Biological E Limited, Corbevax)"
+              }
+            ]
+          },
+          {
+            "code": "518",
+            "display": "COVID-19 Inactivated, Non-US Vaccine (VLA2001, Valneva)",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "COVID-19 Inactivated, Non-US Vaccine (VLA2001, Valneva)"
+              }
+            ]
+          },
+          {
+            "code": "519",
+            "display": "COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine (Spikevax Bivalent), Moderna",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Moderna COVID-19 Bivalent, Original + BA.1 (Non-US Tradename Spikevax Bivalent)"
+              }
+            ]
+          },
+          {
+            "code": "520",
+            "display": "COVID-19 mRNA, bivalent, original/Omicron BA.1, Non-US Vaccine Product, Pfizer-BioNTech",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Pfizer COVID-19 Bivalent, Original + BA.1 (Non-US Tradename COMIRNATY Bivalent)"
               }
             ]
           }

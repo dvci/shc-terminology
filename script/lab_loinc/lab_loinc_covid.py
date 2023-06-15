@@ -1,13 +1,20 @@
 from datetime import datetime
 import os
-import re
 from itertools import chain
+import json
+
 
 import pandas as pd
 import requests
 from dotenv import load_dotenv
 from requests.auth import HTTPBasicAuth
 import yaml
+# noinspection PyUnresolvedReferences
+import json_fix  # Used to make a custom object serializable by JSON.dump
+
+import sys
+sys.path.append(os.path.dirname(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..")))
+from util.fsh_version import get_old_version, update_version
 
 LOINC_COVID_URL = 'https://loinc.org/sars-cov-2-and-covid-19/'
 
@@ -122,6 +129,9 @@ class LoincAnswerList:
 
         return self._df[colnames]
 
+    def __json__(self):
+        return self.answers
+
 
 def get_covid_loincs_from_website() -> list[pd.DataFrame]:
     dfs = pd.read_html(LOINC_COVID_URL)
@@ -140,39 +150,6 @@ def get_answer_list_codes_for_loinc(loinc) -> list[str]:
     # Extract the `answer-list` code from the JSON response -- this is kind of gross, but it works
     return [p['part'][1]['valueString'] for p in code_system['parameter'] if
             'part' in p and 'valueCode' in p['part'][0] and p['part'][0]['valueCode'] == 'answer-list']
-
-
-def increment_version(old_version) -> str:
-    if old_version == "0.0" or old_version == "0.0.0":
-        old_version = None
-
-    if old_version is None:
-        return f'{datetime.now().strftime("%Y")}.1'
-
-    # Verify format
-    s = re.search(r'^([0-9]{4})\.([0-9]+)', old_version)
-    if not s:
-        raise BaseException(f'{old_version} not in YYYY.n format')
-
-    year = int(s.groups()[0])
-    num = int(s.groups()[1])
-
-    # If old year is not the current year, version is CURRENT_YEAR.1
-    if year != int(datetime.now().strftime("%Y")):
-        return f'{datetime.now().strftime("%Y")}.1'
-
-    # Otherwise, version is OLD_YEAR.n+1
-    return f'{year}.{num+1}'
-
-def get_old_version(fsh) -> str:
-    old_version_search = re.search(r'\* \^version\s*=\s*"(.*)"', fsh)
-    if not old_version_search:
-        return "0.0"
-    else:
-        return old_version_search.groups()[0]
-
-def update_version(fsh, old_version) -> str:
-    return re.sub(r'\* \^version\s*=\s*"(.*)"', f'* ^version = "{increment_version(old_version)}"', fsh)
 
 def main():
     dirname = os.path.dirname(__file__)
@@ -218,13 +195,18 @@ def main():
         print(set(included_lab_tests).intersection(set(ignored_lab_tests)))
         raise BaseException("LOINCs are both included and excluded")
 
-    # TODO raise an exception for new LOINCs or answer lists
+    # Raise an exception for new answer lists not in the prescreen
+    new_answer_lists = [a for a in answer_lists.keys() if a not in prescreened_answer_lists['included'] and a not in prescreened_answer_lists['ignored']]
+    if len(new_answer_lists) > 0:
+        print("\n\n\nLOINC answer lists not found in `lab_loinc_covid.yaml`:")
+        print(json.dumps({k:v for (k, v) in answer_lists.items() if k in new_answer_lists}, indent=2))
+        raise BaseException("New LOINC answer lists that are not in the `lab_loinc_covid.yaml` file - see above.")
 
     # Get the display names of the LOINCs in a dict like {'12345-6': 'display name'}
     loinc_display_names = dict(zip(*all_lab_tests[['LOINC_NUM','Shortname']].to_dict(orient='list').values()))
 
     # Read version from existing .fsh file
-    fsh_path = os.path.join(dirname, '../../input/fsh/covid-lab-loinc.fsh')
+    fsh_path = os.path.join(dirname, '../../input/fsh/lab-qualitative-test-covid.fsh')
     with open(fsh_path, 'r') as f:
         old_fsh = f.read()
     old_version = get_old_version(old_fsh)
@@ -239,8 +221,8 @@ def main():
 //
 Alias: $loinc = http://loinc.org
 
-ValueSet: QualitativeCovidLabTestValueSet
-Id: qualitative-covid-lab-test-value-set
+ValueSet: LabQualitativeTestCovidValueSet
+Id: lab-qualitative-test-covid
 Title: "LOINCs identifying qualitative COVID lab tests"
 Description: "This value set includes a subset of the LOINCs found at <{LOINC_COVID_URL}> that identify COVID-19-related laboratory tests. Only those laboratory tests that include qualitative results we believe to be useful in SMART Health Cards are included."
 
@@ -253,7 +235,7 @@ Description: "This value set includes a subset of the LOINCs found at <{LOINC_CO
 '''
 
     intro = f'''### Usage
-    
+
 This value set includes a subset of the LOINCs found at <{LOINC_COVID_URL}> that identify COVID-19-related laboratory tests. Only those laboratory tests that include qualitative results we believe to be useful in SMART Health Cards are included.
 
 The purpose of this value set is to provide Issuers guidance on what LOINCs Verifiers are likely to expect in a COVID-19-related SMART Health Card. It is possible to construct a fully valid SMART Health Card that identifies a laboratory test with a LOINC *not* in this list, but it may be less likely that a Verifier will have included such a LOINC in their logic for processing the SMART Health Card data.
@@ -269,7 +251,7 @@ This ValueSet is programmatically generated by [this script](https://github.com/
     with open(fsh_path, 'w') as f:
         f.write(fsh)
 
-    filename = os.path.join(dirname, '../../input/pagecontent/ValueSet-qualitative-covid-lab-test-value-set-intro.md')
+    filename = os.path.join(dirname, '../../input/pagecontent/ValueSet-lab-qualitative-test-covid-intro.md')
     with open(filename, 'w') as f:
         f.write(intro)
 
@@ -293,7 +275,7 @@ This ValueSet is programmatically generated by [this script](https://github.com/
     results_fsh = '\n'.join(results_fsh)
 
     # Read version from existing .fsh file
-    fsh_path = os.path.join(dirname, '../../input/fsh/lab-qualitative-results.fsh')
+    fsh_path = os.path.join(dirname, '../../input/fsh/lab-qualitative-result.fsh')
     with open(fsh_path, 'r') as f:
         old_fsh = f.read()
     old_version = get_old_version(old_fsh)
@@ -307,14 +289,25 @@ This ValueSet is programmatically generated by [this script](https://github.com/
 Alias: $snomed = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 
-ValueSet: QualitativeLabTestResultValueSet
-Id: qualitative-lab-test-result-value-set
+ValueSet: LabQualitativeResultValueSet
+Id: lab-qualitative-result
 Title: "Qualitative infectious disease-related lab test result codes"
 Description: "This value set includes a codes to identify the results of qualitative lab tests related to infectious diseases."
 
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc
 
-The SNOMED CT codes in this ValueSet are made available by SNOMED International to users at no cost, and are licensed under the Creative Commons Attribution 4.0 International License."
+The SNOMED CT codes in this ValueSet are part of SNOMED GPS, which is produced by SNOMED International under the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/).
+
+Additional information about this license specific to SNOMED International's release of the GPS:
+
+- SNOMED CT is © and ® SNOMED International. The right to maintain the GPS remains vested exclusively in SNOMED International.
+- The Licensee can redistribute the GPS.
+- The Licensee can create derivatives or implementation-related products and services based on the GPS.
+- The Licensee cannot claim that SNOMED International or any of its Members endorses the Licensee's derivative because it uses content from the GPS.
+- Neither SNOMED International nor any of the contributors accept any liability for the Licensee's use or redistribution of the GPS.
+- SNOMED CT® was originally created by the College of American Pathologists.
+
+Without obtaining prior written permission from SNOMED International, you are expressly prohibited from using, distributing or reproducing the SNOMED International, SNOMED CT or SNOMED GPS logo, service mark or trademark. Please review all terms and conditions of use [here](http://www.snomed.org/terms-and-conditions)."
 
 * ^version = "{old_version}"
 
@@ -331,19 +324,15 @@ The SNOMED CT codes in this ValueSet are made available by SNOMED International 
 
 
     intro = f'''### Usage
-    
-Whenever possible, SNOMED CT codes SHALL be be used. If no equivalent code is available, LOINCs MAY be used as a fallback. 
 
-A concept map is forthcoming. Until then, here is a human-readable crosswalk between the relevant SNOEMD CT codes and LOINCs:
+Use of SNOMED CT concepts for representing laboratory test results is preferred. For convenience, the table below provides equivalencies between SNOMED CT concepts and LOINC answers.
 
 {results_human_readable}
 
 This ValueSet is programmatically generated by [this script](https://github.com/dvci/shc-terminology/tree/main/script/lab_loinc/lab_loinc_covid.py).'''
-    filename = os.path.join(dirname, '../../input/pagecontent/ValueSet-qualitative-lab-test-result-value-set-intro.md')
+    filename = os.path.join(dirname, '../../input/pagecontent/ValueSet-lab-qualitative-result-intro.md')
     with open(filename, 'w') as f:
         f.write(intro)
-
-    # TODO Create ConceptMap2 linking SNOMED and LOINC answers
 
 if __name__ == "__main__":
     main()

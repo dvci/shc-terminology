@@ -7,21 +7,30 @@
 Alias: $snomed = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 
-ValueSet: QualitativeLabTestResultValueSet
-Id: qualitative-lab-test-result-value-set
+ValueSet: LabQualitativeResultValueSet
+Id: lab-qualitative-result
 Title: "Qualitative infectious disease-related lab test result codes"
 Description: "This value set includes a codes to identify the results of qualitative lab tests related to infectious diseases."
 
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc
 
-The SNOMED CT codes in this ValueSet are made available by SNOMED International to users at no cost, and are licensed under the Creative Commons Attribution 4.0 International License."
+The SNOMED CT codes in this ValueSet are part of SNOMED GPS, which is produced by SNOMED International under the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/).
 
-* ^version = "2022.1"
+Additional information about this license specific to SNOMED International's release of the GPS:
 
-* $loinc#LA28480-4 "Ab not detected"
+- SNOMED CT is © and ® SNOMED International. The right to maintain the GPS remains vested exclusively in SNOMED International.
+- The Licensee can redistribute the GPS.
+- The Licensee can create derivatives or implementation-related products and services based on the GPS.
+- The Licensee cannot claim that SNOMED International or any of its Members endorses the Licensee's derivative because it uses content from the GPS.
+- Neither SNOMED International nor any of the contributors accept any liability for the Licensee's use or redistribution of the GPS.
+- SNOMED CT® was originally created by the College of American Pathologists.
+
+Without obtaining prior written permission from SNOMED International, you are expressly prohibited from using, distributing or reproducing the SNOMED International, SNOMED CT or SNOMED GPS logo, service mark or trademark. Please review all terms and conditions of use [here](http://www.snomed.org/terms-and-conditions)."
+
+* ^version = "2022.2"
+
 * $loinc#LA28481-2 "Past infection"
 * $loinc#LA28482-0 "Recent infection"
-* $loinc#LA4259-3 "Borderline"
 * $snomed#10828004 "Positive (qualifier value)"
 * $snomed#11214006 "Reactive (qualifier value)"
 * $snomed#125154007 "Specimen unsatisfactory for evaluation (finding)"
@@ -29,9 +38,11 @@ The SNOMED CT codes in this ValueSet are made available by SNOMED International 
 * $snomed#260373001 "Detected (qualifier value)"
 * $snomed#260385009 "Negative (qualifier value)"
 * $snomed#260415000 "Not detected (qualifier value)"
+* $snomed#260415000 "Not detected (qualifier value)"
 * $snomed#407479009 "Influenza A virus (organism)"
 * $snomed#407480007 "Influenza B virus (organism)"
 * $snomed#415684004 "Suspected (qualifier value)"
+* $snomed#419984006 "Inconclusive (qualifier value)"
 * $snomed#419984006 "Inconclusive (qualifier value)"
 * $snomed#42425007 "Equivocal (qualifier value)"
 * $snomed#455371000124106 "Invalid result (qualifier value)"
