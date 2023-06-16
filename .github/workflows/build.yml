@@ -89,8 +89,14 @@ jobs:
           # Copy pages to make URLs like `https://terminology.smarthealth.cards/ValueSet/immunization-orthopoxvirus-all` resolve
           mkdir ValueSet
           find . -regex '\./ValueSet-[^.]*\.html$' -type f -exec bash -c 'cp "$0" "ValueSet/${0#./ValueSet-}" && mv "ValueSet/${0#./ValueSet-}" "ValueSet/${0#./ValueSet-}"' {} \;
+          find . -regex '\./ValueSet-[^.]*\.json$' -type f -exec bash -c 'cp "$0" "ValueSet/${0#./ValueSet-}" && mv "ValueSet/${0#./ValueSet-}" "ValueSet/${0#./ValueSet-}"' {} \;
+          # Make paths work
+          find ValueSet -name '*.html' -type f -exec perl -i -pe 's/(<img[^>]+src=")\K/\.\.\//g; s/(<script[^>]+src=")\K/\.\.\//g; s/(<link[^>]+href=")\K/\.\.\//g; s/(<style[^>]*>|<style [^>]*>)\K/\.\.\//g' {} +
           mkdir CodeSystem
           find . -regex '\./CodeSystem-[^.]*\.html$' -type f -exec bash -c 'cp "$0" "CodeSystem/${0#./CodeSystem-}" && mv "CodeSystem/${0#./CodeSystem-}" "CodeSystem/${0#./CodeSystem-}"' {} \;
+          find . -regex '\./CodeSystem-[^.]*\.json$' -type f -exec bash -c 'cp "$0" "CodeSystem/${0#./CodeSystem-}" && mv "CodeSystem/${0#./CodeSystem-}" "CodeSystem/${0#./CodeSystem-}"' {} \;
+          find CodeSystem -name '*.html' -type f -exec perl -i -pe 's/(<img[^>]+src=")\K/\.\.\//g; s/(<script[^>]+src=")\K/\.\.\//g; s/(<link[^>]+href=")\K/\.\.\//g; s/(<style[^>]*>|<style [^>]*>)\K/\.\.\//g' {} +
+
 
           echo "terminology.smarthealth.cards" > CNAME
           git add -A
