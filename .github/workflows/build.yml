@@ -85,6 +85,11 @@ jobs:
           mv ../branches .
           cp -r $GITHUB_WORKSPACE/output/* .
           rm -rf .github/workflows
+
+          # Copy pages to make URLs like `https://terminology.smarthealth.cards/ValueSet/immunization-orthopoxvirus-all` resolve
+          find . -regex '\./ValueSet-[^.]*\.html$' -type f -exec bash -c 'cp "$0" "ValueSet/${0#./ValueSet-}" && mv "ValueSet/${0#./ValueSet-}" "ValueSet/${0#./ValueSet-}"' {} \;
+          find . -regex '\./CodeSystem-[^.]*\.html$' -type f -exec bash -c 'cp "$0" "CodeSystem/${0#./CodeSystem-}" && mv "CodeSystem/${0#./CodeSystem-}" "CodeSystem/${0#./CodeSystem-}"' {} \;
+
           echo "terminology.smarthealth.cards" > CNAME
           git add -A
           git commit --amend -m "Update site"
