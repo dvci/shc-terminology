@@ -5,11 +5,10 @@ import json
 source_files = {
     'COVID': [
         'input/vocabulary/immunization-covid-cvx.json',
-        'fsh-generated/resources/ValueSet-immunization-covid-snomed.json'
+        'fsh-generated/resources/ValueSet-immunization-covid-snomed.json',
+        'fsh-generated/resources/ValueSet-immunization-covid-icd11.json',
     ],
-    'orthopoxvirus': [
-        'input/vocabulary/immunization-orthopoxvirus-cvx.json'
-    ]
+    'orthopoxvirus': ['input/vocabulary/immunization-orthopoxvirus-cvx.json']
 }
 
 root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))
