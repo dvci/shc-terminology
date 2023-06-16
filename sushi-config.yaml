@@ -31,6 +31,7 @@ parameters:
     - ValueSet/orthopoxvirus-cvx
     - ValueSet/immunization-covid-all
     - ValueSet/immunization-orthopoxvirus-all
+    - ValueSet/immunization-covid-icd11
     - CodeSystem/designation-use
     - CodeSystem/health-card
     - CodeSystem/identity-assurance-level
