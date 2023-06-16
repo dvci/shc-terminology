@@ -29,6 +29,8 @@ parameters:
     - ValueSet/qualitative-covid-lab-test
     - ValueSet/qualitative-lab-test-result
     - ValueSet/orthopoxvirus-cvx
+    - ValueSet/immunization-covid-all
+    - ValueSet/immunization-orthopoxvirus-all
     - CodeSystem/designation-use
     - CodeSystem/health-card
     - CodeSystem/identity-assurance-level
