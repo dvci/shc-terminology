@@ -62,7 +62,7 @@ jobs:
 
       # Run the IG publisher
       - name: Run IG Publisher
-        run: java  -Xmx4g -jar $GITHUB_WORKSPACE/input-cache/publisher.jar publisher -ig $GITHUB_WORKSPACE/
+        run: java  -Xmx4g -jar $GITHUB_WORKSPACE/input-cache/publisher.jar publisher -ig $GITHUB_WORKSPACE/ -tx n/a
 
       # Deploy the output
       - name: Push build to gh-pages (default branch)
