@@ -21,8 +21,8 @@ Title: "Immunization / COVID / ICD-11"
 Description: "Contains ICD-11 MMS codes from the [`{latest}` release](
 https://icd.who.int/icdapi/docs2/SupportedClassifications/) that are descendants of `XM68M6` ("COVID-19 Vaccines")."
 
-* ^copyright = "International Classification of Diseases, Eleventh Revision (ICD-11), World Health Organization (WHO) 
-2019/2021. <https://icd.who.int/browse11>. Licensed under [Creative Commons Attribution-NoDerivatives 3.0 IGO licence 
+* ^copyright = "International Classification of Diseases, Eleventh Revision (ICD-11), World Health Organization (WHO)
+2019/2021. <https://icd.who.int/browse11>. Licensed under [Creative Commons Attribution-NoDerivatives 3.0 IGO license
 (CC BY-ND 3.0 IGO)](https://creativecommons.org/licenses/by-nd/3.0/igo/)."
 
 * ^version = "{latest}"
