@@ -103,9 +103,9 @@ jobs:
 
           # Make IG canonical resolve
           mkdir ImplementationGuide
-          cp ImplementationGuide-cards.smarthealth.terminology.xml ImplementationGuide/ImplementationGuide-cards.smarthealth.terminology.xml.html
-          cp ImplementationGuide-cards.smarthealth.terminology.xml ImplementationGuide/ImplementationGuide-cards.smarthealth.terminology.html
-          cp ImplementationGuide-cards.smarthealth.terminology.json ImplementationGuide/ImplementationGuide-cards.smarthealth.terminology.json
+          cp ImplementationGuide-cards.smarthealth.terminology.xml ImplementationGuide/cards.smarthealth.terminology.xml.html
+          cp ImplementationGuide-cards.smarthealth.terminology.xml ImplementationGuide/cards.smarthealth.terminology.html
+          cp ImplementationGuide-cards.smarthealth.terminology.json ImplementationGuide/cards.smarthealth.terminology.json
 
 
 
