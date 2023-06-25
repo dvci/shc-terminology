@@ -90,11 +90,22 @@ jobs:
           mkdir ValueSet
           find . -regex '\./ValueSet-[^.]*\.html$' -type f -exec bash -c 'cp "$0" "ValueSet/${0#./ValueSet-}" && mv "ValueSet/${0#./ValueSet-}" "ValueSet/${0#./ValueSet-}"' {} \;
           find . -regex '\./ValueSet-[^.]*\.json$' -type f -exec bash -c 'cp "$0" "ValueSet/${0#./ValueSet-}" && mv "ValueSet/${0#./ValueSet-}" "ValueSet/${0#./ValueSet-}"' {} \;
+          find . -regex '\./ValueSet-[^.]*\.xml$' -type f -exec bash -c 'cp "$0" "ValueSet/${0#./ValueSet-}" && mv "ValueSet/${0#./ValueSet-}" "ValueSet/${0#./ValueSet-}"' {} \;
           perl $GITHUB_WORKSPACE/script/fix_relative_paths.pl ValueSet # Touch up relative paths in the .html files
+
           mkdir CodeSystem
           find . -regex '\./CodeSystem-[^.]*\.html$' -type f -exec bash -c 'cp "$0" "CodeSystem/${0#./CodeSystem-}" && mv "CodeSystem/${0#./CodeSystem-}" "CodeSystem/${0#./CodeSystem-}"' {} \;
           find . -regex '\./CodeSystem-[^.]*\.json$' -type f -exec bash -c 'cp "$0" "CodeSystem/${0#./CodeSystem-}" && mv "CodeSystem/${0#./CodeSystem-}" "CodeSystem/${0#./CodeSystem-}"' {} \;
+          find . -regex '\./CodeSystem-[^.]*\.xml$' -type f -exec bash -c 'cp "$0" "CodeSystem/${0#./CodeSystem-}" && mv "CodeSystem/${0#./CodeSystem-}" "CodeSystem/${0#./CodeSystem-}"' {} \;
           perl $GITHUB_WORKSPACE/script/fix_relative_paths.pl CodeSystem # Touch up relative paths in the .html files
+
+
+
+          # Make IG canonical resolve
+          mkdir ImplementationGuide
+          cp ImplementationGuide-cards.smarthealth.terminology.xml ImplementationGuide/ImplementationGuide-cards.smarthealth.terminology.xml.html
+          cp ImplementationGuide-cards.smarthealth.terminology.xml ImplementationGuide/ImplementationGuide-cards.smarthealth.terminology.html
+          cp ImplementationGuide-cards.smarthealth.terminology.json ImplementationGuide/ImplementationGuide-cards.smarthealth.terminology.json
 
 
 
