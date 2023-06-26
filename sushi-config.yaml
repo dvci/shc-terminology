@@ -25,18 +25,19 @@ parameters:
   "path-liquid": liquid
   "apply-version": false
   no-narrative:
-    - ValueSet/covid-cvx
-    - ValueSet/qualitative-covid-lab-test
-    - ValueSet/qualitative-lab-test-result
-    - ValueSet/orthopoxvirus-cvx
-    - ValueSet/immunization-covid-all
-    - ValueSet/immunization-orthopoxvirus-all
-    - ValueSet/immunization-covid-icd11
-    - ValueSet/lab-qualitative-test-covid
-    - ValueSet/lab-qualitative-result
     - CodeSystem/designation-use
     - CodeSystem/health-card
     - CodeSystem/identity-assurance-level
+    - ValueSet/immunization-covid-all
+    - ValueSet/immunization-covid-cvx
+    - ValueSet/immunization-covid-icd11
+    - ValueSet/immunization-covid-snomed
+    - ValueSet/immunization-orthopoxvirus-all
+    - ValueSet/immunization-orthopoxvirus-cvx
+    - ValueSet/lab-qualitative-result
+    - ValueSet/lab-qualitative-test-covid
+    - ValueSet/qualitative-covid-lab-test
+    - ValueSet/qualitative-lab-test-result
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
