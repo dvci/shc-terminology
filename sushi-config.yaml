@@ -32,6 +32,9 @@ parameters:
     - ValueSet/immunization-covid-all
     - ValueSet/immunization-orthopoxvirus-all
     - ValueSet/immunization-covid-icd11
+    - ValueSet/immunization-all-cvx
+    - ValueSet/immunization-all-icd11
+    - ValueSet/immunization-all-snomed
     - ValueSet/lab-qualitative-test-covid
     - ValueSet/lab-qualitative-result
     - CodeSystem/designation-use
