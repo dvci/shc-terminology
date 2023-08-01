@@ -325,7 +325,7 @@ Without obtaining prior written permission from SNOMED International, you are ex
 
     intro = f'''### Usage
 
-Use of SNOMED CT concepts for representing laboratory test results is preferred. For convenience, the table below provides equivalencies between SNOMED CT concepts and LOINC answers.
+**Laboratory test results MUST be represented using SNOMED CTG concepts.** For convenience, the table below provides equivalencies between SNOMED CT concepts and LOINC answers.
 
 {results_human_readable}
 

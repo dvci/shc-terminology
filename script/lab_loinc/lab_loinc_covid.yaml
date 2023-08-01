@@ -14,7 +14,6 @@ included:
   - LL5837-1 # Pos|Neg|Inconcl|Invalid
   - LL5695-3 # Pos|Presump Pos|Neg|Invalid
   - LL2888-7 # React/Non/Inval
-  - LL4772-1 # Recent or past infection
   - LL4623-6 # Pos|Neg|Suspect|Invalid
   - LL360-9 # Pos|Neg
   - LL6182-1 # Reactive|Non-Reactive|Invalid|Borderline
@@ -27,3 +26,4 @@ ignored:
   - LL5806-6 # Nextstrain SARS-CoV-2 clades
   - LL5807-4 # SARS-CoV-2 lineages
   - LL5768-8 # SARS-CoV-2 variants
+  - LL4772-1 # Recent or past infection

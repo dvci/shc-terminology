@@ -13,7 +13,7 @@ Description: "This value set includes a subset of the LOINCs found at <https://l
 
 
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2022, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
-* ^version = "2022.2"
+* ^version = "2023.1"
 
 
 * $loinc#94307-6 "SARS-CoV-2 N gene Spec Ql NAA N1"
@@ -42,7 +42,6 @@ Description: "This value set includes a subset of the LOINCs found at <https://l
 * $loinc#94641-8 "SARS-CoV-2 S gene Spec Ql NAA+probe"
 * $loinc#94647-5 "SARSr-CoV RNA Spec Ql NAA+probe"
 * $loinc#94660-8 "SARS-CoV-2 RNA SerPl Ql NAA+probe"
-* $loinc#94661-6 "SARS-CoV-2 Ab SerPl-Imp"
 * $loinc#94756-4 "SARS-CoV-2 N gene Resp Ql NAA N1"
 * $loinc#94757-2 "SARS-CoV-2 N gene Resp Ql NAA N2"
 * $loinc#94758-0 "SARS-rel CoV E gene Resp Ql NAA+probe"

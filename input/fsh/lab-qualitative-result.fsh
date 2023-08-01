@@ -27,17 +27,14 @@ Additional information about this license specific to SNOMED International's rel
 
 Without obtaining prior written permission from SNOMED International, you are expressly prohibited from using, distributing or reproducing the SNOMED International, SNOMED CT or SNOMED GPS logo, service mark or trademark. Please review all terms and conditions of use [here](http://www.snomed.org/terms-and-conditions)."
 
-* ^version = "2022.2"
+* ^version = "2023.1"
 
-* $loinc#LA28481-2 "Past infection"
-* $loinc#LA28482-0 "Recent infection"
 * $snomed#10828004 "Positive (qualifier value)"
 * $snomed#11214006 "Reactive (qualifier value)"
 * $snomed#125154007 "Specimen unsatisfactory for evaluation (finding)"
 * $snomed#131194007 "Non-reactive (qualifier value)"
 * $snomed#260373001 "Detected (qualifier value)"
 * $snomed#260385009 "Negative (qualifier value)"
-* $snomed#260415000 "Not detected (qualifier value)"
 * $snomed#260415000 "Not detected (qualifier value)"
 * $snomed#407479009 "Influenza A virus (organism)"
 * $snomed#407480007 "Influenza B virus (organism)"

@@ -1,6 +1,6 @@
 ### Usage
 
-Use of SNOMED CT concepts for representing laboratory test results is preferred. For convenience, the table below provides equivalencies between SNOMED CT concepts and LOINC answers.
+**Laboratory test results MUST be represented using SNOMED CTG concepts.** For convenience, the table below provides equivalencies between SNOMED CT concepts and LOINC answers.
 
 {:.table-striped.table.table-bordered}
 |SNOMED-CT|LOINC Answer|
@@ -19,9 +19,6 @@ Use of SNOMED CT concepts for representing laboratory test results is preferred.
 |`125154007`<br>Specimen unsatisfactory for evaluation (finding)|`LA13548-5`<br>Specimen unsatisfactory for evaluation|
 |`455371000124106`<br>Invalid result (qualifier value)|`LA15841-2`<br>Invalid|
 |`419984006`<br>Inconclusive (qualifier value)|`LA4259-3`<br>Borderline|
-|`260415000`<br>Not detected (qualifier value)|`LA28480-4`<br>Ab not detected|
-|*No equivalent*|`LA28481-2`<br>Past infection|
-|*No equivalent*|`LA28482-0`<br>Recent infection|
 |`407479009`<br>Influenza A virus (organism)|`LA11919-0`<br>Influenza A virus|
 |`407480007`<br>Influenza B virus (organism)|`LA13543-6`<br>Influenza B virus|
 |`840533007`<br>Severe acute respiratory syndrome coronavirus 2 (organism)|`LA31065-8`<br>SARS coronavirus 2|

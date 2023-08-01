@@ -85,20 +85,23 @@
 #         88456-9 (California encephalitis virus IgG+IgM Ab [Interpretation] in Serum Qualitative by Immunofluorescence)
 #         90365-8 (Chlamydia trachomatis L1 Ab.IgG+IgA+IgM Interpretation in Serum by Immunoassay)
 #
+# 2023-08-01 omitting this given there are no SNOMED equivalents, and the LOINC answer list is not
+# very clear (what is "past infection" vs "recent infection"?)
+#
 # These are NOT equivalencies provided by SNOMED/LOINC, but are close enough for SHC use cases.
-- loinc: LA28480-4
-  loinc_display: Ab not detected
-  snomed: 260415000
-  snomed_display: Not detected (qualifier value)
-- loinc: LA28481-2
-  loinc_display: Past infection
-  snomed: false
+# - loinc: LA28480-4
+#   loinc_display: Ab not detected
+#   snomed: 260415000
+#   snomed_display: Not detected (qualifier value)
+# - loinc: LA28481-2
+#   loinc_display: Past infection
+#   snomed: false
   # Waiting for the addition of this to GPS
   # snomed: 410588008
   # snomed_display: Past - time unspecified (qualifier value)
-- loinc: LA28482-0
-  loinc_display: Recent infection
-  snomed: false
+# - loinc: LA28482-0
+#   loinc_display: Recent infection
+#   snomed: false
   # Waiting for the addition of this to GPS
   # snomed: 6493001
   # snomed_display: Recent (qualifier value)
