@@ -281,7 +281,7 @@
           },
           {
             "code": "229",
-            "display": "COVID-19, mRNA, LNP-S, bivalent booster, PF, 50 mcg/0.5 mL or 25mcg/0.25 mL dose",
+            "display": "COVID-19, mRNA, LNP-S, bivalent, PF, 50 mcg/0.5 mL or 25mcg/0.25 mL dose",
             "designation": [
               {
                 "language": "en-US",
@@ -295,7 +295,7 @@
           },
           {
             "code": "230",
-            "display": "COVID-19, mRNA, LNP-S, bivalent booster, PF, 10 mcg/0.2 mL",
+            "display": "COVID-19, mRNA, LNP-S, bivalent, PF, 10 mcg/0.2 mL",
             "designation": [
               {
                 "language": "en-US",
@@ -309,7 +309,7 @@
           },
           {
             "code": "300",
-            "display": "COVID-19, mRNA, LNP-S, bivalent booster, PF, 30 mcg/0.3 mL dose",
+            "display": "COVID-19, mRNA, LNP-S, bivalent, PF, 30 mcg/0.3 mL dose",
             "designation": [
               {
                 "language": "en-US",
@@ -323,7 +323,7 @@
           },
           {
             "code": "301",
-            "display": "COVID-19, mRNA, LNP-S, bivalent booster, PF, 10 mcg/0.2 mL dose",
+            "display": "COVID-19, mRNA, LNP-S, bivalent, PF, 10 mcg/0.2 mL dose",
             "designation": [
               {
                 "language": "en-US",
@@ -346,6 +346,90 @@
                   "use": "consumer-friendly"
                 },
                 "value": "Pfizer-BioNTech COVID-19 Bivalent, Original + BA.4/BA.5 (Non-US Tradename COMIRNATY Bivalent)"
+              }
+            ]
+          },
+          {
+            "code": "308",
+            "display": "COVID-19, mRNA, LNP-S, PF, tris-sucrose, 3 mcg/0.3 mL",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Pfizer-BioNTech COVID-19 Vaccine (US Only)"
+              }
+            ]
+          },
+          {
+            "code": "309",
+            "display": "COVID-19, mRNA, LNP-S, PF, tris-sucrose, 30 mcg/0.3 mL",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "COMIRNATY"
+              }
+            ]
+          },
+          {
+            "code": "310",
+            "display": "COVID-19, mRNA, LNP-S, PF, tris-sucrose, 10 mcg/0.3 mL",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Pfizer-BioNTech COVID-19 Vaccine (US Only)"
+              }
+            ]
+          },
+          {
+            "code": "311",
+            "display": "COVID-19, mRNA, LNP-S, PF, 25 mcg/0.25 mL",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Moderna COVID-19 Vaccine (US only)"
+              }
+            ]
+          },
+          {
+            "code": "312",
+            "display": "COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "SPIKEVAX"
+              }
+            ]
+          },
+          {
+            "code": "313",
+            "display": "COVID-19, subunit, rS-nanoparticle, adjuvanted, PF, 5 mcg/0.5 mL",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "Novavax COVID-19 Vaccine, Adjuvanted (US Only)"
               }
             ]
           },
@@ -626,6 +710,20 @@
                   "use": "consumer-friendly"
                 },
                 "value": "Pfizer COVID-19 Bivalent, Original + BA.1 (Non-US Tradename COMIRNATY Bivalent)"
+              }
+            ]
+          },
+          {
+            "code": "521",
+            "display": "COVID-19 SP, protein-based, adjuvanted (VidPrevtyn Beta), Sanofi-GSK",
+            "designation": [
+              {
+                "language": "en-US",
+                "use": {
+                  "system": "https://terminology.smarthealth.cards/CodeSystem/designation-use",
+                  "use": "consumer-friendly"
+                },
+                "value": "COVID-19 SP, protein-based, adjuvanted (VidPrevtyn Beta), Sanofi-GSK"
               }
             ]
           }

@@ -9,11 +9,11 @@ Alias: $cvx = http://hl7.org/fhir/sid/cvx
 ValueSet: ImmunizationAllCvxValueSet
 Id: immunization-all-cvx
 Title: "Immunization / All / CVX"
-Description: "Contains all CVX codes from <https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx> as of 2023-06-23."
+Description: "Contains all CVX codes from <https://www2.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx> as of 2023-09-20."
 
 * ^copyright = ""
 
-* ^version = "20230623"
+* ^version = "20230920"
 
 * $cvx#54 "adenovirus, type 4"
 * $cvx#55 "adenovirus, type 7"
@@ -272,4 +272,13 @@ Description: "Contains all CVX codes from <https://www2.cdc.gov/vaccines/iis/iis
 * $cvx#231 "influenza, Southern Hemisphere, high-dose, quadrivalent"
 * $cvx#303 "RSV, recombinant, protein subunit RSVpreF, adjuvant reconstituted, 0.5 mL, PF"
 * $cvx#304 "Respiratory syncytial virus (RSV), unspecified "
+* $cvx#305 "RSV, bivalent, protein subunit RSVpreF, diluent reconstituted, 0.5 mL, PF"
+* $cvx#306 "RSV, mAb, nirsevimab-alip, 0.5 mL, neonate to 24 months"
+* $cvx#307 "RSV, mAb, nirsevimab-alip, 1 mL, neonate to 24 months"
+* $cvx#313 "COVID-19, subunit, rS-nanoparticle, adjuvanted, PF, 5 mcg/0.5 mL"
+* $cvx#308 "COVID-19, mRNA, LNP-S, PF, tris-sucrose, 3 mcg/0.3 mL"
+* $cvx#309 "COVID-19, mRNA, LNP-S, PF, tris-sucrose, 30 mcg/0.3 mL"
+* $cvx#310 "COVID-19, mRNA, LNP-S, PF, tris-sucrose, 10 mcg/0.3 mL"
+* $cvx#312 "COVID-19, mRNA, LNP-S, PF, 50 mcg/0.5 mL"
+* $cvx#311 "COVID-19, mRNA, LNP-S, PF, 25 mcg/0.25 mL"
 * $cvx#302 "COVID-19, mRNA, LNP-S, bivalent, PF, 3 mcg/0.2 mL dose"
