@@ -1,9 +1,3 @@
-<!-- Hide unnecessary message about Code System not being used anywhere -->
-<script>
-    let pTags = Array.from(document.getElementsByTagName("p"));
-    pTags.filter(function(x) { return x.textContent.includes('This Code system is referenced in the content logical definition of the following value sets:')}).forEach(function(t) { t.style.display = "none"});
-    pTags.filter(function(x) { return x.textContent.includes('This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)')}).forEach(function(t) {t.style.display = "none"});
-</script>
 <div xmlns="http://www.w3.org/1999/xhtml">
     <table class="table-striped table table-bordered">
         <tr>
